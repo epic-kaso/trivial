@@ -1,0 +1,74 @@
+.btn-facebook {
+    background-color: #3b5998;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.btn-google-plus {
+    background-color: #d34836;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.navbar.navbar-white {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.7);
+    border: none;
+}
+
+.navbar.navbar-white a {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar.navbar-white .nav > li > a:hover, .navbar.navbar-white .nav > li > a:focus {
+    color: #000000;
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+/*
+ * 1. Behave like form elements
+ * 2. Create position context for dropdowns
+ * 3. Clip content
+ */
+.uk-form-file {
+    /* 1 */
+    display: inline-block;
+    vertical-align: middle;
+    /* 2 */
+    position: relative;
+    /* 3 */
+    overflow: hidden;
+}
+
+/*
+ * 1. Required for Firefox
+ * 2. Expand height and required for the cursor
+ */
+.uk-form-file input[type="file"] {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer;
+    /* 1 */
+    left: 0;
+    /* 2 */
+    font-size: 500px;
+}
+
+.upload-icon {
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.file-details span.file-name {
+    font-size: 25px;
+}
+
+.file-details span.glyphicon {
+    font-size: 40px;
+}
