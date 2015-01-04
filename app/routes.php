@@ -82,6 +82,14 @@
         ]
     );
 
+    Route::post('/files/enable-share-sell/{file_id}',
+        [
+            'before' => 'auth',
+            'as'     => 'user.files.enable-share-sell',
+            'uses'   => 'FileController@makeSellable'
+        ]
+    );
+
     Route::resource('/files', 'FileController');
     Route::resource('/sell', 'SellFileController');
 

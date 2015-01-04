@@ -131,11 +131,12 @@
                 return Redirect::back();
 
             $price = Input::get('price');
+
             $validation = Validator::make(Input::only(['price']), ['price' => 'required|numeric']);
 
             if ($validation->fails())
                 return Redirect::back()->withInput()->withErrors($validation);
-            $file->makeSellable($price);
+            $file->makeSellable(doubleval($price));
 
             return Redirect::home();
         }

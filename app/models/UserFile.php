@@ -45,6 +45,8 @@
             if (is_numeric($sellingPrice)) {
                 $this->is_sellable = TRUE;
                 $this->sell_price = $sellingPrice;
+
+                return $this->save();
             }
             throw new InvalidArgumentException('Selling price must be a number');
         }

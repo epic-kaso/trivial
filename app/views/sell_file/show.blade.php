@@ -21,10 +21,11 @@
                                 <span class="doc-type label label-success">{{ $file->type }}</span>
                             </p>
                         </div>
+                        <h3>₦{{ $file->sell_price }}</h3>
                     </div>
 
                     <div class="panel-footer">
-                        <a class="btn btn-info" href="">₦{{ $file->price || '0.00' }} BUY NOW</a>
+                        <a class="btn btn-info" href="">BUY NOW</a>
                     </div>
                 </div>
             </div>

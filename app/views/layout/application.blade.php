@@ -11,8 +11,8 @@
 <body>
 @yield('content')
 
-@yield('scripts')
 <script src="{{ asset('bower_components/jquery/dist/jquery.min.js')  }}" type="text/javascript"></script>
 <script src="{{ asset('bower_components/bootstrap/dist/js/bootstrap.min.js')  }}" type="text/javascript"></script>
+@yield('scripts')
 </body>
 </html>
