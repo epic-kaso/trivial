@@ -30,7 +30,7 @@ class BuyStorageSpaceViaCreditCardCommandHandler extends BaseCommandHandler
     public function handle($command)
     {
         $transactionResponse = CreditCardPayment::newInstance($command->creditCardTransactionResponse);
-        $storageSpaceData = Size::Gigabyte($command->storageSpaceData->size);
+        $storageSpaceData = Size::Bytes($command->storageSpaceData->size);
 
         if (!$transactionResponse->isOrderApproved()) {
             throw new TransactionNotApprovedException("Transaction not approved");

@@ -13,7 +13,9 @@
          */
         public function index()
         {
-            return View::make('storage.index');
+            $storageSpaces = SellableStorageSpace::orderBy('size')->get();
+
+            return View::make('storage.index', compact('storageSpaces'));
         }
 
         public function buyFailure($data)

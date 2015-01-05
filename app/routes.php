@@ -28,7 +28,9 @@
     Route::bind('data', function ($data) {
         $parsed = base64_decode($data);
         $obj = json_decode($parsed);
-        return $obj;
+        $hashcode = $obj->hashcode;
+
+        return SellableStorageSpace::whereHashcode($hashcode)->first();
     });
 
     Route::get('/', ['before' => 'auth', 'as' => 'home', 'uses' => 'HomeController@showWelcome']);
