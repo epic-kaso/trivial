@@ -12,7 +12,7 @@
         {
             Eloquent::unguard();
 
-            // $this->call('UserTableSeeder');
+            $this->call('StorageSpacesSeed');
         }
 
     }

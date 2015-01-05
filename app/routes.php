@@ -28,7 +28,6 @@
     Route::bind('data', function ($data) {
         $parsed = base64_decode($data);
         $obj = json_decode($parsed);
-
         return $obj;
     });
 

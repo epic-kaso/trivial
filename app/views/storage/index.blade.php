@@ -37,9 +37,9 @@
                                     <input type="hidden" name="itemImageURL" value=""/>
                                     <input type="hidden" name="data" value="{{ base64_encode('{size: 1}') }}"/>
                                     <input type="hidden" name="successURL"
-                                           value="{{ route('user.buy-storage-success',['_token' => csrf_token(),'data' => base64_encode('{size: 1}') ]) }}"/>
+                                           value="{{ route('user.buy-storage-success',['_token' => csrf_token(),'data' => base64_encode(json_encode(['size' => 1])) ]) }}"/>
                                     <input type="hidden" name="failURL"
-                                           value="{{ route('user.buy-storage-failure',['_token' => csrf_token(),'data' => base64_encode('{size: 1}') ]) }}"/>
+                                           value="{{ route('user.buy-storage-failure',['_token' => csrf_token(),'data' => base64_encode(json_encode(['size' => 1])) ]) }}"/>
                                     <input type="submit" class="btn btn-info" value="BUY NOW"/>
                                 </form>
                             </td>
@@ -58,9 +58,9 @@
                                            value="MEDIAHUBB -- Purchase of 2 Gig Storage Space"/>
                                     <input type="hidden" name="itemImageURL" value=""/>
                                     <input type="hidden" name="successURL"
-                                           value="{{ route('user.buy-storage-success',['_token' => csrf_token(),'data' => base64_encode('{size: 2}') ]) }}"/>
+                                           value="{{ route('user.buy-storage-success',['_token' => csrf_token(),'data' => base64_encode(json_encode(['size' => 2])) ]) }}"/>
                                     <input type="hidden" name="failURL"
-                                           value="{{ route('user.buy-storage-failure',['_token' => csrf_token(),'data' => base64_encode('{size: 2}') ]) }}"/>
+                                           value="{{ route('user.buy-storage-failure',['_token' => csrf_token(),'data' => base64_encode(json_encode(['size' => 2])) ]) }}"/>
                                     <input type="submit" class="btn btn-info" value="BUY NOW"/>
                                 </form>
                             </td>
@@ -79,9 +79,9 @@
                                            value="MEDIAHUBB -- Purchase of 4 Gig Storage Space"/>
                                     <input type="hidden" name="itemImageURL" value=""/>
                                     <input type="hidden" name="successURL"
-                                           value="{{ route('user.buy-storage-success',['_token' => csrf_token(),'data' => base64_encode('{size: 4}') ]) }}"/>
+                                           value="{{ route('user.buy-storage-success',['_token' => csrf_token(),'data' => base64_encode(json_encode(['size' => 4])) ]) }}"/>
                                     <input type="hidden" name="failURL"
-                                           value="{{ route('user.buy-storage-failure',['_token' => csrf_token(),'data' => base64_encode('{size: 4}') ]) }}"/>
+                                           value="{{ route('user.buy-storage-failure',['_token' => csrf_token(),'data' => base64_encode(json_encode(['size' => 4])) ]) }}"/>
                                     <input type="submit" class="btn btn-info" value="BUY NOW"/>
                                 </form>
                             </td>
@@ -100,9 +100,9 @@
                                            value="MEDIAHUBB -- Purchase of 8 Gig Storage Space"/>
                                     <input type="hidden" name="itemImageURL" value=""/>
                                     <input type="hidden" name="successURL"
-                                           value="{{ route('user.buy-storage-success',['_token' => csrf_token(),'data' => base64_encode('{size: 8}') ]) }}"/>
+                                           value="{{ route('user.buy-storage-success',['_token' => csrf_token(),'data' => base64_encode(json_encode(['size' => 8])) ]) }}"/>
                                     <input type="hidden" name="failURL"
-                                           value="{{ route('user.buy-storage-failure',['_token' => csrf_token(),'data' => base64_encode('{size: 8}') ]) }}"/>
+                                           value="{{ route('user.buy-storage-failure',['_token' => csrf_token(),'data' => base64_encode(json_encode(['size' => 8])) ]) }}"/>
                                     <input type="submit" class="btn btn-info" value="BUY NOW"/>
                                 </form>
                             </td>
