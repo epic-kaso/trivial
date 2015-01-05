@@ -24,6 +24,9 @@
             App::abort(404);
         }
     });
+    Route::bind('user_file', function ($user_file) {
+        return UserFile::whereHashcode($user_file)->first();
+    });
 
     Route::bind('data', function ($data) {
         $parsed = base64_decode($data);
@@ -98,13 +101,13 @@
         ]
     );
 
-    Route::any('/sell-success',
+    Route::any('/sell-success/{user_file}',
         [
             'as'     => 'user.sell-success',
             'before' => 'csrf',
             'uses'   => 'SellFileController@sellSuccess'
         ]);
-    Route::any('/sell-failure',
+    Route::any('/sell-failure/{user_file}',
         [
             'as'     => 'user.sell-failure',
             'before' => 'csrf',

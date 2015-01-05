@@ -36,9 +36,9 @@
                             <input type="hidden" name="itemDesc" value="MEDIAHUBB -- Purchase of {{ $file->name }}"/>
                             <input type="hidden" name="itemImageURL" value=""/>
                             <input type="hidden" name="successURL"
-                                   value="{{ route('user.sell-success',['_token' => csrf_token(),'hashcode' => $file->hashcode]) }}"/>
+                                   value="{{ route('user.sell-success',['_token' => csrf_token(),'user_file' => $file->hashcode]) }}"/>
                             <input type="hidden" name="failURL"
-                                   value="{{ route('user.sell-failure',['_token' => csrf_token(),'hashcode' => $file->hashcode]) }}"/>
+                                   value="{{ route('user.sell-failure',['_token' => csrf_token(),'user_file' => $file->hashcode]) }}"/>
                             <input type="submit" class="btn btn-info" value="BUY NOW"/>
                         </form>
 
