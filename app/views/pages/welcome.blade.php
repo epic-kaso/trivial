@@ -6,17 +6,18 @@
                 <div class="col-md-3" style="position: relative">
 
                     <div class="side-menu">
-                        <ul class="list-unstyled">
+                        <ul class="nav nav-stacked">
                             <li>
                                 <a href="{{ route('user.storage') }}">
                                     <span class="fa fa-cloud pull-left"></span> Buy Storage Space
                                 </a>
                             </li>
+                            <li>
+                                <a href="{{ route('user.storage') }}">
+                                    <span class="fa fa-cc pull-left"></span> Files For Sale
+                                </a>
+                            </li>
                         </ul>
-                    </div>
-
-                    <div class="text-center navbar-fixed-bottom" style="width: 400px;">
-                        <canvas id="myChart" width="400" height="150"></canvas>
                     </div>
                 </div>
 
