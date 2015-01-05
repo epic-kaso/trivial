@@ -31,6 +31,17 @@
                             @foreach($files as $file)
                                 <tr>
                                     <td>
+                                        <span class="glyphicon glyphicon-file"
+                                              style="margin-right: 15px;font-size: 30px;"></span>
+                                         <span style="display: inline-block;">
+                                             <span>{{ $file->name }}</span>
+                                             <p style="font-weight: 200;font-size: 12px;">
+                                                 <span class="text-muted">{{$file->created_at->toDayDateTimeString() }}</span>
+                                                 &nbsp;&nbsp;
+                                                 {{ strtoupper($file->type) }}
+                                             </p>
+                                        </span>
+
                                         <div class="pull-right">
                                             <a class="btn btn-xs btn-default"
                                                href="{{ route('user.files.download',[$file->id]) }}"
@@ -64,14 +75,7 @@
                                                class="btn btn-xs btn-danger">
                                                 <span class="glyphicon glyphicon-remove-sign"></span></a>
                                         </div>
-                                        <h4><span class="glyphicon glyphicon-file pull-left"></span> {{ $file->name }}
-                                        </h4>
 
-                                        <p>
-                                            <span class="text-muted">{{$file->created_at->toDayDateTimeString() }}</span>
-                                            &nbsp;&nbsp;
-                                            <span class="label label-default">{{ strtoupper($file->type) }}</span>
-                                        </p>
                                     </td>
                                 </tr>
                             @endforeach
