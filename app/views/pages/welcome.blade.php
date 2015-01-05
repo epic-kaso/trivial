@@ -81,6 +81,8 @@
                                 </tr>
                             @endforeach
                         </table>
+
+                        {{ $files->links() }}
                     </div>
 
                 </div>

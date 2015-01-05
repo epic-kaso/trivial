@@ -62,6 +62,6 @@
 
         public function all(User $user)
         {
-            return UserFile::where('user_id', $user->id)->orderBy('name')->get();
+            return UserFile::where('user_id', $user->id)->orderBy('name')->paginate(20);
         }
     }
