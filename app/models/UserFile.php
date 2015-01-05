@@ -7,21 +7,12 @@
      */
 
     use Laracasts\Commander\Events\EventGenerator;
+    use TestOauthApp\Services\File\Size;
 
     class UserFile extends BaseModel
     {
         use EventGenerator;
-        /*
-         * $table->increments('id');
-                $table->string('user_id');
-                $table->string('hashcode');
-                $table->string('key');
-                $table->string('name');
-                $table->string('type');
-                $table->string('size');
-                $table->string('file_path');
-                $table->timestamps();
-         */
+
         protected $table = "user_files";
         protected $guarded = array('id', 'hashcode');
 
@@ -80,5 +71,12 @@
         public function getDownloadCount()
         {
             return number_format($this->download_count);
+        }
+
+        public function getFormattedSize()
+        {
+            $size = Size::Bytes($this->size);
+
+            return $size->humanFileSize();
         }
     }

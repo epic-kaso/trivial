@@ -3,11 +3,11 @@
     @include('pages.partials.navigation')
     <div class="container main-content">
             <div class="row">
-                <div class="col-md-3" style="position: relative">
+                <div class="col-md-2" style="position: relative">
                     @include('pages.partials.side-nav')
                 </div>
 
-                <div class="col-md-9">
+                <div class="col-md-8">
 
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -21,11 +21,15 @@
                                         <span class="fa {{ getFileIconCssClass(strtolower($file->type)) }}"
                                               style="margin-right: 15px;font-size: 30px;"></span>
                                          <span style="display: inline-block;">
-                                             <span>{{ $file->name }}</span>
+                                             <span style="display: inline-block;margin-bottom: 5px;"
+                                                   data-toggle="tooltip"
+                                                   title="{{ $file->name }}">{{ Str::limit($file->name ,30)}}</span>
                                              <p style="font-weight: 200;font-size: 12px;">
                                                  <span class="text-muted">{{$file->created_at->toDayDateTimeString() }}</span>
                                                  &nbsp;&nbsp;
-                                                 {{ strtoupper($file->type) }}
+                                                 <span class="text-muted">{{ strtoupper($file->getFormattedSize()) }}</span>
+                                                 &nbsp;&nbsp;
+                                                 <span class="text-muted text-info">{{ strtoupper($file->type) }}</span>
                                              </p>
                                         </span>
 
@@ -81,7 +85,9 @@
                             @endforeach
                         </table>
 
-                        {{ $files->links() }}
+                        @if(method_exists($files,'links'))
+                            {{ $files->links() }}
+                        @endif
                     </div>
 
                 </div>

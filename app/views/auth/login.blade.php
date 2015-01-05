@@ -3,7 +3,7 @@
     <div class="container">
         <div class="space" style="height: 120px;">
         </div>
-        <div class="col-md-12 text-center" style="margin-bottom: 25px">
+        <div class="col-md-12 col-sm-12 text-center" style="margin-bottom: 25px">
             <div class="form-group">
                 <h2>Login. Share File. Make Money</h2>
 
@@ -11,9 +11,9 @@
             </div>
         </div>
 
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-8 col-md-offset-2 col-sm-12">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-5 col-sm-12">
                     {{ Form::open(['url' => route('user.process-login')]) }}
                     <div class="form-group">
                         <input class="form-control" type="text" name="email" placeholder="Email"/>
@@ -31,11 +31,11 @@
                     </div>
                 </div>
 
-                <div class="col-md-2">
+                <div class="col-md-2 col-sm-12">
                     <span></span>
                 </div>
 
-                <div class="col-md-5">
+                <div class="col-md-5 col-sm-12">
                     <a href="{{ route('user.facebook-login') }}" class="btn btn-facebook btn-block">
                         <span class="fa fa-facebook pull-left"></span> Login with Facebook
                     </a>

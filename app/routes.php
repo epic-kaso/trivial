@@ -48,6 +48,12 @@
         'uses'   => 'HomeController@showFilesForSale'
     ]);
 
+    Route::get('/purchases', [
+        'before' => 'auth',
+        'as'     => 'home-purchased-files',
+        'uses'   => 'HomeController@showPurchasedFiles'
+    ]);
+
     Route::get('/login', [
         'as'   => 'user.show-login',
         'uses' => 'LoginController@getShowLogin'

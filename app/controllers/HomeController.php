@@ -34,4 +34,19 @@
             return View::make('pages.welcome', compact('files', 'active', 'title'));
         }
 
+        public function showPurchasedFiles()
+        {
+            $user = Auth::user();
+            $user->load('purchasedFiles.userFile');
+            $ini = $user->purchasedFiles;
+
+            $files = $ini->map(function ($item) {
+                return $item->userFile;
+            });
+
+            $active = 'purchased-files';
+            $title = "My Purchases";
+
+            return View::make('pages.welcome', compact('files', 'active', 'title'));
+        }
     }

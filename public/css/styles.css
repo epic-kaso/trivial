@@ -147,3 +147,23 @@ span.glyphicon.glyphicon-cloud-upload {
     display: inline-block;
     float: right;
 }
+
+@media (max-width: 768px) {
+    .space {
+        display: none;
+    }
+}
+
+.navmenu.navmenu-custom {
+    background-color: #ffffff;
+    border-right-color: #ddd;
+}
+
+.clean-btn {
+    border: none;
+}
+
+.navmenu-custom > ul.nav {
+    margin-left: 20px;
+    margin-top: 25px;
+}

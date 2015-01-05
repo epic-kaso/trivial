@@ -1,11 +1,16 @@
 <div class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
+            <button type="button" style="margin-left: 4px;" class="clean-btn navbar-toggle collapsed pull-left"
+                    data-target="#sideMenu" data-toggle="offcanvas"><span class="fa fa-ellipsis-v"></span></button>
             <a href="" class="navbar-brand">
                 CloudBox
             </a>
+            <button type="button" class="clean-btn navbar-toggle collapsed" data-target="#navMenuBar"
+                    data-toggle="collapse"><span class="fa fa-navicon"></span></button>
         </div>
 
+        <div class="collapse navbar-collapse" id="navMenuBar">
         @if(Auth::check())
             <ul class="navbar-right navbar-nav nav">
                 <li><a href="#UploadModal" data-toggle="modal">
@@ -36,6 +41,6 @@
                 <li><a href="">Login</a></li>
             </ul>
         @endif
-
+        </div>
     </div>
 </div>

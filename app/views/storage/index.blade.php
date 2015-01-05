@@ -3,11 +3,11 @@
 @section('content')
     @include('pages.partials.navigation')
     <div class="container main-content">
-        <div class="col-md-3" style="position: relative">
+        <div class="col-md-2" style="position: relative">
             @include('pages.partials.side-nav')
         </div>
 
-        <div class="col-md-9">
+        <div class="col-md-8">
             <div class="row">
             <div class="col-md-5">
                 <div class="panel panel-default">
