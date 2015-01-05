@@ -1,6 +1,7 @@
 <?php namespace TestOauthApp\Command\FilePurchase;
 
 use TestOauthApp\Command\BaseCommandHandler;
+use TestOauthApp\Events\File\CustomerPurchasesFile;
 use TestOauthApp\Services\Payment\CreditCardPayment;
 
 class BuyFileViaCreditCardCommandHandler extends BaseCommandHandler
@@ -35,6 +36,14 @@ class BuyFileViaCreditCardCommandHandler extends BaseCommandHandler
         ) {
             throw new TransactionNotApprovedException("Transaction not approved");
         }
+
+        $customer = $transactionResponse->getCustomer();
+
+        $customer->raise(new CustomerPurchasesFile($customer, $userFile));
+
+        $this->dispatchEventsFor($customer);
+
+        return TRUE;
     }
 
 }

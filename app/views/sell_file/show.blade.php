@@ -25,6 +25,10 @@
                     </div>
 
                     <div class="panel-footer">
+                        <div class="form-group">
+                            <p class="alert alert-danger">Make sure to give your correct <strong>Email</strong> at the
+                                purchase page, The file will be sent to your email.</p>
+                        </div>
                         <form method="post" action="http://gpayexpress.com/gpay/gpayexpress.php">
                             <input type="hidden" name="merchantID" value="141101"/>
                             <input type="hidden" name="itemName" value="{{ $file->name }}"/>
@@ -37,6 +41,7 @@
                                    value="{{ route('user.sell-failure',['_token' => csrf_token(),'hashcode' => $file->hashcode]) }}"/>
                             <input type="submit" class="btn btn-info" value="BUY NOW"/>
                         </form>
+
                     </div>
                 </div>
             </div>

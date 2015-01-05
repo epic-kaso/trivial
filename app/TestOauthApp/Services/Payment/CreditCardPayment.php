@@ -9,6 +9,8 @@
     namespace TestOauthApp\Services\Payment;
 
 
+    use TestOauthApp\Services\File\Customer;
+
     class CreditCardPayment
     {
         protected $responseProcessed;
@@ -76,11 +78,13 @@
 
         public function getCustomer()
         {
-            return [
-                'name'  => $this->responseProcessed['CustomerName'],
-                'email' => $this->responseProcessed['CustomerEmail'],
-                'phone' => $this->responseProcessed['CustomerPhone']
-            ];
+            $temp = new Customer(
+                $this->responseProcessed['CustomerName'],
+                $this->responseProcessed['CustomerEmail'],
+                $this->responseProcessed['CustomerPhone']
+            );
+
+            return $temp;
         }
 
         public function getPAN()
