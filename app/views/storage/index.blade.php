@@ -3,16 +3,24 @@
 @section('content')
     @include('pages.partials.navigation')
     <div class="container main-content">
-        <div class="row">
+        <div class="col-md-3" style="position: relative">
+            @include('pages.partials.side-nav')
+        </div>
+
+        <div class="col-md-9">
+            <div class="row">
             <div class="col-md-5">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <canvas id="myChart" width="400" height="400"></canvas>
+                        <div class="center-item">
+                            <canvas id="myChart" width="200" height="200"
+                                    style="display: block;margin-left: auto;margin-right: auto;"></canvas>
+                        </div>
                     </div>
                     <div class="panel-footer">
-                        <h4>Current Storage Used <strong>{{ Auth::user()->storage->getFormattedUsedStorage() }}</strong>
+                        <p>Current Storage Used <strong>{{ Auth::user()->storage->getFormattedUsedStorage() }}</strong>
                             of <strong>{{ Auth::user()->storage->getFormattedTotalStorage() }}</strong>
-                        </h4>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -52,6 +60,7 @@
                 </div>
             </div>
 
+            </div>
         </div>
     </div>
 @stop

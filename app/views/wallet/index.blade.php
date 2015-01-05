@@ -3,16 +3,24 @@
 @section('content')
     @include('pages.partials.navigation')
     <div class="container main-content">
-        <div class="row">
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <h2>Wallet Balance: N10,000</h2>
-                    <a class="btn btn-success" href="/">Request Fund</a>
-                </div>
-            </div>
+        <div class="col-md-3" style="position: relative">
+            @include('pages.partials.side-nav')
         </div>
 
-        <div class="row">
+        <div class="col-md-9">
+            <div class="row">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4>Wallet</h4>
+                    </div>
+                    <div class="panel-body">
+                        <h1>Current Balance <span>N1000</span></h1>
+                        <a class="btn btn-success" href="/">Request Fund</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h5>Transactions</h5>
@@ -46,6 +54,7 @@
                         <td><a class="btn btn-info">BUY</a></td>
                     </tr>
                 </table>
+            </div>
             </div>
         </div>
     </div>

@@ -12,7 +12,8 @@
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <div class="file-details">
-                            <span class="glyphicon glyphicon-file pull-left"></span>
+                            <span class="fa {{ getFileIconCssClass(strtolower($file->type)) }} pull-left"
+                                  style="margin-right: 15px;font-size: 30px;"></span>
                             <span class="file-name">{{ $file->name }}</span>
 
                             <p>

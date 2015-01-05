@@ -13,9 +13,11 @@
          */
         public function index()
         {
+            $active = 'storage';
+            $title = "storage";
             $storageSpaces = SellableStorageSpace::orderBy('size')->get();
 
-            return View::make('storage.index', compact('storageSpaces'));
+            return View::make('storage.index', compact('storageSpaces', 'active', 'title'));
         }
 
         public function buyFailure($data)

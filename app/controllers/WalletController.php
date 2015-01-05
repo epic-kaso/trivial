@@ -10,6 +10,9 @@
          */
         public function index()
         {
-            return View::make('wallet.index');
+            $active = 'wallet';
+            $title = "Wallet";
+
+            return View::make('wallet.index', compact('active', 'title'));
         }
     }

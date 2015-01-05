@@ -6,11 +6,6 @@
             </a>
         </div>
 
-        <ul class="nav navbar-nav">
-            <li><a href="{{ route('home') }}">Home</a></li>
-            <li><a href=" {{ route('user.wallet') }}">Wallet <span class="badge">0</span></a></li>
-        </ul>
-
         @if(Auth::check())
             <ul class="navbar-right navbar-nav nav">
                 <li><a href="#UploadModal" data-toggle="modal">
