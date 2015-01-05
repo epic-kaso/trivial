@@ -25,6 +25,13 @@
         }
     });
 
+    Route::bind('data', function ($data) {
+        $parsed = base64_decode($data);
+        $obj = json_decode($parsed);
+
+        return $obj;
+    });
+
     Route::get('/', ['before' => 'auth', 'as' => 'home', 'uses' => 'HomeController@showWelcome']);
 
     Route::get('/login', [
@@ -113,4 +120,20 @@
 
 
     Route::get('/storage', ['as' => 'user.storage', 'before' => 'auth', 'uses' => 'UserStorageController@index']);
+    Route::post('/storage/buy/success/{data}',
+        [
+            'as'     => 'user.buy-storage-success',
+            'before' => 'csrf|auth',
+            'uses'   => 'UserStorageController@buySuccess'
+        ]
+    );
+    Route::post('/storage/buy/failure/{data}',
+        [
+            'as'     => 'user.buy-storage-failure',
+            'before' => 'csrf|auth',
+            'uses'   => 'UserStorageController@buyFailure'
+        ]
+    );
+
+
     Route::get('/wallet', ['as' => 'user.wallet', 'before' => 'auth', 'uses' => 'WalletController@index']);

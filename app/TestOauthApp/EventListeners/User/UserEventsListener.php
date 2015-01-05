@@ -49,4 +49,10 @@
             $this->fileService->deleteFile($event->getUserFilePath());
             $user->save();
         }
+
+        public function whenUserStorageSizeIncreased($event)
+        {
+            $user = $event->getUser();
+            $size = $event->getSize();
+        }
     }

@@ -8,7 +8,8 @@
 
     return [
         'listeners'          => [
-            'TestOauthApp\EventListeners\User\UserEventsListener'
+            'TestOauthApp\EventListeners\User\UserEventsListener',
+            'TestOauthApp\EventListeners\Storage\TransactionsListener'
         ],
         'production-storage' => 'awss3'
     ];

@@ -27,28 +27,85 @@
                             <td>1</td>
                             <td>1 Gigabyte</td>
                             <td>N1,000</td>
-                            <td><a class="btn btn-info">BUY</a></td>
+                            <td>
+                                <form method="post" action="http://gpayexpress.com/gpay/gpayexpress.php">
+                                    <input type="hidden" name="merchantID" value="141101"/>
+                                    <input type="hidden" name="itemName" value="MediaHubb -- 1 Gig Storage Space"/>
+                                    <input type="hidden" name="itemPrice" value="1"/>
+                                    <input type="hidden" name="itemDesc"
+                                           value="MEDIAHUBB -- Purchase of 1 Gig Storage Space"/>
+                                    <input type="hidden" name="itemImageURL" value=""/>
+                                    <input type="hidden" name="data" value="{{ base64_encode('{size: 1}') }}"/>
+                                    <input type="hidden" name="successURL"
+                                           value="{{ route('user.buy-storage-success',['_token' => csrf_token(),'data' => base64_encode('{size: 1}') ]) }}"/>
+                                    <input type="hidden" name="failURL"
+                                           value="{{ route('user.buy-storage-failure',['_token' => csrf_token(),'data' => base64_encode('{size: 1}') ]) }}"/>
+                                    <input type="submit" class="btn btn-info" value="BUY NOW"/>
+                                </form>
+                            </td>
                         </tr>
 
                         <tr>
                             <td>2</td>
                             <td>2 Gigabytes</td>
                             <td>N1,500</td>
-                            <td><a class="btn btn-info">BUY</a></td>
+                            <td>
+                                <form method="post" action="http://gpayexpress.com/gpay/gpayexpress.php">
+                                    <input type="hidden" name="merchantID" value="141101"/>
+                                    <input type="hidden" name="itemName" value="MediaHubb -- 2 Gig Storage Space"/>
+                                    <input type="hidden" name="itemPrice" value="1500"/>
+                                    <input type="hidden" name="itemDesc"
+                                           value="MEDIAHUBB -- Purchase of 2 Gig Storage Space"/>
+                                    <input type="hidden" name="itemImageURL" value=""/>
+                                    <input type="hidden" name="successURL"
+                                           value="{{ route('user.buy-storage-success',['_token' => csrf_token(),'data' => base64_encode('{size: 2}') ]) }}"/>
+                                    <input type="hidden" name="failURL"
+                                           value="{{ route('user.buy-storage-failure',['_token' => csrf_token(),'data' => base64_encode('{size: 2}') ]) }}"/>
+                                    <input type="submit" class="btn btn-info" value="BUY NOW"/>
+                                </form>
+                            </td>
                         </tr>
 
                         <tr>
                             <td>3</td>
                             <td>4 Gigabytes</td>
                             <td>N2,500</td>
-                            <td><a class="btn btn-info">BUY</a></td>
+                            <td>
+                                <form method="post" action="http://gpayexpress.com/gpay/gpayexpress.php">
+                                    <input type="hidden" name="merchantID" value="141101"/>
+                                    <input type="hidden" name="itemName" value="MediaHubb -- 4 Gig Storage Space"/>
+                                    <input type="hidden" name="itemPrice" value="2500"/>
+                                    <input type="hidden" name="itemDesc"
+                                           value="MEDIAHUBB -- Purchase of 4 Gig Storage Space"/>
+                                    <input type="hidden" name="itemImageURL" value=""/>
+                                    <input type="hidden" name="successURL"
+                                           value="{{ route('user.buy-storage-success',['_token' => csrf_token(),'data' => base64_encode('{size: 4}') ]) }}"/>
+                                    <input type="hidden" name="failURL"
+                                           value="{{ route('user.buy-storage-failure',['_token' => csrf_token(),'data' => base64_encode('{size: 4}') ]) }}"/>
+                                    <input type="submit" class="btn btn-info" value="BUY NOW"/>
+                                </form>
+                            </td>
                         </tr>
 
                         <tr>
                             <td>4</td>
                             <td>8 Gigabytes</td>
                             <td>N4,000</td>
-                            <td><a class="btn btn-info">BUY</a></td>
+                            <td>
+                                <form method="post" action="http://gpayexpress.com/gpay/gpayexpress.php">
+                                    <input type="hidden" name="merchantID" value="141101"/>
+                                    <input type="hidden" name="itemName" value="MediaHubb -- 8 Gig Storage Space"/>
+                                    <input type="hidden" name="itemPrice" value="4000"/>
+                                    <input type="hidden" name="itemDesc"
+                                           value="MEDIAHUBB -- Purchase of 8 Gig Storage Space"/>
+                                    <input type="hidden" name="itemImageURL" value=""/>
+                                    <input type="hidden" name="successURL"
+                                           value="{{ route('user.buy-storage-success',['_token' => csrf_token(),'data' => base64_encode('{size: 8}') ]) }}"/>
+                                    <input type="hidden" name="failURL"
+                                           value="{{ route('user.buy-storage-failure',['_token' => csrf_token(),'data' => base64_encode('{size: 8}') ]) }}"/>
+                                    <input type="submit" class="btn btn-info" value="BUY NOW"/>
+                                </form>
+                            </td>
                         </tr>
                     </table>
                 </div>

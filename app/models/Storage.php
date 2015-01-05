@@ -64,4 +64,11 @@
 
             return $size->humanFileSize();
         }
+
+        public function increaseStorageSize(Size $size)
+        {
+            $this->total_storage += $size->getBytes();
+
+            return $this->save();
+        }
     }
