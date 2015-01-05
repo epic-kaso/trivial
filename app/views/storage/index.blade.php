@@ -13,8 +13,8 @@
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <div class="center-item">
-                            <canvas id="myChart" width="200" height="200"
-                                    style="display: block;margin-left: auto;margin-right: auto;"></canvas>
+                            <canvas id="myChart" width="150" height="150"
+                                    style="display: block;margin-left: auto;margin-right: auto;width: 300px;height: 300px;"></canvas>
                         </div>
                     </div>
                     <div class="panel-footer">
