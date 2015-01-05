@@ -83,12 +83,12 @@ span.glyphicon.glyphicon-cloud-upload {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    width: 110px;
-    height: 110px;
+    width: 150px;
+    height: 150px;
     background-color: #e8e8e8;
     border-radius: 100px;
     text-align: center;
     vertical-align: middle;
-    padding-top: 10px;
+    padding-top: 30px;
     font-size: 22px;
 }

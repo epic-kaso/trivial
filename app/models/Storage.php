@@ -52,4 +52,16 @@
         {
             return number_format(100 * ($this->used_storage / $this->total_storage), 2);
         }
+
+        public function getPercentageFreeSpace()
+        {
+            return number_format(100 * (($this->total_storage - $this->used_storage) / $this->total_storage), 2);
+        }
+
+        public function getFormattedFreeStorage()
+        {
+            $size = Size::Bytes($this->total_storage - $this->used_storage);
+
+            return $size->humanFileSize();
+        }
     }

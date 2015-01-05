@@ -113,3 +113,4 @@
 
 
     Route::get('/storage', ['as' => 'user.storage', 'before' => 'auth', 'uses' => 'UserStorageController@index']);
+    Route::get('/wallet', ['as' => 'user.wallet', 'before' => 'auth', 'uses' => 'WalletController@index']);

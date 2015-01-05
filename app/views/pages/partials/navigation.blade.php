@@ -7,11 +7,10 @@
         </div>
 
         <ul class="nav navbar-nav">
-            <li><a href="">Home</a></li>
+            <li><a href="{{ route('home') }}">Home</a></li>
             <li><a href="{{ route('user.storage') }}">Storage</a></li>
-            <li><a href="">Wallet <span class="badge">0</span></a></li>
+            <li><a href=" {{ route('user.wallet') }}">Wallet <span class="badge">0</span></a></li>
             <li><a href="">Profile</a></li>
-
         </ul>
 
         @if(Auth::check())
