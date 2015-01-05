@@ -25,7 +25,7 @@
         protected $table = "user_files";
         protected $guarded = array('id', 'hashcode');
 
-        public function getKey()
+        public function getFileKey()
         {
             return $this->key;
         }
@@ -54,5 +54,10 @@
         public function getSellingPrice()
         {
             return $this->sell_price;
+        }
+
+        public function deleteMe()
+        {
+            $this->forceDelete();
         }
     }

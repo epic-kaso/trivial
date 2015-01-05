@@ -2,6 +2,7 @@
 
     use TestOauthApp\Command\FileCreation\CreateUserFileCommand;
     use TestOauthApp\Command\FileCreation\CreateUserFileException;
+    use TestOauthApp\Command\FileDelete\DeleteUserFileCommand;
     use TestOauthApp\Command\FileDownload\DownloadUserFileCommand;
 
     class FileController extends \BaseController
@@ -100,12 +101,21 @@
         /**
          * Remove the specified resource from storage.
          *
-         * @param  int $id
+         * @param UserFile $file
          * @return Response
+         * @internal param int $id
          */
         public function destroy(UserFile $file)
         {
-            //
+            //dd(UserFile::destroy($file->id));
+            try {
+                $this->execute(DeleteUserFileCommand::class, ['userFile' => $file]);
+
+                return Redirect::home();
+            } catch (Exception $ex) {
+                dd($ex->getMessage());
+            }
+
         }
 
         public function download(UserFile $file)

@@ -13,10 +13,12 @@
     {
 
         protected $userFileSize;
+        private $userFilePath;
 
-        function __construct($userFileSize)
+        function __construct($userFileSize, $userFilePath)
         {
             $this->userFileSize = $userFileSize;
+            $this->userFilePath = $userFilePath;
         }
 
         /**
@@ -25,5 +27,13 @@
         public function getUserFileSize()
         {
             return $this->userFileSize;
+        }
+
+        /**
+         * @return mixed
+         */
+        public function getUserFilePath()
+        {
+            return $this->userFilePath;
         }
     }

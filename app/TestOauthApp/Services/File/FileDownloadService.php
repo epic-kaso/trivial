@@ -9,20 +9,9 @@
     namespace TestOauthApp\Services\File;
 
 
-    use App;
-    use Config;
-    use GrahamCampbell\Flysystem\FlysystemManager;
-
-    class FileDownloadService
+    class FileDownloadService extends FileService
     {
 
-        protected $flysystem;
-
-        function __construct(FlysystemManager $flysystem)
-        {
-            $this->flysystem = App::environment() == 'local' ?
-                $flysystem->connection('local') : $flysystem->connection(Config::get('my-config.production-storage'));
-        }
 
         public function download($fileName)
         {

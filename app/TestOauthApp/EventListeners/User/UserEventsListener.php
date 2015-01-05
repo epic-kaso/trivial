@@ -10,10 +10,22 @@
 
 
     use Laracasts\Commander\Events\EventListener;
+    use TestOauthApp\Services\File\FileService;
     use TestOauthApp\Services\File\Size;
 
     class UserEventsListener extends EventListener
     {
+
+
+        /**
+         * @var FileService
+         */
+        private $fileService;
+
+        function __construct(FileService $fileService)
+        {
+            $this->fileService = $fileService;
+        }
 
         public function whenUserRegisterEvent($event)
         {
@@ -34,6 +46,7 @@
         {
             $user = \Auth::user();
             $user->storage->deductUsedSize(Size::Bytes($event->getUserFileSize()));
+            $this->fileService->deleteFile($event->getUserFilePath());
             $user->save();
         }
     }

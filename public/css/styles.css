@@ -72,3 +72,23 @@
 .file-details span.glyphicon {
     font-size: 40px;
 }
+
+span.glyphicon.glyphicon-cloud-upload {
+    display: block;
+    font-size: 43px;
+    margin-bottom: 5px;
+}
+
+.uk-form-file.upload-icon {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 110px;
+    height: 110px;
+    background-color: #e8e8e8;
+    border-radius: 100px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 10px;
+    font-size: 22px;
+}

@@ -10,8 +10,9 @@
 
             <ul class="nav navbar-nav">
                 <li><a href="">Home</a></li>
-                <li><a href="">Features</a></li>
-                <li><a href="">Pricing</a></li>
+                <li><a href="">Storage</a></li>
+                <li><a href="">Wallet</a></li>
+                <li><a href="">Profile</a></li>
 
             </ul>
 
@@ -28,32 +29,17 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container" style="padding-bottom: 50px">
             <div class="row">
                 <div class="col-md-3">
-
-                    <div class="">
-                        <div class="progress" data-toggle="tooltip" data-placement="top"
-                             style="margin-bottom: 4px;margin-top: 4px"
-                             title="Used {{ Auth::user()->storage->getFormattedUsedStorage() }} of {{ Auth::user()->storage->getFormattedTotalStorage() }}">
-                            <div class="progress-bar"
-                                 style="width: {{ Auth::user()->storage->getPercentageUsed() }}%"></div>
-                        </div>
-                        <p>
-                            {{ Auth::user()->storage->getFormattedUsedStorage() }}
-                            /{{ Auth::user()->storage->getFormattedTotalStorage() }}
-                        </p>
-                    </div>
-
                     <div class="form-group">
-                        {{ Form::open(['url' => route('files.store'),'files'=> true]) }}
-                        <div class="form-group">
-                            <input type="file" name="file"/>
+                        <div class="uk-form-file upload-icon">
+                            <span class="glyphicon glyphicon-cloud-upload"></span> Upload
+                            <input type="file" data-url="{{ route('files.store') }}" name="file" id="documentUpload"/>
                         </div>
-                        <div class="form-group">
-                            <input class="btn btn-primary" type="submit" value="upload"/>
-                        </div>
-                        {{Form::close()}}
+                    </div>
+                    <div class="progress file-upload-progress" style="display: none">
+                        <div class="progress-bar" id="file-upload"></div>
                     </div>
                 </div>
 
@@ -71,7 +57,7 @@
                                         <div class="pull-right">
                                             <a class="btn btn-xs btn-default"
                                                href="{{ route('user.files.download',[$file->id]) }}"
-                                               title="download file" data-placement="top" data-toggle="tooltip">
+                                               title="Download file" data-placement="top" data-toggle="tooltip">
                                                 <span class="glyphicon glyphicon-download"></span>
                                             </a>
                                             @if($file->isSellable())
@@ -88,8 +74,18 @@
                                                     <span class="glyphicon glyphicon-share-alt"></span>
                                                 </a>
                                             @endif
-                                            <a href="" class="btn btn-xs btn-default"><span
-                                                        class="glyphicon glyphicon-edit"></span></a>
+                                            <a href="" class="btn btn-xs btn-default" title="Rename file"
+                                               data-placement="top" data-toggle="tooltip">
+                                                <span class="glyphicon glyphicon-edit"></span>
+                                            </a>
+                                            <a data-placement="top"
+                                               data-toggle="tooltip"
+                                               title="Delete file"
+                                               href="{{ route('files.destroy',[$file->id]) }}"
+                                               data-method="delete"
+                                               rel="nofollow" data-confirm="Are you sure?"
+                                               class="btn btn-xs btn-danger">
+                                                <span class="glyphicon glyphicon-remove-sign"></span></a>
                                         </div>
                                         <h4><span class="glyphicon glyphicon-file pull-left"></span> {{ $file->name }}
                                         </h4>
@@ -108,6 +104,21 @@
                 </div>
             </div>
         </div>
+
+    <div class="navbar navbar-fixed-bottom navbar-inverse" style="min-height: 10px">
+        <div class="container">
+            <div class="col-md-4">
+                <div class="">
+                    <div class="progress" data-toggle="tooltip" data-placement="top"
+                         style="margin-bottom: 4px;margin-top: 4px"
+                         title="Used {{ Auth::user()->storage->getFormattedUsedStorage() }} of {{ Auth::user()->storage->getFormattedTotalStorage() }}">
+                        <div class="progress-bar progress-bar-success"
+                             style="width: {{ Auth::user()->storage->getPercentageUsed() }}%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="modal fade" id="shareSellModal">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -131,11 +142,31 @@
             </div>
         </div>
     </div>
+
 @stop
 
 @section('scripts')
+    <script src="{{asset('js/jquery-ujs.js')}}" type="text/javascript"></script>
+    <script src="{{ asset('js/vendor/jquery.ui.widget.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/jquery.iframe-transport.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/jquery.fileupload.js') }}" type="text/javascript"></script>
     <script>
         $(function () {
+            $('.file-upload-progress').hide();
+
+            $('#documentUpload').fileupload({
+                start: function (e, data) {
+                    $('.file-upload-progress').fadeIn();
+                },
+                done: function (e, data) {
+                    location.reload();
+                },
+                progressall: function (e, data) {
+                    var progress = parseInt(data.loaded / data.total * 100, 10);
+                    $('#file-upload').css('width', progress + '%');
+                }
+            });
+
             $('form[name="enableShareSellForm"]').hide();
 
             $('[data-toggle="tooltip"]').tooltip();
