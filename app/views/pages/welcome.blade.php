@@ -1,6 +1,6 @@
 @extends('layout.application')
 @section('content')
-    <div class="navbar navbar-white navbar-static-top">
+    <div class="navbar navbar-default navbar-static-top">
         <div class="container">
             <div class="navbar-header">
                 <a href="" class="navbar-brand">
@@ -10,8 +10,8 @@
 
             <ul class="nav navbar-nav">
                 <li><a href="">Home</a></li>
-                <li><a href="">Storage</a></li>
-                <li><a href="">Wallet</a></li>
+                <li><a href="{{ route('user.storage') }}">Storage</a></li>
+                <li><a href="">Wallet <span class="badge">0</span></a></li>
                 <li><a href="">Profile</a></li>
 
             </ul>

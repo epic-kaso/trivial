@@ -90,6 +90,19 @@
         ]
     );
 
+    Route::any('/sell-success',
+        [
+            'as'     => 'user.sell-success',
+            'before' => 'csrf',
+            'uses'   => 'SellFileController@sellSuccess'
+        ]);
+    Route::any('/sell-failure',
+        [
+            'as'     => 'user.sell-failure',
+            'before' => 'csrf',
+            'uses'   => 'SellFileController@sellFailure'
+        ]);
+
     Route::resource('/files', 'FileController');
     Route::resource('/sell', 'SellFileController');
 
@@ -97,3 +110,6 @@
         'as'   => 'oauth-login',
         'uses' => 'OAuthController@postAccessToken'
     ]);
+
+
+    Route::get('/storage', ['as' => 'user.storage', 'before' => 'auth', 'uses' => 'UserStorageController@index']);

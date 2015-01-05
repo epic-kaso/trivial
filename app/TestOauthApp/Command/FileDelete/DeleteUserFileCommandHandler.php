@@ -27,7 +27,7 @@
         public function handle($command)
         {
             $file = $command->userFile;
-            $event = new UserFileDeleted($file->size, $file->path);
+            $event = new UserFileDeleted($file->size, $file->getPath());
 
             $response = $file->deleteMe();
             $this->raise($event);

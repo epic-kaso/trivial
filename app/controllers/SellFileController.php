@@ -83,5 +83,13 @@
             //
         }
 
+        public function sellSuccess()
+        {
 
+        }
+
+        public function sellFailure()
+        {
+
+        }
     }
