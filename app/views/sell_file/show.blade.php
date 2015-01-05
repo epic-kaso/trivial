@@ -29,7 +29,9 @@
                     </div>
 
                     <div class="panel-footer">
-                        <form name="buyFile" method="post" action="http://gpayexpress.com/gpay/gpayexpress.php">
+
+                        @if( $file->sell_price > 0)
+                            <form name="buyFile" method="post" action="http://gpayexpress.com/gpay/gpayexpress.php">
                             <input type="hidden" name="merchantID" value="141101"/>
                             <input type="hidden" name="itemName" value="{{ $file->name }}"/>
                             <input type="hidden" name="itemPrice" value="{{ $file->sell_price }}"/>
@@ -42,6 +44,13 @@
                             <input type="submit" id="fileActionBtn" class="btn btn-success btn-lg" value="BUY NOW"
                                    data-force-submit="0" data-authenticated="{{ Auth::check() }}"/>
                         </form>
+                        @else
+                            <a class="btn btn-lg btn-success" href="">Download</a>
+                        @endif
+
+                        <div class="d-count">
+                            <span class="badge">{{ $file->getDownloadCount() }}</span> downloads
+                        </div>
                     </div>
                 </div>
             </div>

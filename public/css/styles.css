@@ -142,3 +142,8 @@ span.glyphicon.glyphicon-cloud-upload {
 .panel.panel-default.panel-sale {
     border: solid #ddd 1px;
 }
+
+.d-count {
+    display: inline-block;
+    float: right;
+}

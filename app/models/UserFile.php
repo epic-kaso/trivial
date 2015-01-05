@@ -70,4 +70,15 @@
         {
             return $this->belongsTo('User');
         }
+
+        public function increaseDownloadCount()
+        {
+            $this->download_count += 1;
+            $this->save();
+        }
+
+        public function getDownloadCount()
+        {
+            return number_format($this->download_count);
+        }
     }

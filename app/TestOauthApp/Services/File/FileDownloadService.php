@@ -19,6 +19,8 @@
 
         public function makeDownloadResponse(UserFile $file, $content)
         {
+            $file->increaseDownloadCount();
+
             return Response::make($content, 200, [
                 'Content-Description' => 'File Transfer',
                 'Content-Type'        => 'application/octet-stream',
