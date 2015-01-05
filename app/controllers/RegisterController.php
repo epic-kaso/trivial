@@ -6,6 +6,12 @@
     class RegisterController extends \BaseController
     {
 
+
+        function __construct()
+        {
+            $this->beforeFilter('guest');
+        }
+
         public function getShowRegister()
         {
             return View::make('auth.register');

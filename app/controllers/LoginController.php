@@ -28,6 +28,8 @@
         {
             $this->oauthService = $oauthService;
             $this->userRepository = $userRepository;
+
+            $this->beforeFilter('guest');
         }
 
         public function getShowLogin()
@@ -82,7 +84,7 @@
             }
 
             if (Auth::attempt($data, $data['remember_me'])) {
-                return Redirect::intended(route('home'));
+                return Redirect::intended(Redirect::back());
             }
 
             return Redirect::back()->withInput()->withError('Invalid Email/Password');

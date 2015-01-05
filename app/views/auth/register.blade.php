@@ -1,4 +1,4 @@
-@extends('layout.application')
+@extends('layout.basic')
 @section('content')
     <div class="container">
         <div class="space" style="height: 120px;">

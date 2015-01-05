@@ -9,11 +9,26 @@
     namespace TestOauthApp\Services\File;
 
 
+    use Response;
+    use UserFile;
     use ZipArchive;
 
     class FileDownloadService extends FileService
     {
 
+
+        public function makeDownloadResponse(UserFile $file, $content)
+        {
+            return Response::make($content, 200, [
+                'Content-Description' => 'File Transfer',
+                'Content-Type'        => 'application/octet-stream',
+                'Content-Disposition' => 'attachment; filename=' . basename($file->name),
+                'Expires'             => '0',
+                'Cache-Control'       => 'must-revalidate',
+                'Pragma'              => 'public',
+                'Content-Length'      => $file->size
+            ]);
+        }
 
         public function download($fileName)
         {

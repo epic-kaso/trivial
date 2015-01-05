@@ -91,7 +91,7 @@
             $response = Input::get('xmlmsg');
 
             try {
-                $this->execute(BuyFileViaCreditCardCommand::class,
+                return $this->execute(BuyFileViaCreditCardCommand::class,
                     [
                         'creditCardTransactionResponse' => $response,
                         'userFile'                      => $userFile
@@ -99,8 +99,6 @@
             } catch (TransactionNotApprovedException $ex) {
                 return Redirect::route('home')->withError('Failed to Buy Storage');
             }
-
-            return Redirect::route('home')->withStatus('Successfully Bought');
 
         }
 

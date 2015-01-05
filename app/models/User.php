@@ -113,4 +113,18 @@
                 return;
             $this->wallet += $realPrice;
         }
+
+        public function addFileToMyPurchases(UserFile $file)
+        {
+            $purchases = new UserPurchasedFile();
+            $purchases->download_count = 1;
+            $purchases->userFile()->associate($file);
+
+            return $this->purchasedFiles()->save($purchases);
+        }
+
+        public function purchasedFiles()
+        {
+            return $this->hasMany('UserPurchasedFile');
+        }
     }

@@ -138,3 +138,7 @@ span.glyphicon.glyphicon-cloud-upload {
 .side-menu .nav > li > a.active {
     color: #000000;
 }
+
+.panel.panel-default.panel-sale {
+    border: solid #ddd 1px;
+}

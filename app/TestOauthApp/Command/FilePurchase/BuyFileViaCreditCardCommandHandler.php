@@ -2,12 +2,19 @@
 
 use TestOauthApp\Command\BaseCommandHandler;
 use TestOauthApp\Events\File\CustomerPurchasesFile;
+use TestOauthApp\Services\File\FileDownloadService;
 use TestOauthApp\Services\Payment\CreditCardPayment;
 
 class BuyFileViaCreditCardCommandHandler extends BaseCommandHandler
 {
-    function __construct()
+    /**
+     * @var FileDownloadService
+     */
+    private $fileDownloadService;
+
+    function __construct(FileDownloadService $fileDownloadService)
     {
+        $this->fileDownloadService = $fileDownloadService;
     }
 
 
@@ -38,7 +45,7 @@ class BuyFileViaCreditCardCommandHandler extends BaseCommandHandler
 
         $this->dispatchEventsFor($customer);
 
-        return TRUE;
+        return $this->fileDownloadService->makeDownloadResponse($userFile, $this->fileDownloadService->download($userFile->getPath()));
     }
 
 }

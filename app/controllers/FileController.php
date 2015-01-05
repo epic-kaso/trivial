@@ -4,18 +4,24 @@
     use TestOauthApp\Command\FileCreation\CreateUserFileException;
     use TestOauthApp\Command\FileDelete\DeleteUserFileCommand;
     use TestOauthApp\Command\FileDownload\DownloadUserFileCommand;
+    use TestOauthApp\Services\File\FileDownloadService;
 
     class FileController extends \BaseController
     {
 
 
         protected $currentUser;
+        /**
+         * @var FileDownloadService
+         */
+        private $downloadService;
 
-        function __construct()
+        function __construct(FileDownloadService $downloadService)
         {
             $this->beforeFilter('auth');
             $this->beforeFilter('storage-size', ['only' => 'store']);
             $this->currentUser = Auth::user();
+            $this->downloadService = $downloadService;
         }
 
 
@@ -123,15 +129,7 @@
 
             $result = $this->execute(DownloadUserFileCommand::class, ['userFile' => $file]);
 
-            return Response::make($result, 200, [
-                'Content-Description' => 'File Transfer',
-                'Content-Type'        => 'application/octet-stream',
-                'Content-Disposition' => 'attachment; filename=' . basename($file->name),
-                'Expires'             => '0',
-                'Cache-Control'       => 'must-revalidate',
-                'Pragma'              => 'public',
-                'Content-Length'      => $file->size
-            ]);
+            return $this->downloadService->makeDownloadResponse($file, $result);
         }
 
         public function makeSellable(UserFile $file)

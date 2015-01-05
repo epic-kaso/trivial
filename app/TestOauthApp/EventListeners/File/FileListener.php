@@ -9,6 +9,7 @@
     namespace TestOauthApp\EventListeners\File;
 
 
+    use Auth;
     use Laracasts\Commander\Events\EventListener;
     use Mail;
     use TestOauthApp\Services\File\FileDownloadService;
@@ -30,7 +31,9 @@
             $customer = $event->getCustomer();
             $file = $event->getUserFile();
 
-            $this->sendFileToUser($file, $customer);
+            if (Auth::check()) {
+                Auth::user()->addFileToMyPurchases($file);
+            }
         }
 
         private function sendFileToUser($file, $customer)
