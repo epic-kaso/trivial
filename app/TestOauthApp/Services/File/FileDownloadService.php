@@ -24,10 +24,12 @@
         {
             $content = $this->flysystem->read($filePath);
             $dirName = storage_path('files/temp');
+            if (!file_exists($dirName))
+                \File::makeDirectory($dirName);
+
             $path = $dirName . '/' . time() . $fileName;
 
             \File::put($path, $content);
-
             return $this->prepareArchive($path, $fileName);
         }
 

@@ -7,18 +7,6 @@ use TestOauthApp\Services\Payment\CreditCardPayment;
 class BuyFileViaCreditCardCommandHandler extends BaseCommandHandler
 {
 
-
-    /**
-     * @var CreditCardPayment
-     */
-    private $creditCardPayment;
-
-    function __construct(CreditCardPayment $creditCardPayment)
-    {
-        $this->creditCardPayment = $creditCardPayment;
-    }
-
-
     /**
      * Handle the command.
      *

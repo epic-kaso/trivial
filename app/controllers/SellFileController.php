@@ -1,5 +1,8 @@
 <?php
 
+    use TestOauthApp\Command\FilePurchase\BuyFileViaCreditCardCommand;
+    use TestOauthApp\Command\FilePurchase\TransactionNotApprovedException;
+
     class SellFileController extends \BaseController
     {
 
@@ -83,13 +86,38 @@
             //
         }
 
-        public function sellSuccess($userFile)
+        public function sellSuccess(UserFile $userFile)
         {
+            $response = Input::get('xmlmsg');
+
+            try {
+                $this->execute(BuyFileViaCreditCardCommand::class,
+                    [
+                        'creditCardTransactionResponse' => $response,
+                        'userFile'                      => $userFile
+                    ]);
+            } catch (TransactionNotApprovedException $ex) {
+                return Redirect::route('home')->withError('Failed to Buy Storage');
+            }
+
+            return Redirect::route('home')->withStatus('Successfully Bought');
 
         }
 
-        public function sellFailure($userFile)
+        public function sellFailure(UserFile $userFile)
         {
+            $response = Input::get('xmlmsg');
 
+            try {
+                $this->execute(BuyFileViaCreditCardCommand::class,
+                    [
+                        'creditCardTransactionResponse' => $response,
+                        'userFile'                      => $userFile
+                    ]);
+            } catch (TransactionNotApprovedException $ex) {
+                return Redirect::route('home')->withError('Failed to Buy Storage');
+            }
+
+            return Redirect::route('home')->withStatus('Successfully Bought');
         }
     }
