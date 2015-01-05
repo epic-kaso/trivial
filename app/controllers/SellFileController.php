@@ -83,12 +83,12 @@
             //
         }
 
-        public function sellSuccess()
+        public function sellSuccess($userFile)
         {
 
         }
 
-        public function sellFailure()
+        public function sellFailure($userFile)
         {
 
         }

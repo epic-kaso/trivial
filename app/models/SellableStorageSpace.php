@@ -10,4 +10,9 @@
     {
         protected $table = "sellable_storage_spaces";
         protected $guarded = ['id', 'hashcode', 'price'];
+
+        public function getPrice()
+        {
+            return $this->price;
+        }
     }

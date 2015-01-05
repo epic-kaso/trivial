@@ -60,4 +60,9 @@
         {
             $this->forceDelete();
         }
+
+        public function getPrice()
+        {
+            return $this->sell_price;
+        }
     }

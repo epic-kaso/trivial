@@ -1,6 +1,5 @@
 <?php namespace TestOauthApp\Command\FilePurchase;
 
-use Exception;
 use TestOauthApp\Command\BaseCommandHandler;
 use TestOauthApp\Services\Payment\CreditCardPayment;
 
@@ -23,21 +22,19 @@ class BuyFileViaCreditCardCommandHandler extends BaseCommandHandler
      * Handle the command.
      *
      * @param object $command
-     * @return void
+     * @return mixed|void
+     * @throws TransactionNotApprovedException
      */
     public function handle($command)
     {
-        $transactionResponse = $command->creditCardTransactionResponse;
+        $transactionResponse = CreditCardPayment::newInstance($command->creditCardTransactionResponse);
         $userFile = $command->userFile;
 
-        try {
-            $transactionArray = $this->creditCardPayment->processResponse($transactionResponse);
-
-            dd($transactionArray);
-        } catch (Exception $ex) {
-
+        if (!$transactionResponse->isOrderApproved() ||
+            ($transactionResponse->getTransactionAmount() < $userFile->getPrice())
+        ) {
+            throw new TransactionNotApprovedException("Transaction not approved");
         }
-
     }
 
 }
