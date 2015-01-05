@@ -8,12 +8,13 @@
                     <div class="side-menu">
                         <ul class="nav nav-stacked">
                             <li>
-                                <a href="{{ route('user.storage') }}" class="active">
+                                <a href="{{ route('home') }}" class="{{ $active == 'all-files' ? 'active' : '' }} ">
                                     <span class="fa fa-folder pull-left"></span> All Files
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('user.storage') }}">
+                                <a href="{{ route('home-files-for-sale') }}"
+                                   class="{{ $active == 'files-for-sale' ? 'active' : '' }}">
                                     <span class="fa fa-cc pull-left"></span> Files For Sale
                                 </a>
                             </li>
@@ -35,7 +36,7 @@
 
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4>My Files</h4>
+                            <h4>{{ $title }}</h4>
                         </div>
 
                         <table class="table table-striped">

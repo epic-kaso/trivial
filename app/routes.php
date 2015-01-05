@@ -27,7 +27,6 @@
     Route::bind('user_file', function ($user_file) {
         return UserFile::whereHashcode($user_file)->first();
     });
-
     Route::bind('data', function ($data) {
         $parsed = base64_decode($data);
         $obj = json_decode($parsed);
@@ -36,7 +35,18 @@
         return SellableStorageSpace::whereHashcode($hashcode)->first();
     });
 
-    Route::get('/', ['before' => 'auth', 'as' => 'home', 'uses' => 'HomeController@showWelcome']);
+
+    Route::get('/', [
+        'before' => 'auth',
+        'as'     => 'home',
+        'uses'   => 'HomeController@showWelcome'
+    ]);
+
+    Route::get('/files-for-sale', [
+        'before' => 'auth',
+        'as'     => 'home-files-for-sale',
+        'uses'   => 'HomeController@showFilesForSale'
+    ]);
 
     Route::get('/login', [
         'as'   => 'user.show-login',

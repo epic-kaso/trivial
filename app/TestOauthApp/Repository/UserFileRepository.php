@@ -64,4 +64,11 @@
         {
             return UserFile::where('user_id', $user->id)->orderBy('name')->paginate(20);
         }
+
+        public function filesForSale($user)
+        {
+            return UserFile::where('user_id', $user->id)
+                ->where('is_sellable', TRUE)
+                ->orderBy('name')->paginate(20);
+        }
     }
