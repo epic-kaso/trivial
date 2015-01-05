@@ -6,6 +6,28 @@
      * Time: 12:47 PM
      */
 
+
+    function getFileIconCssClass($type)
+    {
+        switch ($type) {
+            case 'pdf':
+                return 'fa-file-pdf-o';
+            case 'zip':
+                return 'fa-file-archive-o';
+            case 'mp3':
+                return 'fa-file-audio-o';
+            case 'jpg':
+            case 'png':
+            case 'bmp':
+            case 'gif':
+            case 'jpeg':
+                return 'fa-file-photo-o';
+            case 'docx':
+                return 'fa-file-word-o';
+            default:
+                return 'fa-file-o';
+        }
+    }
 // ------------------------------------------------------------------------
 
     /**

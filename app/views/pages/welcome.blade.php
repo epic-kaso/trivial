@@ -31,7 +31,7 @@
                             @foreach($files as $file)
                                 <tr>
                                     <td>
-                                        <span class="glyphicon glyphicon-file"
+                                        <span class="fa {{ getFileIconCssClass(strtolower($file->type)) }}"
                                               style="margin-right: 15px;font-size: 30px;"></span>
                                          <span style="display: inline-block;">
                                              <span>{{ $file->name }}</span>
