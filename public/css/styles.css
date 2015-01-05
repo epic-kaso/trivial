@@ -122,14 +122,19 @@ span.glyphicon.glyphicon-cloud-upload {
     font-size: 22px;
 }
 
-.side-menu li > a:hover, .side-menu li > a:active {
-    color: #000000;
-}
-
 .main-content {
     padding-top: 70px;
 }
 
 .flyoutmenu .list-group-item {
     border: none;
+}
+
+.side-menu .nav > li > a:hover, .side-menu .nav > li > a:focus {
+    background-color: transparent;
+    color: #000000;
+}
+
+.side-menu .nav > li > a.active {
+    color: #000000;
 }
