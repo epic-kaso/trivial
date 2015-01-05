@@ -49,42 +49,44 @@
                                                 <span class="glyphicon glyphicon-chevron-down"></span>
                                             </button>
 
-                                            <div class="dropdown-menu list-group">
-                                                <a class="list-group-item"
-                                                   href="{{ route('user.files.download',[$file->id]) }}"
-                                                   data-placement="top" data-toggle="tooltip">
-                                                    <span class="glyphicon glyphicon-download"></span>
-                                                    Download file
-                                                </a>
-                                                @if($file->isSellable())
+                                            <div class="dropdown-menu">
+                                                <div class="list-group flyoutmenu">
                                                     <a class="list-group-item"
-                                                       href="{{ route('sell.show',[$file->hashcode]) }}"
+                                                       href="{{ route('user.files.download',[$file->id]) }}"
                                                        data-placement="top" data-toggle="tooltip">
-                                                        <span class="glyphicon glyphicon-share-alt"></span>
-                                                        Share & Sale
+                                                        <span class="glyphicon glyphicon-download"></span>
+                                                        Download file
                                                     </a>
-                                                @else
-                                                    <a data-placement="top" data-toggle="tooltip"
-                                                       class="list-group-item modal-toggle" href="#shareSellModal"
-                                                       data-action="{{ route('user.files.enable-share-sell',[$file->id]) }}">
-                                                        <span class="glyphicon glyphicon-share-alt"></span>
-                                                        Enable Share & Sale
+                                                    @if($file->isSellable())
+                                                        <a class="list-group-item"
+                                                           href="{{ route('sell.show',[$file->hashcode]) }}"
+                                                           data-placement="top" data-toggle="tooltip">
+                                                            <span class="glyphicon glyphicon-share-alt"></span>
+                                                            Share & Sale
+                                                        </a>
+                                                    @else
+                                                        <a data-placement="top" data-toggle="tooltip"
+                                                           class="list-group-item modal-toggle" href="#shareSellModal"
+                                                           data-action="{{ route('user.files.enable-share-sell',[$file->id]) }}">
+                                                            <span class="glyphicon glyphicon-share-alt"></span>
+                                                            Enable Share & Sale
+                                                        </a>
+                                                    @endif
+                                                    <a href="" class="list-group-item"
+                                                       data-placement="top" data-toggle="tooltip">
+                                                        <span class="glyphicon glyphicon-edit"></span>
+                                                        Rename file
                                                     </a>
-                                                @endif
-                                                <a href="" class="list-group-item"
-                                                   data-placement="top" data-toggle="tooltip">
-                                                    <span class="glyphicon glyphicon-edit"></span>
-                                                    Rename file
-                                                </a>
-                                                <a data-placement="top"
-                                                   data-toggle="tooltip"
-                                                   href="{{ route('files.destroy',[$file->id]) }}"
-                                                   data-method="delete"
-                                                   rel="nofollow" data-confirm="Are you sure?"
-                                                   class="list-group-item">
-                                                    <span class="glyphicon glyphicon-remove-sign"></span>
-                                                    Delete file
-                                                </a>
+                                                    <a data-placement="top"
+                                                       data-toggle="tooltip"
+                                                       href="{{ route('files.destroy',[$file->id]) }}"
+                                                       data-method="delete"
+                                                       rel="nofollow" data-confirm="Are you sure?"
+                                                       class="list-group-item">
+                                                        <span class="glyphicon glyphicon-remove-sign"></span>
+                                                        Delete file
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                         </div>

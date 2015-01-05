@@ -129,3 +129,7 @@ span.glyphicon.glyphicon-cloud-upload {
 .main-content {
     padding-top: 70px;
 }
+
+.flyoutmenu .list-group-item {
+    border: none;
+}
