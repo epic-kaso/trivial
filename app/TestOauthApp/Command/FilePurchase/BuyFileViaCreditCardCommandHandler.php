@@ -6,6 +6,10 @@ use TestOauthApp\Services\Payment\CreditCardPayment;
 
 class BuyFileViaCreditCardCommandHandler extends BaseCommandHandler
 {
+    function __construct()
+    {
+    }
+
 
     /**
      * Handle the command.
@@ -18,6 +22,7 @@ class BuyFileViaCreditCardCommandHandler extends BaseCommandHandler
     {
         $transactionResponse = CreditCardPayment::newInstance($command->creditCardTransactionResponse);
         $userFile = $command->userFile;
+        $user = $userFile->user;
 
         if (!$transactionResponse->isOrderApproved() ||
             ($transactionResponse->getTransactionAmount() < $userFile->getPrice())
@@ -28,6 +33,8 @@ class BuyFileViaCreditCardCommandHandler extends BaseCommandHandler
         $customer = $transactionResponse->getCustomer();
 
         $customer->raise(new CustomerPurchasesFile($customer, $userFile));
+
+        $user->handleFilePayment($userFile);
 
         $this->dispatchEventsFor($customer);
 

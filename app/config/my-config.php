@@ -12,5 +12,6 @@
             'TestOauthApp\EventListeners\Storage\TransactionsListener',
             'TestOauthApp\EventListeners\File\FileListener'
         ],
-        'production-storage' => 'awss3'
+        'production-storage' => 'awss3',
+        'user-sales-share'   => 0.7
     ];

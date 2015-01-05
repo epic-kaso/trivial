@@ -65,4 +65,9 @@
         {
             return $this->sell_price;
         }
+
+        public function user()
+        {
+            return $this->belongsTo('User');
+        }
     }

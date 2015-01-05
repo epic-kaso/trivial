@@ -2,7 +2,7 @@
 
 @section('content')
     @include('pages.partials.navigation')
-    <div class="container" style="padding-bottom: 50px">
+    <div class="container main-content">
         <div class="row">
             <div class="col-md-5">
                 <div class="panel panel-default">

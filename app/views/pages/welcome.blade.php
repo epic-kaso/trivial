@@ -1,22 +1,22 @@
 @extends('layout.application')
 @section('content')
     @include('pages.partials.navigation')
-    <div class="container" style="padding-bottom: 50px">
+    <div class="container main-content">
             <div class="row">
                 <div class="col-md-3" style="position: relative">
-                    <div class="form-group">
-                        <div class="uk-form-file upload-icon">
-                            <span class="glyphicon glyphicon-cloud-upload"></span> Upload
-                            <input type="file" data-url="{{ route('files.store') }}" name="file" id="documentUpload"/>
-                        </div>
-                    </div>
-                    <div class="text-center" style="position: absolute;top: 0;left: 0;width: 100%;">
-                        <canvas id="uploadProgress" width="150" height="150"
-                                style="margin-left: auto;margin-right: auto;"></canvas>
+
+                    <div class="side-menu">
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="{{ route('user.storage') }}">
+                                    <span class="fa fa-cloud pull-left"></span> Buy Storage Space
+                                </a>
+                            </li>
+                        </ul>
                     </div>
 
-                    <div class="text-center">
-                        <canvas id="myChart" width="150" height="150"></canvas>
+                    <div class="text-center navbar-fixed-bottom" style="width: 400px;">
+                        <canvas id="myChart" width="400" height="150"></canvas>
                     </div>
                 </div>
 
@@ -109,97 +109,10 @@
         </div>
     </div>
 
+
+
 @stop
 
 @section('scripts')
-    <script src="{{asset('js/jquery-ujs.js')}}" type="text/javascript"></script>
-    <script src="{{ asset('js/vendor/jquery.ui.widget.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('js/jquery.iframe-transport.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('js/jquery.fileupload.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('js/vendor/Chart.min.js') }}" type="text/javascript"></script>
-    <script>
-        var data = [
-                    {
-                        value: {{ Auth::user()->storage->getPercentageFreeSpace() }},
-                        color: "#8e44ad",
-                        highlight: "#9b59b6",
-                        label: "Free Space - {{ Auth::user()->storage->getFormattedFreeStorage() }}"
-                    },
-                    {
-                        value: {{ Auth::user()->storage->getPercentageUsed() }},
-                        color: "#F7464A",
-                        highlight: "#FF5A5E",
-                        label: "Used Space - {{ Auth::user()->storage->getFormattedUsedStorage() }}"
-                    }
-                ],
-                options = {
-                    tooltipTemplate: "<%if (label){%><%=label%> <%}%>",
-                    animationEasing: "easeOut"
-                };
 
-        var ctx = $("#myChart").get(0).getContext("2d");
-        var myDoughnutChart = new Chart(ctx).Doughnut(data, options);
-
-
-    </script>
-    <script>
-        $(function () {
-            var progressChart = "empty";
-
-            $('#documentUpload').fileupload({
-                start: function (e, data) {
-                    setUploadState();
-                },
-                done: function (e, data) {
-                    location.reload();
-                },
-                progressall: function (e, data) {
-                    var progress = parseInt(data.loaded / data.total * 100, 10);
-                    setProgressChart(progress);
-                }
-            });
-
-            $('form[name="enableShareSellForm"]').hide();
-
-            $('[data-toggle="tooltip"]').tooltip();
-
-
-            $('input[name=enableShareSell]').change(function () {
-                $('form[name="enableShareSellForm"]').toggle();
-            });
-
-            ///modal toggle
-            $('a.modal-toggle').click(function (e) {
-                var id = $(this).attr('href');
-                var modalView = $(id);
-                modalView.find('form[name="enableShareSellForm"]').attr('action', $(this).data('action'));
-                modalView.modal();
-                e.preventDefault();
-            });
-
-            function setUploadState() {
-                $('.upload-icon').css('opacity', 0);
-                $('#uploadProgress').fadeIn();
-            }
-
-            function setProgressChart(value) {
-                if (progressChart == "empty") {
-                    var data = [
-                                {
-                                    value: 20,
-                                    color: "#f39c12",
-                                    highlight: "#f1c40f",
-                                    label: "Progress"
-                                }
-                            ],
-                            options = {animationEasing: "easeOut"};
-
-                    var ctx = $('#uploadProgress').get(0).getContext("2d");
-                    progressChart = new Chart(ctx).Doughnut(data, options);
-                }
-                progressChart.segments[0].value = value;
-                progressChart.update();
-            }
-        })
-    </script>
 @stop

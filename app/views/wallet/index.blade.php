@@ -2,12 +2,12 @@
 
 @section('content')
     @include('pages.partials.navigation')
-    <div class="container" style="padding-bottom: 50px">
+    <div class="container main-content">
         <div class="row">
             <div class="panel panel-default">
                 <div class="panel-body">
                     <h2>Wallet Balance: N10,000</h2>
-                    <a class="btn btn-default" href="/">Request Fund</a>
+                    <a class="btn btn-success" href="/">Request Fund</a>
                 </div>
             </div>
         </div>

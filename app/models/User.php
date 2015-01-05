@@ -91,4 +91,26 @@
         {
             return $this->hasMany('UserFile');
         }
+
+        public function handleFilePayment(UserFile $file)
+        {
+            $price = $file->getPrice();
+            $realPrice = $this->getRealPrice($price);
+            $this->creditWallet($realPrice);
+            $this->save();
+
+            return $this;
+        }
+
+        private function getRealPrice($price)
+        {
+            return Config::get('my-config.user-sales-share') * $price;
+        }
+
+        public function creditWallet($realPrice)
+        {
+            if (!is_numeric($realPrice) || $realPrice <= 0)
+                return;
+            $this->wallet += $realPrice;
+        }
     }

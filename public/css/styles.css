@@ -108,3 +108,24 @@ span.glyphicon.glyphicon-cloud-upload {
 .panel-default > .panel-heading {
     background-color: white;
 }
+
+.side-menu {
+    margin-top: 50px;
+}
+
+.side-menu li > a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.side-menu li > a span {
+    font-size: 22px;
+}
+
+.side-menu li > a:hover, .side-menu li > a:active {
+    color: #000000;
+}
+
+.main-content {
+    padding-top: 70px;
+}
