@@ -47,10 +47,12 @@
                                                     }}
                                                     @if($file->isSellable())
                                                         <a class="list-group-item"
-                                                           href="{{ route('sell.show',[$file->hashcode]) }}"
-                                                           data-placement="top" data-toggle="tooltip">
+                                                           href="#shareFileModal"
+                                                           data-toggle="modal"
+                                                           data-share-url="{{ route('sell.show',[$file->hashcode]) }}"
+                                                           data-placement="top">
                                                             <span class="glyphicon glyphicon-link"></span>
-                                                            {{ $file->isFree() ? "Share Link" : "Sale Link" }}
+                                                            {{ $file->isFree() ? "Share Download Link" : "Share Sale Link" }}
                                                         </a>
                                                     @else
                                                         <a data-placement="top" data-toggle="tooltip"
@@ -97,6 +99,9 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                     <h3 class="modal-title">Sell File</h3>
                 </div>
                 <div class="modal-body">
@@ -121,6 +126,9 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                     <h3 class="modal-title">Rename File</h3>
                 </div>
                 <div class="modal-body">
@@ -137,6 +145,28 @@
         </div>
     </div>
 
+    <div class="modal" id="shareFileModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3 class="modal-title">Share File Link</h3>
+                </div>
+                <div class="modal-body">
+                    <p>To Share file simply Copy the Link in the textbox below</p>
+
+                    <div class="form-group">
+                        <textarea class="form-control" id="shareUrlTxtBox"></textarea>
+                    </div>
+                    <button class="btn btn-xs btn-default preview-btn">Preview <span class="fa fa-external-link"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 @stop
 
@@ -145,6 +175,7 @@
         var fileRenameUrl = "{{ route('user.file-rename',['user_file' => '']) }}";
         $(function () {
             var $renameFileModal = $('#renameFileModal');
+            var $shareFileModal = $('#shareFileModal');
 
             $renameFileModal.on('shown.bs.modal', function (event) {
                 var input = $(this).find('input[name=renameFileInput]');
@@ -178,6 +209,25 @@
 
                 })
             });
+
+            $shareFileModal.on('shown.bs.modal', function (event) {
+                var input = $(this).find('textarea#shareUrlTxtBox');
+                var previewBtn = $(this).find('button.preview-btn');
+
+                var button = $(event.relatedTarget);
+                var shareUrl = button.attr('data-share-url');
+
+                input.val(shareUrl).focus();
+
+                previewBtn.click(function (e) {
+                    OpenInNewTab(shareUrl);
+                });
+            });
+
+            function OpenInNewTab(url) {
+                var win = window.open(url, '_blank');
+                win.focus();
+            }
 
             function stripExtention(filename) {
                 var ex = filename.split('.').pop();
