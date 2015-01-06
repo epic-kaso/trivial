@@ -43,6 +43,9 @@
                                     style="margin-left: auto;margin-right: auto;"></canvas>
                         </div>
                         <div class="form-group">
+                            <div id="infoAlert" style="display: none;" class="alert alert-info">
+                                <p>100%</p>
+                            </div>
                             <div id="successAlert" style="display: none;" class="alert alert-success">
                                 <p>Uploaded successfully, Reloading page...</p>
                             </div>
@@ -152,12 +155,17 @@
             var modal = $('#UploadModal');
             var successAlert = modal.find('#successAlert'),
                     errorAlert = modal.find('#errorAlert');
+            var progressAlert = modal.find('#infoAlert');
+            progressAlert.fadeOut(100);
 
             if (response == 'success') {
                 successAlert.fadeIn(100);
                 location.reload();
             } else {
                 errorAlert.fadeIn(100);
+                setTimeout(function () {
+                    errorAlert.fadeOut(300);
+                }, 2000);
                 setUploadState(false);
             }
         }
@@ -173,6 +181,13 @@
         }
 
         function setProgressChart(value) {
+            var modal = $('#UploadModal');
+            var progressAlert = modal.find('#infoAlert');
+            if (progressAlert.css('display') == 'none') {
+                progressAlert.fadeIn();
+            }
+            progressAlert.find('p').text("Uploading " + value + "%");
+
             if (progressChart == "empty") {
                 var data = [
                             {
