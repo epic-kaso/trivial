@@ -37,6 +37,7 @@
                                 <p class="text-muted tiny-text">by clicking on the download button you agree with our
                                     <a>terms of service</a> and our <a>privacy policy</a>
                                 </p>
+
                             @endif
                         </div>
 
@@ -63,16 +64,13 @@
                                    data-force-submit="0" data-authenticated="{{ Auth::check() }}"/>
                         </form>
                         @else
-                            {{ $file->downloadLink(
-                                        "Download file",
-                                        [
-                                        "class" => "btn btn-lg btn-success",
-                                            "data-placement"=>"top",
-                                             "data-toggle"=>"tooltip"
-                                        ])
-                            }}
+                            <form action="{{ $file->downloadUrl() }}">
+                                {{ Form::captcha() }}
+                                <div class="form-group" style="margin-top: 5px">
+                                    <input class="btn btn-success btn-lg" type="submit"/>
+                                </div>
+                            </form>
                         @endif
-
 
                     </div>
                 </div>

@@ -128,6 +128,7 @@
             'Laracasts\Commander\CommanderServiceProvider',
             'GrahamCampbell\Flysystem\FlysystemServiceProvider',
             'Indatus\Dispatcher\ServiceProvider',
+            'Greggilbert\Recaptcha\RecaptchaServiceProvider',
             //My Service Providers
             'TestOauthApp\ServiceProviders\Bootstrap'
         ),

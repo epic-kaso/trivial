@@ -191,6 +191,10 @@ footer a {
     .page-title {
         padding-left: 220px;
     }
+
+    .hide-mobile {
+        display: none;
+    }
 }
 
 p.tiny-text {

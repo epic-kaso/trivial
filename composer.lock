@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "67912c08a1243ce193ae1ea8240c220c",
+    "hash": "8a20fa121875f773c6ff95c54b484a87",
     "packages": [
         {
             "name": "artdarek/oauth-4-laravel",
@@ -381,6 +381,58 @@
                 "manager"
             ],
             "time": "2014-12-23 23:59:05"
+        },
+        {
+            "name": "greggilbert/recaptcha",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/greggilbert/recaptcha.git",
+                "reference": "9c39f8b8124002b6830eeb1bc299039df9dc558c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/greggilbert/recaptcha/zipball/9c39f8b8124002b6830eeb1bc299039df9dc558c",
+                "reference": "9c39f8b8124002b6830eeb1bc299039df9dc558c",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/migrations"
+                ],
+                "psr-0": {
+                    "Greggilbert\\Recaptcha": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Greg Gilbert",
+                    "email": "greg@greg-gilbert.com"
+                }
+            ],
+            "description": "reCAPTCHA Validator for Laravel 4",
+            "homepage": "http://github.com/greggilbert/recaptcha",
+            "keywords": [
+                "captcha",
+                "laravel",
+                "laravel4",
+                "recaptcha"
+            ],
+            "time": "2014-12-15 04:23:23"
         },
         {
             "name": "guzzle/guzzle",
@@ -1956,12 +2008,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "fb1845202f6be7c24025da39b49b223f03eaf8c4"
+                "reference": "754f4b6de7b4a1d442f9b6a728bfb7adef54592c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/fb1845202f6be7c24025da39b49b223f03eaf8c4",
-                "reference": "fb1845202f6be7c24025da39b49b223f03eaf8c4",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/754f4b6de7b4a1d442f9b6a728bfb7adef54592c",
+                "reference": "754f4b6de7b4a1d442f9b6a728bfb7adef54592c",
                 "shasum": ""
             },
             "require": {
@@ -2002,7 +2054,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2015-01-05 17:29:33"
+            "time": "2015-01-06 17:40:45"
         },
         {
             "name": "symfony/css-selector",
@@ -2729,7 +2781,8 @@
     "stability-flags": {
         "artdarek/oauth-4-laravel": 20,
         "graham-campbell/flysystem": 20,
-        "indatus/dispatcher": 20
+        "indatus/dispatcher": 20,
+        "greggilbert/recaptcha": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

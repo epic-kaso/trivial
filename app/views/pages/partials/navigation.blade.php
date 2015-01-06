@@ -14,6 +14,9 @@
             @else
                 <a href="" class="navbar-brand">CloudBox</a>
             @endif
+            <a href="#UploadModal" class="pull-right navbar-toggle collapsed" data-toggle="modal">
+                <span class="fa fa-cloud-upload"></span> Upload
+            </a>
         </div>
     </div>
 </div>

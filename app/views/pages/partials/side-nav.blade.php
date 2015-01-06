@@ -21,7 +21,7 @@
     </ul>
 
     <ul class="nav  nav-stacked">
-        <li><a href="#UploadModal" data-toggle="modal">
+        <li><a href="#UploadModal" class="hide-mobile" data-toggle="modal">
                 <span class="fa fa-cloud-upload"></span> Upload
             </a>
         </li>

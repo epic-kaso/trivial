@@ -125,6 +125,15 @@
 
         public function download(UserFile $file)
         {
+            $rules = ['g-recaptcha-response' => 'required|recaptcha'];
+
+            if (!Auth::check()) {
+                $validation = Validator::make(Input::all(), $rules);
+                if ($validation->fails()) {
+                    return Redirect::back()->withErrors($validation);
+                }
+            }
+
             if ((Auth::check() && $file->belongsToUser(Auth::user())) || $file->isFree()) {
                 $result = $this->execute(DownloadUserFileCommand::class, ['userFile' => $file]);
 

@@ -81,14 +81,14 @@
             $this->save();
         }
 
-        public function downloadLink($title, array $attributes)
+        public function downloadUrl()
         {
             if ((Auth::check() && $this->belongsToUser(Auth::user())) || $this->isFree()) {
                 $url = route('user.files.download', [$this->hashcode]);
 
-                return HTML::link($url, $title, $attributes);
+                return $url;
             } else {
-                return $this->purchaseLink($title, $attributes);
+                return $this->purchaseUrl();
             }
         }
 
@@ -105,6 +105,22 @@
         public function getSellingPrice()
         {
             return $this->sell_price;
+        }
+
+        private function purchaseUrl()
+        {
+            return "";
+        }
+
+        public function downloadLink($title, array $attributes)
+        {
+            if ((Auth::check() && $this->belongsToUser(Auth::user())) || $this->isFree()) {
+                $url = route('user.files.download', [$this->hashcode]);
+
+                return HTML::link($url, $title, $attributes);
+            } else {
+                return $this->purchaseLink($title, $attributes);
+            }
         }
 
         private function purchaseLink($title, array $attributes)
