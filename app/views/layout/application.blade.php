@@ -80,8 +80,13 @@
                 animationEasing: "easeOut"
             };
 
-    var ctx = $("#myChart").get(0).getContext("2d");
-    var myDoughnutChart = new Chart(ctx).Doughnut(data, options);
+    var chartNode = $("#myChart").get(0);
+    if (typeof chartNode === 'undefined') {
+
+    } else {
+        var ctx = chartNode.getContext("2d");
+        var myDoughnutChart = new Chart(ctx).Doughnut(data, options);
+    }
 
 
 </script>
@@ -144,8 +149,14 @@
                         ],
                         options = {animationEasing: "easeOut"};
 
-                var ctx = $('#uploadProgress').get(0).getContext("2d");
-                progressChart = new Chart(ctx).Doughnut(data, options);
+                var chartNode = $('#uploadProgress').get(0);
+                if (typeof chartNode === 'undefined') {
+
+                } else {
+                    var ctx = chartNode.getContext("2d");
+                    progressChart = new Chart(ctx).Doughnut(data, options);
+                }
+
             }
             progressChart.segments[0].value = value;
             progressChart.update();
