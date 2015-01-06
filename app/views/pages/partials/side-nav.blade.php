@@ -1,5 +1,29 @@
-<div id="sideMenu" class="side-menu offcanvas-sm navmenu navmenu-custom navmenu-fixed-left">
+<div id="sideMenu" class="offcanvas-sm side-menu navmenu navmenu-custom navmenu-fixed-left">
+    <a class="navmenu-brand" href="#">CloudBox</a>
     <ul class="nav nav-stacked">
+        <li>
+            <a href="" class="dropdown-toggle" id="dropdownMenu1"
+               data-toggle="dropdown">{{ Auth::user()->email }} <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <li role="presentation">
+                            <span><p style="font-size: 10px;font-weight: 200;text-align: center;padding-bottom: 0;margin-bottom: 0;">{{ Auth::user()->storage->getFormattedUsedStorage() }}
+                                    of {{ Auth::user()->storage->getFormattedTotalStorage() }}</p></span>
+
+                    <div class="progress-bar" style="width: 20%;height: 5px;margin: 4px;"></div>
+                </li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Profile</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Settings</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="{{ route('user.logout') }}">Logout</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <ul class="nav  nav-stacked">
+        <li><a href="#UploadModal" data-toggle="modal">
+                <span class="fa fa-cloud-upload"></span> Upload
+            </a>
+        </li>
         <li>
             <a href="{{ route('home') }}" class="{{ $active == 'all-files' ? 'active' : '' }} ">
                 <span class="fa fa-folder pull-left"></span> All Files
@@ -36,4 +60,16 @@
             </a>
         </li>
     </ul>
+
+    <footer>
+        <div class="text-center">
+            <a href="#">about us</a>
+            <a href="#">privacy</a>
+            <a href="#">copyright</a>
+            <a href="#">terms & condition</a>
+            <a href="#">blog</a>
+
+            <p class="text-muted">&copy; copyright of landar studio limited, RC 1230157 </p>
+        </div>
+    </footer>
 </div>

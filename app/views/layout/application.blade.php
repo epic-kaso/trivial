@@ -13,8 +13,9 @@
     <title>Cloud Service</title>
     @yield('stylesheets')
 </head>
-<body>
+<body style="position: relative;">
 @yield('content')
+
 <div class="modal fade" id="UploadModal">
     <div class="modal-dialog">
         <div class="modal-content">

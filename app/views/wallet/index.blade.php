@@ -10,9 +10,6 @@
         <div class="col-md-8">
             <div class="row">
                 <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4>Wallet</h4>
-                    </div>
                     <div class="panel-body">
                         <h1>Current Balance <span>₦{{ number_format(Auth::user()->wallet) }}</span></h1>
                         <a class="btn btn-success" href="/">Request Fund</a>

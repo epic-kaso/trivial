@@ -109,34 +109,13 @@ span.glyphicon.glyphicon-cloud-upload {
     background-color: white;
 }
 
-.side-menu {
-    margin-top: 50px;
-}
-
-.side-menu li > a {
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.5);
-}
-
-.side-menu li > a span {
-    font-size: 22px;
-}
 
 .main-content {
-    padding-top: 70px;
+    padding-top: 54px;
 }
 
 .flyoutmenu .list-group-item {
     border: none;
-}
-
-.side-menu .nav > li > a:hover, .side-menu .nav > li > a:focus {
-    background-color: transparent;
-    color: #000000;
-}
-
-.side-menu .nav > li > a.active {
-    color: #000000;
 }
 
 .panel.panel-default.panel-sale {
@@ -166,4 +145,50 @@ span.glyphicon.glyphicon-cloud-upload {
 .navmenu-custom > ul.nav {
     margin-left: 20px;
     margin-top: 25px;
+}
+
+footer {
+    position: fixed;
+    margin-top: 50px;
+    bottom: 0;
+    width: inherit;
+    font-weight: 100;
+    font-size: 12px;
+}
+
+footer a {
+    margin-right: 5px;
+    color: grey;
+}
+
+.side-menu .navmenu-brand {
+    margin-left: 20px;
+}
+
+.side-menu li > a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.side-menu li > a span {
+    font-size: 22px;
+}
+
+.side-menu .nav > li > a:hover, .side-menu .nav > li > a:focus {
+    background-color: transparent;
+    color: #000000;
+}
+
+.side-menu .nav > li > a.active {
+    color: #000000;
+}
+
+.page-title {
+    text-transform: capitalize;
+}
+
+@media (min-width: 768px) {
+    .page-title {
+        padding-left: 220px;
+    }
 }

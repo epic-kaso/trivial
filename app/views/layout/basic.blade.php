@@ -12,8 +12,23 @@
     <title>Cloud Service</title>
     @yield('stylesheets')
 </head>
-<body>
+<body style="position: relative;">
 @yield('content')
+
+<footer>
+    <div class="container">
+        <div class="row text-center">
+            <a href="#">about us</a>
+            <a href="#">privacy</a>
+            <a href="#">copyright</a>
+            <a href="#">terms & condition</a>
+            <a href="#">blog</a>
+        </div>
+        <div class="row text-center">
+            <p class="text-muted">&copy; copyright of landar studio limited, RC 1230157 </p>
+        </div>
+    </div>
+</footer>
 <script src="{{ asset('bower_components/jquery/dist/jquery.min.js')  }}" type="text/javascript"></script>
 <script src="{{ asset('bower_components/bootstrap/dist/js/bootstrap.min.js')  }}" type="text/javascript"></script>
 <script src="{{asset('js/jquery-ujs.js')}}" type="text/javascript"></script>

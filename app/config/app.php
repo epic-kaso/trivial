@@ -127,6 +127,7 @@
             'Artdarek\OAuth\OAuthServiceProvider',
             'Laracasts\Commander\CommanderServiceProvider',
             'GrahamCampbell\Flysystem\FlysystemServiceProvider',
+            'Indatus\Dispatcher\ServiceProvider',
             //My Service Providers
             'TestOauthApp\ServiceProviders\Bootstrap'
         ),
