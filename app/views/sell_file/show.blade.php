@@ -67,7 +67,7 @@
                             <form action="{{ $file->downloadUrl() }}">
                                 {{ Form::captcha() }}
                                 <div class="form-group" style="margin-top: 5px">
-                                    <input class="btn btn-success btn-lg" type="submit"/>
+                                    <input class="btn btn-success btn-lg" value="Download" type="submit"/>
                                 </div>
                             </form>
                         @endif
