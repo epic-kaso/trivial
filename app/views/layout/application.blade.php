@@ -101,6 +101,10 @@
 </script>
 <script>
     $(function () {
+        setTimeout(function () {
+            $('.alert').fadeOut();
+        }, 3000);
+
         var progressChart = "empty";
 
         $('#documentUpload').fileupload({
