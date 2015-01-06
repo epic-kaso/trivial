@@ -115,7 +115,14 @@
         $('a.modal-toggle').click(function (e) {
             var id = $(this).attr('href');
             var modalView = $(id);
-            modalView.find('form[name="enableShareSellForm"]').attr('action', $(this).data('action'));
+            var form = modalView.find('form[name="enableShareSellForm"]');
+            form.attr('action', $(this).data('action'));
+            modalView.find('button#enableShareSaleBtn').click(function (e) {
+                var t = $(this);
+                t.button('loading');
+                form.submit();
+            });
+
             modalView.modal();
             e.preventDefault();
         });

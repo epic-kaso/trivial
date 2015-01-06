@@ -106,17 +106,36 @@
                 </div>
                 <div class="modal-body">
                     <p>File is currently not enabled for share and sell.</p>
-                    <label>
-                        Enable for share and sell <input type="checkbox" name="enableShareSell"/>
-                    </label>
 
-                    <form name="enableShareSellForm" action="" method="post">
-                        <input class="form-control" type="text" name="price" placeholder="Sell Price"/>
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-default active">
+                            <input type="radio" name="enableShareSell" id="option1" autocomplete="off" checked> Share
+                            File
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="enableShareSell" id="option2" autocomplete="off"> Sale File
+                        </label>
+                    </div>
 
-                        <div class="form-group">
-                            <input class="btn" type="submit" value="Save"/>
-                        </div>
-                    </form>
+                    <div class="form-group">
+                        <form name="enableShareSellForm" action="" method="post">
+                            <div class="form-group" style="margin-top: 10px;">
+                                <label>Enter selling price</label>
+
+                                <div class="input-group">
+                                    <span class="input-group-addon" id="basic-addon1">₦</span>
+                                    <input type="text" name="price" value="0" class="form-control" placeholder="100"
+                                           aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-success" data-loading-text="Saving..." id="enableShareSaleBtn" type="button">
+                        Share
+                    </button>
                 </div>
             </div>
         </div>

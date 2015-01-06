@@ -9,7 +9,8 @@
                             <span><p style="font-size: 10px;font-weight: 200;text-align: center;padding-bottom: 0;margin-bottom: 0;">{{ Auth::user()->storage->getFormattedUsedStorage() }}
                                     of {{ Auth::user()->storage->getFormattedTotalStorage() }}</p></span>
 
-                    <div class="progress-bar" style="width: 20%;height: 5px;margin: 4px;"></div>
+                    <div class="progress-bar"
+                         style="width: {{ Auth::user()->storage->getPercentageUsed() }}%;height: 5px;margin: 4px;"></div>
                 </li>
                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Profile</a></li>
                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Settings</a></li>
