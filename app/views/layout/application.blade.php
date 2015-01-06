@@ -30,6 +30,7 @@
             <div class="modal-body">
                 <div class="container">
                     <div class="col-md-4 col-md-offset-1 text-center" style="position: relative">
+
                         <div class="form-group">
                             <div class="uk-form-file upload-icon">
                                 <span class="glyphicon glyphicon-cloud-upload"></span> Upload
@@ -40,6 +41,14 @@
                         <div class="text-center" style="position: absolute;top: 0;left: 0;width: 100%;">
                             <canvas id="uploadProgress" width="150" height="150"
                                     style="margin-left: auto;margin-right: auto;"></canvas>
+                        </div>
+                        <div class="form-group">
+                            <div id="successAlert" style="display: none;" class="alert alert-success">
+                                <p>Uploaded successfully, Reloading page...</p>
+                            </div>
+                            <div id="errorAlert" style="display: none;" class="alert alert-danger">
+                                <p>Uploaded failed, Try again</p>
+                            </div>
                         </div>
                         <div>
                             <h4 class="text-muted text-center">Upload From PC</h4>
@@ -96,16 +105,33 @@
 
         $('#documentUpload').fileupload({
             start: function (e, data) {
-                setUploadState();
+                setUploadState(true);
             },
             done: function (e, data) {
-                location.reload();
+                uploadStatus('success');
+            },
+            fail: function (e, data) {
+                uploadStatus('fail');
             },
             progressall: function (e, data) {
                 var progress = parseInt(data.loaded / data.total * 100, 10);
                 setProgressChart(progress);
             }
         });
+
+        function uploadStatus(response) {
+            var modal = $('#UploadModal');
+            var successAlert = modal.find('#successAlert'),
+                    errorAlert = modal.find('#errorAlert');
+
+            if (response == 'success') {
+                successAlert.fadeIn(100);
+                location.reload();
+            } else {
+                errorAlert.fadeIn(100);
+                setUploadState(false);
+            }
+        }
 
         $('form[name="enableShareSellForm"]').hide();
 
@@ -132,9 +158,14 @@
             e.preventDefault();
         });
 
-        function setUploadState() {
-            $('.upload-icon').css('opacity', 0);
-            $('#uploadProgress').fadeIn();
+        function setUploadState(state) {
+            if (state == true) {
+                $('.upload-icon').css('opacity', 0);
+                $('#uploadProgress').fadeIn();
+            } else {
+                $('#uploadProgress').fadeOut();
+                $('.upload-icon').css('opacity', 1);
+            }
         }
 
         function setProgressChart(value) {
