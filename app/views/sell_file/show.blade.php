@@ -25,7 +25,17 @@
                                 <span class="doc-type label label-info">{{ $file->type }}</span>
                             </p>
                         </div>
-                        <h3>₦{{ $file->sell_price }}</h3>
+                        <div style="margin-top: 20px">
+                            @if(!$file->isFree())
+                                <p>Please be informed that You about to buy this file</p>
+                                <h3>₦{{ $file->sell_price }}</h3>
+                            @else
+                                <p>Download this file by clicking in the download button below</p>
+                                <p class="text-muted tiny-text">by clicking on the download button you agree with our
+                                    <a>terms of service</a> and our <a>privacy policy</a></p>
+                            @endif
+                        </div>
+
                     </div>
 
                     <div class="panel-footer">
@@ -45,7 +55,14 @@
                                    data-force-submit="0" data-authenticated="{{ Auth::check() }}"/>
                         </form>
                         @else
-                            <a class="btn btn-lg btn-success" href="">Download</a>
+                            {{ $file->downloadLink(
+                                        "Download file",
+                                        [
+                                        "class" => "btn btn-lg btn-success",
+                                            "data-placement"=>"top",
+                                             "data-toggle"=>"tooltip"
+                                        ])
+                            }}
                         @endif
 
                         <div class="d-count">

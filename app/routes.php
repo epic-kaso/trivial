@@ -105,9 +105,8 @@
 
 
     //User Files
-    Route::get('/files/download/{file_id}',
+    Route::get('/files/download/{user_file}',
         [
-            'before' => 'auth',
             'as'     => 'user.files.download',
             'uses'   => 'FileController@download'
         ]
@@ -120,6 +119,12 @@
             'uses'   => 'FileController@makeSellable'
         ]
     );
+
+    Route::post('/files/rename/{user_file}', [
+        'before' => 'auth',
+        'as'     => 'user.file-rename',
+        'uses'   => 'FileController@renameFile'
+    ]);
 
     Route::any('/sell-success/{user_file}',
         [

@@ -13,6 +13,7 @@
     @yield('stylesheets')
 </head>
 <body style="position: relative;">
+@include('pages.partials.notifications')
 @yield('content')
 
 <footer>

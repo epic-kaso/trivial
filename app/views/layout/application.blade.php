@@ -14,6 +14,8 @@
     @yield('stylesheets')
 </head>
 <body style="position: relative;">
+@include('pages.partials.notifications')
+
 @yield('content')
 
 <div class="modal fade" id="UploadModal">

@@ -42,11 +42,6 @@
             throw new InvalidArgumentException('Selling price must be a number');
         }
 
-        public function getSellingPrice()
-        {
-            return $this->sell_price;
-        }
-
         public function deleteMe()
         {
             $this->forceDelete();
@@ -78,5 +73,42 @@
             $size = Size::Bytes($this->size);
 
             return $size->humanFileSize();
+        }
+
+        public function rename($newName)
+        {
+            $this->name = $newName;
+            $this->save();
+        }
+
+        public function downloadLink($title, array $attributes)
+        {
+            if ((Auth::check() && $this->belongsToUser(Auth::user())) || $this->isFree()) {
+                $url = route('user.files.download', [$this->hashcode]);
+
+                return HTML::link($url, $title, $attributes);
+            } else {
+                return $this->purchaseLink($title, $attributes);
+            }
+        }
+
+        public function belongsToUser(User $user)
+        {
+            return $this->user->id == $user->id;
+        }
+
+        public function isFree()
+        {
+            return $this->getSellingPrice() <= 0;
+        }
+
+        public function getSellingPrice()
+        {
+            return $this->sell_price;
+        }
+
+        private function purchaseLink($title, array $attributes)
+        {
+            return "";
         }
     }

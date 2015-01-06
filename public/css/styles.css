@@ -192,3 +192,8 @@ footer a {
         padding-left: 220px;
     }
 }
+
+p.tiny-text {
+    font-weight: 100;
+    font-size: 12px;
+}

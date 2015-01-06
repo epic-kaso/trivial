@@ -9,7 +9,11 @@
                     >
                 <span class="fa fa-navicon"></span>
             </button>
-            <a href="" class="navbar-brand page-title">{{ $title }}</a>
+            @if(isset($title))
+                <a href="" class="navbar-brand page-title">{{ $title }}</a>
+            @else
+                <a href="" class="navbar-brand">CloudBox</a>
+            @endif
         </div>
     </div>
 </div>

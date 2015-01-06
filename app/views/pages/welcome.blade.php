@@ -37,18 +37,20 @@
 
                                             <div class="dropdown-menu">
                                                 <div class="list-group flyoutmenu">
-                                                    <a class="list-group-item"
-                                                       href="{{ route('user.files.download',[$file->id]) }}"
-                                                       data-placement="top" data-toggle="tooltip">
-                                                        <span class="glyphicon glyphicon-download"></span>
-                                                        Download file
-                                                    </a>
+                                                    {{ $file->downloadLink(
+                                                    "Download file",
+                                                    [
+                                                    "class" => "list-group-item",
+                                                        "data-placement"=>"top",
+                                                         "data-toggle"=>"tooltip"
+                                                    ])
+                                                    }}
                                                     @if($file->isSellable())
                                                         <a class="list-group-item"
                                                            href="{{ route('sell.show',[$file->hashcode]) }}"
                                                            data-placement="top" data-toggle="tooltip">
                                                             <span class="glyphicon glyphicon-link"></span>
-                                                            Sale Link
+                                                            {{ $file->isFree() ? "Share Link" : "Sale Link" }}
                                                         </a>
                                                     @else
                                                         <a data-placement="top" data-toggle="tooltip"
@@ -59,7 +61,9 @@
                                                         </a>
                                                     @endif
                                                     <a href="" class="list-group-item"
-                                                       data-placement="top" data-toggle="tooltip">
+                                                       data-current-name="{{ $file->name }}"
+                                                       data-hashcode="{{ $file->hashcode }}"
+                                                       data-target="#renameFileModal" data-toggle="modal">
                                                         <span class="glyphicon glyphicon-edit"></span>
                                                         Rename file
                                                     </a>
@@ -113,10 +117,89 @@
         </div>
     </div>
 
+    <div class="modal fade" id="renameFileModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Rename File</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Rename file</label>
+                        <input class="form-control" type="text" name="renameFileInput" placeholder="Rename File"/>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button data-loading-text="Saving..." type="button" class="btn btn-success" id="saveButton">Save
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 @stop
 
 @section('scripts')
+    <script>
+        var fileRenameUrl = "{{ route('user.file-rename',['user_file' => '']) }}";
+        $(function () {
+            var $renameFileModal = $('#renameFileModal');
 
+            $renameFileModal.on('shown.bs.modal', function (event) {
+                var input = $(this).find('input[name=renameFileInput]');
+                var saveButton = $(this).find('#saveButton');
+
+                var button = $(event.relatedTarget);
+                var currentName = button.attr('data-current-name');
+                var hashcode = button.attr('data-hashcode');
+                var data = stripExtention(currentName);
+
+                input.attr('data-file-extension', data.ext);
+                input.attr('data-file-hashcode', hashcode);
+                input.val(data.name).focus();
+
+                saveButton.click(function (e) {
+                    var t = $(this);
+                    t.button('loading');
+
+
+                    var filename = input.val().trim();
+                    if (filename == "") {
+                        alert("Input can not be empty");
+                        t.button('reset');
+                        e.preventDefault();
+                    } else {
+                        var ext = input.attr('data-file-extension');
+                        var hashcode = input.attr('data-file-hashcode');
+                        renameFile(fileRenameUrl, hashcode, filename + "." + ext, t);
+                    }
+
+
+                })
+            });
+
+            function stripExtention(filename) {
+                var ex = filename.split('.').pop();
+                return {name: filename.replace("." + ex, ""), ext: ex};
+            }
+
+
+            function renameFile(serverUrl, fileHashCode, newName, saveButton) {
+
+                $.post(serverUrl + "/" + fileHashCode,
+                        {
+                            newName: newName
+                        },
+                        function (data, status) {
+                            if (status == "success") {
+                                //$renameFileModal.modal('close');
+                                saveButton.button('reset');
+                                window.location.reload();
+                            }
+                        }
+                );
+            }
+        })
+    </script>
 @stop

@@ -18,12 +18,11 @@
 
         function __construct(FileDownloadService $downloadService)
         {
-            $this->beforeFilter('auth');
+            $this->beforeFilter('auth', ['except' => 'download']);
             $this->beforeFilter('storage-size', ['only' => 'store']);
             $this->currentUser = Auth::user();
             $this->downloadService = $downloadService;
         }
-
 
         /**
          * Display a listing of the resource.
@@ -126,15 +125,35 @@
 
         public function download(UserFile $file)
         {
+            if ((Auth::check() && $file->belongsToUser(Auth::user())) || $file->isFree()) {
+                $result = $this->execute(DownloadUserFileCommand::class, ['userFile' => $file]);
 
-            $result = $this->execute(DownloadUserFileCommand::class, ['userFile' => $file]);
-
-            return $this->downloadService->makeDownloadResponse($file, $result);
+                return $this->downloadService->makeDownloadResponse($file, $result);
+            }
+            App::abort(404);
         }
 
+        public function renameFile(UserFile $file)
+        {
+            $name = Input::get('newName');
+
+            $validation = Validator::make(Input::only(['newName']), ['newName' => 'required']);
+
+            if ($validation->fails())
+                return Redirect::back()->withInput()->withErrors($validation);
+
+            $file->rename($name);
+
+            Session::flash('success', 'Successfully renamed file.');
+
+            if (Request::ajax()) {
+                return Response::json(['success' => TRUE]);
+            } else {
+                return Redirect::home();
+            }
+        }
         public function makeSellable(UserFile $file)
         {
-
             if ($file->isSellable())
                 return Redirect::back();
 
@@ -148,4 +167,5 @@
 
             return Redirect::home();
         }
+
     }
