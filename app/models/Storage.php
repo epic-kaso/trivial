@@ -38,8 +38,9 @@
 
         public function deductUsedSize(Size $size)
         {
-            if ($this->used_storage > 0)
-                $this->used_storage -= $size->getBytes();
+            $this->used_storage -= $size->getBytes();
+            if ($this->used_storage < 0)
+                $this->used_storage = 0;
             $this->save();
         }
 
