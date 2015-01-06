@@ -16,7 +16,7 @@
 
         private function __construct($bytes)
         {
-            if (!is_numeric($bytes) || $bytes < 0)
+            if (!is_numeric($bytes))
                 throw new \InvalidArgumentException('Invalid Number');
 
             $this->bytes = $bytes;
@@ -24,7 +24,7 @@
 
         public static function Gigabyte($value)
         {
-            if (!is_numeric($value) || $value < 0)
+            if (!is_numeric($value))
                 throw new \InvalidArgumentException('Invalid Number');
 
             $bytes = $value * 1024 * 1024 * 1024;

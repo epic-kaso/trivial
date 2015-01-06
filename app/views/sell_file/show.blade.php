@@ -28,11 +28,15 @@
                         <div style="margin-top: 20px">
                             @if(!$file->isFree())
                                 <p>Please be informed that You about to buy this file</p>
-                                <h3>₦{{ $file->sell_price }}</h3>
+                                <h3>Costs ₦{{ $file->sell_price }}</h3>
+                                <p class="text-muted tiny-text">by clicking on the "buy now" button you agree with our
+                                    <a>terms of service</a>, our <a>privacy policy</a> and our <a>business agreement</a>
+                                </p>
                             @else
                                 <p>Download this file by clicking in the download button below</p>
                                 <p class="text-muted tiny-text">by clicking on the download button you agree with our
-                                    <a>terms of service</a> and our <a>privacy policy</a></p>
+                                    <a>terms of service</a> and our <a>privacy policy</a>
+                                </p>
                             @endif
                         </div>
 
@@ -40,7 +44,11 @@
 
                     <div class="panel-footer">
 
-                        @if( $file->sell_price > 0)
+                        <div class="d-count">
+                            <span class="badge">{{ $file->getDownloadCount() }}</span> downloads
+                        </div>
+
+                    @if( $file->sell_price > 0)
                             <form name="buyFile" method="post" action="http://gpayexpress.com/gpay/gpayexpress.php">
                             <input type="hidden" name="merchantID" value="141101"/>
                             <input type="hidden" name="itemName" value="{{ $file->name }}"/>
@@ -65,9 +73,7 @@
                             }}
                         @endif
 
-                        <div class="d-count">
-                            <span class="badge">{{ $file->getDownloadCount() }}</span> downloads
-                        </div>
+
                     </div>
                 </div>
             </div>
