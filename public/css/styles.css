@@ -201,3 +201,21 @@ p.tiny-text {
     font-weight: 100;
     font-size: 12px;
 }
+
+@media (min-width: 768px) {
+    .display-table {
+        margin-left: 300px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .display-table {
+        margin-left: 300px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .display-table {
+        margin-left: 200px !important;
+    }
+}
