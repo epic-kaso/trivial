@@ -107,6 +107,31 @@
 
         var progressChart = "empty";
 
+        $('form[name="enableShareSellForm"]').hide();
+
+        $('[data-toggle="tooltip"]').tooltip();
+
+
+        $('input[name=enableShareSell]').change(function () {
+            $('form[name="enableShareSellForm"]').toggle();
+        });
+
+        ///modal toggle
+        $('a.modal-toggle').click(function (e) {
+            var id = $(this).attr('href');
+            var modalView = $(id);
+            var form = modalView.find('form[name="enableShareSellForm"]');
+            form.attr('action', $(this).data('action'));
+            modalView.find('button#enableShareSaleBtn').click(function (e) {
+                var t = $(this);
+                t.button('loading');
+                form.submit();
+            });
+
+            modalView.modal();
+            e.preventDefault();
+        });
+
         $('#documentUpload').fileupload({
             start: function (e, data) {
                 setUploadState(true);
@@ -136,31 +161,6 @@
                 setUploadState(false);
             }
         }
-
-        $('form[name="enableShareSellForm"]').hide();
-
-        $('[data-toggle="tooltip"]').tooltip();
-
-
-        $('input[name=enableShareSell]').change(function () {
-            $('form[name="enableShareSellForm"]').toggle();
-        });
-
-        ///modal toggle
-        $('a.modal-toggle').click(function (e) {
-            var id = $(this).attr('href');
-            var modalView = $(id);
-            var form = modalView.find('form[name="enableShareSellForm"]');
-            form.attr('action', $(this).data('action'));
-            modalView.find('button#enableShareSaleBtn').click(function (e) {
-                var t = $(this);
-                t.button('loading');
-                form.submit();
-            });
-
-            modalView.modal();
-            e.preventDefault();
-        });
 
         function setUploadState(state) {
             if (state == true) {
