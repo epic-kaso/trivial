@@ -165,7 +165,9 @@
                 return Redirect::back()->withInput()->withErrors($validation);
             $file->makeSellable(doubleval($price));
 
-            $message = 'Successfully Enable ' . $file->isFree() ? 'Sharing' : 'Selling' . ' Feature for' . $file->name();
+            $type = $file->isFree() ? 'Sharing' : 'Selling';
+
+            $message = 'Successfully Enable ' . $type . ' Feature for' . $file->name;
 
             return Redirect::home()->withSuccess($message);
         }
