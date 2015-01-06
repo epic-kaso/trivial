@@ -10,6 +10,7 @@
                 <div class="col-md-8">
 
                     <div class="panel panel-default">
+                        @if(count($files) > 0)
                         <table class="table table-striped">
                             @foreach($files as $file)
                                 <tr>
@@ -86,7 +87,14 @@
                                 </tr>
                             @endforeach
                         </table>
+                        @else
+                            <div class="text-center text-muted">
+                                <h1><span class="fa fa-file-o"></span></h1>
 
+                                <p>you don't have any files yet, <a href="#UploadModal" data-toggle="modal">click
+                                        here</a> to get started</p>
+                            </div>
+                        @endif
                         @if(method_exists($files,'links'))
                             {{ $files->links() }}
                         @endif
