@@ -47,9 +47,36 @@
          */
         public function show(UserFile $file)
         {
-            return View::make('sell_file.show', compact('file'));
+            if (Agent::isMobile()) {
+                $math = $this->generateCaptchaMath();
+                $expression = $math['expression'];
+                Session::put('captcha-result', $math['result']);
+                Session::put('captcha-expression', $math['expression']);
+
+                return View::make('sell_file.show-opera', compact('file', 'expression'));
+            } else {
+                return View::make('sell_file.show', compact('file'));
+            }
+
         }
 
+        private function generateCaptchaMath()
+        {
+            $first = rand(1, 20);
+            $second = rand(1, 20);
+            $operand = array_rand(['-', '+'], 1);
+
+            switch ($operand) {
+                case '-':
+                    $result = $first - $second;
+
+                    return ['result' => $result, 'expression' => "{$first} - {$second}"];
+                case '+':
+                    $result = $first + $second;
+
+                    return ['result' => $result, 'expression' => "{$first} + {$second}"];
+            }
+        }
 
         /**
          * Show the form for editing the specified resource.
@@ -62,7 +89,6 @@
             //
         }
 
-
         /**
          * Update the specified resource in storage.
          *
@@ -73,7 +99,6 @@
         {
             //
         }
-
 
         /**
          * Remove the specified resource from storage.

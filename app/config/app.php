@@ -129,6 +129,8 @@
             'GrahamCampbell\Flysystem\FlysystemServiceProvider',
             'Indatus\Dispatcher\ServiceProvider',
             'Greggilbert\Recaptcha\RecaptchaServiceProvider',
+            'Intervention\Image\ImageServiceProvider',
+            'Jenssegers\Agent\AgentServiceProvider',
             //My Service Providers
             'TestOauthApp\ServiceProviders\Bootstrap'
         ),
@@ -200,7 +202,9 @@
             'Authorizer'        => 'LucaDegasperi\OAuth2Server\Facades\AuthorizerFacade',
             'Clockwork'         => 'Clockwork\Support\Laravel\Facade',
             'OAuth'             => 'Artdarek\OAuth\Facade\OAuth',
-            'Flysystem'         => 'GrahamCampbell\Flysystem\Facades\Flysystem'
+            'Flysystem' => 'GrahamCampbell\Flysystem\Facades\Flysystem',
+            'Image'     => 'Intervention\Image\Facades\Image',
+            'Agent'     => 'Jenssegers\Agent\Facades\Agent',
         ),
 
     );

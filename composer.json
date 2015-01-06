@@ -18,7 +18,9 @@
     "graham-campbell/flysystem": "1.0.*@dev",
     "aws/aws-sdk-php": "~2.4",
     "indatus/dispatcher": "1.4.*@dev",
-    "greggilbert/recaptcha": "dev-master"
+    "greggilbert/recaptcha": "dev-master",
+    "intervention/image": "dev-master",
+    "jenssegers/agent": "dev-master"
   },
   "autoload": {
     "classmap": [

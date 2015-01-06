@@ -166,3 +166,21 @@
 
 
     Route::get('/wallet', ['as' => 'user.wallet', 'before' => 'auth', 'uses' => 'WalletController@index']);
+
+    Route::get('/captcha-image',
+        [
+            'as'   => 'captcha',
+            'uses' => function () {
+                $expression = Session::get('captcha-expression');
+
+                $img = Image::canvas(300, 100)->text($expression, 65, 75, function ($font) {
+                    $font->file(public_path('fonts/Roboto-Regular.ttf'));
+                    $font->size(30);
+                    //$font->color('#fdf6e3');
+//            $font->align('center');
+//            $font->valign('top');
+//            $font->angle(45);
+                });
+
+                return $img->response('png');
+            }]);

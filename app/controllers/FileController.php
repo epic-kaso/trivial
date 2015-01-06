@@ -127,10 +127,20 @@
             $rules = ['g-recaptcha-response' => 'required|recaptcha'];
 
             if (!Auth::check()) {
-                $validation = Validator::make(Input::all(), $rules);
-                if ($validation->fails()) {
-                    return Redirect::back()->withErrors($validation);
+                if (Agent::isMobile()) {
+                    $result = Input::get('captcha-result');
+                    $validated = $result == Session::get('captcha-result');
+
+                    if (!$validated) {
+                        return Redirect::back()->withError("Please Re-Validate Captcha");
+                    }
+                } else {
+                    $validation = Validator::make(Input::all(), $rules);
+                    if ($validation->fails()) {
+                        return Redirect::back()->withErrors($validation);
+                    }
                 }
+
             }
 
             if ((Auth::check() && $file->belongsToUser(Auth::user())) || $file->isFree()) {
