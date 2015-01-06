@@ -22,13 +22,13 @@
              * Facebook
              */
             'Facebook' => array(
-                'client_id'     => '288126571362674',
-                'client_secret' => 'b2ad741e8adc9c8e499958dfb9e8676b',
+                'client_id'     => getenv('FACEBOOK_APP_KEY'),
+                'client_secret' => getenv('FACEBOOK_APP_SECRET'),
                 'scope'         => array('email'),
             ),
             'Google'   => array(
-                'client_id'     => '468737018255-02b86ae4ebi4ee6iqti2ju8vv8lddk25.apps.googleusercontent.com',
-                'client_secret' => 'HHSTCn3hj4OBkTzjtwYa8ViA',
+                'client_id'     => getenv('GOOGLE_APP_KEY'),
+                'client_secret' => getenv('GOOGLE_APP_SECRET'),
                 'scope'         => array('userinfo_email', 'userinfo_profile'),
             ),
             'Twitter'  => array(
