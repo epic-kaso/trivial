@@ -54,6 +54,10 @@
         'uses'   => 'HomeController@showPurchasedFiles'
     ]);
 
+    Route::get('/privacy', [
+        'uses' => 'HomeController@showPrivacy'
+    ]);
+
     Route::get('/login', [
         'as'   => 'user.show-login',
         'uses' => 'LoginController@getShowLogin'

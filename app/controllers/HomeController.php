@@ -49,4 +49,9 @@
 
             return View::make('pages.welcome', compact('files', 'active', 'title'));
         }
+
+        public function showPrivacy()
+        {
+            return View::make('pages.privacy');
+        }
     }
