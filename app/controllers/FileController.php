@@ -61,7 +61,10 @@
 
                 return Redirect::home()->withStatus('Uploaded Successfully');
             } catch (CreateUserFileException $ex) {
-                return Redirect::back()->withInput()->withErrors($ex->getErrorProvider());
+                if (Request::ajax())
+                    return Response::json(['error' => $ex->getMessage()], 400);
+                else
+                    return Redirect::back()->withInput()->withErrors($ex->getErrorProvider());
             }
         }
 
