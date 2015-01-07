@@ -26,14 +26,14 @@ class CreateUserFileCommandHandler extends BaseCommandHandler
      */
     public function handle($command)
     {
-        $file = $command->uploadedFile;
+        $file = $command->uploadedFile;//new UploadedFile('','');
 
         $originalFileName = $file->getClientOriginalName();
         $originalExtension = $file->getClientOriginalExtension();
         $newDirectory = $command->currentUser->getDirectory();
         $size = $file->getSize();
         $newFilename = $this->userFileRepository->getNewUniqueFileName($originalExtension);
-        $filePath = $file->move(storage_path('files/temp'), $newFilename);
+        $newfile = $file->move(storage_path('files/temp'), $newFilename);
 
         $userFile = $this->userFileRepository
             ->createFile(
@@ -41,7 +41,7 @@ class CreateUserFileCommandHandler extends BaseCommandHandler
                 $originalExtension,
                 $newFilename,
                 $newDirectory,
-                $filePath,
+                $newfile->getPathname(),
                 $size,
                 $command->currentUser
             );
