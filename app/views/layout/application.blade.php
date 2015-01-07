@@ -140,7 +140,7 @@
             maxFilesize: 50, // MB
             init: function () {
                 this.on("uploadprogress", function (file, progress) {
-                    setProgressChart(progress)
+                    setProgressChart(Math.ceil(progress))
                 });
                 this.on("error", function (file, error) {
                     uploadStatus("error");
@@ -187,7 +187,7 @@
             if (progressAlert.css('display') == 'none') {
                 progressAlert.fadeIn();
             }
-            progressAlert.find('p').text("Uploading " + value + "%");
+            progressAlert.find('p').text("Please Wait, Uploading " + value + "%");
         }
     })
 </script>
