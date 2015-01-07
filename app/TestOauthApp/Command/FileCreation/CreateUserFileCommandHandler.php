@@ -1,5 +1,6 @@
 <?php namespace TestOauthApp\Command\FileCreation;
 
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 use TestOauthApp\Command\BaseCommandHandler;
 use TestOauthApp\Repository\UserFileRepository;
 
@@ -26,13 +27,13 @@ class CreateUserFileCommandHandler extends BaseCommandHandler
      */
     public function handle($command)
     {
-        $file = $command->uploadedFile;
+        $file = new UploadedFile('', ''); //$command->uploadedFile;
 
         $originalFileName = $file->getClientOriginalName();
         $originalExtension = $file->getClientOriginalExtension();
         $newDirectory = $command->currentUser->getDirectory();
         $newFilename = $this->userFileRepository->getNewUniqueFileName($originalExtension);
-        $filePath = $file->getPathname();
+        $filePath = $file->move(storage_path('files/temp'), $newFilename);
 
         $userFile = $this->userFileRepository
             ->createFile(

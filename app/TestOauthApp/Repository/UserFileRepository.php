@@ -38,17 +38,18 @@
             User $currentUser
         )
         {
-            $response = $this->fileUploadService->upload($currentfilepath, $newfilename, $newDirectory);
-
             $Resultfile = UserFile::create(
                 [
                     'user_id'   => $currentUser->id,
-                    'key'       => $response['key'],
+                    'key'       => $newfilename,
                     'name'      => $originalFileName,
                     'type'      => $originalExtension,
                     'size'      => $fileSize,
-                    'file_path' => $response['path'],
+                    'file_path' => '',
+                    'active'    => FALSE
                 ]);
+
+            $this->fileUploadService->upload($Resultfile, $currentfilepath, $newfilename, $newDirectory);
 
             $Resultfile->raise(new UserFileCreated($Resultfile));
 
