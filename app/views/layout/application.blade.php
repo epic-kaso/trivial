@@ -9,6 +9,7 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="{{ asset('bower_components/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('bower_components/jasny-bootstrap/css/jasny-bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('bower_components/dropzone/css/basic.css') }}" rel="stylesheet">
     <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
     <title>Cloud Service</title>
     @yield('stylesheets')
@@ -32,15 +33,14 @@
                     <div class="col-md-4 col-md-offset-1 text-center" style="position: relative">
 
                         <div class="form-group">
-                            <div class="uk-form-file upload-icon">
-                                <span class="glyphicon glyphicon-cloud-upload"></span> Upload
-                                <input type="file" data-url="{{ route('files.store') }}" name="file"
-                                       id="documentUpload"/>
-                            </div>
-                        </div>
-                        <div class="text-center" style="position: absolute;top: 0;left: 0;width: 100%;">
-                            <canvas id="uploadProgress" width="150" height="150"
-                                    style="margin-left: auto;margin-right: auto;"></canvas>
+                            <form action="{{ route('files.store') }}" class="dropzone square" id="my-upload-button">
+                                <div class="fallback">
+                                    <input type="file" name="file" id="documentUpload"/>
+                                </div>
+                                <div class="uk-form-file upload-icon dz-message">
+                                    <span class="glyphicon glyphicon-cloud-upload"></span> Upload
+                                </div>
+                            </form>
                         </div>
                         <div class="form-group">
                             <div id="infoAlert" style="display: none;" class="alert alert-info">
@@ -68,9 +68,7 @@
 <script src="{{ asset('bower_components/jasny-bootstrap/js/jasny-bootstrap.min.js')  }}"
         type="text/javascript"></script>
 <script src="{{asset('js/jquery-ujs.js')}}" type="text/javascript"></script>
-<script src="{{ asset('js/vendor/jquery.ui.widget.js') }}" type="text/javascript"></script>
-<script src="{{ asset('js/jquery.iframe-transport.js') }}" type="text/javascript"></script>
-<script src="{{ asset('js/jquery.fileupload.js') }}" type="text/javascript"></script>
+<script src="{{ asset('bower_components/dropzone/dropzone.min.js') }}" type="text/javascript"></script>
 <script src="{{ asset('js/vendor/Chart.min.js') }}" type="text/javascript"></script>
 <script>
     var data = [
@@ -135,21 +133,24 @@
             e.preventDefault();
         });
 
-        $('#documentUpload').fileupload({
-            start: function (e, data) {
-                setUploadState(true);
-            },
-            done: function (e, data) {
-                uploadStatus('success');
-            },
-            fail: function (e, data) {
-                uploadStatus('fail');
-            },
-            progressall: function (e, data) {
-                var progress = parseInt(data.loaded / data.total * 100, 10);
-                setProgressChart(progress);
+
+        //fileupload config
+        Dropzone.options.myUploadButton = {
+            paramName: "file", // The name that will be used to transfer the file
+            maxFilesize: 50, // MB
+            init: function () {
+                this.on("uploadprogress", function (file, progress) {
+                    setProgressChart(progress)
+                });
+                this.on("error", function (file, error) {
+                    uploadStatus("error");
+                });
+                this.on("success", function (file) {
+                    uploadStatus("success");
+                })
             }
-        });
+        };
+
 
         function uploadStatus(response) {
             var modal = $('#UploadModal');
@@ -187,29 +188,6 @@
                 progressAlert.fadeIn();
             }
             progressAlert.find('p').text("Uploading " + value + "%");
-
-            if (progressChart == "empty") {
-                var data = [
-                            {
-                                value: 20,
-                                color: "#f39c12",
-                                highlight: "#f1c40f",
-                                label: "Progress"
-                            }
-                        ],
-                        options = {animationEasing: "easeOut"};
-
-                var chartNode = $('#uploadProgress').get(0);
-                if (typeof chartNode === 'undefined') {
-
-                } else {
-                    var ctx = chartNode.getContext("2d");
-                    progressChart = new Chart(ctx).Doughnut(data, options);
-                }
-
-            }
-            progressChart.segments[0].value = value;
-            progressChart.update();
         }
     })
 </script>
