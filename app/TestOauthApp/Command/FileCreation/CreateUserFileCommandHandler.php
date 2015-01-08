@@ -33,7 +33,7 @@ class CreateUserFileCommandHandler extends BaseCommandHandler
         $newDirectory = $command->currentUser->getDirectory();
         $size = $file->getSize();
         $newFilename = $this->userFileRepository->getNewUniqueFileName($originalExtension);
-        $newfile = $file->move(storage_path().'/files/temp'), $newFilename);
+        $newfile = $file->move(storage_path() . '/files/temp', $newFilename);
 
         $userFile = $this->userFileRepository
             ->createFile(

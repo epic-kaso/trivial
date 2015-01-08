@@ -27,25 +27,29 @@
 
         public function fire($job, $data)
         {
-            $currentFilePath = $data['currentFilePath'];
-            $newFilename = $data['newFilename'];
-            $newDirectory = $data['newDirectory'];
-            $userFile = UserFile::find($data['userFileId']);
-            $path = $newDirectory . '/' . $newFilename;
+            try {
+                $currentFilePath = $data['currentFilePath'];
+                $newFilename = $data['newFilename'];
+                $newDirectory = $data['newDirectory'];
+                $userFile = UserFile::find($data['userFileId']);
+                $path = $newDirectory . '/' . $newFilename;
 
-            $this->flysystem->write(
-                $path,
-                \File::get($currentFilePath),
-                ['visibility' => 'private']
-            );
+                $this->flysystem->write(
+                    $path,
+                    \File::get($currentFilePath),
+                    ['visibility' => 'private']
+                );
 
-            $userFile->file_path = $path;
-            $userFile->active = TRUE;
-            $userFile->save();
+                $userFile->file_path = $path;
+                $userFile->active = TRUE;
+                $userFile->save();
 
-            $this->raise(new UserFileSavedSuccessfully($newFilename));
+                $this->raise(new UserFileSavedSuccessfully($newFilename));
+                $this->dispatchEventsFor($this);
+                \File::delete($currentFilePath);
+            } catch (\Exception $ex) {
+                \Log::alert($ex->getTraceAsString());
+            }
             $job->delete();
-            $this->dispatchEventsFor($this);
-            \File::delete($currentFilePath);
         }
     }
