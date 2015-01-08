@@ -11,8 +11,16 @@
     |
     */
 
-
     use Illuminate\Database\Eloquent\ModelNotFoundException;
+
+
+    $monolog = Log::getMonolog();
+    $syslog = new \Monolog\Handler\SyslogHandler('papertrail');
+    $formatter = new \Monolog\Formatter\LineFormatter('%channel%.%level_name%: %message% %extra%');
+    $syslog->setFormatter($formatter);
+
+    $monolog->pushHandler($syslog);
+
 
     Route::model('file_id', 'UserFile');
     Route::model('files', 'UserFile');
