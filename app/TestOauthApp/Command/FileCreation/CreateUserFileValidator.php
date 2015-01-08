@@ -25,7 +25,7 @@
                     'file' => $command->uploadedFile
                 ], $this->rules);
 
-            if ($validation->fails() && !in_array($command->uploadedFile->getExtension(), $varA)) {
+            if ($validation->fails() && !in_array($command->uploadedFile->getClientOriginalExtension(), $varA)) {
                 throw new CreateUserFileException($validation->messages(), $validation);
             }
         }
