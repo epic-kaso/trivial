@@ -13,7 +13,7 @@
     {
 
         public $rules = [
-            'file' => 'required|mimes:jpeg,bmp,png,zip,rar,mpga,7zip,pdf,doc,docx,ppt,pptx,xsl,xslx'
+            'file' => 'required|mimes:jpeg,bmp,png,zip,rar,mpga,mp3,mp4,wav,aac,m4a,m3u,audio/*,video/*,7zip,pdf,doc,docx,ppt,pptx,xsl,xslx'
         ];
 
         public function validate(CreateUserFileCommand $command)
