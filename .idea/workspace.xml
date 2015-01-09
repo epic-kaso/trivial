@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f41cc8c-7bf5-4536-85f5-a67712c49906" name="Default" comment="Version 1 fully working">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/TestOauthApp/Notifications/PushNotifications/Events/File/UserFileReadyPushNotificationEvent.php" afterPath="$PROJECT_DIR$/app/TestOauthApp/Notifications/PushNotifications/Events/File/UserFileReadyPushNotificationEvent.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layout/application.blade.php" afterPath="$PROJECT_DIR$/app/views/layout/application.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -23,17 +22,23 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="DatabaseView">
+    <option name="FLATTEN" value="false" />
+    <option name="GROUP_BY_TYPE" value="true" />
+    <option name="SORT_CHILDREN" value="false" />
+    <option name="SHOW_TABLE_CONSTRAINTS" value="true" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="TestOauthApp" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UserFileReadyPushNotificationEvent.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/TestOauthApp/Notifications/PushNotifications/Events/File/UserFileReadyPushNotificationEvent.php">
+      <file leaf-file-name="application.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layout/application.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.790932" vertical-offset="258" max-vertical-offset="962">
-              <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.52896726" vertical-offset="4626" max-vertical-offset="6292">
+              <caret line="186" column="16" selection-start-line="186" selection-start-column="16" selection-end-line="186" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -385,12 +390,6 @@
       <option name="number" value="Default" />
       <updated>1420058379794</updated>
     </task>
-    <task id="LOCAL-00034" summary="Version 1 fully working">
-      <created>1420542744546</created>
-      <option name="number" value="00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1420542744546</updated>
-    </task>
     <task id="LOCAL-00035" summary="Version 1 fully working">
       <created>1420549608831</created>
       <option name="number" value="00035" />
@@ -679,7 +678,13 @@
       <option name="project" value="LOCAL" />
       <updated>1420804895605</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="Version 1 fully working">
+      <created>1420805450119</created>
+      <option name="number" value="00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1420805450119</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -690,7 +695,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29863483" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25622255" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1381,10 +1386,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/TestOauthApp/Notifications/PushNotifications/Events/File/UserFileReadyPushNotificationEvent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.59445846" vertical-offset="258" max-vertical-offset="962">
+          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+          <folding>
+            <marker date="1420805450000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1420805450000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1420805450000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1420805450000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1420805450000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1420805450000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/storage/logs/laravel.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="368">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.13098237" vertical-offset="0" max-vertical-offset="397">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1394,77 +1414,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layout/application.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6599496" vertical-offset="4782" max-vertical-offset="6292">
-          <caret line="194" column="9" selection-start-line="194" selection-start-column="9" selection-end-line="194" selection-end-column="9" />
-          <folding>
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1420805434000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1420805434000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1420805434000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1420805434000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1420805434000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="[...]" />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="{&quot;color&quot;: &quot;#8e44ad&quot;...}" />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="{&quot;color&quot;: &quot;#F7464A&quot;...}" />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="{&quot;tooltipTemplate&quot;: &quot;&lt;%if (label){%&gt;&lt;%=label%&gt; &lt;%}%&gt;&quot;...}" />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="{&quot;paramName&quot;: &quot;file&quot;...}" />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1420805434000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/TestOauthApp/Notifications/PushNotifications/Events/File/UserFileReadyPushNotificationEvent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.790932" vertical-offset="258" max-vertical-offset="962">
-          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.52896726" vertical-offset="4626" max-vertical-offset="6292">
+          <caret line="186" column="16" selection-start-line="186" selection-start-column="16" selection-end-line="186" selection-end-column="16" />
           <folding />
         </state>
       </provider>

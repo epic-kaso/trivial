@@ -184,7 +184,7 @@
 
             if (response == 'success') {
                 successAlert.fadeIn(100);
-                //location.reload();
+                location.reload();
             } else {
                 errorAlert.fadeIn(100);
                 setTimeout(function () {
