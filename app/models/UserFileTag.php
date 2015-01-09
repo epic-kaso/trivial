@@ -11,6 +11,14 @@
 
         protected $table = "user_file_tags";
 
+        public static function createTagsFromString($tags,$file_id,$user_id)
+        {
+            $tags = explode(',',$tags);
+            foreach($tags as $tag){
+                static::create(['tag'=> $tag,'user_file_id' => $file_id,'user_id' => $user_id]);
+            }
+        }
+
         public function user()
         {
             return $this->belongsTo('User');

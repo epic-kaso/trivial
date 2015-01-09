@@ -14,6 +14,7 @@
 
         protected $errors;
 
+        protected $guarded = ['id'];
 
         public static function boot()
         {

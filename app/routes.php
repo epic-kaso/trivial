@@ -146,7 +146,17 @@
             'before' => 'csrf',
             'uses'   => 'SellFileController@sellFailure'
         ]);
-
+    Route::post('/files/{user_file}/tag',
+        [
+            'as' => 'post.user_file_tag',
+            'before' => 'auth',
+            'uses' => function(UserFile $userFile ){
+                $tags = Input::get('tags');
+                UserFileTag::createTagsFromString($tags,$userFile->id,Auth::id());
+                return Response::json(['tags' => $tags]);
+            }
+        ]
+    );
     Route::resource('/files', 'FileController');
     Route::resource('/sell', 'SellFileController');
 

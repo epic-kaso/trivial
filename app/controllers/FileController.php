@@ -53,13 +53,23 @@
         public function store()
         {
             try {
-                $this->execute(CreateUserFileCommand::class,
+                $userfile = $this->execute(CreateUserFileCommand::class,
                     [
                         'currentUser'  => $this->currentUser,
                         'uploadedFile' => Input::file('file')
                     ]);
 
-                return Redirect::home()->withStatus('Uploaded Successfully');
+                if (Request::ajax()){
+                    return Response::json(
+                        [
+                            'success'=>true,
+                            'file' => $userfile,
+                            'tag_url' => route('post.user_file_tag',['user_file' => $userfile->hashcode])
+                        ]);
+                }else{
+                    return Redirect::home()->withStatus('Uploaded Successfully');
+                }
+
             } catch (CreateUserFileException $ex) {
                 if (Request::ajax())
                     return Response::json(['error' => $ex->getErrorProvider()->getMessageBag()->all()], 400);

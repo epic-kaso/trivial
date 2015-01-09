@@ -47,17 +47,23 @@
                             <div id="infoAlert" style="display: none;" class="alert alert-info">
                                 <p>100%</p>
                             </div>
-                            <div id="successAlert" style="display: none;" class="alert alert-success">
-                                <p>Uploaded successfully, Reloading page...</p>
-
-                                <div class="form-group">
-                                    <input type="text" id="tagInput" class="form-control">
-                                    <input type="submit" class="btn btn-success" value="Save Tags"/>
+                            <div id="successAlert" style="display: none;" class="alert">
+                                <div class="alert alert-success alert-fixed-top">
+                                    <p class="text-success">Uploaded successfully, tag your file for easy discovery</p>
                                 </div>
+
+                                <form action="" id="tagForm" method="post" data-remote>
+                                    <div class="form-group text-justify">
+                                        <input type="text" id="tagInput">
+                                        <input type="submit" class="btn btn-success submit-tag" value="Save Tags" data-loading-text="Saving..."/>
+                                    </div>
+                                </form>
                             </div>
-                            <div id="errorAlert" style="display: none;" class="alert alert-danger">
+                            <div id="errorAlert" style="display: none;" class="alert alert-danger alert-fixed-top">
                                 <p>Uploaded failed, Try again</p>
                             </div>
+
+
                         </div>
                         <div>
                             <h4 class="text-muted text-center">Upload From PC</h4>
@@ -132,9 +138,27 @@
 </script>
 <script>
     $(function () {
-        setTimeout(function () {
-            $('.alert').fadeOut();
-        }, 3000);
+
+
+
+        var $Taginput = $('#tagInput');
+        $Taginput.selectize({
+            delimiter: ',',
+            persist: false,
+            create: function (input) {
+                return {
+                    value: input,
+                    text: input
+                }
+            }
+        });
+
+       function dismissAlert(){
+           setTimeout(function () {
+               $('.alert').fadeOut();
+           }, 3000);
+       }
+        dismissAlert();
 
         var progressChart = "empty";
 
@@ -175,33 +199,39 @@
                 this.on("error", function (file, error) {
                     uploadStatus("error");
                 });
-                this.on("success", function (file) {
-                    uploadStatus("success");
+                this.on("success", function (file,response) {
+                    console.log(response);
+                    uploadStatus("success",response);
                 })
             }
         };
 
 
-        function uploadStatus(response) {
+        function uploadStatus(response,data) {
             var modal = $('#UploadModal');
             var successAlert = modal.find('#successAlert'),
-                    $Taginput = successAlert.find('#tagInput'),
+                    $TagForm = successAlert.find('#tagForm'),
                     errorAlert = modal.find('#errorAlert');
             var progressAlert = modal.find('#infoAlert');
             progressAlert.fadeOut(100);
 
+            $TagForm.on('ajax:before',function(){
+                $(this).find('.btn.submit-tag').button('loading');
+            });
+
+            $TagForm.on('ajax:success',function(){
+                dismissAlert();
+                location.reload();
+            });
+
+            $TagForm.on('ajax:error',function(){
+                $(this).find('.btn.submit-tag').button('reset');
+                dismissAlert();
+            });
+
             if (response == 'success') {
                 successAlert.fadeIn(100);
-                $Taginput.selectize({
-                    delimiter: ',',
-                    persist: false,
-                    create: function (input) {
-                        return {
-                            value: input,
-                            text: input
-                        }
-                    }
-                });
+                $TagForm.attr('action',data.tag_url);
                 //location.reload();
             } else {
                 errorAlert.fadeIn(100);
