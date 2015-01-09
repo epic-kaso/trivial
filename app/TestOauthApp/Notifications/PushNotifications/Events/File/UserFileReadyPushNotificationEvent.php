@@ -24,7 +24,9 @@
             $this->userFile = $userFile;
             $this->setMessage([
                     'file_ready'    => $userFile->isReady(),
-                    'file_hashcode' => $userFile->hashcode]
+                    'file_hashcode' => $userFile->hashcode,
+                    'file'          => $userFile
+                ]
             );
         }
 
