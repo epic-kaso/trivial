@@ -47,7 +47,7 @@
          */
         public function show(UserFile $file)
         {
-            if (Agent::is('Opera Mini')) {
+            if (Agent::is('Opera')) {
                 $math = $this->generateCaptchaMath();
                 $expression = $math['expression'];
                 Session::put('captcha-result', $math['result']);
