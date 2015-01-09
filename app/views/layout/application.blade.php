@@ -79,7 +79,7 @@
         }
     };
 
-    var pusher = new Pusher('{{ Config.get('services.pusher.app_key'); }}');
+    var pusher = new Pusher('{{ \Config::get('services.pusher.app_key'); }}');
     var channel = pusher.subscribe('{{ \TestOauthApp\Notifications\PushNotifications\Events\File\UserFilePushNotificationEvent::$channel }}');
     channel.bind('{{ \TestOauthApp\Notifications\PushNotifications\Events\File\UserFileReadyPushNotificationEvent::$name }}', function (data) {
         var message = data.message;
