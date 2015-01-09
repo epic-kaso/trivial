@@ -37,13 +37,13 @@
 
         private function setupPushNotification()
         {
-            $appId = Config::get('services.pusher.app_id');
-            $appKey = Config::get('services.pusher.app_key');
-            $appSecret = Config::get('services.pusher.app_secret');
+            $this->app->singleton('Pusher', function () {
+                $appId = Config::get('services.pusher.app_id');
+                $appKey = Config::get('services.pusher.app_key');
+                $appSecret = Config::get('services.pusher.app_secret');
 
-            $pusher = new Pusher($appId, $appKey, $appSecret);
-
-            $this->app->singleton('Pusher', $pusher);
+                return new Pusher($appId, $appKey, $appSecret);
+            });
 
 
             $this->app->bind(
