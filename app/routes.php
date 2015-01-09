@@ -191,7 +191,7 @@
             'uses' => function () {
                 $expression = Session::get('captcha-expression');
 
-                $img = Image::canvas(250, 200)->text($expression, 65, 75, function ($font) {
+                $img = Image::canvas(220, 70)->text($expression, 65, 75, function ($font) {
                     $font->file(public_path('fonts/Roboto-Regular.ttf'));
                     $font->size(30);
                     //$font->color('#fdf6e3');
