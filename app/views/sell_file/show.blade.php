@@ -7,7 +7,11 @@
             @include('pages.partials.navigation')
         @endif
         <div class="row">
-            @include('ads.pc-ad')
+            @if(Agent::isMobile())
+                @include('ads.mobile-ad')
+            @else
+                @include('ads.pc-ad')
+            @endif
         </div>
 
         <div class="row">
