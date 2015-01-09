@@ -20,8 +20,7 @@
     "indatus/dispatcher": "1.4.*@dev",
     "greggilbert/recaptcha": "dev-master",
     "intervention/image": "dev-master",
-    "jenssegers/agent": "dev-master",
-    "pusher/pusher-php-server": "2.1.3"
+    "jenssegers/agent": "dev-master"
   },
   "autoload": {
     "classmap": [

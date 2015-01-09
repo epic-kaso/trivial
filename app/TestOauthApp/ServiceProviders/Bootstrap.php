@@ -29,6 +29,20 @@
             Event::listen('auth.login', function ($user) {
 
             });
+
+
+            $appId = Config::get('services.pusher.app_id');
+            $appKey = Config::get('services.pusher.app_key');
+            $appSecret = Config::get('services.pusher.app_secret');
+
+            $pusher = \Pusher($appId,$appKey,$appSecret);
+
+            $this->app->singleton('Pusher',$pusher);
+
+
+            $this->app->bind('TestOauthApp\Notifications\PushNotifications\PushNotificationInterface',
+                'TestOauthApp\Notifications\PushNotifications\PusherNotification');
+
         }
 
         /**

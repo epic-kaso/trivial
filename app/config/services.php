@@ -27,5 +27,10 @@
             'model'  => 'User',
             'secret' => '',
         ),
+        'pusher' => array(
+	        'app_id'=>'102645',
+	        'app_key'=> '6278ac0fb0e0438da832',
+        	'app_secret' => '9da18a0889b1920977e0'
+		)
 
     );
