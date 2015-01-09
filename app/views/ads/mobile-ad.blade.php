@@ -1,5 +1,5 @@
 <div class="text-center center-div" 
-style="width: 320px;height: 100px;margin-top: 10px;margin-bottom: 10px;margin-right: auto;margin-left: auto">
+style="width: 320px;height: 100px;margin-top: 70px;margin-bottom: 10px;margin-right: auto;margin-left: auto">
 
 <script type="text/javascript">
     google_ad_client = "ca-pub-8310659029488996";
