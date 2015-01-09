@@ -192,3 +192,7 @@
 
                 return $img->response('png');
             }]);
+
+    Route::group(['domain' => 'developers.kaso.co'],function(){
+       Route::controller('/','DevelopersPageController');
+    });
