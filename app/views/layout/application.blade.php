@@ -8,6 +8,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="{{ asset('bower_components/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('bower_components/selectize.default.css') }}" rel="stylesheet">
     <link href="{{ asset('bower_components/jasny-bootstrap/css/jasny-bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('bower_components/dropzone/css/basic.css') }}" rel="stylesheet">
     <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
@@ -48,6 +49,11 @@
                             </div>
                             <div id="successAlert" style="display: none;" class="alert alert-success">
                                 <p>Uploaded successfully, Reloading page...</p>
+
+                                <div class="form-group">
+                                    <input type="text" id="tagInput" class="form-control">
+                                    <input type="submit" class="btn btn-success" value="Save Tags"/>
+                                </div>
                             </div>
                             <div id="errorAlert" style="display: none;" class="alert alert-danger">
                                 <p>Uploaded failed, Try again</p>
@@ -70,6 +76,7 @@
         type="text/javascript"></script>
 <script src="{{asset('js/jquery-ujs.js')}}" type="text/javascript"></script>
 <script src="{{ asset('bower_components/dropzone/dropzone.min.js') }}" type="text/javascript"></script>
+<script src="{{ asset('bower_components/selectize.js') }}" type="text/javascript"></script>
 <script src="{{ asset('js/vendor/Chart.min.js') }}" type="text/javascript"></script>
 <script type="text/javascript">
     // Enable pusher logging - don't include this in production
@@ -178,13 +185,24 @@
         function uploadStatus(response) {
             var modal = $('#UploadModal');
             var successAlert = modal.find('#successAlert'),
+                    $Taginput = successAlert.find('#tagInput'),
                     errorAlert = modal.find('#errorAlert');
             var progressAlert = modal.find('#infoAlert');
             progressAlert.fadeOut(100);
 
             if (response == 'success') {
                 successAlert.fadeIn(100);
-                location.reload();
+                $Taginput.selectize({
+                    delimiter: ',',
+                    persist: false,
+                    create: function (input) {
+                        return {
+                            value: input,
+                            text: input
+                        }
+                    }
+                });
+                //location.reload();
             } else {
                 errorAlert.fadeIn(100);
                 setTimeout(function () {
