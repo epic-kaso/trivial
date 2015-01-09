@@ -1,4 +1,4 @@
-<div class="text-center" style="width: 730px; height: 100px;margin-left: auto; margin-right: auto;margin-top: 10px;margin-bottom: 10px">
+<div class="text-center" style="width: 730px; height: 100px;margin-left: auto; margin-right: auto;margin-top: 70px;margin-bottom: 10px">
 	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- cloud-kaso-pc-ad -->
 <ins class="adsbygoogle"

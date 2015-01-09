@@ -6,7 +6,7 @@
         @if(Auth::check())
             @include('pages.partials.navigation')
         @endif
-        <div class="row" style="height: 150px;">
+        <div class="row">
             @include('ads.pc-ad')
         </div>
 
