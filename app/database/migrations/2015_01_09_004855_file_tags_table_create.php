@@ -3,7 +3,7 @@
     use Illuminate\Database\Migrations\Migration;
     use Illuminate\Database\Schema\Blueprint;
 
-    class CreateFailedJobsTable extends Migration
+    class FileTagsTableCreate extends Migration
     {
 
         /**
@@ -13,12 +13,14 @@
          */
         public function up()
         {
-            Schema::create('failed_jobs', function (Blueprint $table) {
+            Schema::create('user_file_tags', function (Blueprint $table) {
                 $table->increments('id');
-                $table->text('connection');
-                $table->text('queue');
-                $table->text('payload');
-                $table->timestamp('failed_at');
+                $table->integer('user_id');
+                $table->integer('user_file_id');
+                $table->string('tag');
+                $table->timestamps();
+
+                $table->unique(['user_file_id', 'tag']);
             });
         }
 
@@ -29,9 +31,7 @@
          */
         public function down()
         {
-            Schema::drop('failed_jobs');
+            Schema::drop('user_file_tags');
         }
 
     }
-
-    //5Dye3Xrg

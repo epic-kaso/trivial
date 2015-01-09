@@ -127,4 +127,9 @@
         {
             return $this->hasMany('UserPurchasedFile');
         }
+
+        public function tags()
+        {
+            return $this->hasMany('UserFileTag');
+        }
     }

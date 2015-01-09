@@ -127,4 +127,10 @@
         {
             return "";
         }
+
+        public function tags()
+        {
+            return $this->hasMany('UserFileTag');
+        }
+
     }
