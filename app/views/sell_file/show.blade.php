@@ -6,13 +6,6 @@
         @if(Auth::check())
             @include('pages.partials.navigation')
         @endif
-        <div class="row">
-            @if(Agent::isMobile())
-                @include('ads.mobile-ad')
-            @else
-                @include('ads.pc-ad')
-            @endif
-        </div>
 
         <div class="row">
             <div class="col-md-6 col-md-offset-3">

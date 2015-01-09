@@ -91,6 +91,11 @@
         'uses' => 'RegisterController@getShowRegister'
     ]);
 
+
+    Route::get('/administrator', function () {
+        return View::make('admin.dashboard');
+    });
+
     Route::post('/register', [
         'as'   => 'user.process-register',
         'uses' => 'RegisterController@postProcessRegister'

@@ -12,6 +12,17 @@
                     <div class="panel panel-default">
                         @if(count($files) > 0)
                         <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <td>
+                                    <a href="" class="btn btn-xs btn-default"><span
+                                                class="fa fa-sort-alpha-asc"> </span> Name</a>
+                                    <a href="" class="btn btn-xs btn-default"><span
+                                                class="fa fa-sort-numeric-desc"></span> Date</a>
+                                </td>
+                            </tr>
+                            </thead>
+                            <tbody>
                             @foreach($files as $file)
                                 <tr id="file-{{$file->hashcode}}">
                                     <td>
@@ -87,6 +98,7 @@
                                     </td>
                                 </tr>
                             @endforeach
+                            </tbody>
                         </table>
                         @else
                             <div class="text-center text-muted">
@@ -102,11 +114,6 @@
                     </div>
 
                 </div>
-                @unless(Agent::isMobile())
-                <div class="ad-bar pull-right">
-                    @include('ads.vertical-ad')
-                </div>
-                @endunless
             </div>
         </div>
     <div class="modal fade" id="shareSellModal">
