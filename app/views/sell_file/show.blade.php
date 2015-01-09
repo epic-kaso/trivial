@@ -1,7 +1,7 @@
 @extends('layout.basic')
 @section('content')
 
-    <div class="container">
+    <div class="container" style="padding-top: 100px;">
 
         @if(Auth::check())
             @include('pages.partials.navigation')
