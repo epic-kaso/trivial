@@ -1,7 +1,7 @@
 @extends('layout.application')
 @section('content')
     @include('pages.partials.navigation')
-    <div class="container main-content">
+    <div class="container-fluid main-content">
             <div class="row">
                 <div style="position: relative">
                     @include('pages.partials.side-nav')
