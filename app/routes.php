@@ -194,10 +194,6 @@
                 $img = Image::canvas(220, 70)->text($expression, 65, 60, function ($font) {
                     $font->file(public_path('fonts/Roboto-Regular.ttf'));
                     $font->size(30);
-                    //$font->color('#fdf6e3');
-//            $font->align('center');
-//            $font->valign('top');
-//            $font->angle(45);
                 });
 
                 return $img->response('png');

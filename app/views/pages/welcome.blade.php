@@ -16,7 +16,7 @@
                                 <tr id="file-{{$file->hashcode}}">
                                     <td>
                                         <span class="fa {{ getFileIconCssClass(strtolower($file->type)) }}"
-                                              style="margin-right: 15px;font-size: 30px;"></span>
+                                              style="margin-left: 10px; margin-right: 15px;font-size: 30px;"></span>
                                          <span style="display: inline-block;">
                                              <span style="display: inline-block;margin-bottom: 5px;"
                                                    class="name-span {{ $file->active ? '' : 'text-muted' }}"
