@@ -205,7 +205,7 @@ p.tiny-text {
 @media (min-width: 768px) {
     .display-table {
         margin-left: 300px !important;
-        width: 100%;
+        min-width: 100%;
     }
 }
 
