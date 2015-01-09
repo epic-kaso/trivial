@@ -1,6 +1,8 @@
-<?php 
+<?php
 
-namespace 'TestOauthApp\Notifications\PushNotifications\Events\File';
+    namespace TestOauthApp\Notifications\PushNotifications\Events\File;
+
+    use TestOauthApp\Notifications\PushNotifications\Events\PushNotificationEvent;
 
 abstract class UserFilePushNotificationEvent extends PushNotificationEvent
 {

@@ -64,12 +64,35 @@
 </div>
 
 <script src="{{ asset('bower_components/jquery/dist/jquery.min.js')  }}" type="text/javascript"></script>
+<script src="//js.pusher.com/2.2/pusher.min.js" type="text/javascript"></script>
 <script src="{{ asset('bower_components/bootstrap/dist/js/bootstrap.min.js')  }}" type="text/javascript"></script>
 <script src="{{ asset('bower_components/jasny-bootstrap/js/jasny-bootstrap.min.js')  }}"
         type="text/javascript"></script>
 <script src="{{asset('js/jquery-ujs.js')}}" type="text/javascript"></script>
 <script src="{{ asset('bower_components/dropzone/dropzone.min.js') }}" type="text/javascript"></script>
 <script src="{{ asset('js/vendor/Chart.min.js') }}" type="text/javascript"></script>
+<script type="text/javascript">
+    // Enable pusher logging - don't include this in production
+    Pusher.log = function (message) {
+        if (window.console && window.console.log) {
+            window.console.log(message);
+        }
+    };
+
+    var pusher = new Pusher('{{ Config.get('services.pusher.app_key'); }}');
+    var channel = pusher.subscribe('{{ \TestOauthApp\Notifications\PushNotifications\Events\File\UserFilePushNotificationEvent::$channel }}');
+    channel.bind('{{ \TestOauthApp\Notifications\PushNotifications\Events\File\UserFileReadyPushNotificationEvent::$name }}', function (data) {
+        var message = data.message;
+        var hashcode = message.file_hashcode;
+        var active = message.file_ready;
+        var row = $('#file-' + hashcode);
+
+        var name = row.find('span.name-span')
+        name.removeClass('text-muted');
+        var btn = row.find('btn.flyout-btn').removeAttr('disabled');
+
+    });
+</script>
 <script>
     var data = [
                 {

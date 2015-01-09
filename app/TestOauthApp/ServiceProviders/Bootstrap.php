@@ -12,6 +12,7 @@
     use Config;
     use Event;
     use Illuminate\Support\ServiceProvider;
+    use Pusher;
     use TestOauthApp\OauthServices\FacebookOauthService;
     use TestOauthApp\OauthServices\GoogleOauthService;
 
@@ -30,19 +31,25 @@
 
             });
 
+            $this->setupPushNotification();
 
+        }
+
+        private function setupPushNotification()
+        {
             $appId = Config::get('services.pusher.app_id');
             $appKey = Config::get('services.pusher.app_key');
             $appSecret = Config::get('services.pusher.app_secret');
 
-            $pusher = \Pusher($appId,$appKey,$appSecret);
+            $pusher = new Pusher($appId, $appKey, $appSecret);
 
-            $this->app->singleton('Pusher',$pusher);
+            $this->app->singleton('Pusher', $pusher);
 
 
-            $this->app->bind('TestOauthApp\Notifications\PushNotifications\PushNotificationInterface',
-                'TestOauthApp\Notifications\PushNotifications\PusherNotification');
-
+            $this->app->bind(
+                'TestOauthApp\Notifications\PushNotifications\PushNotificationInterface',
+                'TestOauthApp\Notifications\PushNotifications\PusherNotification'
+            );
         }
 
         /**

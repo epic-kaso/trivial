@@ -133,4 +133,15 @@
             return $this->hasMany('UserFileTag');
         }
 
+        public function isReady()
+        {
+            return $this->active ? TRUE : FALSE;
+        }
+
+        public function setReady($state)
+        {
+            $this->active = $state;
+            $this->save();
+        }
+
     }

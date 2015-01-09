@@ -9,14 +9,21 @@
     namespace TestOauthApp\Events\File;
 
 
+    use UserFile;
+
     class UserFileSavedSuccessfully
     {
 
         protected $fileKey;
+        /**
+         * @var UserFile
+         */
+        private $file;
 
-        function __construct($fileKey)
+        function __construct($fileKey, UserFile $file = NULL)
         {
             $this->fileKey = $fileKey;
+            $this->file = $file;
         }
 
         /**
@@ -33,6 +40,14 @@
         public function setFileKey($fileKey)
         {
             $this->fileKey = $fileKey;
+        }
+
+        /**
+         * @return UserFile
+         */
+        public function getFile()
+        {
+            return $this->file;
         }
 
     }

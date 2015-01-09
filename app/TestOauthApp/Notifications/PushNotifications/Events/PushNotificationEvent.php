@@ -1,6 +1,6 @@
 <?php
 
-namespace 'TestOauthApp\Notifications\PushNotifications\Events';
+    namespace TestOauthApp\Notifications\PushNotifications\Events;
 
 abstract class PushNotificationEvent
 {

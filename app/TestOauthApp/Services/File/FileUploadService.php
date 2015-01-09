@@ -41,10 +41,9 @@
                 );
 
                 $userFile->file_path = $path;
-                $userFile->active = TRUE;
-                $userFile->save();
+                $userFile->setReady(TRUE);
 
-                $this->raise(new UserFileSavedSuccessfully($newFilename));
+                $this->raise(new UserFileSavedSuccessfully($newFilename, $userFile));
                 $this->dispatchEventsFor($this);
                 \File::delete($currentFilePath);
             } catch (\Exception $ex) {

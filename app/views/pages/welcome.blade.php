@@ -13,13 +13,13 @@
                         @if(count($files) > 0)
                         <table class="table table-striped">
                             @foreach($files as $file)
-                                <tr>
+                                <tr id="file-{{$file->hashcode}}">
                                     <td>
                                         <span class="fa {{ getFileIconCssClass(strtolower($file->type)) }}"
                                               style="margin-right: 15px;font-size: 30px;"></span>
                                          <span style="display: inline-block;">
                                              <span style="display: inline-block;margin-bottom: 5px;"
-                                                   class="{{ $file->active ? '' : 'text-muted' }}"
+                                                   class="name-span {{ $file->active ? '' : 'text-muted' }}"
                                                    data-toggle="tooltip"
                                                    title="{{ $file->name }}">{{ Str::limit($file->name ,30)}}</span>
                                              <p style="font-weight: 200;font-size: 12px;">
@@ -32,7 +32,7 @@
                                         </span>
 
                                         <div class="pull-right dropdown">
-                                            <button class="btn btn-default btn-xs dropdown-toggle {{ $file->active ? '' : 'disabled' }}"
+                                            <button class="flyout-btn btn btn-default btn-xs dropdown-toggle {{ $file->active ? '' : 'disabled' }}"
                                                     data-toggle="dropdown" {{ $file->active ? '' : 'disabled' }}>
                                                 <span class="glyphicon glyphicon-chevron-down"></span>
                                             </button>

@@ -10,7 +10,8 @@
         'listeners'          => [
             'TestOauthApp\EventListeners\User\UserEventsListener',
             'TestOauthApp\EventListeners\Storage\TransactionsListener',
-            'TestOauthApp\EventListeners\File\FileListener'
+            'TestOauthApp\EventListeners\File\FileListener',
+            'TestOauthApp\EventListeners\Notifications\UserFileNotificationsListener'
         ],
         'production-storage' => 'local',//'awss3',
         'user-sales-share'   => 0.7
