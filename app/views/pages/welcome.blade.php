@@ -102,6 +102,11 @@
                     </div>
 
                 </div>
+                @unless(Agent::isMobile())
+                <div class="ad-bar">
+                    @include('ads.vertical-ad')
+                </div>
+                @endunless
             </div>
         </div>
     <div class="modal fade" id="shareSellModal">
