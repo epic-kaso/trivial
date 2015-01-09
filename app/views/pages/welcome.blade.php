@@ -7,7 +7,7 @@
                     @include('pages.partials.side-nav')
                 </div>
 
-                <div class="display-table">
+                <div class="display-table" style="display: inline-block;">
 
                     <div class="panel panel-default">
                         @if(count($files) > 0)
@@ -103,7 +103,7 @@
 
                 </div>
                 @unless(Agent::isMobile())
-                <div class="ad-bar">
+                <div class="ad-bar pull-right">
                     @include('ads.vertical-ad')
                 </div>
                 @endunless
