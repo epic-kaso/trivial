@@ -212,13 +212,13 @@ p.tiny-text {
 @media (min-width: 992px) {
     .display-table {
         margin-left: 300px !important;
-        min-width: 40%;
+        min-width: 40% !important;
     }
 }
 
 @media (min-width: 1200px) {
     .display-table {
         margin-left: 310px !important;
-        min-width: 50%;
+        min-width: 50% !important;
     }
 }

@@ -7,7 +7,7 @@
                     @include('pages.partials.side-nav')
                 </div>
 
-                <div class="display-table" style="display: inline-block;">
+                <div class="display-table" style="display: inline-block;min-width: 100%;">
 
                     <div class="panel panel-default">
                         @if(count($files) > 0)
