@@ -7,7 +7,7 @@
             @include('pages.partials.navigation')
         @endif
         <div class="row" style="height: 150px;">
-
+        	@include('ads.mobile-ad')
         </div>
 
         <div class="row">
