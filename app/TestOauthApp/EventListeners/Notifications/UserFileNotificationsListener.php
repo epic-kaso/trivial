@@ -9,6 +9,7 @@
     namespace TestOauthApp\EventListeners\Notifications;
 
     use Laracasts\Commander\Events\EventListener;
+    use TestOauthApp\Notifications\PushNotifications\Events\File\UserFileReadyPushNotificationEvent;
     use TestOauthApp\Notifications\PushNotifications\PushNotificationInterface;
 
     class UserFileNotificationsListener extends EventListener
@@ -26,6 +27,9 @@
         public function whenUserFileSavedSuccessfully($event)
         {
             $userfile = $event->getFile();
-            $this->pushNotification->notify($userfile);
+            $this->pushNotification
+                ->notify(
+                    new UserFileReadyPushNotificationEvent($userfile)
+                );
         }
     }
