@@ -12,7 +12,6 @@
         public function run()
         {
             Eloquent::unguard();
-
             User::firstOrCreate(['email' => 'admin@kaso.co', 'password' => 'password', 'type' => 'admin']);
 
         }

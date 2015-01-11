@@ -98,7 +98,7 @@
     Route::get('/administrator', [
         'before' => 'auth-admin',
         'as'     => 'administrator',
-        'uses'   => 'AdminController'
+        'uses' => 'AdminController@index'
     ]);
 
     Route::post('/register', [
@@ -215,7 +215,7 @@
 
 
     Route::get('api/v1/users', ['as' => 'users-api.index', 'uses' => function () {
-        return User::all(['email', 'created_at', 'id', 'hashcode', 'updated_at']);
+        return User::where('type', '!=', 'admin')->get(['email', 'created_at', 'id', 'hashcode', 'updated_at']);
     }]);
 
     Route::get('api/v1/users/{user_hashcode}', ['as' => 'users-api.show', 'uses' => function (User $user) {

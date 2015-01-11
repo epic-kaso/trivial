@@ -13,6 +13,10 @@
                     <li role="presentation" ui-sref="storages" ui-sref-active="active"><a href="#">Storage <span
                                     class="badge pull-right" ng-bind="count.storages">1TB</span></a></li>
                 </ul>
+
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="{{ route('user.logout') }}">Logout</a></li>
+                </ul>
             </div>
 
             <div class="col-md-9 admin-dashboard">
