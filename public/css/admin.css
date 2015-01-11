@@ -1,3 +1,7 @@
 .nav, .pagination, .carousel, .panel-title a {
     cursor: pointer;
 }
+
+.admin-dashboard {
+    min-height: 600px;
+}

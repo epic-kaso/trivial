@@ -35,6 +35,9 @@
     Route::bind('user_file', function ($user_file) {
         return UserFile::whereHashcode($user_file)->first();
     });
+    Route::bind('user_hashcode', function ($user_hashcode) {
+        return User::whereHashcode($user_hashcode)->first(['email', 'created_at', 'id', 'hashcode', 'updated_at']);
+    });
     Route::bind('data', function ($data) {
         $parsed = base64_decode($data);
         $obj = json_decode($parsed);
@@ -207,3 +210,18 @@
     Route::group(['domain' => 'developers.kaso.co'],function(){
        Route::controller('/','DevelopersPageController');
     });
+
+
+    Route::get('api/v1/users', ['as' => 'users-api.index', 'uses' => function () {
+        return User::all(['email', 'created_at', 'id', 'hashcode', 'updated_at']);
+    }]);
+
+    Route::get('api/v1/users/{user_hashcode}', ['as' => 'users-api.show', 'uses' => function (User $user) {
+        return $user;
+    }]);
+    Route::delete('api/v1/users/{user_hashcode}', ['as' => 'users-api.delete', 'uses' => function (User $user) {
+        return $user->delete();
+    }]);
+    Route::put('api/v1/users/{user_hashcode}', ['as' => 'users-api.update', 'uses' => function (User $user) {
+        return $user->update(Input::only(['wallet', 'active']));
+    }]);
