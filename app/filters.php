@@ -49,10 +49,12 @@
 
     Route::filter('auth-admin', function () {
         if (Auth::guest() || !Auth::user()->isAdmin()) {
+            if (Auth::check())
+                Auth::logout();
+
             if (Request::ajax()) {
                 return Response::make('Unauthorized', 401);
             }
-
             return Redirect::guest('login');
         }
     });

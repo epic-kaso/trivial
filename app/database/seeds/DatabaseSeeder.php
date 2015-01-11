@@ -13,6 +13,7 @@
             Eloquent::unguard();
 
             $this->call('StorageSpacesSeed');
+            $this->call('AdminSeeder');
         }
 
     }
