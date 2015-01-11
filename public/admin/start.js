@@ -11,12 +11,19 @@ var app = angular.module('AdminApp', [
     $interpolateProvider.endSymbol('%>');
 });
 
+app.run(function ($rootScope) {
+    $rootScope.count = {
+        'users': 0,
+        'files': 0,
+        'storages': 0
+    }
+});
 //app.constant('ViewsBaseURL','/Assets/app/views');
 
 
 app.constant('UserUrlRoot', window.application.user_base_url);
 
-app.config(function ($stateProvider, $urlRouterProvider, ViewBaseURL) {
+app.config(function ($stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider.otherwise("/users");
 
@@ -32,6 +39,45 @@ app.config(function ($stateProvider, $urlRouterProvider, ViewBaseURL) {
         }
     };
 
+    var files = {
+        name: 'files',
+        url: "/files",
+        templateUrl: "usersTable.html",
+        controller: "UserListingController",
+        resolve: {
+            'users': function (UserService) {
+                return UserService.fetchAll();
+            }
+        }
+    };
+
+    var storages = {
+        name: 'storages',
+        url: "/storages",
+        templateUrl: "usersTable.html",
+        controller: "UserListingController",
+        resolve: {
+            'users': function (UserService) {
+                return UserService.fetchAll();
+            }
+        }
+    };
+
+    var analytics = {
+        name: 'analytics',
+        url: "/analytics",
+        templateUrl: "usersTable.html",
+        controller: "UserListingController",
+        resolve: {
+            'users': function (UserService) {
+                return UserService.fetchAll();
+            }
+        }
+    };
+
     $stateProvider
-        .state(users);
+        .state(users)
+        .state(files)
+        .state(analytics)
+        .state(storages);
 });

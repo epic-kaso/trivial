@@ -4,6 +4,8 @@
 
 var app = angular.module('app.users.controller', []);
 
-app.controller('UserListingController', ['$scope', function ($scope, users) {
-    $scope.users = users;
+app.controller('UserListingController', ['$scope', 'users', '$rootScope', function ($scope, users, $rootScope) {
+    $rootScope.count.users = users.data.length;
+    $scope.users = users.data;
+    console.log(users.data);
 }]);

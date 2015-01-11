@@ -95,9 +95,11 @@
     ]);
 
 
-    Route::get('/administrator', function () {
-        return View::make('admin.dashboard');
-    });
+    Route::get('/administrator', [
+        'before' => 'auth-admin',
+        'as'     => 'administrator',
+        'uses'   => 'AdminController'
+    ]);
 
     Route::post('/register', [
         'as'   => 'user.process-register',

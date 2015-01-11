@@ -32,10 +32,10 @@
 </footer>
 <script src="{{ asset('bower_components/jquery/dist/jquery.min.js')  }}" type="text/javascript"></script>
 <script src="{{asset('js/jquery-ujs.js')}}" type="text/javascript"></script>
-<script src="{{ asset('bower_components/angular/angular.min.js')  }}" type="text/javascript"></script>
-<script src="{{ asset('bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js')  }}"
+<script src="{{ asset('bower_components/angular/angular.js')  }}" type="text/javascript"></script>
+<script src="{{ asset('bower_components/angular-bootstrap/ui-bootstrap-tpls.js')  }}"
         type="text/javascript"></script>
-<script src="{{ asset('bower_components/angular-ui-router/release/angular-ui-router.min.js')  }}"
+<script src="{{ asset('bower_components/angular-ui-router/release/angular-ui-router.js')  }}"
         type="text/javascript"></script>
 @include('admin.partials.js_users')
 <script src="{{ asset('admin/start.js')  }}" type="text/javascript"></script>

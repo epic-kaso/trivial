@@ -47,6 +47,16 @@
         }
     });
 
+    Route::filter('auth-admin', function () {
+        if (Auth::guest() || !Auth::user()->isAdmin()) {
+            if (Request::ajax()) {
+                return Response::make('Unauthorized', 401);
+            }
+
+            return Redirect::guest('login');
+        }
+    });
+
 
     Route::filter('auth.basic', function () {
         return Auth::basic();

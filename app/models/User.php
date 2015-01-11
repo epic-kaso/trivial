@@ -132,4 +132,9 @@
         {
             return $this->hasMany('UserFileTag');
         }
+
+        public function isAdmin()
+        {
+            return $this->type === 'admin';
+        }
     }
