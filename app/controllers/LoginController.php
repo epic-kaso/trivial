@@ -84,7 +84,7 @@
             }
 
             if (Auth::attempt($data, $data['remember_me'])) {
-                return Redirect::intended(Redirect::back());
+                return Auth::user()->isAdmin() ? Redirect::route('administrator') : Redirect::intended(Redirect::back());
             }
 
             return Redirect::back()->withInput()->withError('Invalid Email/Password');
