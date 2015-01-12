@@ -38,6 +38,7 @@
     <script>
         window.application = {};
         window.application.user_base_url = "{{ route('users-api.index') }}";
+        window.application.user_files_base_url = "{{ route('files-api.index') }}";
     </script>
 @stop
 
@@ -62,5 +63,29 @@
             <p>No Users.</p>
         </div>
 
+    </script>
+    <script id="userFilesTable.html" type="text/ng-template">
+        <div ng-if="files.length > 0">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3>Files</h3>
+                </div>
+                <table class="table table-striped">
+                    <tr ng-repeat="file in files">
+                        <td><span ng-bind="$index"></span></td>
+                        <td>
+                            <span ng-bind="file.name"></span>
+
+                            <p>owner: <span ng-bind="file.user.email"></span></p>
+                        </td>
+                        <td><span ng-bind="file.created_at"></span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div ng-if="!users || users.length == 0">
+            <p>No Users.</p>
+        </div>
     </script>
 @stop

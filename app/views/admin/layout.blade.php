@@ -38,6 +38,7 @@
 <script src="{{ asset('bower_components/angular-ui-router/release/angular-ui-router.js')  }}"
         type="text/javascript"></script>
 @include('admin.partials.js_users')
+@include('admin.partials.js_user_files')
 <script src="{{ asset('admin/start.js')  }}" type="text/javascript"></script>
 @yield('scripts')
 <script>

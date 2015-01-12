@@ -214,8 +214,12 @@
     });
 
 
+    /*
+     * API ROUTES
+     */
     Route::get('api/v1/users', ['as' => 'users-api.index', 'uses' => function () {
-        return User::where('type', '!=', 'admin')->get(['email', 'created_at', 'id', 'hashcode', 'updated_at']);
+        return User::where('type', '!=', 'admin')
+            ->get(['email', 'created_at', 'id', 'hashcode', 'updated_at']);
     }]);
 
     Route::get('api/v1/users/{user_hashcode}', ['as' => 'users-api.show', 'uses' => function (User $user) {
@@ -225,5 +229,20 @@
         return $user->delete();
     }]);
     Route::put('api/v1/users/{user_hashcode}', ['as' => 'users-api.update', 'uses' => function (User $user) {
+        return $user->update(Input::only(['wallet', 'active']));
+    }]);
+
+    Route::get('api/v1/files', ['as' => 'files-api.index', 'uses' => function () {
+        return UserFile::with('user')
+            ->get(['email', 'created_at', 'id', 'hashcode', 'updated_at']);
+    }]);
+
+    Route::get('api/v1/files/{user_file}', ['as' => 'files-api.show', 'uses' => function (UserFile $user) {
+        return $user;
+    }]);
+    Route::delete('api/v1/files/{user_file}', ['as' => 'files-api.delete', 'uses' => function (UserFile $user) {
+        return $user->delete();
+    }]);
+    Route::put('api/v1/files/{user_file}', ['as' => 'files-api.update', 'uses' => function (UserFile $user) {
         return $user->update(Input::only(['wallet', 'active']));
     }]);

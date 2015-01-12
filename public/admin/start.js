@@ -5,7 +5,8 @@
 var app = angular.module('AdminApp', [
     'ui.router',
     'ui.bootstrap',
-    'app.users'
+    'app.users',
+    'app.files'
 ], function ($interpolateProvider) {
     $interpolateProvider.startSymbol('<%');
     $interpolateProvider.endSymbol('%>');
@@ -22,6 +23,7 @@ app.run(function ($rootScope) {
 
 
 app.constant('UserUrlRoot', window.application.user_base_url);
+app.constant('UserFileUrlRoot', window.application.user_files_base_url);
 
 app.config(function ($stateProvider, $urlRouterProvider) {
 
@@ -42,11 +44,11 @@ app.config(function ($stateProvider, $urlRouterProvider) {
     var files = {
         name: 'files',
         url: "/files",
-        templateUrl: "usersTable.html",
+        templateUrl: "userFilesTable.html",
         controller: "UserListingController",
         resolve: {
-            'users': function (UserService) {
-                return UserService.fetchAll();
+            'user_files': function (UserFileService) {
+                return UserFileService.fetchAll();
             }
         }
     };
