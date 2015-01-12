@@ -8,7 +8,7 @@
 <body>
 <div class="container">
     <div class="col-md-4 col-md-offset-4">
-        {{ Form::open(['url' => route('oauth-login')]) }}
+        {{ Form::open(['url' => route('oauth-login.post')]) }}
         {{ Form::hidden('client_id',1) }}
         {{ Form::hidden('grant_type','password') }}
         {{ Form::hidden('client_secret','johnbull') }}

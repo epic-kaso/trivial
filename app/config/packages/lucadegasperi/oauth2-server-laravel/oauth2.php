@@ -80,13 +80,19 @@
                 'access_token_ttl' => 3600,
                 'auth_token_ttl'   => 3600
             ],
-            'password'           => [
+            'password' => [
                 'class'            => '\League\OAuth2\Server\Grant\PasswordGrant',
                 'callback'         => function ($email, $password) {
-                    return Auth::validate([
+                    $credentials = [
                         'email'    => $email,
                         'password' => $password,
-                    ]);
+                    ];
+
+                    if (Auth::once($credentials)) {
+                        return Auth::user()->id;
+                    } else {
+                        return FALSE;
+                    }
                 },
                 'access_token_ttl' => 3600
             ],

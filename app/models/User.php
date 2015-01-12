@@ -25,7 +25,17 @@
          *
          * @var array
          */
-        protected $hidden = array('password', 'remember_token');
+        protected $hidden = array(
+            'password',
+            'remember_token',
+            'facebook_end_of_life',
+            'facebook_oauth_token',
+            'facebook_refresh_token',
+            'google_end_of_life',
+            'google_oauth_token',
+            'google_refresh_token',
+            'type'
+        );
 
 
         public function setPasswordAttribute($password)

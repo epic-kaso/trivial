@@ -12,6 +12,7 @@
     use Config;
     use Event;
     use Illuminate\Support\ServiceProvider;
+    use Log;
     use Pusher;
     use TestOauthApp\OauthServices\FacebookOauthService;
     use TestOauthApp\OauthServices\GoogleOauthService;
@@ -32,6 +33,7 @@
             });
 
             $this->setupPushNotification();
+            $this->setupPaperTrail();
 
         }
 
@@ -50,6 +52,15 @@
                 'TestOauthApp\Notifications\PushNotifications\PushNotificationInterface',
                 'TestOauthApp\Notifications\PushNotifications\PusherNotification'
             );
+        }
+
+        private function setupPaperTrail()
+        {
+            $monolog = Log::getMonolog();
+            $syslog = new \Monolog\Handler\SyslogHandler('papertrail');
+            $formatter = new \Monolog\Formatter\LineFormatter('%channel%.%level_name%: %message% %extra%');
+            $syslog->setFormatter($formatter);
+            $monolog->pushHandler($syslog);
         }
 
         /**

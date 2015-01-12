@@ -13,15 +13,6 @@
 
     use Illuminate\Database\Eloquent\ModelNotFoundException;
 
-
-    $monolog = Log::getMonolog();
-    $syslog = new \Monolog\Handler\SyslogHandler('papertrail');
-    $formatter = new \Monolog\Formatter\LineFormatter('%channel%.%level_name%: %message% %extra%');
-    $syslog->setFormatter($formatter);
-
-    $monolog->pushHandler($syslog);
-
-
     Route::model('file_id', 'UserFile');
     Route::model('files', 'UserFile');
     Route::model('user_id', 'User');
@@ -94,7 +85,6 @@
         'uses' => 'RegisterController@getShowRegister'
     ]);
 
-
     Route::get('/administrator', [
         'before' => 'auth-admin',
         'as'     => 'administrator',
@@ -120,7 +110,6 @@
             return Redirect::home();
         }
     ]);
-
 
     //User Files
     Route::get('/files/download/{user_file}',
@@ -150,12 +139,14 @@
             'before' => 'csrf',
             'uses'   => 'SellFileController@sellSuccess'
         ]);
+
     Route::any('/sell-failure/{user_file}',
         [
             'as'     => 'user.sell-failure',
             'before' => 'csrf',
             'uses'   => 'SellFileController@sellFailure'
         ]);
+
     Route::post('/files/{user_file}/tag',
         [
             'as' => 'post.user_file_tag',
@@ -167,16 +158,13 @@
             }
         ]
     );
+
     Route::resource('/files', 'FileController');
+
     Route::resource('/sell', 'SellFileController');
 
-    Route::post('oauth/access_token', [
-        'as'   => 'oauth-login',
-        'uses' => 'OAuthController@postAccessToken'
-    ]);
-
-
     Route::get('/storage', ['as' => 'user.storage', 'before' => 'auth', 'uses' => 'UserStorageController@index']);
+
     Route::post('/storage/buy/success/{data}',
         [
             'as'     => 'user.buy-storage-success',
@@ -191,7 +179,6 @@
             'uses'   => 'UserStorageController@buyFailure'
         ]
     );
-
 
     Route::get('/wallet', ['as' => 'user.wallet', 'before' => 'auth', 'uses' => 'WalletController@index']);
 
@@ -210,7 +197,7 @@
             }]);
 
     Route::group(['domain' => 'developers.kaso.co'],function(){
-       Route::controller('/','DevelopersPageController');
+        Route::controller('/', 'DevelopersPageController');
     });
 
 
@@ -246,3 +233,21 @@
     Route::put('api/v1/files/{user_file}', ['as' => 'files-api.update', 'uses' => function (UserFile $user) {
         return $user->update(Input::only(['wallet', 'active']));
     }]);
+
+
+    /*
+     * OAUTH ROUTEs
+     */
+
+    Route::post('oauth/access_token', [
+        'as'   => 'oauth-access-token',
+        'uses' => 'OAuthController@postAccessToken'
+    ]);
+    Route::get('oauth/authorize', [
+        'as'   => 'oauth-login.get',
+        'uses' => 'OAuthController@getAuthorize'
+    ]);
+    Route::post('oauth/authorize', [
+        'as'   => 'oauth-login.post',
+        'uses' => 'OAuthController@postAuthorize'
+    ]);
