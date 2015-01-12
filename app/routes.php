@@ -239,7 +239,7 @@
      * OAUTH ROUTEs
      */
 
-    Route::post('oauth/access_token', [
+    Route::any('oauth/access_token', [
         'as'   => 'oauth-access-token',
         'uses' => 'OAuthController@postAccessToken'
     ]);
