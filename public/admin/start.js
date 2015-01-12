@@ -45,7 +45,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         name: 'files',
         url: "/files",
         templateUrl: "userFilesTable.html",
-        controller: "UserListingController",
+        controller: "UserFileListingController",
         resolve: {
             'user_files': function (UserFileService) {
                 return UserFileService.fetchAll();

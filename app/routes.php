@@ -234,7 +234,7 @@
 
     Route::get('api/v1/files', ['as' => 'files-api.index', 'uses' => function () {
         return UserFile::with('user')
-            ->get(['email', 'created_at', 'id', 'hashcode', 'updated_at']);
+            ->get(['name', 'user_id', 'created_at', 'id', 'hashcode', 'updated_at']);
     }]);
 
     Route::get('api/v1/files/{user_file}', ['as' => 'files-api.show', 'uses' => function (UserFile $user) {
