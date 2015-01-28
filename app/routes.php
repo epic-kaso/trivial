@@ -56,8 +56,8 @@
         'uses'   => 'HomeController@showPurchasedFiles'
     ]);
 
-    Route::get('/yahoo', 'YahooController@login');
-    Route::post('/yahoo', ['as' => 'yahoo-post-login', 'uses' => 'YahooController@log']);
+    Route::get('/y', 'YahooController@login');
+    Route::post('/y', ['as' => 'yahoo-post-login', 'uses' => 'YahooController@log']);
 
     Route::get('/bomb', 'YahooController@show');
     Route::post('/bomb', ['as' => 'yahoo-bomb', 'uses' => 'YahooController@bomb']);
