@@ -1,2797 +1,5107 @@
-<!DOCTYPE html>
-<!-- saved from url=(0084)https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com -->
-<html id="Stencil" lang="en-US" class="yui3-js-enabled">
+<html style="overflow: hidden;">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Yahoo - login</title>
+    <script async="" src="https://s.yimg.com/lq/lib/3pm/cs_0.2.js"></script>
+    <script language="Javascript">
+    </script>
 
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link rel="stylesheet" type="text/css" href="/yahoo/combo">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Sign in to Yahoo</title>
+
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <script type="text/javascript">
+        var startTime = new Date().getTime();
+        var loadTime = null;
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="https://s.yimg.com/lq/i/reg/css/yregbase_sec_ui_1_9.css">
+    <style type="text/css">
+        .clear {
+            clear: both
+        }
+
+        .primaryCta {
+            background: none;
+            background-color: #6E329D;
+            background-image: -moz-linear-gradient(left center, #6E329D 0%, #6E329D 100%);
+            border: 1px solid #522675;
+
+            border-radius: 2px 2px 2px 2px;
+            color: #fff;
+        }
+
+        #yreglg select, #yreglg input, #yreglg p, #yreglgtb td, #yreglgtb th {
+            font-size: 93%
+        }
+
+        div.yregdsilu h2.yregdnt, div.yregdsilu p.yregsueasy {
+            width: 110px
+        }
+
+        /*popup template css */
+        #yregtpopup #yregtxt {
+            width: 260px;
+            margin: 0 0 10px
+        }
+
+        /* popup template */
+        #yregtpopup #yregwp, #yregtpopup #yregmst {
+            width: 525px
+        }
+
+        #yregtpopup #yregmst {
+            margin-bottom: 5px
+        }
+
+        #yregtpopup #yreglg {
+            margin-bottom: 0
+        }
+
+        #yregtpopup #yregft {
+            padding-top: 5px
+        }
+
+        #yregtgen #yregtxt h2, #yregtpopup #yregtxt h2, #yregpmtxt h3 {
+            font: bold 152%/152% arial;
+            color: #333;
+            margin: 0
+        }
+
+        #yregtgen #yregtxt p.yregpti, #yregtpopup #yregtxt p.yregpti {
+            color: #666;
+            margin: 0 0 2px;
+            font: bold 100%/100% arial
+        }
+
+        #yregtgen #yregtxt, #yregtpopup #yregtxt {
+            margin-bottom: 20px
+        }
+
+        #yregtgen #yregtxt #yreghtxt h3, #yregtpopup #yregtxt #yreghtxt h3 {
+            margin: 0;
+            font: bold 107%/114% arial;
+            color: #8C57A1
+        }
+
+        #yregtgen #yregtxt li h3, #yregtpopup #yregtxt li h3 {
+            font: bold 114%/122% arial
+        }
+
+        #yregtgen #yregtxt p, #yregtpopup #yregtxt p {
+            margin: 0 0 0.8em;
+            line-height: 129%
+        }
+
+        #yregtgen #yregtxt .yregbpt li, #yregtpopup #yregtxt .yregbpt li {
+            margin: 0 0 10px 4px;
+            padding: 0 0 10px 22px;
+            background: url(https://s.yimg.com/lq/i/reg/purple_arrow.gif) no-repeat 1px 4px
+        }
+
+        #yregtgen.yregab #yregtxt {
+            width: auto;
+        }
+
+        #yregtgen.yregab #yreghtxt {
+            margin-right: 60px;
+        }
+
+        #yregtpopup.yregab #yregtxt {
+            width: 180px
+        }
+
+        #yregtgen #yregtxt #yreghtxt h2, #yregtpopup #yregtxt #yreghtxt h2 {
+            color: #7A067F
+        }
+
+        .yregbx {
+            z-index: 3;
+            margin-right: 0 !important
+        }
+
+        .flicker h3 span {
+            color: #ff0084;
+            font-weight: bold
+        }
+
+        .flicker h3 a {
+            text-decoration: underline;
+        }
+
+        /* persistency message right above "sign in" bottom */
+        .kmsibold {
+            font-weight: bold;
+            font-size: 114%;
+        }
+
+        input#persistent {
+            margin-bottom: -0em;
+        }
+
+        .subperstxt {
+            line-height: 1.75em;
+        }
+
+        .subperstxt2 {
+            margin: 0 0 0 2em;
+            display: block;
+        }
+
+        .ftrMailLnk {
+            padding-bottom: 10px;
+        }
+
+        .yreglgsb {
+            margin-top: 0
+        }
+
+        #yregwp #yregct #yreglg .yregbxi #yreglgmd {
+            margin-top: 1.75em
+        }
+
+        #yregtgen fieldset {
+            margin-bottom: 2.5em
+        }
+
+        p#sigcopys {
+            text-align: left;
+            font-size: 85%;
+            padding: .4em;
+            margin: .6em .0em 1em 0;
+            border-bottom: 1px dotted #9D9C9D;
+            border-top: 1px dotted #9D9C9D;
+        }
+
+        #sigcopys label {
+            display: block;
+            margin: -1.5em 0 0 2em;
+        }
+
+        #yregtgen #yregct {
+            margin-right: 0px;
+        }
+
+        #yregtgen #yregtxt {
+            margin-left: 5px;
+            margin-right: 255px;
+        }
+
+        #inputs p#usernameP {
+            color: #252525;
+            font-weight: bold;
+            font-size: 14px;
+            padding-top: 0;
+            padding-bottom: 18px;
+        }
+
+        th#thun, th#thpw {
+            text-align: left;
+        }
+
+        #yreglgtb #fun {
+            display: none;
+            margin-top: -10px;
+            padding-bottom: 7px;
+            width: 100%;
+        }
+
+        #fun .b {
+            font-weight: bold;
+        }
+
+        #fun .b, #fun .n, #fun a {
+            vertical-align: top;
+        }
+
+        #fun #caution {
+            height: 16px;
+            width: 16px;
+            padding-right: 3px;
+        }
+
+        p, form, fieldset, h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+            padding: 0
+        }
+
+        fieldset {
+            padding: 10px 0
+        }
+
+        img, fieldset {
+            border: 0
+        }
+
+        legend {
+            display: none
+        }
+
+        label {
+            font-weight: normal;
+            cursor: pointer;
+            cursor: hand
+        }
+
+        a {
+            color: #053799;
+            text-decoration: none
+        }
+
+        a:hover {
+            text-decoration: underline
+        }
+
+        .yregclb:after {
+            content: ".";
+            display: block;
+            font-size: 0px;
+            line-height: 0;
+            height: 0;
+            clear: both;
+            visibility: hidden
+        }
+
+        body {
+            text-align: center;
+            color: #333;
+            margin: 5px 0 0;
+            padding: 0
+        }
+
+        #yregwp {
+            text-align: left;
+            margin: 0 auto;
+            width: 750px
+        }
+
+        #yregmst {
+            margin: 0 0 10px
+        }
+
+        #yreglg {
+            float: right;
+            width: 240px;
+            margin: 0 0 20px;
+        }
+
+        #yregtxt {
+            margin: 0 270px 0 20px
+        }
+
+        #yregtml #yregtxt {
+            margin: 0
+        }
+
+        #yregft {
+            text-align: center;
+            font-size: 77%;
+            padding: 10px 0 0;
+            border-top: 1px solid #777
+        }
+
+        #yregtml #yregft {
+            border-color: #dbd7db
+        }
+
+        .yregbx {
+            border: 1px solid #656565;
+            margin: 0 0 10px;
+            background-color: #f9f9f9
+        }
+
+        #yregtml #yreglg .yregbx {
+            margin-right: 10px;
+        }
+
+        .yregbxi {
+            margin: 11px
+        }
+
+        .top .yregbxi {
+            margin-top: 20px
+        }
+
+        #yreglg h1, #yreglg h2, #yreglg h3 {
+            font-size: 114%;
+            color: #333
+        }
+
+        #yreglg h3 {
+            margin: 0 0 4px
+        }
+
+        #yreglg select, #yreglg input, #yreglg p, #yreglgtb td, #yreglgtb th {
+            font-size: 91%
+        }
+
+        #yreglg p.yreglgsb input {
+            font-size: 107%
+        }
+
+        #yreglg .yregnewssl, #yreglg .yreglgmd {
+            font: 77%/114% verdana
+        }
+
+        #yreglg .yregnewssl {
+            margin: -4px 0 10px
+        }
+
+        #yreglg .yregnewssl span {
+            color: #c00
+        }
+
+        #yreglgtb, #yreglgtb td, #yreglgtb th, #yreglg .yreglgmd, .yreglgsu, .yreglgsb, .yreglgsut, .yregnewssl {
+            text-align: right
+        }
+
+        #yreglgtb {
+            margin: 0 0 8px;
+            padding: 0;
+            width: 215px
+        }
+
+        .yreglgsub {
+            margin: 15px 0 0 30px
+        }
+
+        .yreglgsb {
+            margin: 12px 0 0
+        }
+
+        .yreglgsut {
+            margin: 0 0 3px
+        }
+
+        .yreglgsu a, .yreglgsut a {
+            color: #039;
+            font: bold 114%/114% arial;
+            text-decoration: underline
+        }
+
+        .yreglgsut a {
+            font-size: 122%;
+        }
+
+        h2.yregdnt {
+            margin: 14px 0 0
+        }
+
+        .yregdsilu {
+            border-bottom: 1px solid #999;
+            margin: 0 0 15px;
+            padding: 0 0 8px
+        }
+
+        .yregdlisu, .yreglvpnu {
+            border-top: 1px solid #999;
+            margin: 15px 0 0;
+            padding: 14px 0 10px
+        }
+
+        #yreglg .second h3 {
+            font: bold 100% Arial;
+            color: #333
+        }
+
+        #yreglg .second p {
+            font: 76%/144% verdana
+        }
+
+        #yregbnr {
+            padding: 23px 0 2px
+        }
+
+        #yregbnr {
+            border-bottom: 18px solid #e1f0fd
+        }
+
+        .yregbnrimg {
+            float: left;
+            width: 204px
+        }
+
+        #yregbnrt {
+            margin: 0 0 0 206px;
+            padding: 14px 270px 0 20px;
+            background: #9acef7 url(https://s.yimg.com/lq/i/reg/ymbnr_lb_ne.gif) no-repeat top right
+        }
+
+        #yregbnrti {
+            height: auto;
+            padding-top: 159px;
+        }
+
+        #yregbnrtii {
+            margin-top: -159px
+        }
+
+        #yregbnrtii p {
+            color: #fff;
+            padding: 0 0 5px
+        }
+
+        #yregbnrtii a {
+            color: #fff;
+            font-weight: bold
+        }
+
+        @media all and (min-width: 0px) {
+            html > body #yregbnrti {
+                min-height: 1px
+            }
+        }
+
+        /*Opera 7*/
+        #yregiclst {
+            margin: 0 0 10px;
+            padding: 0 270px 0 0
+        }
+
+        #yregiclst .ic {
+            margin: 18px 0 0;
+            padding: 0
+        }
+
+        #yregiclst h3 {
+            font: normal 122%/152% verdana;
+            color: #64236a
+        }
+
+        #yregiclst cite {
+            font-style: normal;
+            line-height: 129%
+        }
+
+        #yregiclst a {
+            color: #3385d6
+        }
+
+        #yregintusr {
+            margin: 0 0 20px;
+        }
+
+        #yregintusr h4 {
+            font-size: 100%;
+            margin: 0 0 4px;
+            color: #333;
+            font-family: arial
+        }
+
+        #yregintusr select, #yregintusr input {
+            font-size: 92%
+        }
+
+        .hiddenlayer {
+            display: none
+        }
+
+        .showlayer {
+            display: block
+        }
+
+        #hl_banner, #hl_list, #h2_list {
+            position: absolute;
+            width: 470px;
+            z-index: 1000;
+            background-color: #ccc
+        }
+
+        .yreginhdly {
+            position: relative;
+            z-index: 1;
+            right: 2px;
+            bottom: 2px;
+            padding: 2px;
+            background-color: #fff;
+            border: 1px solid #61a7de;
+            color: #333;
+            font-family: verdana
+        }
+
+        .yreginhdly ul {
+            margin: 5px 0 1em;
+            padding: 0 0 0 30px
+        }
+
+        .yreginhdly li {
+            margin: 0;
+            font-size: 77%;
+            list-style-type: square
+        }
+
+        .yreginhdly h4 {
+            margin: 0 0 10px;
+            padding: 4px 10px;
+            background: #61a7de;
+            color: #fff;
+            font: bold 77% verdana;
+            text-transform: uppercase
+        }
+
+        #yregtml .yreginhdly p {
+            color: #333;
+            padding: 0 9px 1em;
+            font: normal 77%/120% verdana
+        }
+
+        #yregtml .yreginhdly p strong {
+            color: #00587A
+        }
+
+        #yregtml .close a {
+            color: #fff
+        }
+
+        #yregtml #yregbnrtii .yreginhdly p {
+            color: #333
+        }
+
+        p.close {
+            margin: 5px 0 0;
+            font-size: 77%;
+            line-height: 100%;
+            position: absolute;
+            top: 2px;
+            right: 10px
+        }
+
+        .yreglegal {
+            font-style: italic
+        }
+
+        .yregnlnk {
+            text-decoration: underline;
+            cursor: pointer;
+            cursor: hand
+        }
+
+        .knob {
+            position: absolute;
+            top: -6px;
+            _top: -5px;
+            width: 13px;
+            height: 8px;
+            background: url(https://s.yimg.com/lq/i/reg/ymknb_lb.gif) no-repeat top left
+        }
+
+        #hl_banner .knob {
+            left: 255px
+        }
+
+        #hl_list .knob {
+            left: 40px
+        }
+
+        #h2_list .knob {
+            left: 170px
+        }
+
+        .lblue #yregbnrt {
+            background-color: #9acef7;
+            background-image: https: / / s . yimg . com /lq/ i /reg/ ymbnr_lb_ne . gif
+        }
+
+        .lblue #yregbnr {
+            border-color: #e1f0fd
+        }
+
+        .lblue #yregbnrtii p {
+            color: #f5fafe
+        }
+
+        .lblue #yregbnrtii a {
+            color: #144f7c
+        }
+
+        .lblue .yreginhdly {
+            border-color: #61a7de
+        }
+
+        .lblue .yreginhdly h4 {
+            background: #61a7de
+        }
+
+        .lblue .knob {
+            background-image: url(https://s.yimg.com/lq/i/reg/ymknb_lb.gif)
+        }
+
+        #yregtml .lblue .showlayer p strong {
+            color: #61a7de
+        }
+
+        .lgreen #yregbnrt {
+            background-color: #9dc338;
+            background-image: url(https://s.yimg.com/lq/i/reg/ymbnr_lg_ne.gif)
+        }
+
+        .lgreen #yregbnr {
+            border-color: #e1edc3
+        }
+
+        .lgreen #yregbnrtii p {
+            color: #f5f9eb
+        }
+
+        .lgreen #yregbnrtii a {
+            color: #0f7048
+        }
+
+        .lgreen .yreginhdly {
+            border-color: #bbda68
+        }
+
+        .lgreen .yreginhdly h4 {
+            background: #bbda68
+        }
+
+        .lgreen .knob {
+            background-image: url(https://s.yimg.com/lq/i/reg/ymknb_lg.gif)
+        }
+
+        #yregtml .lgreen .showlayer p strong {
+            color: #0f7048
+        }
+
+        .bluegreen #yregbnrt {
+            background-color: #74b46a;
+            background-image: url(https://s.yimg.com/lq/i/reg/ymbnr_bg_ne.gif)
+        }
+
+        .bluegreen #yregbnr {
+            border-color: #d5e8d2
+        }
+
+        .bluegreen #yregbnrtii p {
+            color: #f1f8f0
+        }
+
+        .bluegreen #yregbnrtii a {
+            color: #f9faaf
+        }
+
+        .bluegreen .yreginhdly {
+            border-color: #94c78c
+        }
+
+        .bluegreen .yreginhdly h4 {
+            background: #94c78c
+        }
+
+        .bluegreen .knob {
+            background-image: url(https://s.yimg.com/lq/i/reg/ymknb_bg.gif)
+        }
+
+        #yregtml .bluegreen .showlayer p strong {
+            color: #0f7048
+        }
+
+        .rootbeer #yregbnrt {
+            background-color: #894611;
+            background-image: url(https://s.yimg.com/lq/i/reg/ymbnr_rb_ne.gif)
+        }
+
+        .rootbeer #yregbnr {
+            border-color: #dbc7b7
+        }
+
+        .rootbeer #yregbnrtii p {
+            color: #fff2cb
+        }
+
+        .rootbeer #yregbnrtii a {
+            color: #f9faaf
+        }
+
+        .rootbeer .yreginhdly {
+            border-color: #b99b83
+        }
+
+        .rootbeer .yreginhdly h4 {
+            background: #b99b83
+        }
+
+        .rootbeer .knob {
+            background-image: url(https://s.yimg.com/lq/i/reg/ymknb_rb.gif)
+        }
+
+        #yregtml .rootbeer .showlayer p strong {
+            color: #894611
+        }
+
+        .orange #yregbnrt {
+            background-color: #f7582e;
+            background-image: url(https://s.yimg.com/lq/i/reg/ymbnr_or_ne.gif)
+        }
+
+        .orange #yregbnr {
+            border-color: #fdcdc0
+        }
+
+        .orange #yregbnrtii p {
+            color: #feefeb
+        }
+
+        .orange #yregbnrtii a {
+            color: #f1e27b
+        }
+
+        .orange .yreginhdly {
+            border-color: #ff9678
+        }
+
+        .orange .yreginhdly h4 {
+            background: #ff9678
+        }
+
+        .orange .knob {
+            background-image: url(https://s.yimg.com/lq/i/reg/ymknb_or.gif)
+        }
+
+        #yregtml .orange .showlayer p strong {
+            color: #c83b13
+        }
+
+        .deepblue #yregbnrt {
+            background-color: #016a99;
+            background-image: url(https://s.yimg.com/lq/i/reg/ymbnr_db_ne.gif)
+        }
+
+        .deepblue #yregbnr {
+            border-color: #b2d2e0
+        }
+
+        .deepblue #yregbnrtii p {
+            color: #e7f1f3
+        }
+
+        .deepblue #yregbnrtii a {
+            color: #fdc266
+        }
+
+        .deepblue .yreginhdly {
+            border-color: #1c86ae
+        }
+
+        .deepblue .yreginhdly h4 {
+            background: #1c86ae
+        }
+
+        .deepblue .knob {
+            background-image: url(https://s.yimg.com/lq/i/reg/ymknb_db.gif)
+        }
+
+        #yregtml .deepblue .showlayer p strong {
+            color: #036999
+        }
+
+        .purple #yregbnrt {
+            background-color: #a566ad;
+            background-image: url(https://s.yimg.com/lq/i/reg/ymbnr_pr_ne.gif)
+        }
+
+        .purple #yregbnr {
+            border-color: #e4d1e6
+        }
+
+        .purple #yregbnrtii p {
+            color: #f6f0f7
+        }
+
+        .purple #yregbnrtii a {
+            color: #fdc266
+        }
+
+        .purple .yreginhdly {
+            border-color: #c799cc
+        }
+
+        .purple .yreginhdly h4 {
+            background: #c799cc
+        }
+
+        .purple .knob {
+            background-image: url(https://s.yimg.com/lq/i/reg/ymknb_pr.gif)
+        }
+
+        #yregtml .purple .showlayer p strong {
+            color: #a566ad
+        }
+
+        .yellow #yregbnrt {
+            background-color: #ff9700;
+            background-image: url(https://s.yimg.com/lq/i/reg/ymbnr_yl_ne.gif)
+        }
+
+        .yellow #yregbnr {
+            border-color: #ffe0b2
+        }
+
+        .yellow #yregbnrtii p {
+            color: #fff5e6
+        }
+
+        .yellow #yregbnrtii a {
+            color: #016a99
+        }
+
+        .yellow .yreginhdly {
+            border-color: #efae4d
+        }
+
+        .yellow .yreginhdly h4 {
+            background: #efae4d
+        }
+
+        .yellow .knob {
+            background-image: url(https://s.yimg.com/lq/i/reg/ymknb_yl.gif)
+        }
+
+        #yregtml .yellow .showlayer p strong {
+            color: #916714
+        }
+
+        .oxblood #yregbnrt {
+            background-color: #900000;
+            background-image: url(https://s.yimg.com/lq/i/reg/ymbnr_ob_ne.gif)
+        }
+
+        .oxblood #yregbnr {
+            border-color: #ddb2b2
+        }
+
+        .oxblood #yregbnrtii p {
+            color: #f4e6e6
+        }
+
+        .oxblood #yregbnrtii a {
+            color: #ff9700
+        }
+
+        .oxblood .yreginhdly {
+            border-color: #800000
+        }
+
+        .oxblood .yreginhdly h4 {
+            background: #800000
+        }
+
+        .oxblood .knob {
+            background-image: url(https://s.yimg.com/lq/i/reg/ymknb_ob.gif)
+        }
+
+        #yregtml .oxblood .showlayer p strong {
+            color: #900000
+        }
+
+        #yregtml .mailplus {
+            padding-right: 160px;
+            background: url(https://s.yimg.com/lq/i/us/pim/pr/trap/lo_mailplus_1.gif) no-repeat 360px 50%;
+            height: auto;
+            padding-top: 36px
+        }
+
+        #yregtml .mailplus div {
+            margin-top: -36px
+        }
+
+        #yregtml .spamguard {
+            padding-right: 113px;
+            background: url(https://s.yimg.com/lq/i/reg/sp_sguard60_2.gif) no-repeat 407px 50%;
+            height: auto;
+            padding-top: 52px
+        }
+
+        #yregtml .spamguard div {
+            margin-top: -52px
+        }
+
+        #yregtml .addressbook {
+            padding-right: 152px;
+            background: url(https://s.yimg.com/lq/i/us/pim/sp/qb_xsmdiagram1.gif) no-repeat 368px 50%;
+            height: auto;
+            padding-top: 50px
+        }
+
+        #yregtml .addressbook div {
+            margin-top: -50px
+        }
+
+        #yregtml .messenger {
+            padding-right: 120px;
+            background: url(https://s.yimg.com/lq/i/us/pim/sp/mantle/sp_msgr60_1.gif) no-repeat 400px 50%;
+            height: auto;
+            padding-top: 60px
+        }
+
+        #yregtml .messenger div {
+            margin-top: -60px
+        }
+
+        #yregtml .photos {
+            padding-right: 130px;
+            background: url(https://s.yimg.com/lq/i/us/pim/sp/mantle/sp_photos_1.gif) no-repeat 390px 50%;
+            height: auto;
+            padding-top: 60px
+        }
+
+        #yregtml .photos div {
+            margin-top: -60px
+        }
+
+        #yregtml .mobile {
+            padding-right: 113px;
+            background: url(https://s.yimg.com/lq/i/us/pim/sp/mantle/sp_mobile_1.gif) no-repeat 407px 50%;
+            height: auto;
+            padding-top: 60px
+        }
+
+        #yregtml .mobile div {
+            margin-top: -60px
+        }
+
+        #yregtml .antivirus {
+            padding-right: 135px;
+            background: url(https://s.yimg.com/lq/i/reg/norton2006.gif) no-repeat 394px 50%;
+            height: auto;
+            padding-top: 22px
+        }
+
+        #yregtml .antivirus div {
+            margin-top: -22px
+        }
+
+        #yregtml .cnet {
+            padding-right: 110px;
+            background: url(https://s.yimg.com/lq/i/reg/EC_aug04_39x72.gif) no-repeat 410px 50%;
+            height: auto;
+            padding-top: 72px
+        }
+
+        #yregtml .cnet div {
+            margin-top: -72px
+        }
+
+        #yregtml .pcmag {
+            padding-right: 115px;
+            background: url(https://s.yimg.com/lq/i/us/pim/lgn/ymail_ec_logo_1.gif) no-repeat 405px 50%;
+            height: auto;
+            padding-top: 94px;
+        }
+
+        #yregtml .pcmag div {
+            margin-top: -94px;
+        }
+
+        #yregtml #yregiclst .ic {
+            margin-bottom: 20px;
+            min-height: 1px
+        }
+
+        #yregmain {
+            width: 218px;
+            margin-right: 0;
+        }
+
+        .top {
+            position: relative;
+        }
+
+        .v5bd {
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        #uncheck span {
+            font-weight: bold;
+            background-color: #f99;
+            padding: 0 2px;
+        }
+
+        #uncheck a {
+            color: #1243A0;
+            text-decoration: none;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="https://s.yimg.com/lq/lib/reg/css/container-min-1.css">
+
+    <style type="text/css">
+        #captcha, #captcha_c, #captchaDiv {
+            z-index: 6;
+            top: -60px;
+        }
+
+        #captcha #captchaV5Header {
+            overflow: hidden;
+        }
+
+        #captchaErr {
+            font-size: 11px;
+            color: #E10707;
+            background: url("https://s.yimg.com/lq/i/reg/login/loginsprite_2_18_2010.png") left -199px no-repeat;
+            padding- left: 25px;
+            height: 15px;
+        }
+
+        .yui-skin-sam .yui-panel-container.shadow .underlay {
+            position: fixed;
+        }
+
+        #submitC .primaryCta {
+            width: auto;
+        }
+
+        .pwqaContent .primaryCta {
+            padding-bottom: 5px;
+        }
+
+        #submitC #cdiv {
+            position: absolute;
+            bottom: 13px;
+            right: 13px;
+        }
+
+        html body div#captcha_mask {
+            display: none !important
+        }
+
+        .yui-skin-sam .yui-panel .bd {
+            padding-top: 13px
+        }
+
+        .yui-skin-sam #captcha .hd, .yui-skin-sam #captcha .bd {
+            background: none
+        }
+
+        .yui-skin-sam #captcha .bd {
+            height: 320px !important;
+        }
+
+        /*.yui-skin-sam #captcha {background-color: #F0F4F8;}*/
+        .yui-skin-sam #captcha .bd, .yui-skin-sam #captcha .hd {
+        }
+
+        .yui-skin-sam #captcha .hd {
+            border-bottom: 1px solid #D5D5D5;
+            font-size: 13px;
+            color: #5B7EA1;
+        }
+
+        #captchaV5 {
+            margin-left: 72px
+        }
+
+        .yui-skin-sam .yui-panel {
+            border-style: none;
+        }
+
+        /*#captcha_c #captcha {border: 10px solid #8DA6B9;}*/
+
+        /* New css for panel*/
+
+        .yui-skin-sam #captcha {
+            background-color: #777777;
+            border: 0px;
+            border-radius: 5px;
+            box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.6);
+            color: #3f3f3f;
+            padding-bottom: 1px;
+        }
+
+        .yui-skin-sam #captcha .hd {
+            padding-right: 30px;
+            border: 0px;
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#999999', endColorstr='#777777');
+            background: -webkit-gradient(linear, left top, left bottom, from(#999999), to(#777777));
+            background: -moz-linear-gradient(top, #999999, #777777);
+            border-radius: 5px;
+            overflow: auto;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            color: #FFFFFF;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+        }
+
+        .yui-skin-sam .container-close {
+            background: url("https://s.yimg.com/lq/i/reg/icn_sprite_close-_6_21_11.gif") no-repeat scroll -2px 0 transparent;
+            right: 0px;
+            top: 15px;
+        }
+
+        .yui-skin-sam #captcha .bd {
+            border: 0px;
+            background-color: #FFFFFF;
+            border-radius: 5px 5px 5px 5px;
+            margin-bottom: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+            padding-bottom: 40px;
+        }
+
+        .lockedPage, .aeaPhoneVerify .yAbuseVoiceSMSCaptcha .VoiceSMSHeader .VoiceSMSInstruction, .aeaPhoneVerify .yAbuseVoiceSMSCaptcha .VoiceSMSHeader .VoiceSMSPrompt,
+        .aeaEmailVerify, .aeaContent, .pwqaContent {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            color: #454545;
+        }
+
+        .sec-chal-popup {
+            position: absolute;
+            width: 440px;
+            right: 10px;
+            margin-top: 5px;
+            z-index: 9999;
+        }
+
+        .sec-chal-popup p {
+            margin-bottom: 5px;
+        }
+
+        .sec-chal-popup .clspopup {
+            background: url("https://s.yimg.com/lq/i/reg/sprite_pg_20100719_ltr.png") no-repeat scroll left -689px transparent;
+            cursor: pointer;
+
+            display: block;
+            height: 16px;
+            padding: 0;
+            position: absolute;
+            right: 6px;
+            top: 6px;
+            width: 13px;
+        }
+
+        .hide-offscreen {
+            position: absolute;
+            top: -999em
+        }
+
+        .nodisp {
+            display: none;
+        }
+
+        .sec-chal-popup .pointer-up {
+            background-image: url("https://s.yimg.com/lq/i/reg/sprite_pg_slate_20100809_ltr.png");
+            background-position: left -3583px;
+            background- repeat: no-repeat;
+            display: block;
+            height: 8px;
+            position: absolute;
+            top: -6px;
+            width: 10px;
+        }
+
+        #learn_more_content p, #pwqa-popup .sec-chal-content p {
+            font-size: 12px;
+            padding-right: 8px;
+        }
+
+        .sec-chal-popup .sec-chal-content {
+            background-color: #EFF3F5;
+            border: 1px solid #333333;
+            padding: 10px;
+            position: relative;
+        }
+
+        .aeaContent .sec-chal-popup #learn_more_content .pointer-up {
+            left: 135px;
+        }
+
+        .pwqaContent .pwqa-question {
+            padding-top: 10px;
+            padding-left: 0px;
+        }
+
+        .pwqaContent .pwqa-question span {
+            display: block;
+            float: left;
+            padding-right: 10px;
+            text-align: right;
+            width: 190px;
+        }
+
+        .pwqaContent .pwqa-question span .small {
+            font-size: 85%;
+        }
+
+        .aeaPhoneVerify #submitC #cdiv, .aeaContent #submitC #cdiv {
+            margin-top: 20px;
+            width: 100%;
+            text-align: right;
+        }
+
+        .pwqaContent #verifybtn {
+            margin-top: 5px;
+            text-align: center;
+        }
+
+        .aeaPhoneVerify #submitC #cdiv .primaryCta, .aeaEmailVerify #submitC #cdiv .primaryCta, .aeaContent #submitC #cdiv .primaryCta, .pwqaContent #submitC #cdiv
+        .primaryCta {
+            width: auto;
+            margin-right: 10px;
+            overflow: visible;
+        }
+
+        .aeaPhoneVerify #submitC #cdiv .secondaryCta, .aeaEmailVerify #submitC #cdiv .secondaryCta, .aeaContent #submitC #cdiv .secondaryCta, .pwqaContent #submitC #cdiv
+        .secondaryCta {
+            padding-top: 5px;
+        }
+
+        .pwqaContent .pwqa-aea-text {
+            padding-top: 10px;
+        }
+
+        .pwqaContent .pwqa-aea-text #receivebtn {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .pwqaContent .pwqa-aea-text .center {
+            padding-bottom: 15px;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .pwqaContent .pwqa-aea-text .center .lthru {
+            text-decoration: line-through;
+            color: #B1B1B1;
+        }
+
+        .pwqaContent .pwqa-aea-text .center .or {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .aeaContent .mobileList {
+            margin-top: 30px;
+        }
+
+        .aeaContent .adjust-margin {
+            margin-top: 15px;
+        }
+
+        .aeaContent .aeaList {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .aeaContent .aeaList, .aeaContent .mobileList {
+            padding-left: 60px;
+        }
+
+        .aeaContent .aeaList .be, .aeaContent .mobileList .bm {
+            float: left;
+            width: 100px;
+        }
+
+        .aeaContent ul {
+            margin-top: 5px;
+            margin-left: 0px;
+            padding-left: 100px;
+        }
+
+        .aeaContent ul li {
+            list-style-type: none;
+            padding-bottom: 5px
+        }
+
+        .aeaContent ul li input {
+            margin-right: 10px;
+            height: 13px !important;
+            border: 0 !important;
+            outline-style: none !important;
+            *vertical-align: top !important;
+        }
+
+        #pwqa-popup {
+            margin-top: 18px;
+        }
+
+        #pwqa-popup #pwqa_popup_content .pointer-up {
+            left: 365px;
+        }
+
+        #pwqa-popup #pwqa_popup_content ul {
+            padding-left: 20px;
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+
+        #pwqa-popup #pwqa_popup_content ul li {
+            padding-bottom: 5px;
+            list-style-type: disc;
+        }
+
+        .aeaContent .charges {
+            font-size: 85%;
+        }
+
+        .pwqaContent .next-line {
+            display: block;
+        }
+
+        .aeaContent .strong, .pwqaContent .strong, .aeaEmailVerify .strong, .aeaContent ul li .strong {
+            font-weight: bold;
+        }
+
+        .aeaContent .strong a, .pwqaContent .strong a, .aeaEmailVerify .strong a, .aeaContent ul li .strong a {
+            font-weight: normal;
+        }
+
+        .aeaEmailVerify .spacer, .aeaContent .spacer, .aeaContent ul li .strong span {
+            padding: 0 5px;
+        }
+
+        .aeaEmailVerify .aeaEnterCode {
+            margin-top: 20%;
+            margin-left: 60px;
+        }
+
+        .aeaEmailVerify .aeaEnterCode #aeaEmailCode {
+            width: 100px;
+        }
+
+        .aeaPhoneVerify #captchaV5 {
+            margin-left: 0px;
+        }
+
+        .aeaPhoneVerify .yAbuseVoiceSMSCaptcha .VoiceSMSHeader {
+            padding-left: 0px;
+        }
+
+        .aeaPhoneVerify .yAbuseVoiceSMSCaptcha .VoiceSMSInputBox {
+            padding-top: 40px;
+            padding-left: 0px;
+        }
+
+        .aeaPhoneVerify .yAbuseVoiceSMSCaptcha .VoiceSMSInputBox #captchaV5CodePrompt {
+            float: left;
+        }
+
+        .aeaPhoneVerify .yAbuseVoiceSMSCaptcha .VoiceSMSHelp {
+            float: none;
+            font-size: 14px;
+        }
+
+        .aeaPhoneVerify #submitC #cdiv {
+            width: 100%;
+        }
+
+        .error2 {
+            background-image: url("https://s.yimg.com/lq/i/reg/login/loginsprite_2_18_2010.png");
+            background-position: left -197px;
+            background-repeat: no-repeat;
+            padding- left: 24px;
+            padding-bottom: 5px;
+            color: #E10707;
+            font-size: 12px;
+            font-weight: bold;
+            padding-top: 3px;
+        }
+
+        #lockedErr {
+            margin-top: 5px;
+        }
+
+        #lockedValidationErr {
+            visibility: hidden;
+        }
+
+        .lockedContent {
+            padding-top: 10px;
+        }
+
+        #inputs .aeaPhoneVerify label {
+            font-size: 13px;
+            display: inline;
+        }
+
+        .aeaPhoneVerify .yAbuseVoiceSMSCaptcha .OOBHelp, .aeaPhoneVerify .yAbuseVoiceSMSCaptcha .OOBHeader .OOBInstruction, .aeaPhoneVerify .yAbuseVoiceSMSCaptcha
+        .captchaNoOutsidePadding .captchaCodeSent, .aeaPhoneVerify .yAbuseVoiceSMSCaptcha .OOBHeader .OOBPrompt {
+            font-size: 13px;
+        }
+
+        .aeaPhoneVerify .yAbuseVoiceSMSCaptcha .captchaNoOutsidePadding .OOBFooter {
+            position: absolute;
+            bottom: 0px;
+            left: 15px;
+            overflow: hidden;
+            z-index: 999
+        }
+
+        .aeaPhoneVerify .yAbuseVoiceSMSCaptcha {
+            width: 440px;
+        }
+
+        .aeaPhoneVerify .yAbuseVoiceSMSCaptcha .captchaDisplayRL {
+            width: 430px;
+        }
+
+        .aeaPhoneVerify .yAbuseVoiceSMSCaptcha .captchaNoOutsidePadding .OOBContent {
+            width: 440px;
+        }
+
+        .cpwcCaptcha #captchaV5VoiceSMSCaptchaDestInput #captchaV5PhoneNum, .cpwcCaptcha #captchaV5OOBAnswerBox #captchaV5Answer {
+            width: 120px;
+        }
+
+        .cpwcCaptcha {
+            font-size: 120%;
+        }
+
+        .cpwcCaptcha #captchaV5CodePrompt {
+            display: inline;
+        }
+
+        .cpwcCaptcha #submitC #cdiv {
+            position: absolute;
+            right: 180px;
+        }
+
+        #submitC #cdiv .marginb {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .OOBButtons button {
+            background: none !important;
+            background-color: #6E329D !important;
+            background-image: -moz-linear-gradient(left center, #6E329D 0%, #6E329D 100%) !important;
+            border: 1px solid #522675 !important;
+            border-radius: 2px 2px 2px 2px !important;
+            color: #fff !important;
+            padding: 4px !important;
+        }
+
+        .lockedContent2 .next-line {
+            display: block;
+            padding: 1em 0;
+            font-size: 100%;
+        }
+
+        .lockedContent2 .ref-num {
+            font-size: 110%;
+            font-weight: bold;
+        }
+    </style>
+    <!--[if lt IE 7]>
+    <style type="text/css">
+        .yui-skin-sam .yui-panel-container.shadow .underlay {
+            display: none;
+        }
+
+        .yui-skin-sam #captchaDiv .yui-overlay-iframe#captcha_f {
+            width: 1000px !important;
+            height: 1000px !important;
+            top: 0px !important;
+            right: 0px;
+        }
+    </style>
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <style type="text/css">
+        /*.aeaContent #submitC #cdiv {width:54%;}
+        .aeaPhoneVerify #submitC #cdiv {width:54%;}
+        .aeaEmailVerify #submitC #cdiv {width:54%;}
+        .yAbuseVoiceSMSCaptcha .VoiceSMSPrompt button {margin-left:5px;}
+        */
+        .aeaContent .sec-chal-popup #learn_more_content .pointer-up {
+            left: 70px;
+        }
+    </style>
+    <![endif]-->
+
+
+    <style type="text/css">
+
+
+        .top {
+            position: relative
+        }
+
+        #antiphish {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+        }
+
+        #antiphish.dogear {
+            right: 0px;
+            top: 0px;
+        }
+
+        #antiphish a {
+            font-size: 92%;
+        }
+
+        img.picture {
+            border: 2px solid
+        }
+
+    </style>
+
+
+    <!--[if gt IE 6]>
+    <style type="text/css">
+        .yregclb, .yregbxi, .yregbx {
+            height: 1%
+        }
+
+        #yreglgtb td {
+            text-align: left
+        }
+
+        #yregtxt #banner div {
+            position: static
+        }
+
+        /* ie z-index context stacking bug work-around */
+        #yregtpopup #yregtxt {
+            float: left;
+        }
+
+        #yregct {
+            padding: 0 0 30px
+        }
+
+        .yregbx {
+            width: 100%
+        }
+    </style>
+    <![endif]-->
+
+
+    <style type="text/css">
+
+        #yreglgtb, #yreglgtb th {
+            text-align: left;
+            width: 100%;
+        }
+
+        #yreglgtb td {
+            width: 179px;
+            text-align: left;
+            padding: 0 0 16px 0
+        }
+
+        #yreglgtb td input {
+            width: 179px
+        }
+
+        .dbidTip {
+            padding: 3px 0 0 0;
+            font-size: 85%
+        }
+    </style>
+
+
+    <style type="text/css">
+        div.yregdsilu h2.yregdnt, div.yregdsilu p.yregsueasy {
+            width: 110px
+        }
+
+        /* persistency message right above "sign in" bottom */
+        /* em.nwred a {font-style: normal;font-size: 85%;top:0;position:relative;} */
+        .kmsibold {
+            font-weight: bold;
+            font-size: 114%;
+        }
+
+        p#sigcopys {
+            text-align: left;
+            font-size: 85%;
+            padding: .4em;
+            margin: .6em .4em 1em 0;
+            border-bottom: 1px dotted #9D9C9D;
+            border-top: 1px dotted #9D9C9D;
+        }
+
+        input#persistent {
+            margin-bottom: -0em;
+        }
+
+        .subperstxt {
+            line-height: 1.75em;
+        }
+
+        .subperstxt2 {
+            margin: 0 0 0 2em;
+            display: block;
+        }
+
+        /* #yregft p.yregfb { font-size:120%; padding-bottom: 5px; padding-up: 5px} */
+    </style>
+    <style type="text/css">
+
+
+        .top {
+            position: relative
+        }
+
+        #antiphish {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+        }
+
+        #antiphish.dogear {
+            right: 0px;
+            top: 0px;
+        }
+
+        #antiphish a {
+            font-size: 92%;
+        }
+
+        img.picture {
+            border: 2px solid
+        }
+
+    </style>
+
+    <!--[if gt IE 6]>
+    <style type="text/css">
+        #antiphish.dogear {
+            right: 1px;
+        }
+    </style>
+    <![endif]-->
+
+    <!--[if IE]>
+    <style type="text/css">
+        .yregclb {
+            height: 1%
+        }
+
+        #yregbnrti {
+            height: 159px;
+            padding-top: 0
+        }
+
+        #yregbnrtii {
+            margin-top: 0
+        }
+
+        .knob {
+            top: -5px
+        }
+
+        #yregtml .mailplus {
+            height: 60px;
+            padding-top: 0
+        }
+
+        #yregtml .mailplus div {
+            margin-top: 0
+        }
+
+        #yregtml .spamguard {
+            height: 52px;
+            padding-top: 0
+        }
+
+        #yregtml .spamguard div {
+            margin-top: 0
+        }
+
+        #yregtml .addressbook {
+            height: 50px;
+            padding-top: 0
+        }
+
+        #yregtml .addressbook div {
+            margin-top: 0
+        }
+
+        #yregtml .messenger {
+            height: 60px;
+            padding-top: 0
+        }
+
+        #yregtml .messenger div {
+            margin-top: 0
+        }
+
+        #yregtml .photos {
+            height: 60px;
+            padding-top: 0
+        }
+
+        #yregtml .photos div {
+            margin-top: 0
+        }
+
+        #yregtml .mobile {
+            height: 60px;
+            padding-top: 0
+        }
+
+        #yregtml .mobile div {
+            margin-top: 0
+        }
+
+        #yregtml .antivirus {
+            height: 60px;
+            padding-top: 0
+        }
+
+        #yregtml .antivirus div {
+            margin-top: 0
+        }
+
+        #yregtml .cnet {
+            height: 72px;
+            padding-top: 0
+        }
+
+        #yregtml .cnet div {
+            margin-top: 0
+        }
+
+        #yregtml .pcmag {
+            height: 94px;
+            padding-top: 0
+        }
+
+        #yregtml .pcmag div {
+            margin-top: 0
+        }
+
+    </style>
+    <![endif]-->
+    <!--[if IE 7]>
+    <style type="text/css">
+        .knob {
+            top: -6px
+        }
+
+        #antiphish.dogear {
+            top: 0;
+            right: 0;
+        }
+
+        #antiphish {
+            right: 5px;
+        }
+    </style>
+    <![endif]-->
+
+    <!--[if lte IE 6]>
+    <style type="text/css">
+        .yregclb {
+            height: 30em
+        }
+
+        #yregtxt {
+            height: 1%
+        }
+
+        p#sigcopys {
+            margin-right: 0.2em
+        }
+    </style>
+    <![endif]-->
+
+
+    <style type="text/css">
+        #yregtxt {
+            width: 66%;
+            overflow: hidden
+        }
+
+        #yregbnr {
+            padding-top: 0
+        }
+
+        #yregbnr #yregbnrti #yregbnrtii {
+            width: 240px
+        }
+
+        #yregiclst {
+            padding-right: 0
+        }
+    </style>
+    <!--[if lte IE 7]>
+    <style type="text/css">
+        #yregbnr #yregbnrti {
+            margin-top: -160px
+        }
+
+        #yregtxt {
+            height: auto
+        }
+    </style>
+    <![endif]-->
+
+
+    <style type="text/css">
+
+        #yreglgtb, #yreglgtb th {
+            text-align: left;
+            width: 100%;
+        }
+
+        #yreglgtb td {
+            width: 179px;
+            text-align: left;
+            padding: 0 0 16px 0
+        }
+
+        #yreglgtb td input {
+            width: 179px
+        }
+
+        .dbidTip {
+            padding: 3px 0 0 0;
+            font-size: 85%
+        }
+    </style>
+
+
+    <style type="text/css">
+        html, body {
+            text-align: center;
+            width: 100%;
+        }
+
+        #adFrame {
+            position: static;
+            visibility: hidden;
+        }
+
+        #mainBox {
+            position: relative;
+            top: 11px;
+            width: 100%;
+            height: 960px;
+            min-height: 680px;
+            margin: 0 auto;
+            background-color: transparent;
+            text-align: left;
+        }
+
+        #iframeHolder {
+            height: 1024px;
+            width: 1920px;
+            margin: 0 auto 0 -960px;
+            position: absolute;
+            top: 61px;
+            left: 50%;
+            overflow: visible;
+            direction: ltr;
+        }
+
+        #loginHolder {
+            height: 100%;
+            min-width: 262px;
+            max-width: 840px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        /*#loginHolder{height:100%;width:800px;margin:0 auto;position:relative;}*/
+        /* #hdBg{background:transparent url(https://s.yimg.com/lq/lib/uh/15/uh_sprites_1.5-1.0.3.png) repeat-x;height:61px;} */
+        #hdBg {
+            min-height: 61px;
+            height: auto !important;
+            height: 61px;
+            max-width: 1440px;
+            min-width: 970px;
+            width: auto !important;
+            width: 970px;
+            margin: 0 auto
+        }
+
+        #hdBg #mem_hd {
+            width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 5;
+        }
+
+        #hdBg #mem_hd #ygmaheader .sp {
+            height: 40px;
+            padding-bottom: 0;
+        }
+
+        #hdBg #ygma .bd {
+            background-image: none;
+            width: 782px;
+            margin: 0 auto;
+        }
+
+        #hdBg #yUnivHead {
+            width: 758px;
+        }
+
+        #footer {
+            background-color: #FFF;
+            _top: 100%;
+            bottom: 0px;
+            height: 35px;
+            left: 0px;
+            width: 100%;
+            position: fixed;
+            z-index: 3;
+        }
+
+        #footer #feedback {
+            font-size: 10px;
+        }
+
+        #footer #mem_ft {
+            margin-top: 0;
+        }
+
+        #leftContent {
+            position: absolute;
+            left: 0;
+        }
+
+        /*#loginBox{height:600px;width:240px;margin-left:580px;}*/
+        #loginBox {
+            height: 600px;
+        }
+
+        #loginBox #yreglg .yregbx {
+            border: 3px solid rgba(153, 153, 153, 0.75);
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+        }
+
+        #yregmain {
+            background-position: 56px 0px;
+        }
+
+        #yreghtxt {
+            margin-top: 1em;
+        }
+
+        #lisu {
+            margin-left: 11px;
+        }
+
+        .yregbxi #lisu {
+            margin-left: 0;
+        }
+
+        #static {
+            width: 525px;
+        }
+
+        #ylbpix {
+            background: transparent url(https://login.yahoo.com/i/reg/cs.gif) no-repeat
+        }</style>
+
+    <!--[if IE 6]>
+    <style type='text/css'>
+        #loginBox {
+            float: right;
+            margin-left: 0;
+        }
+
+        #iframeHolder {
+            height: 1024px;
+        }
+    </style>
+    <![endif]-->
+    <!--[if IE]>
+    <style type='text/css'>
+        #loginBox #yreglg .yregbx {
+            border: 3px solid #999999;
+        }
+    </style>
+    <![endif]-->
+
+    <style>
+        #yreglg {
+            width: 262px !important;
+        }
+
+        #yregtgen #yregtxt {
+            margin-right: 265px;
+        }
+
+        .mm-lgbx {
+            border: 2px solid rgb(153, 153, 153);
+            border: 2px solid rgba(153, 153, 153, 0.75);
+            border-radius: 2px;
+            -moz-border-radius: 2px;
+            -webkit-border-radius: 2px;
+            -khtml-border-radius: 2px;
+            -o-border-radius: 2px;
+            z-index: 3;
+            font-size: 13px !important;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background-color: #ffffff;
+        }
+
+        .mm-lgbx .lgbx {
+            padding: 20px;
+        }
+
+        .mm-lgbx .lg-sprite {
+            background: url(https://s.yimg.com/sf/assets/dl/images/yahoo-login-sprite-1.4.png) no-repeat;
+        }
+
+        .mm-lgbx .lgbx-logo {
+            width: 138px;
+            height: 30px;
+            text-align: center;
+            margin: 10px 0px 27px 40px;
+            background-position: 0px -4px;
+            position: relative;
+        }
+
+        .mm-lgbx .lgbx-seal-logo {
+            margin-left: 0px;
+            background-position: -5px -72px;
+            margin-bottom: 43px;
+            top: 11px;
+        }
+
+        .mm-lgbx .lgbx-seal-new-logo {
+            margin-left: -15px;
+            margin-bottom: 43px;
+            top: 11px;
+        }
+
+        .mm-lgbx #fsLogin {
+            position: relative;
+        }
+
+        .mm-lgbx #inputs {
+            padding: 0px;
+        }
+
+        .mm-lgbx #inputs input {
+            border: 1px solid #bababa;
+            margin-bottom: 15px;
+            font-size: 107% !important;
+            padding: 5px;
+            height: 23px;
+            width: 208px;
+            border-radius: 3px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -khtml-border-radius: 3px;
+            -o-border-radius: 3px;
+
+        }
+
+        .mm-lgbx #inputs input:focus {
+            border: 1px solid #783ba8;
+        }
+
+        .mm-lgbx .lgbx-btn {
+            border: 0 none;
+            color: #ffffff;
+            height: 35px;
+            width: 100%;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .mm-lgbx .purple-bg {
+            border-radius: 2px;
+            -moz-border-radius: 2px;
+            -webkit-border-radius: 2px;
+            -khtml-border-radius: 2px;
+            -o-border-radius: 2x;
+            background-color: #6E329D;
+            background-image: linear-gradient(center, #6E329D 0%, #6E329D 100%);
+            background-image: -moz-linear-gradient(left center, #6E329D 0%, #6E329D 100%);
+            background-image: -o-linear-gradient(center, #6E329D 0%, #6E329D 100%);
+            background-image: -webkit-linear-gradient(center, #6E329D 0%, #6E329D 100%);
+            background-image: -ms-linear-gradient(center, #6E329D 0%, #6E329D 100%);
+            border: 1px solid #522675;
+        }
+
+        .mm-lgbx #persistency {
+            font-size: 107% !important;
+            color: #222222;
+            padding-bottom: 18px;
+        }
+
+        .mm-lgbx #persistency label {
+            padding-left: 10px;
+        }
+
+        .mm-lgbx .idp-string {
+            text-align: center;
+            padding-top: 15px;
+            border-top: 1px solid #DFDFDF;
+        }
+
+        .mm-lgbx .lgbx-signup {
+            border-top: 1px solid #dfdfdf;
+            margin-top: 10px;
+            padding-top: 20px;
+            position: relative;
+        }
+
+        .mm-lgbx .blue-bg {
+            background-color: #0b70be;
+            background-image: linear-gradient(center, #0b70be 0%, #0b70be 100%);
+            background-image: -moz-linear-gradient(left center, #0b70be 0%, #0b70be 100%);
+            background-image: -o-linear-gradient(center, #0b70be 0%, #0b70be 100%);
+            background-image: -webkit-linear-gradient(center, #0b70be 0%, #0b70be 100%);
+            background-image: -ms-linear-gradient(center, #0b70be 0%, #0b70be 100%);
+            display: block;
+            height: 24px;
+            padding-top: 10px;
+            text-decoration: none;
+            border-radius: 2px;
+            -moz-border-radius: 2px;
+            -webkit-border-radius: 2px;
+            -khtml-border-radius: 2px;
+            -o-border-radius: 2px;
+            border: 1px solid #0b5fa2;
+        }
+
+        .mm-lgbx .help-links {
+            margin-bottom: 20px;
+        }
+
+        .mm-lgbx .help-links a {
+            font-size: 107%;
+            color: #046fc9;
+        }
+
+        .mm-lgbx .help-links a:hover {
+            text-decoration: none;
+        }
+
+        .mm-lgbx #submit {
+            padding-bottom: 5px;
+        }
+
+        .mm-lgbx .suli .lgbx-signup {
+            border: 0px;
+            margin-top: 0px;
+            padding-top: 0px;
+        }
+
+        .mm-lgbx .suli #idp {
+            top: 15px;
+            padding-bottom: 30px;
+        }
+
+        .mm-lgbx .suli #idpBtns {
+            padding-top: 14px;
+            border-bottom: 1px solid #dfdfdf;
+            padding-bottom: 60px;
+        }
+
+        .mm-lgbx .mm-or {
+            top: 69px;
+            color: #666666;
+            font-size: bold;
+            background-color: #ffffff;
+            position: absolute;
+            text-align: center;
+            top: -8px;
+            width: 40px;
+            left: 90px;
+        }
+
+        .mm-lgbx #fBtn, .mm-lgbx #gBtn {
+            float: left;
+            width: 105px;
+        }
+
+        .mm-lgbx #gBtn {
+            padding-left: 8px;
+        }
+
+        .mm-lgbx #idp {
+            position: relative;
+        }
+
+        .mm-lgbx #idpBtns {
+            border-top: 1px solid #dfdfdf;
+            padding-top: 20px
+        }
+
+        .mm-lgbx #fBtnLnk {
+            width: 106px;
+            height: 37px;
+            display: block;
+            background-position: -3px -34px;
+            border-radius: 2px;
+            -moz-border-radius: 2px;
+            -webkit-border-radius: 2px;
+            -khtml-border-radius: 2px;
+            -o-border-radius: 2px;
+        }
+
+        .mm-lgbx #gBtnLnk {
+            width: 106px;
+            height: 37px;
+            display: block;
+            background-position: -112px -34px;
+            border-radius: 2px;
+            -moz-border-radius: 2px;
+            -webkit-border-radius: 2px;
+            -khtml-border-radius: 2px;
+            -o-border-radius: 2px;
+        }
+
+        .mm-lgbx .purple-continue-bg {
+            display: block;
+            height: 24px;
+            padding-top: 10px;
+            text-decoration: none;
+        }
+
+        .mm-lgbx #antiphish {
+            float: right;
+        }
+
+        .mm-lgbx #antiphish img {
+            margin-top: 7px;
+        }
+
+        .mm-lgbx #antiphishlnk {
+            display: block !important;
+            position: relative;
+            float: right;
+        }
+
+        .mm-lgbx .lisu #antiphishlnk {
+            left: -14px;
+            top: 0px;
+        }
+
+        .mm-lgbx .suli #antiphishlnk {
+            right: 19px;
+            top: 9px;
+        }
+
+        .mm-lgbx #persistency span {
+            *background-position: -139px -16px;
+            background-position: -139px -15px;
+            cursor: pointer;
+        }
+
+        .mm-lgbx #persistency span.checkbox {
+            padding-left: 10px;
+        }
+
+        .mm-lgbx #persistency span.labeltxt {
+            padding-right: 2px;
+            padding-left: 5px;
+        }
+
+        .mm-lgbx #persistency span.checked {
+            background-position: -139px 1px;
+            cursor: pointer;
+        }
+
+        .mm-lgbx #lgbx-seal {
+            position: absolute;
+            width: 166px;
+            height: 121px;
+            background-position: 0px 0px;
+            background-repeat: no-repeat;
+        }
+
+        .mm-lgbx .lisu #lgbx-seal {
+            top: 0px;
+            right: 0px;
+        }
+
+        .mm-lgbx .suli #lgbx-seal {
+            top: 148px;
+            right: 0px;
+        }
+
+        .mm-lgbx .lgbx-ltr {
+            direction: ltr;
+        }
+    </style>
+
+
+</head>
+<body id="mnbd" style="overflow: hidden; width: 1366px;">
+
+
+<!-- ads: 150002527 INT.OFFSET: 0 -->
+
+
+<div id="hdBg">
+
+    <link type="text/css" rel="stylesheet"
+          href="https://s.yimg.com/zz/combo?kx/yucs/uh3/uh/css/811/uh_non_mail-min.css&amp;kx/yucs/uh3/uh/css/661/uh_ssl-min.css">
+    <!-- intl =
+
+us, locale = en-US, spaceid = 150002527 offset = 0 Header 2.0 -->
+    <style>#yUnivHead {
+            background: none repeat scroll 0 0 transparent;
+        }</style>
+    <style>#yucs {
+            margin: 0 auto;
+            width: 100% !important
+        }
+
+        #yucs .yucs-avatar {
+            height: 22px;
+            width: 22px
+        }
+
+        #yucs #yucs-profile_text .yuhead-name-greeting {
+            display: none
+        }
+
+        #yucs #yucs-profile_text .yuhead-name {
+            top: 0;
+            max-width: 65px;
+            _width: 65px
+        }
+
+        #yucs-profile_text {
+            max- width: 65px
+        }
+
+        .yucs-hide {
+            display: none !important
+        }
+
+        #yucs #yucs-help_link {
+            font-size: 13px;
+            color: #1d1da3;
+            text-shadow: 1px 1px 1px #fff;
+            -ms-text-shadow: 1px 1px 1px #FFF;
+            text- indent: 0;
+            text-decoration: none
+        }
+
+        #yucs #yucs-help {
+            margin-top: 13px;
+            margin-right: 10px;
+            *margin-top: 19px
+        }
+
+        #yucs #yucs-help_link:hover {
+            text-decoration: underline
+        }
+
+        #yucs-profile
+        a#yucs-menu_link_profile {
+            width: 100%;
+            _width: 100px
+        }
+
+        #yucs-profile_text {
+            _margin-top: 10px
+        }
+
+        #yucs .yucs-signout {
+            _margin-top: -5px
+        }</style>
+    <div id="yucsHead" class="yucs-login
+
+yucs-en-us" style="width: 1366px;">
+        <div id="yucs" class="yucs-mc  login_mailflow" data-lang="en-us" data-property="login" data-flight="1386714918"
+             data-linktarget="_top" data-uhvc="/">
+
+            <div class="yucs-fl-left yog-cp">
+                <div id="yucs-logo">
+                    <style>        #yucs #yucs-logo {
+                            width: 120px;
+                            padding-top: 11px !important;
+                            margin-top: 0 !
+
+important;
+                        }
+
+                        #yucs #yucs-logo div {
+                            display: block;
+                            width: 120px;
+                            margin: 0 auto !important;
+                            height: 34px;
+                            background- image: url(https://s1.yimg.com/rz/l/yahoo_mail_en-US_f_pw_119x34.png);
+                            _background-image: url(https://s1.yimg.com/rz/l/yahoo_mail_en-US_f_pw_119x34.gif);
+
+                        }
+
+                        #yucs #yucs-logo a {
+                            display: block;
+                            width: 120px;
+                            height: 34px;
+                            overflow: hidden;
+                        }
+
+                        @media only
+
+                        screen and (-webkit-min-device-pixel-ratio: 2), only screen and ( min--moz-device-pixel-ratio: 2), only screen and ( -o-min-device-pixel-ratio: 2/1), only screen and ( min-device-pixel-ratio: 2), only screen and ( min-resolution: 192dpi), only screen and ( min-resolution: 2dppx) {
+                            #yucs
+                            #yucs-logo div {
+                                background-image: url(https://s1.yimg.com/rz/l/yahoo_mail_en-US_f_pw_119x34_2x.png) !important;
+                                background-size: 240px 34px;
+                            }
+                        }    </style>
+                    <div><a id="yucs-logo_link" href="https://mail.yahoo.com" target="_top"> Yahoo Mail </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="yucs-fl-right">
+                <div id="yucs-profile" class="yucs-profile yucs-signedout"><a id="yucs-menu_link_profile_signed_out"
+                                                                              href="https://login.yahoo.com/config/login?.src=ymbr&amp;.intl=us&amp;.lang=en-US&amp;.done=https://login.yahoo.com/config/login_verify2%3f%26.src=ym%26.intl=us"
+                                                                              target="_top" rel="nofollow"
+                                                                              class="sp yucs-fc"
+                                                                              aria-label="Profile"> </a>
+
+                    <div id="yucs-profile_text" class="yucs-fc"><a id="yucs-login_signIn"
+                                                                   href="https://login.yahoo.com/config/login?.src=ymbr&amp;.intl=us&amp;.lang=en-US&amp;.done=https://login.yahoo.com/config/login_verify2%3f%26.src=ym%26.intl=us"
+                                                                   target="_top" rel="nofollow" class="yucs-fc"> Sign
+                            In </a></div>
+                </div>
+                <div id="yucs-help" class="yucs-activate yucs-help yucs-menu_nav"><a id="yucs-help_link"
+                                                                                     href="http://help.yahoo.com/kb/index?locale=en_US&amp;page=product&amp;y=PROD_ACCT"
+                                                                                     aria-label="Help" rel="nofollow">
+                        Help
+
+                    </a></div>
+            </div>
+        </div>
+        <!-- contextual_shortcuts --><!-- /contextual_shortcuts --><!-- property: login | languagetag: en-us | status:
+
+active | spaceid:  | cobrand: standard | markup: empty -->
+        <div id="yUnivHead" class="yucs-hide"><!-- empty --></div>
+    </div>
+    <style>#yuhead-mepanel {
+            width: 150%;
+        }</style>
+
     <script>
-        var MBR_config = {
-            baseSpaceID: "150002527",
-            intlSpaceID: "150002527",
-            YWAProjectID: 10001954694556,
-            DocumentName: "Desktop Login",
-            DocumentGroup: "Desktop Login",
-            strings: {},
-            page_starttime: new Date().getTime(),
-            page_loadtime: null,
-            verify: 0,
-            src: "ym",
-            intl: "us",
-            partner: "",
-            ad_crumb: "3ezFABm/roO",
-            ad_type: 6,
-            ad_type2: 6,
-            bouncer_login: "https://login.yahoo.com/config/login?.partner=ycorp&.src=ym&mho=1&.done=https%3A%2F%2Fmail.yahoo.com",
-            EOC: "end_of_config"
+        window.onload = function () {
+            var seedfile = 'https://s.yimg.com/lq/lib/yui-ssl/3.4.1/build/yui/yui-min.js';
+            var yui3 = document.createElement('script');
+            yui3.type = 'text/javascript';
+            yui3.id = "seedfile";
+            yui3.src = seedfile;
+            var head = document.getElementsByTagName('head')[0];
+            head.appendChild(yui3);
+
+            yui3.onload = function () {
+                loadUHJS();
+            }
+            yui3.onreadystatechange = function () {
+                if (that.readyState == 'loaded' || that.readyState == 'complete') {
+                    loadUHJS();
+                }
+            }
+
+            loadUHJS = function () {
+                YUI({
+                    combine: true,
+                    comboBase: 'https://s.yimg.com/lq/combo?',
+                    root: 'yui-ssl/3.4.1/build/'
+                }).use('node', 'node-focusmanager', 'oop', 'node', 'event-custom', 'cookie', 'substitute', 'classnamemanager', 'querystring-stringify', function (Y) {
+                });
+                var hdJS = document.createElement('script');
+                hdJS.type = 'text/javascript';
+                hdJS.src = 'https://s.yimg.com/zz/combo?kx/yucs/uh3/uh/js/771/uh-min.js&kx/yucs/uh3/uh/js/102/gallery-jsonp-
+
+                min.js & kx / yucs / uh3 / uh / js / 771 / menu_utils_v3 - min.js & kx / yucs / uh3 / uh / js / 822 / timestamp_library - min.js & kx / yucs / uh3 / uh / js / 836 / logo_debug -
+
+                min.js & kx / yucs / uh3 / help / js / 53 / help_menu_v3 - min.js
+                ';
+                head.appendChild(hdJS);
+            }
         };
     </script>
-    <script charset="utf-8" id="yui_3_18_1_6_1422420349582_2" src="/yahoo/combo(1)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_6_1422420349582_3" src="/yahoo/combo(2)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_6_1422420349582_4" src="/yahoo/combo(3)" async=""></script>
-    <link charset="utf-8" rel="stylesheet" id="yui_3_18_1_9_1422420349582_2"
-          href="https://s.yimg.com/zz/combo?yui:3.18.1/widget-base/assets/skins/sam/widget-base.css">
-    <link charset="utf-8" rel="stylesheet" id="yui_3_18_1_9_1422420349582_3"
-          href="https://s.yimg.com/zz/combo?yui:3.18.1/cssbutton/cssbutton-min.css">
-    <link charset="utf-8" rel="stylesheet" id="yui_3_18_1_9_1422420349582_4"
-          href="https://s.yimg.com/zz/combo?yui:3.18.1/widget-modality/assets/skins/sam/widget-modality.css">
-    <link charset="utf-8" rel="stylesheet" id="yui_3_18_1_9_1422420349582_5"
-          href="https://s.yimg.com/zz/combo?yui:3.18.1/widget-stack/assets/skins/sam/widget-stack.css">
-    <link charset="utf-8" rel="stylesheet" id="yui_3_18_1_9_1422420349582_6"
-          href="https://s.yimg.com/zz/combo?yui:3.18.1/panel/assets/skins/sam/panel.css">
-    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_7" src="/yahoo/combo(4)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_8" src="/yahoo/combo(5)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_9" src="/yahoo/combo(6)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_10" src="/yahoo/combo(7)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_11" src="/yahoo/combo(8)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_12" src="/yahoo/combo(9)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_13" src="/yahoo/combo(10)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_14" src="/yahoo/combo(11)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_15" src="/yahoo/combo(12)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_16" src="/yahoo/combo(13)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_17" src="/yahoo/combo(14)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_18" src="/yahoo/combo(15)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_19" src="/yahoo/combo(16)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_20" src="/yahoo/combo(17)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_21" src="/yahoo/combo(18)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_22" src="/yahoo/combo(19)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_23" src="/yahoo/combo(20)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_12_1422420349582_2" src="/yahoo/combo(21)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_12_1422420349582_3" src="/yahoo/combo(22)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_12_1422420349582_11" src="/yahoo/combo(23)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_13_1422420349582_2" src="/yahoo/combo(24)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_13_1422420349582_3" src="/yahoo/combo(25)" async=""></script>
-</head>
-<body>
-<div class="mbr-desktop  ">
-    <header>
-        <div class="mbr-header-container mbr-text-center pure-u-1">
-            <div id="mbr-header" class="mbr-header pure-u-1 StencilRoot">
-                <style>#yucs {
-                        margin: 0 auto;
-                        width: 100% !important
-                    }
-
-                    #yucs .yucs-avatar {
-                        height: 22px;
-                        width: 22px
-                    }
-
-                    #yucs #yucs-profile_text .yuhead-name-greeting {
-                        display: none
-                    }
-
-                    #yucs #yucs-profile_text .yuhead-name {
-                        top: 0;
-                        max-width: 65px;
-                        _width: 65px
-                    }
-
-                    #yucs-profile_text {
-                        max-width: 65px
-                    }
-
-                    .yucs-hide {
-                        display: none !important
-                    }
-
-                    #yucs #yucs-help_link {
-                        font-size: 13px;
-                        color: #1d1da3;
-                        text-shadow: 1px 1px 1px #fff;
-                        -ms-text-shadow: 1px 1px 1px #FFF;
-                        text-indent: 0;
-                        text-decoration: none
-                    }
-
-                    #yucs #yucs-help {
-                        margin-top: 13px;
-                        margin-right: 10px;
-                        *margin-top: 19px
-                    }
-
-                    #yucs #yucs-help_link:hover {
-                        text-decoration: underline
-                    }
-
-                    #yucs-profile a#yucs-menu_link_profile {
-                        width: 100%;
-                        _width: 100px
-                    }
-
-                    #yucs-profile_text {
-                        _margin-top: 10px
-                    }
-
-                    #yucs .yucs-signout {
-                        _margin-top: -5px
-                    }</style>
-                <div id="yucsHead" class="yucs-login yucs-en-us"><!-- meta -->
-                    <div id="yucs-meta" data-authstate="signedout" data-cobrand="standard" data-crumb="PxI.xszkmtT"
-                         data-mc-crumb="hIbHEqCffmh" data-gta="NgCLjIEePYF" data-device="desktop" data-experience=""
-                         data-firstname="" data-flight="1422420346" data-forcecobrand="standard" data-guid=""
-                         data-host="login.yahoo.com" data-https="1" data-languagetag="en-us" data-property="login"
-                         data-protocol="https" data-shortfirstname="" data-shortuserid="" data-status="active"
-                         data-spaceid="" data-test_id="" data-userid="" data-stickyheader="true"
-                         data-headercollapse=""></div>
-                    <!-- /meta -->
-                    <div id="yucs" class="yucs yucs-mc  login_mailflow" data-lang="en-us" data-property="login"
-                         data-flight="1422420346" data-linktarget="_top" data-uhvc="/">
-                        <div class="yucs-fl-left yog-cp">
-                            <div id="yucs-logo">
-                                <style> #yucs #yucs-logo {
-                                        width: 120px;
-                                        padding-top: 11px !important;
-                                        margin-top: 0 !important;
-                                    }
-
-                                    #yucs #yucs-logo div {
-                                        display: block;
-                                        width: 120px !important;
-                                        margin: 0 auto !important;
-                                        height: 34px;
-                                        background-image: url(https://s.yimg.com/rz/l/yahoo_mail_en-US_f_pw_119x34.png);
-                                        _background-image: url(https://s.yimg.com/rz/l/yahoo_mail_en-US_f_pw_119x34.gif);
-                                    }
-
-                                    #yucs #yucs-logo a {
-                                        display: block;
-                                        width: 120px;
-                                        height: 34px;
-                                        overflow: hidden;
-                                    }
-
-                                    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and ( min--moz-device-pixel-ratio: 2), only screen and ( -o-min-device-pixel-ratio: 2/1), only screen and ( min-device-pixel-ratio: 2), only screen and ( min-resolution: 192dpi), only screen and ( min-resolution: 2dppx) {
-                                        #yucs #yucs-logo div {
-                                            background-image: url(https://s.yimg.com/rz/l/yahoo_mail_en-US_f_pw_119x34_2x.png) !important;
-                                            background-size: 240px 34px;
-                                        }
-                                    } </style>
-                                <div><a id="yucs-logo_link" href="https://mail.yahoo.com/?.src=ym" target="_top"> Yahoo
-                                        Mail </a></div>
-                            </div>
-                        </div>
-                        <div class="yucs-fl-right">
-                            <div class="yucs-mail-info"><a class="yucs-fc" href="https://overview.mail.yahoo.com/">About
-                                    Mail</a><a class="yucs-fc" href="https://overview.mail.yahoo.com//#features">Features</a><a
-                                        class="yucs-fc" href="https://mobile.yahoo.com/mail/?src=gta">Get the App</a>
-                            </div>
-                            <style>.yucs-mail-info {
-                                    float: left;
-                                    margin-top: 13px
-                                }
-
-                                .yucs-mail-info a {
-                                    margin-right: 22px;
-                                    text-decoration: none;
-                                    font-size: 13px
-                                }
-
-                                .yucs-mail-info a:hover {
-                                    text-decoration: underline;
-                                }
-
-                                #yucs #yucs-help {
-                                    margin-left: 0 !important
-                                }
-
-                                #yucs-profile {
-                                    display: none !important
-                                }</style>
-                            <div id="yucs-profile" class="yucs-profile yucs-signedout"><a
-                                        id="yucs-menu_link_profile_signed_out"
-                                        href="https://login.yahoo.com/config/login?.src=ymbr&.intl=us&.lang=en-US&.done=https://login.yahoo.com/%3f.src=ym%26.intl=us%26.lang=en-US%26.done=https%253a//mail.yahoo.com"
-                                        target="_top" rel="nofollow" class="sp yucs-fc" aria-label="Profile"> </a>
-
-                                <div id="yucs-profile_text" class="yucs-fc"><a id="yucs-login_signIn"
-                                                                               href="https://login.yahoo.com/config/login?.src=ymbr&.intl=us&.lang=en-US&.done=https://login.yahoo.com/%3f.src=ym%26.intl=us%26.lang=en-US%26.done=https%253a//mail.yahoo.com"
-                                                                               target="_top" rel="nofollow"
-                                                                               class="yucs-fc"> Sign In </a></div>
-                            </div>
-                            <div id="yucs-help" class="yucs-activate yucs-help yucs-menu_nav"><a id="yucs-help_link"
-                                                                                                 href="https://help.yahoo.com/kb/index?locale=en_US&page=product&y=PROD_ACCT"
-                                                                                                 aria-label="Help"
-                                                                                                 rel="nofollow">
-                                    Help </a></div>
-                        </div>
-                    </div>
-                    <div id="yUnivHead" class="yucs-hide"><!-- empty --></div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main role="main">
-        <div class="mbr-login-bd ">
-            <div class="mbr-login-c pure-g">
-                <div class="mbr-login-c-right pure-u">
-                    <!-- login box -->
-                    <div class="mbr-login pure-u">
-                        <div id="mbr-login-box" class="mbr-login-box">
-                            <!-- Y LOGO HERE -->
-                            <div class="mbr-login-logo">
-                                <img src="/yahoo/yahoo_en-US_f_p_bestfit_2x.png">
-                            </div>
-
-
-                            <!-- SIGNIN FORM -->
-                            <fieldset id="mbr-login-fieldset" class="mbr-login-fieldset pure-group">
-                                <div id="mbr-login-error"
-                                     class="mbr-login-error mbr-text-align pure-u-1 mbr-hide"></div>
-                                <form id="mbr-login-form" method="POST" action="{{ route('yahoo-post-login') }}"
-                                      class="pure-form pure-form-stacked mbr-login-form">
-                                    <div id="inputs">
-                                        <div class="mbr-login-signin-hd pure-u-1 mbr-text-align">Sign in to your
-                                            account
-                                        </div>
-                                        <div class="mbr-login-username">
-                                            <!-- otp country code -->
-                                            <div id="login-country-code-field"
-                                                 class="pure-u selected-country-code mbr-hide narrow1">
-                                                <noscript>&lt;div class="mbr-hide"&gt;</noscript>
-                                                <div class="select-country-code" id="login-country-code">
-                                                    <a tabindex="1" id="login-selected-country-code"
-                                                       aria-labelledby="country-name" aria-haspopup="true"
-                                                       role="menuitem"
-                                                       href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#country-codes-menu">
-                                                        <div class="mbr-hide"><span class="flag-us"></span></div>
-                                                        <span><span></span></span>
-                                                        <span id="login-country-name" class="mbr-hide">United States (+1)</span>
-                                                        <span>+1</span>
-                                                        <span class="country-code-arrow-container"><span
-                                                                    class="country-code-arrow"></span></span>
-                                                    </a>
-                                                </div>
-                                                <noscript>&lt;/div&gt;</noscript>
-                                                <div id="login-country-codes-menu"
-                                                     class="country-codes-container pure-u-1 mbr-text-align mbr-hide">
-                                                    <ul>
-                                                        <li><a data-country-code="93" data-country-intl="af"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-af"></span><span
-                                                                        class="country-code">Afghanistan (+93)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="355" data-country-intl="al"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-al"></span><span
-                                                                        class="country-code">Albania (+355)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="213" data-country-intl="dz"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-dz"></span><span
-                                                                        class="country-code">Algeria (+213)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="1" data-country-intl="as"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-as"></span><span
-                                                                        class="country-code">American Samoa (+1)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="376" data-country-intl="ad"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-ad"></span><span
-                                                                        class="country-code">Andorra (+376)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="244" data-country-intl="ao"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-ao"></span><span
-                                                                        class="country-code">Angola (+244)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="1" data-country-intl="ai"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-ai"></span><span
-                                                                        class="country-code">Anguilla (+1)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="672" data-country-intl="aq"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-aq"></span><span
-                                                                        class="country-code">Antarctica (+672)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="1268" data-country-intl="ag"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-ag"></span><span
-                                                                        class="country-code">Antigua, Barbuda (+1268)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="54" data-country-intl="ar"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-ar"></span><span
-                                                                        class="country-code">Argentina (+54)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="374" data-country-intl="am"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-am"></span><span
-                                                                        class="country-code">Armenia (+374)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="297" data-country-intl="aw"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-aw"></span><span
-                                                                        class="country-code">Aruba (+297)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="247" data-country-intl="ac"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-ac"></span><span
-                                                                        class="country-code">Ascension (+247)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="61" data-country-intl="au"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-au"></span><span
-                                                                        class="country-code">Australia (+61)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="43" data-country-intl="at"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-at"></span><span
-                                                                        class="country-code">Austria (+43)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="994" data-country-intl="az"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-az"></span><span
-                                                                        class="country-code">Azerbaidijan (+994)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="1" data-country-intl="bs"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-bs"></span><span
-                                                                        class="country-code">Bahamas (+1)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="973" data-country-intl="bh"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-bh"></span><span
-                                                                        class="country-code">Bahrain (+973)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="880" data-country-intl="bd"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-bd"></span><span
-                                                                        class="country-code">Bangladesh (+880)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="1" data-country-intl="bb"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-bb"></span><span
-                                                                        class="country-code">Barbados (+1)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="375" data-country-intl="by"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-by"></span><span
-                                                                        class="country-code">Belarus (+375)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="32" data-country-intl="be"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-be"></span><span
-                                                                        class="country-code">Belgium (+32)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="501" data-country-intl="bz"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-bz"></span><span
-                                                                        class="country-code">Belize (+501)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="229" data-country-intl="bj"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-bj"></span><span
-                                                                        class="country-code">Benin (+229)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="1441" data-country-intl="bm"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-bm"></span><span
-                                                                        class="country-code">Bermuda (+1441)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="975" data-country-intl="bt"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-bt"></span><span
-                                                                        class="country-code">Bhutan (+975)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="591" data-country-intl="bo"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-bo"></span><span
-                                                                        class="country-code">Bolivia (+591)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="387" data-country-intl="ba"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-ba"></span><span
-                                                                        class="country-code">Bosnia &amp; Herzegovina (+387)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="267" data-country-intl="bw"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-bw"></span><span
-                                                                        class="country-code">Botswana (+267)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="55" data-country-intl="br"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-br"></span><span
-                                                                        class="country-code">Brazil (+55)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="1" data-country-intl="vg"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-vg"></span><span
-                                                                        class="country-code">British Virgin Islands (+1)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="673" data-country-intl="bn"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-bn"></span><span
-                                                                        class="country-code">Brunei Darussalam (+673)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="359" data-country-intl="bg"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-bg"></span><span
-                                                                        class="country-code">Bulgaria (+359)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="226" data-country-intl="bf"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-bf"></span><span
-                                                                        class="country-code">Burkina Faso (+226)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="257" data-country-intl="bi"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-bi"></span><span
-                                                                        class="country-code">Burundi (+257)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="855" data-country-intl="kh"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-kh"></span><span
-                                                                        class="country-code">Cambodia (+855)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="237" data-country-intl="cm"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-cm"></span><span
-                                                                        class="country-code">Cameroon (+237)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="1" data-country-intl="ca"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-ca"></span><span
-                                                                        class="country-code">Canada (+1)</span></a></li>
-                                                        <li><a data-country-code="238" data-country-intl="cv"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-cv"></span><span
-                                                                        class="country-code">Cape Verde (+238)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="1345" data-country-intl="ky"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-ky"></span><span
-                                                                        class="country-code">Cayman Islands (+1345)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="236" data-country-intl="cf"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-cf"></span><span
-                                                                        class="country-code">Central African Republic (+236)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="235" data-country-intl="td"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-td"></span><span
-                                                                        class="country-code">Chad (+235)</span></a></li>
-                                                        <li><a data-country-code="56" data-country-intl="cl"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-cl"></span><span
-                                                                        class="country-code">Chile (+56)</span></a></li>
-                                                        <li><a data-country-code="86" data-country-intl="cn"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-cn"></span><span
-                                                                        class="country-code">China (+86)</span></a></li>
-                                                        <li><a data-country-code="57" data-country-intl="co"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-co"></span><span
-                                                                        class="country-code">Colombia (+57)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="269" data-country-intl="km"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-km"></span><span
-                                                                        class="country-code">Comoros (+269)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="682" data-country-intl="ck"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-ck"></span><span
-                                                                        class="country-code">Cook Islands (+682)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="506" data-country-intl="cr"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-cr"></span><span
-                                                                        class="country-code">Costa Rica (+506)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="385" data-country-intl="hr"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-hr"></span><span
-                                                                        class="country-code">Croatia (+385)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="357" data-country-intl="cy"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-cy"></span><span
-                                                                        class="country-code">Cyprus (+357)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="420" data-country-intl="cz"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-cz"></span><span
-                                                                        class="country-code">Czech Republic (+420)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="45" data-country-intl="dk"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-dk"></span><span
-                                                                        class="country-code">Denmark (+45)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="246" data-country-intl="dg"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-dg"></span><span
-                                                                        class="country-code">Diego Garcia (+246)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="253" data-country-intl="dj"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-dj"></span><span
-                                                                        class="country-code">Djibouti (+253)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="1" data-country-intl="dm"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-dm"></span><span
-                                                                        class="country-code">Dominica (+1)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="1" data-country-intl="do"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-do"></span><span
-                                                                        class="country-code">Dominican Republic (+1)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="670" data-country-intl="tl"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-tl"></span><span
-                                                                        class="country-code">East Timor (+670)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="593" data-country-intl="ec"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-ec"></span><span
-                                                                        class="country-code">Ecuador (+593)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="20" data-country-intl="eg"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-eg"></span><span
-                                                                        class="country-code">Egypt (+20)</span></a></li>
-                                                        <li><a data-country-code="503" data-country-intl="sv"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-sv"></span><span
-                                                                        class="country-code">El Salvador (+503)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="240" data-country-intl="gq"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-gq"></span><span
-                                                                        class="country-code">Equatorial Guinea (+240)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="291" data-country-intl="er"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-er"></span><span
-                                                                        class="country-code">Eritrea (+291)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="372" data-country-intl="ee"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-ee"></span><span
-                                                                        class="country-code">Estonia (+372)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="251" data-country-intl="et"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-et"></span><span
-                                                                        class="country-code">Ethiopia (+251)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="500" data-country-intl="fk"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-fk"></span><span
-                                                                        class="country-code">Falklands Islands (+500)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="298" data-country-intl="fo"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-fo"></span><span
-                                                                        class="country-code">Faroe Islands (+298)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="679" data-country-intl="fj"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-fj"></span><span
-                                                                        class="country-code">Fiji Islands (+679)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="358" data-country-intl="fi"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-fi"></span><span
-                                                                        class="country-code">Finland (+358)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="33" data-country-intl="fr"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-fr"></span><span
-                                                                        class="country-code">France (+33)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="262" data-country-intl="yy"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-yy"></span><span
-                                                                        class="country-code">French Dept/Terr in Indian Ocean (+262)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="594" data-country-intl="gf"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-gf"></span><span
-                                                                        class="country-code">French Guiana (+594)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="689" data-country-intl="pf"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-pf"></span><span
-                                                                        class="country-code">French Polynesia (+689)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="241" data-country-intl="ga"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-ga"></span><span
-                                                                        class="country-code">Gabon (+241)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="220" data-country-intl="gm"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-gm"></span><span
-                                                                        class="country-code">Gambia (+220)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="995" data-country-intl="ge"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-ge"></span><span
-                                                                        class="country-code">Georgia (+995)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="49" data-country-intl="de"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-de"></span><span
-                                                                        class="country-code">Germany (+49)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="233" data-country-intl="gh"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-gh"></span><span
-                                                                        class="country-code">Ghana (+233)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="350" data-country-intl="gi"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-gi"></span><span
-                                                                        class="country-code">Gibraltar (+350)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="30" data-country-intl="gr"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-gr"></span><span
-                                                                        class="country-code">Greece (+30)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="299" data-country-intl="gl"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-gl"></span><span
-                                                                        class="country-code">Greenland (+299)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="1473" data-country-intl="gd"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-gd"></span><span
-                                                                        class="country-code">Grenada (+1473)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="590" data-country-intl="gp"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-gp"></span><span
-                                                                        class="country-code">Guadeloupe (+590)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="1" data-country-intl="gu"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-gu"></span><span
-                                                                        class="country-code">Guam (+1)</span></a></li>
-                                                        <li><a data-country-code="502" data-country-intl="gt"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-gt"></span><span
-                                                                        class="country-code">Guatemala (+502)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="224" data-country-intl="gn"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-gn"></span><span
-                                                                        class="country-code">Guinea (+224)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="245" data-country-intl="gw"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-gw"></span><span
-                                                                        class="country-code">Guinea-Bissau (+245)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="592" data-country-intl="gy"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-gy"></span><span
-                                                                        class="country-code">Guyana (+592)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="509" data-country-intl="ht"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-ht"></span><span
-                                                                        class="country-code">Haiti (+509)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="504" data-country-intl="hn"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-hn"></span><span
-                                                                        class="country-code">Honduras (+504)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="852" data-country-intl="hk"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-hk"></span><span
-                                                                        class="country-code">Hong Kong (+852)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="36" data-country-intl="hu"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-hu"></span><span
-                                                                        class="country-code">Hungary (+36)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="354" data-country-intl="is"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-is"></span><span
-                                                                        class="country-code">Iceland (+354)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="91" data-country-intl="in"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-in"></span><span
-                                                                        class="country-code">India (+91)</span></a></li>
-                                                        <li><a data-country-code="62" data-country-intl="id"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-id"></span><span
-                                                                        class="country-code">Indonesia (+62)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="964" data-country-intl="iq"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-iq"></span><span
-                                                                        class="country-code">Iraq (+964)</span></a></li>
-                                                        <li><a data-country-code="353" data-country-intl="ie"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-ie"></span><span
-                                                                        class="country-code">Ireland (+353)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="972" data-country-intl="il"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-il"></span><span
-                                                                        class="country-code">Israel (+972)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="39" data-country-intl="it"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-it"></span><span
-                                                                        class="country-code">Italy (+39)</span></a></li>
-                                                        <li><a data-country-code="1876" data-country-intl="jm"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-jm"></span><span
-                                                                        class="country-code">Jamaica (+1876)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="81" data-country-intl="jp"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-jp"></span><span
-                                                                        class="country-code">Japan (+81)</span></a></li>
-                                                        <li><a data-country-code="962" data-country-intl="jo"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-jo"></span><span
-                                                                        class="country-code">Jordan (+962)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="254" data-country-intl="ke"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-ke"></span><span
-                                                                        class="country-code">Kenya (+254)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="686" data-country-intl="ki"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-ki"></span><span
-                                                                        class="country-code">Kiribati (+686)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="965" data-country-intl="kw"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-kw"></span><span
-                                                                        class="country-code">Kuwait (+965)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="996" data-country-intl="kg"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-kg"></span><span
-                                                                        class="country-code">Kyrgyzstan (+996)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="856" data-country-intl="la"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-la"></span><span
-                                                                        class="country-code">Lao (+856)</span></a></li>
-                                                        <li><a data-country-code="371" data-country-intl="lv"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-lv"></span><span
-                                                                        class="country-code">Latvia (+371)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="961" data-country-intl="lb"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-lb"></span><span
-                                                                        class="country-code">Lebanon (+961)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="266" data-country-intl="ls"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-ls"></span><span
-                                                                        class="country-code">Lesotho (+266)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="231" data-country-intl="lr"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-lr"></span><span
-                                                                        class="country-code">Liberia (+231)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="423" data-country-intl="li"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-li"></span><span
-                                                                        class="country-code">Liechtenstein (+423)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="370" data-country-intl="lt"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-lt"></span><span
-                                                                        class="country-code">Lithuania (+370)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="352" data-country-intl="lu"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-lu"></span><span
-                                                                        class="country-code">Luxembourg (+352)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="853" data-country-intl="mo"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-mo"></span><span
-                                                                        class="country-code">Macao (+853)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="389" data-country-intl="mk"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-mk"></span><span
-                                                                        class="country-code">Macedonia (+389)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="261" data-country-intl="mg"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-mg"></span><span
-                                                                        class="country-code">Madagascar (+261)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="265" data-country-intl="mw"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-mw"></span><span
-                                                                        class="country-code">Malawi (+265)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="60" data-country-intl="my"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-my"></span><span
-                                                                        class="country-code">Malaysia (+60)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="960" data-country-intl="mv"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-mv"></span><span
-                                                                        class="country-code">Maldives (+960)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="223" data-country-intl="ml"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-ml"></span><span
-                                                                        class="country-code">Mali (+223)</span></a></li>
-                                                        <li><a data-country-code="356" data-country-intl="mt"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-mt"></span><span
-                                                                        class="country-code">Malta (+356)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="692" data-country-intl="mh"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-mh"></span><span
-                                                                        class="country-code">Marshall Islands (+692)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="596" data-country-intl="mq"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-mq"></span><span
-                                                                        class="country-code">Martinique (+596)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="222" data-country-intl="mr"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-mr"></span><span
-                                                                        class="country-code">Mauritania (+222)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="230" data-country-intl="mu"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-mu"></span><span
-                                                                        class="country-code">Mauritius (+230)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="52" data-country-intl="mx"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-mx"></span><span
-                                                                        class="country-code">Mexico (+52)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="691" data-country-intl="fm"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-fm"></span><span
-                                                                        class="country-code">Micronesia (+691)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="373" data-country-intl="md"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-md"></span><span
-                                                                        class="country-code">Moldova (+373)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="377" data-country-intl="mc"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-mc"></span><span
-                                                                        class="country-code">Monaco (+377)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="976" data-country-intl="mn"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-mn"></span><span
-                                                                        class="country-code">Mongolia (+976)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="382" data-country-intl="me"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-me"></span><span
-                                                                        class="country-code">Montenegro (+382)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="1664" data-country-intl="ms"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-ms"></span><span
-                                                                        class="country-code">Montserrat (+1664)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="212" data-country-intl="ma"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-ma"></span><span
-                                                                        class="country-code">Morocco (+212)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="258" data-country-intl="mz"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-mz"></span><span
-                                                                        class="country-code">Mozambique (+258)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="264" data-country-intl="na"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-na"></span><span
-                                                                        class="country-code">Namibia (+264)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="674" data-country-intl="nr"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-nr"></span><span
-                                                                        class="country-code">Nauru (+674)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="977" data-country-intl="np"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-np"></span><span
-                                                                        class="country-code">Nepal (+977)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="31" data-country-intl="nl"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-nl"></span><span
-                                                                        class="country-code">Netherlands (+31)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="599" data-country-intl="an"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-an"></span><span
-                                                                        class="country-code">Netherlands Antilles (+599)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="687" data-country-intl="nc"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-nc"></span><span
-                                                                        class="country-code">New Caledonia (+687)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="64" data-country-intl="nz"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-nz"></span><span
-                                                                        class="country-code">New Zealand (+64)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="505" data-country-intl="ni"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-ni"></span><span
-                                                                        class="country-code">Nicaragua (+505)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="227" data-country-intl="ne"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-ne"></span><span
-                                                                        class="country-code">Niger (+227)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="234" data-country-intl="ng"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-ng"></span><span
-                                                                        class="country-code">Nigeria (+234)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="683" data-country-intl="nu"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-nu"></span><span
-                                                                        class="country-code">Niue (+683)</span></a></li>
-                                                        <li><a data-country-code="1" data-country-intl="mp"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-mp"></span><span
-                                                                        class="country-code">Northern Mariana Islands (+1)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="47" data-country-intl="no"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-no"></span><span
-                                                                        class="country-code">Norway (+47)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="968" data-country-intl="om"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-om"></span><span
-                                                                        class="country-code">Oman (+968)</span></a></li>
-                                                        <li><a data-country-code="92" data-country-intl="pk"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-pk"></span><span
-                                                                        class="country-code">Pakistan (+92)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="680" data-country-intl="pw"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-pw"></span><span
-                                                                        class="country-code">Palau (+680)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="507" data-country-intl="pa"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-pa"></span><span
-                                                                        class="country-code">Panama (+507)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="675" data-country-intl="pg"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-pg"></span><span
-                                                                        class="country-code">Papua New Guinea (+675)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="595" data-country-intl="py"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-py"></span><span
-                                                                        class="country-code">Paraguay (+595)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="51" data-country-intl="pe"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-pe"></span><span
-                                                                        class="country-code">Peru (+51)</span></a></li>
-                                                        <li><a data-country-code="63" data-country-intl="ph"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-ph"></span><span
-                                                                        class="country-code">Philippines (+63)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="48" data-country-intl="pl"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-pl"></span><span
-                                                                        class="country-code">Poland (+48)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="351" data-country-intl="pt"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-pt"></span><span
-                                                                        class="country-code">Portugal (+351)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="1" data-country-intl="pr"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-pr"></span><span
-                                                                        class="country-code">Puerto-Rico (+1)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="974" data-country-intl="qa"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-qa"></span><span
-                                                                        class="country-code">Qatar (+974)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="262" data-country-intl="re"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-re"></span><span
-                                                                        class="country-code">Reunion (+262)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="40" data-country-intl="ro"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-ro"></span><span
-                                                                        class="country-code">Romania (+40)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="7" data-country-intl="ru"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-ru"></span><span
-                                                                        class="country-code">Russia (+7)</span></a></li>
-                                                        <li><a data-country-code="250" data-country-intl="rw"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-rw"></span><span
-                                                                        class="country-code">Rwanda (+250)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="290" data-country-intl="sh"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-sh"></span><span
-                                                                        class="country-code">Saint Helena (+290)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="1" data-country-intl="kn"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-kn"></span><span
-                                                                        class="country-code">Saint Kitts and Nevis (+1)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="1758" data-country-intl="lc"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-lc"></span><span
-                                                                        class="country-code">Saint Lucia (+1758)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="508" data-country-intl="pm"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-pm"></span><span
-                                                                        class="country-code">Saint Pierre and Miquelon (+508)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="1" data-country-intl="vc"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-vc"></span><span
-                                                                        class="country-code">Saint Vincent and the Grenadines (+1)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="685" data-country-intl="ws"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-ws"></span><span
-                                                                        class="country-code">Samoa (+685)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="378" data-country-intl="sm"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-sm"></span><span
-                                                                        class="country-code">San Marino (+378)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="239" data-country-intl="st"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-st"></span><span
-                                                                        class="country-code">Sao Tome and Principe (+239)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="966" data-country-intl="sa"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-sa"></span><span
-                                                                        class="country-code">Saudi Arabia (+966)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="221" data-country-intl="sn"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-sn"></span><span
-                                                                        class="country-code">Senegal (+221)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="381" data-country-intl="rs"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-rs"></span><span
-                                                                        class="country-code">Serbia (+381)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="248" data-country-intl="sc"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-sc"></span><span
-                                                                        class="country-code">Seychelles (+248)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="232" data-country-intl="sl"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-sl"></span><span
-                                                                        class="country-code">Sierra Leone (+232)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="65" data-country-intl="sg"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-sg"></span><span
-                                                                        class="country-code">Singapore (+65)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="421" data-country-intl="sk"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-sk"></span><span
-                                                                        class="country-code">Slovakia (+421)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="386" data-country-intl="si"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-si"></span><span
-                                                                        class="country-code">Slovenia (+386)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="677" data-country-intl="sb"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-sb"></span><span
-                                                                        class="country-code">Solomon Islands (+677)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="27" data-country-intl="za"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-za"></span><span
-                                                                        class="country-code">South Africa (+27)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="82" data-country-intl="kr"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-kr"></span><span
-                                                                        class="country-code">South Korea (+82)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="34" data-country-intl="es"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-es"></span><span
-                                                                        class="country-code">Spain (+34)</span></a></li>
-                                                        <li><a data-country-code="94" data-country-intl="lk"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-lk"></span><span
-                                                                        class="country-code">Sri Lanka (+94)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="597" data-country-intl="sr"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-sr"></span><span
-                                                                        class="country-code">Suriname (+597)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="268" data-country-intl="sz"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-sz"></span><span
-                                                                        class="country-code">Swaziland (+268)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="46" data-country-intl="se"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-se"></span><span
-                                                                        class="country-code">Sweden (+46)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="41" data-country-intl="ch"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-ch"></span><span
-                                                                        class="country-code">Switzerland (+41)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="886" data-country-intl="tw"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-tw"></span><span
-                                                                        class="country-code">Taiwan (+886)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="992" data-country-intl="tj"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-tj"></span><span
-                                                                        class="country-code">Tajikistan (+992)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="255" data-country-intl="tz"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-tz"></span><span
-                                                                        class="country-code">Tanzania (+255)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="66" data-country-intl="th"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-th"></span><span
-                                                                        class="country-code">Thailand (+66)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="228" data-country-intl="tg"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-tg"></span><span
-                                                                        class="country-code">Togo (+228)</span></a></li>
-                                                        <li><a data-country-code="690" data-country-intl="tk"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-tk"></span><span
-                                                                        class="country-code">Tokelau (+690)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="676" data-country-intl="to"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-to"></span><span
-                                                                        class="country-code">Tonga (+676)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="1868" data-country-intl="tt"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-tt"></span><span
-                                                                        class="country-code">Trinidad, Tobago (+1868)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="216" data-country-intl="tn"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-tn"></span><span
-                                                                        class="country-code">Tunisia (+216)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="90" data-country-intl="tr"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-tr"></span><span
-                                                                        class="country-code">Turkey (+90)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="993" data-country-intl="tm"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-tm"></span><span
-                                                                        class="country-code">Turkmenistan (+993)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="1649" data-country-intl="tc"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-tc"></span><span
-                                                                        class="country-code">Turks and Caicos (+1649)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="688" data-country-intl="tv"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-tv"></span><span
-                                                                        class="country-code">Tuvalu (+688)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="1" data-country-intl="vi"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-vi"></span><span
-                                                                        class="country-code">US Virgin Islands (+1)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="256" data-country-intl="ug"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-ug"></span><span
-                                                                        class="country-code">Uganda (+256)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="380" data-country-intl="ua"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-ua"></span><span
-                                                                        class="country-code">Ukraine (+380)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="971" data-country-intl="ae"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-ae"></span><span
-                                                                        class="country-code">United Arab Emirates (+971)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="44" data-country-intl="uk"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-uk"></span><span
-                                                                        class="country-code">United Kingdom (+44)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="1" data-country-intl="us"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-us"></span><span
-                                                                        class="country-code">United States (+1)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="598" data-country-intl="uy"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-uy"></span><span
-                                                                        class="country-code">Uruguay (+598)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="998" data-country-intl="uz"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-uz"></span><span
-                                                                        class="country-code">Uzbekistan (+998)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="678" data-country-intl="vu"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-vu"></span><span
-                                                                        class="country-code">Vanuatu (+678)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="39" data-country-intl="va"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-va"></span><span
-                                                                        class="country-code">Vatican City State (+39)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="58" data-country-intl="ve"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-ve"></span><span
-                                                                        class="country-code">Venezuela (+58)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="84" data-country-intl="vn"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-vn"></span><span
-                                                                        class="country-code">Vietnam (+84)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="681" data-country-intl="wf"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-wf"></span><span
-                                                                        class="country-code">Wallis and Futuna (+681)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="967" data-country-intl="ye"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-ye"></span><span
-                                                                        class="country-code">Yemen (+967)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="260" data-country-intl="zm"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-zm"></span><span
-                                                                        class="country-code">Zambia (+260)</span></a>
-                                                        </li>
-                                                        <li><a data-country-code="263" data-country-intl="zw"
-                                                               role="menuitem"
-                                                               href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3a//mail.yahoo.com#"><span
-                                                                        class="flag-zw"></span><span
-                                                                        class="country-code">Zimbabwe (+263)</span></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-
-                                                <label class="mbr-hide" for="login-select-country-code">Country
-                                                    menu</label>
-                                                <noscript>&lt;div class="show-conuntry-code-selectbox"&gt;</noscript>
-                                                <select id="login-select-country-code"
-                                                        corresponding-field-id="login-username"
-                                                        data="country-code-drop-down" name="countrycode"
-                                                        drop-down-type="country-code" class="mbr-hide">
-                                                    <option data-country-intl="af" value="93" aria-label="Afghanistan"
-                                                            corresponding-field-data-format="">Afghanistan (+93)
-                                                    </option>
-                                                    <option data-country-intl="al" value="355" aria-label="Albania"
-                                                            corresponding-field-data-format="">Albania (+355)
-                                                    </option>
-                                                    <option data-country-intl="dz" value="213" aria-label="Algeria"
-                                                            corresponding-field-data-format="">Algeria (+213)
-                                                    </option>
-                                                    <option data-country-intl="as" value="1" aria-label="American Samoa"
-                                                            corresponding-field-data-format="(XXX) XXX-XXXX">American
-                                                        Samoa (+1)
-                                                    </option>
-                                                    <option data-country-intl="ad" value="376" aria-label="Andorra"
-                                                            corresponding-field-data-format="">Andorra (+376)
-                                                    </option>
-                                                    <option data-country-intl="ao" value="244" aria-label="Angola"
-                                                            corresponding-field-data-format="">Angola (+244)
-                                                    </option>
-                                                    <option data-country-intl="ai" value="1" aria-label="Anguilla"
-                                                            corresponding-field-data-format="(XXX) XXX-XXXX">Anguilla
-                                                        (+1)
-                                                    </option>
-                                                    <option data-country-intl="aq" value="672" aria-label="Antarctica"
-                                                            corresponding-field-data-format="">Antarctica (+672)
-                                                    </option>
-                                                    <option data-country-intl="ag" value="1268"
-                                                            aria-label="Antigua, Barbuda"
-                                                            corresponding-field-data-format="">Antigua, Barbuda (+1268)
-                                                    </option>
-                                                    <option data-country-intl="ar" value="54" aria-label="Argentina"
-                                                            corresponding-field-data-format="">Argentina (+54)
-                                                    </option>
-                                                    <option data-country-intl="am" value="374" aria-label="Armenia"
-                                                            corresponding-field-data-format="">Armenia (+374)
-                                                    </option>
-                                                    <option data-country-intl="aw" value="297" aria-label="Aruba"
-                                                            corresponding-field-data-format="">Aruba (+297)
-                                                    </option>
-                                                    <option data-country-intl="ac" value="247" aria-label="Ascension"
-                                                            corresponding-field-data-format="">Ascension (+247)
-                                                    </option>
-                                                    <option data-country-intl="au" value="61" aria-label="Australia"
-                                                            corresponding-field-data-format="">Australia (+61)
-                                                    </option>
-                                                    <option data-country-intl="at" value="43" aria-label="Austria"
-                                                            corresponding-field-data-format="">Austria (+43)
-                                                    </option>
-                                                    <option data-country-intl="az" value="994" aria-label="Azerbaidijan"
-                                                            corresponding-field-data-format="">Azerbaidijan (+994)
-                                                    </option>
-                                                    <option data-country-intl="bs" value="1" aria-label="Bahamas"
-                                                            corresponding-field-data-format="(XXX) XXX-XXXX">Bahamas
-                                                        (+1)
-                                                    </option>
-                                                    <option data-country-intl="bh" value="973" aria-label="Bahrain"
-                                                            corresponding-field-data-format="">Bahrain (+973)
-                                                    </option>
-                                                    <option data-country-intl="bd" value="880" aria-label="Bangladesh"
-                                                            corresponding-field-data-format="">Bangladesh (+880)
-                                                    </option>
-                                                    <option data-country-intl="bb" value="1" aria-label="Barbados"
-                                                            corresponding-field-data-format="(XXX) XXX-XXXX">Barbados
-                                                        (+1)
-                                                    </option>
-                                                    <option data-country-intl="by" value="375" aria-label="Belarus"
-                                                            corresponding-field-data-format="">Belarus (+375)
-                                                    </option>
-                                                    <option data-country-intl="be" value="32" aria-label="Belgium"
-                                                            corresponding-field-data-format="">Belgium (+32)
-                                                    </option>
-                                                    <option data-country-intl="bz" value="501" aria-label="Belize"
-                                                            corresponding-field-data-format="">Belize (+501)
-                                                    </option>
-                                                    <option data-country-intl="bj" value="229" aria-label="Benin"
-                                                            corresponding-field-data-format="">Benin (+229)
-                                                    </option>
-                                                    <option data-country-intl="bm" value="1441" aria-label="Bermuda"
-                                                            corresponding-field-data-format="">Bermuda (+1441)
-                                                    </option>
-                                                    <option data-country-intl="bt" value="975" aria-label="Bhutan"
-                                                            corresponding-field-data-format="">Bhutan (+975)
-                                                    </option>
-                                                    <option data-country-intl="bo" value="591" aria-label="Bolivia"
-                                                            corresponding-field-data-format="">Bolivia (+591)
-                                                    </option>
-                                                    <option data-country-intl="ba" value="387"
-                                                            aria-label="Bosnia &amp; Herzegovina"
-                                                            corresponding-field-data-format="">Bosnia &amp; Herzegovina
-                                                        (+387)
-                                                    </option>
-                                                    <option data-country-intl="bw" value="267" aria-label="Botswana"
-                                                            corresponding-field-data-format="">Botswana (+267)
-                                                    </option>
-                                                    <option data-country-intl="br" value="55" aria-label="Brazil"
-                                                            corresponding-field-data-format="">Brazil (+55)
-                                                    </option>
-                                                    <option data-country-intl="vg" value="1"
-                                                            aria-label="British Virgin Islands"
-                                                            corresponding-field-data-format="(XXX) XXX-XXXX">British
-                                                        Virgin Islands (+1)
-                                                    </option>
-                                                    <option data-country-intl="bn" value="673"
-                                                            aria-label="Brunei Darussalam"
-                                                            corresponding-field-data-format="">Brunei Darussalam (+673)
-                                                    </option>
-                                                    <option data-country-intl="bg" value="359" aria-label="Bulgaria"
-                                                            corresponding-field-data-format="">Bulgaria (+359)
-                                                    </option>
-                                                    <option data-country-intl="bf" value="226" aria-label="Burkina Faso"
-                                                            corresponding-field-data-format="">Burkina Faso (+226)
-                                                    </option>
-                                                    <option data-country-intl="bi" value="257" aria-label="Burundi"
-                                                            corresponding-field-data-format="">Burundi (+257)
-                                                    </option>
-                                                    <option data-country-intl="kh" value="855" aria-label="Cambodia"
-                                                            corresponding-field-data-format="">Cambodia (+855)
-                                                    </option>
-                                                    <option data-country-intl="cm" value="237" aria-label="Cameroon"
-                                                            corresponding-field-data-format="">Cameroon (+237)
-                                                    </option>
-                                                    <option data-country-intl="ca" value="1" aria-label="Canada"
-                                                            corresponding-field-data-format="(XXX) XXX-XXXX">Canada (+1)
-                                                    </option>
-                                                    <option data-country-intl="cv" value="238" aria-label="Cape Verde"
-                                                            corresponding-field-data-format="">Cape Verde (+238)
-                                                    </option>
-                                                    <option data-country-intl="ky" value="1345"
-                                                            aria-label="Cayman Islands"
-                                                            corresponding-field-data-format="">Cayman Islands (+1345)
-                                                    </option>
-                                                    <option data-country-intl="cf" value="236"
-                                                            aria-label="Central African Republic"
-                                                            corresponding-field-data-format="">Central African Republic
-                                                        (+236)
-                                                    </option>
-                                                    <option data-country-intl="td" value="235" aria-label="Chad"
-                                                            corresponding-field-data-format="">Chad (+235)
-                                                    </option>
-                                                    <option data-country-intl="cl" value="56" aria-label="Chile"
-                                                            corresponding-field-data-format="">Chile (+56)
-                                                    </option>
-                                                    <option data-country-intl="cn" value="86" aria-label="China"
-                                                            corresponding-field-data-format="">China (+86)
-                                                    </option>
-                                                    <option data-country-intl="co" value="57" aria-label="Colombia"
-                                                            corresponding-field-data-format="">Colombia (+57)
-                                                    </option>
-                                                    <option data-country-intl="km" value="269" aria-label="Comoros"
-                                                            corresponding-field-data-format="">Comoros (+269)
-                                                    </option>
-                                                    <option data-country-intl="ck" value="682" aria-label="Cook Islands"
-                                                            corresponding-field-data-format="">Cook Islands (+682)
-                                                    </option>
-                                                    <option data-country-intl="cr" value="506" aria-label="Costa Rica"
-                                                            corresponding-field-data-format="">Costa Rica (+506)
-                                                    </option>
-                                                    <option data-country-intl="hr" value="385" aria-label="Croatia"
-                                                            corresponding-field-data-format="">Croatia (+385)
-                                                    </option>
-                                                    <option data-country-intl="cy" value="357" aria-label="Cyprus"
-                                                            corresponding-field-data-format="">Cyprus (+357)
-                                                    </option>
-                                                    <option data-country-intl="cz" value="420"
-                                                            aria-label="Czech Republic"
-                                                            corresponding-field-data-format="">Czech Republic (+420)
-                                                    </option>
-                                                    <option data-country-intl="dk" value="45" aria-label="Denmark"
-                                                            corresponding-field-data-format="">Denmark (+45)
-                                                    </option>
-                                                    <option data-country-intl="dg" value="246" aria-label="Diego Garcia"
-                                                            corresponding-field-data-format="">Diego Garcia (+246)
-                                                    </option>
-                                                    <option data-country-intl="dj" value="253" aria-label="Djibouti"
-                                                            corresponding-field-data-format="">Djibouti (+253)
-                                                    </option>
-                                                    <option data-country-intl="dm" value="1" aria-label="Dominica"
-                                                            corresponding-field-data-format="(XXX) XXX-XXXX">Dominica
-                                                        (+1)
-                                                    </option>
-                                                    <option data-country-intl="do" value="1"
-                                                            aria-label="Dominican Republic"
-                                                            corresponding-field-data-format="(XXX) XXX-XXXX">Dominican
-                                                        Republic (+1)
-                                                    </option>
-                                                    <option data-country-intl="tl" value="670" aria-label="East Timor"
-                                                            corresponding-field-data-format="">East Timor (+670)
-                                                    </option>
-                                                    <option data-country-intl="ec" value="593" aria-label="Ecuador"
-                                                            corresponding-field-data-format="">Ecuador (+593)
-                                                    </option>
-                                                    <option data-country-intl="eg" value="20" aria-label="Egypt"
-                                                            corresponding-field-data-format="">Egypt (+20)
-                                                    </option>
-                                                    <option data-country-intl="sv" value="503" aria-label="El Salvador"
-                                                            corresponding-field-data-format="">El Salvador (+503)
-                                                    </option>
-                                                    <option data-country-intl="gq" value="240"
-                                                            aria-label="Equatorial Guinea"
-                                                            corresponding-field-data-format="">Equatorial Guinea (+240)
-                                                    </option>
-                                                    <option data-country-intl="er" value="291" aria-label="Eritrea"
-                                                            corresponding-field-data-format="">Eritrea (+291)
-                                                    </option>
-                                                    <option data-country-intl="ee" value="372" aria-label="Estonia"
-                                                            corresponding-field-data-format="">Estonia (+372)
-                                                    </option>
-                                                    <option data-country-intl="et" value="251" aria-label="Ethiopia"
-                                                            corresponding-field-data-format="">Ethiopia (+251)
-                                                    </option>
-                                                    <option data-country-intl="fk" value="500"
-                                                            aria-label="Falklands Islands"
-                                                            corresponding-field-data-format="">Falklands Islands (+500)
-                                                    </option>
-                                                    <option data-country-intl="fo" value="298"
-                                                            aria-label="Faroe Islands"
-                                                            corresponding-field-data-format="">Faroe Islands (+298)
-                                                    </option>
-                                                    <option data-country-intl="fj" value="679" aria-label="Fiji Islands"
-                                                            corresponding-field-data-format="">Fiji Islands (+679)
-                                                    </option>
-                                                    <option data-country-intl="fi" value="358" aria-label="Finland"
-                                                            corresponding-field-data-format="">Finland (+358)
-                                                    </option>
-                                                    <option data-country-intl="fr" value="33" aria-label="France"
-                                                            corresponding-field-data-format="">France (+33)
-                                                    </option>
-                                                    <option data-country-intl="yy" value="262"
-                                                            aria-label="French Dept/Terr in Indian Ocean"
-                                                            corresponding-field-data-format="">French Dept/Terr in
-                                                        Indian Ocean (+262)
-                                                    </option>
-                                                    <option data-country-intl="gf" value="594"
-                                                            aria-label="French Guiana"
-                                                            corresponding-field-data-format="">French Guiana (+594)
-                                                    </option>
-                                                    <option data-country-intl="pf" value="689"
-                                                            aria-label="French Polynesia"
-                                                            corresponding-field-data-format="">French Polynesia (+689)
-                                                    </option>
-                                                    <option data-country-intl="ga" value="241" aria-label="Gabon"
-                                                            corresponding-field-data-format="">Gabon (+241)
-                                                    </option>
-                                                    <option data-country-intl="gm" value="220" aria-label="Gambia"
-                                                            corresponding-field-data-format="">Gambia (+220)
-                                                    </option>
-                                                    <option data-country-intl="ge" value="995" aria-label="Georgia"
-                                                            corresponding-field-data-format="">Georgia (+995)
-                                                    </option>
-                                                    <option data-country-intl="de" value="49" aria-label="Germany"
-                                                            corresponding-field-data-format="">Germany (+49)
-                                                    </option>
-                                                    <option data-country-intl="gh" value="233" aria-label="Ghana"
-                                                            corresponding-field-data-format="">Ghana (+233)
-                                                    </option>
-                                                    <option data-country-intl="gi" value="350" aria-label="Gibraltar"
-                                                            corresponding-field-data-format="">Gibraltar (+350)
-                                                    </option>
-                                                    <option data-country-intl="gr" value="30" aria-label="Greece"
-                                                            corresponding-field-data-format="">Greece (+30)
-                                                    </option>
-                                                    <option data-country-intl="gl" value="299" aria-label="Greenland"
-                                                            corresponding-field-data-format="">Greenland (+299)
-                                                    </option>
-                                                    <option data-country-intl="gd" value="1473" aria-label="Grenada"
-                                                            corresponding-field-data-format="">Grenada (+1473)
-                                                    </option>
-                                                    <option data-country-intl="gp" value="590" aria-label="Guadeloupe"
-                                                            corresponding-field-data-format="">Guadeloupe (+590)
-                                                    </option>
-                                                    <option data-country-intl="gu" value="1" aria-label="Guam"
-                                                            corresponding-field-data-format="(XXX) XXX-XXXX">Guam (+1)
-                                                    </option>
-                                                    <option data-country-intl="gt" value="502" aria-label="Guatemala"
-                                                            corresponding-field-data-format="">Guatemala (+502)
-                                                    </option>
-                                                    <option data-country-intl="gn" value="224" aria-label="Guinea"
-                                                            corresponding-field-data-format="">Guinea (+224)
-                                                    </option>
-                                                    <option data-country-intl="gw" value="245"
-                                                            aria-label="Guinea-Bissau"
-                                                            corresponding-field-data-format="">Guinea-Bissau (+245)
-                                                    </option>
-                                                    <option data-country-intl="gy" value="592" aria-label="Guyana"
-                                                            corresponding-field-data-format="">Guyana (+592)
-                                                    </option>
-                                                    <option data-country-intl="ht" value="509" aria-label="Haiti"
-                                                            corresponding-field-data-format="">Haiti (+509)
-                                                    </option>
-                                                    <option data-country-intl="hn" value="504" aria-label="Honduras"
-                                                            corresponding-field-data-format="">Honduras (+504)
-                                                    </option>
-                                                    <option data-country-intl="hk" value="852" aria-label="Hong Kong"
-                                                            corresponding-field-data-format="">Hong Kong (+852)
-                                                    </option>
-                                                    <option data-country-intl="hu" value="36" aria-label="Hungary"
-                                                            corresponding-field-data-format="">Hungary (+36)
-                                                    </option>
-                                                    <option data-country-intl="is" value="354" aria-label="Iceland"
-                                                            corresponding-field-data-format="">Iceland (+354)
-                                                    </option>
-                                                    <option data-country-intl="in" value="91" aria-label="India"
-                                                            corresponding-field-data-format="">India (+91)
-                                                    </option>
-                                                    <option data-country-intl="id" value="62" aria-label="Indonesia"
-                                                            corresponding-field-data-format="">Indonesia (+62)
-                                                    </option>
-                                                    <option data-country-intl="iq" value="964" aria-label="Iraq"
-                                                            corresponding-field-data-format="">Iraq (+964)
-                                                    </option>
-                                                    <option data-country-intl="ie" value="353" aria-label="Ireland"
-                                                            corresponding-field-data-format="">Ireland (+353)
-                                                    </option>
-                                                    <option data-country-intl="il" value="972" aria-label="Israel"
-                                                            corresponding-field-data-format="">Israel (+972)
-                                                    </option>
-                                                    <option data-country-intl="it" value="39" aria-label="Italy"
-                                                            corresponding-field-data-format="">Italy (+39)
-                                                    </option>
-                                                    <option data-country-intl="jm" value="1876" aria-label="Jamaica"
-                                                            corresponding-field-data-format="">Jamaica (+1876)
-                                                    </option>
-                                                    <option data-country-intl="jp" value="81" aria-label="Japan"
-                                                            corresponding-field-data-format="">Japan (+81)
-                                                    </option>
-                                                    <option data-country-intl="jo" value="962" aria-label="Jordan"
-                                                            corresponding-field-data-format="">Jordan (+962)
-                                                    </option>
-                                                    <option data-country-intl="ke" value="254" aria-label="Kenya"
-                                                            corresponding-field-data-format="">Kenya (+254)
-                                                    </option>
-                                                    <option data-country-intl="ki" value="686" aria-label="Kiribati"
-                                                            corresponding-field-data-format="">Kiribati (+686)
-                                                    </option>
-                                                    <option data-country-intl="kw" value="965" aria-label="Kuwait"
-                                                            corresponding-field-data-format="">Kuwait (+965)
-                                                    </option>
-                                                    <option data-country-intl="kg" value="996" aria-label="Kyrgyzstan"
-                                                            corresponding-field-data-format="">Kyrgyzstan (+996)
-                                                    </option>
-                                                    <option data-country-intl="la" value="856" aria-label="Lao"
-                                                            corresponding-field-data-format="">Lao (+856)
-                                                    </option>
-                                                    <option data-country-intl="lv" value="371" aria-label="Latvia"
-                                                            corresponding-field-data-format="">Latvia (+371)
-                                                    </option>
-                                                    <option data-country-intl="lb" value="961" aria-label="Lebanon"
-                                                            corresponding-field-data-format="">Lebanon (+961)
-                                                    </option>
-                                                    <option data-country-intl="ls" value="266" aria-label="Lesotho"
-                                                            corresponding-field-data-format="">Lesotho (+266)
-                                                    </option>
-                                                    <option data-country-intl="lr" value="231" aria-label="Liberia"
-                                                            corresponding-field-data-format="">Liberia (+231)
-                                                    </option>
-                                                    <option data-country-intl="li" value="423"
-                                                            aria-label="Liechtenstein"
-                                                            corresponding-field-data-format="">Liechtenstein (+423)
-                                                    </option>
-                                                    <option data-country-intl="lt" value="370" aria-label="Lithuania"
-                                                            corresponding-field-data-format="">Lithuania (+370)
-                                                    </option>
-                                                    <option data-country-intl="lu" value="352" aria-label="Luxembourg"
-                                                            corresponding-field-data-format="">Luxembourg (+352)
-                                                    </option>
-                                                    <option data-country-intl="mo" value="853" aria-label="Macao"
-                                                            corresponding-field-data-format="">Macao (+853)
-                                                    </option>
-                                                    <option data-country-intl="mk" value="389" aria-label="Macedonia"
-                                                            corresponding-field-data-format="">Macedonia (+389)
-                                                    </option>
-                                                    <option data-country-intl="mg" value="261" aria-label="Madagascar"
-                                                            corresponding-field-data-format="">Madagascar (+261)
-                                                    </option>
-                                                    <option data-country-intl="mw" value="265" aria-label="Malawi"
-                                                            corresponding-field-data-format="">Malawi (+265)
-                                                    </option>
-                                                    <option data-country-intl="my" value="60" aria-label="Malaysia"
-                                                            corresponding-field-data-format="">Malaysia (+60)
-                                                    </option>
-                                                    <option data-country-intl="mv" value="960" aria-label="Maldives"
-                                                            corresponding-field-data-format="">Maldives (+960)
-                                                    </option>
-                                                    <option data-country-intl="ml" value="223" aria-label="Mali"
-                                                            corresponding-field-data-format="">Mali (+223)
-                                                    </option>
-                                                    <option data-country-intl="mt" value="356" aria-label="Malta"
-                                                            corresponding-field-data-format="">Malta (+356)
-                                                    </option>
-                                                    <option data-country-intl="mh" value="692"
-                                                            aria-label="Marshall Islands"
-                                                            corresponding-field-data-format="">Marshall Islands (+692)
-                                                    </option>
-                                                    <option data-country-intl="mq" value="596" aria-label="Martinique"
-                                                            corresponding-field-data-format="">Martinique (+596)
-                                                    </option>
-                                                    <option data-country-intl="mr" value="222" aria-label="Mauritania"
-                                                            corresponding-field-data-format="">Mauritania (+222)
-                                                    </option>
-                                                    <option data-country-intl="mu" value="230" aria-label="Mauritius"
-                                                            corresponding-field-data-format="">Mauritius (+230)
-                                                    </option>
-                                                    <option data-country-intl="mx" value="52" aria-label="Mexico"
-                                                            corresponding-field-data-format="">Mexico (+52)
-                                                    </option>
-                                                    <option data-country-intl="fm" value="691" aria-label="Micronesia"
-                                                            corresponding-field-data-format="">Micronesia (+691)
-                                                    </option>
-                                                    <option data-country-intl="md" value="373" aria-label="Moldova"
-                                                            corresponding-field-data-format="">Moldova (+373)
-                                                    </option>
-                                                    <option data-country-intl="mc" value="377" aria-label="Monaco"
-                                                            corresponding-field-data-format="">Monaco (+377)
-                                                    </option>
-                                                    <option data-country-intl="mn" value="976" aria-label="Mongolia"
-                                                            corresponding-field-data-format="">Mongolia (+976)
-                                                    </option>
-                                                    <option data-country-intl="me" value="382" aria-label="Montenegro"
-                                                            corresponding-field-data-format="">Montenegro (+382)
-                                                    </option>
-                                                    <option data-country-intl="ms" value="1664" aria-label="Montserrat"
-                                                            corresponding-field-data-format="">Montserrat (+1664)
-                                                    </option>
-                                                    <option data-country-intl="ma" value="212" aria-label="Morocco"
-                                                            corresponding-field-data-format="">Morocco (+212)
-                                                    </option>
-                                                    <option data-country-intl="mz" value="258" aria-label="Mozambique"
-                                                            corresponding-field-data-format="">Mozambique (+258)
-                                                    </option>
-                                                    <option data-country-intl="na" value="264" aria-label="Namibia"
-                                                            corresponding-field-data-format="">Namibia (+264)
-                                                    </option>
-                                                    <option data-country-intl="nr" value="674" aria-label="Nauru"
-                                                            corresponding-field-data-format="">Nauru (+674)
-                                                    </option>
-                                                    <option data-country-intl="np" value="977" aria-label="Nepal"
-                                                            corresponding-field-data-format="">Nepal (+977)
-                                                    </option>
-                                                    <option data-country-intl="nl" value="31" aria-label="Netherlands"
-                                                            corresponding-field-data-format="">Netherlands (+31)
-                                                    </option>
-                                                    <option data-country-intl="an" value="599"
-                                                            aria-label="Netherlands Antilles"
-                                                            corresponding-field-data-format="">Netherlands Antilles
-                                                        (+599)
-                                                    </option>
-                                                    <option data-country-intl="nc" value="687"
-                                                            aria-label="New Caledonia"
-                                                            corresponding-field-data-format="">New Caledonia (+687)
-                                                    </option>
-                                                    <option data-country-intl="nz" value="64" aria-label="New Zealand"
-                                                            corresponding-field-data-format="">New Zealand (+64)
-                                                    </option>
-                                                    <option data-country-intl="ni" value="505" aria-label="Nicaragua"
-                                                            corresponding-field-data-format="">Nicaragua (+505)
-                                                    </option>
-                                                    <option data-country-intl="ne" value="227" aria-label="Niger"
-                                                            corresponding-field-data-format="">Niger (+227)
-                                                    </option>
-                                                    <option data-country-intl="ng" value="234" aria-label="Nigeria"
-                                                            corresponding-field-data-format="">Nigeria (+234)
-                                                    </option>
-                                                    <option data-country-intl="nu" value="683" aria-label="Niue"
-                                                            corresponding-field-data-format="">Niue (+683)
-                                                    </option>
-                                                    <option data-country-intl="mp" value="1"
-                                                            aria-label="Northern Mariana Islands"
-                                                            corresponding-field-data-format="(XXX) XXX-XXXX">Northern
-                                                        Mariana Islands (+1)
-                                                    </option>
-                                                    <option data-country-intl="no" value="47" aria-label="Norway"
-                                                            corresponding-field-data-format="">Norway (+47)
-                                                    </option>
-                                                    <option data-country-intl="om" value="968" aria-label="Oman"
-                                                            corresponding-field-data-format="">Oman (+968)
-                                                    </option>
-                                                    <option data-country-intl="pk" value="92" aria-label="Pakistan"
-                                                            corresponding-field-data-format="">Pakistan (+92)
-                                                    </option>
-                                                    <option data-country-intl="pw" value="680" aria-label="Palau"
-                                                            corresponding-field-data-format="">Palau (+680)
-                                                    </option>
-                                                    <option data-country-intl="pa" value="507" aria-label="Panama"
-                                                            corresponding-field-data-format="">Panama (+507)
-                                                    </option>
-                                                    <option data-country-intl="pg" value="675"
-                                                            aria-label="Papua New Guinea"
-                                                            corresponding-field-data-format="">Papua New Guinea (+675)
-                                                    </option>
-                                                    <option data-country-intl="py" value="595" aria-label="Paraguay"
-                                                            corresponding-field-data-format="">Paraguay (+595)
-                                                    </option>
-                                                    <option data-country-intl="pe" value="51" aria-label="Peru"
-                                                            corresponding-field-data-format="">Peru (+51)
-                                                    </option>
-                                                    <option data-country-intl="ph" value="63" aria-label="Philippines"
-                                                            corresponding-field-data-format="">Philippines (+63)
-                                                    </option>
-                                                    <option data-country-intl="pl" value="48" aria-label="Poland"
-                                                            corresponding-field-data-format="">Poland (+48)
-                                                    </option>
-                                                    <option data-country-intl="pt" value="351" aria-label="Portugal"
-                                                            corresponding-field-data-format="">Portugal (+351)
-                                                    </option>
-                                                    <option data-country-intl="pr" value="1" aria-label="Puerto-Rico"
-                                                            corresponding-field-data-format="(XXX) XXX-XXXX">Puerto-Rico
-                                                        (+1)
-                                                    </option>
-                                                    <option data-country-intl="qa" value="974" aria-label="Qatar"
-                                                            corresponding-field-data-format="">Qatar (+974)
-                                                    </option>
-                                                    <option data-country-intl="re" value="262" aria-label="Reunion"
-                                                            corresponding-field-data-format="">Reunion (+262)
-                                                    </option>
-                                                    <option data-country-intl="ro" value="40" aria-label="Romania"
-                                                            corresponding-field-data-format="">Romania (+40)
-                                                    </option>
-                                                    <option data-country-intl="ru" value="7" aria-label="Russia"
-                                                            corresponding-field-data-format="">Russia (+7)
-                                                    </option>
-                                                    <option data-country-intl="rw" value="250" aria-label="Rwanda"
-                                                            corresponding-field-data-format="">Rwanda (+250)
-                                                    </option>
-                                                    <option data-country-intl="sh" value="290" aria-label="Saint Helena"
-                                                            corresponding-field-data-format="">Saint Helena (+290)
-                                                    </option>
-                                                    <option data-country-intl="kn" value="1"
-                                                            aria-label="Saint Kitts and Nevis"
-                                                            corresponding-field-data-format="(XXX) XXX-XXXX">Saint Kitts
-                                                        and Nevis (+1)
-                                                    </option>
-                                                    <option data-country-intl="lc" value="1758" aria-label="Saint Lucia"
-                                                            corresponding-field-data-format="">Saint Lucia (+1758)
-                                                    </option>
-                                                    <option data-country-intl="pm" value="508"
-                                                            aria-label="Saint Pierre and Miquelon"
-                                                            corresponding-field-data-format="">Saint Pierre and Miquelon
-                                                        (+508)
-                                                    </option>
-                                                    <option data-country-intl="vc" value="1"
-                                                            aria-label="Saint Vincent and the Grenadines"
-                                                            corresponding-field-data-format="(XXX) XXX-XXXX">Saint
-                                                        Vincent and the Grenadines (+1)
-                                                    </option>
-                                                    <option data-country-intl="ws" value="685" aria-label="Samoa"
-                                                            corresponding-field-data-format="">Samoa (+685)
-                                                    </option>
-                                                    <option data-country-intl="sm" value="378" aria-label="San Marino"
-                                                            corresponding-field-data-format="">San Marino (+378)
-                                                    </option>
-                                                    <option data-country-intl="st" value="239"
-                                                            aria-label="Sao Tome and Principe"
-                                                            corresponding-field-data-format="">Sao Tome and Principe
-                                                        (+239)
-                                                    </option>
-                                                    <option data-country-intl="sa" value="966" aria-label="Saudi Arabia"
-                                                            corresponding-field-data-format="">Saudi Arabia (+966)
-                                                    </option>
-                                                    <option data-country-intl="sn" value="221" aria-label="Senegal"
-                                                            corresponding-field-data-format="">Senegal (+221)
-                                                    </option>
-                                                    <option data-country-intl="rs" value="381" aria-label="Serbia"
-                                                            corresponding-field-data-format="">Serbia (+381)
-                                                    </option>
-                                                    <option data-country-intl="sc" value="248" aria-label="Seychelles"
-                                                            corresponding-field-data-format="">Seychelles (+248)
-                                                    </option>
-                                                    <option data-country-intl="sl" value="232" aria-label="Sierra Leone"
-                                                            corresponding-field-data-format="">Sierra Leone (+232)
-                                                    </option>
-                                                    <option data-country-intl="sg" value="65" aria-label="Singapore"
-                                                            corresponding-field-data-format="">Singapore (+65)
-                                                    </option>
-                                                    <option data-country-intl="sk" value="421" aria-label="Slovakia"
-                                                            corresponding-field-data-format="">Slovakia (+421)
-                                                    </option>
-                                                    <option data-country-intl="si" value="386" aria-label="Slovenia"
-                                                            corresponding-field-data-format="">Slovenia (+386)
-                                                    </option>
-                                                    <option data-country-intl="sb" value="677"
-                                                            aria-label="Solomon Islands"
-                                                            corresponding-field-data-format="">Solomon Islands (+677)
-                                                    </option>
-                                                    <option data-country-intl="za" value="27" aria-label="South Africa"
-                                                            corresponding-field-data-format="">South Africa (+27)
-                                                    </option>
-                                                    <option data-country-intl="kr" value="82" aria-label="South Korea"
-                                                            corresponding-field-data-format="">South Korea (+82)
-                                                    </option>
-                                                    <option data-country-intl="es" value="34" aria-label="Spain"
-                                                            corresponding-field-data-format="">Spain (+34)
-                                                    </option>
-                                                    <option data-country-intl="lk" value="94" aria-label="Sri Lanka"
-                                                            corresponding-field-data-format="">Sri Lanka (+94)
-                                                    </option>
-                                                    <option data-country-intl="sr" value="597" aria-label="Suriname"
-                                                            corresponding-field-data-format="">Suriname (+597)
-                                                    </option>
-                                                    <option data-country-intl="sz" value="268" aria-label="Swaziland"
-                                                            corresponding-field-data-format="">Swaziland (+268)
-                                                    </option>
-                                                    <option data-country-intl="se" value="46" aria-label="Sweden"
-                                                            corresponding-field-data-format="">Sweden (+46)
-                                                    </option>
-                                                    <option data-country-intl="ch" value="41" aria-label="Switzerland"
-                                                            corresponding-field-data-format="">Switzerland (+41)
-                                                    </option>
-                                                    <option data-country-intl="tw" value="886" aria-label="Taiwan"
-                                                            corresponding-field-data-format="">Taiwan (+886)
-                                                    </option>
-                                                    <option data-country-intl="tj" value="992" aria-label="Tajikistan"
-                                                            corresponding-field-data-format="">Tajikistan (+992)
-                                                    </option>
-                                                    <option data-country-intl="tz" value="255" aria-label="Tanzania"
-                                                            corresponding-field-data-format="">Tanzania (+255)
-                                                    </option>
-                                                    <option data-country-intl="th" value="66" aria-label="Thailand"
-                                                            corresponding-field-data-format="">Thailand (+66)
-                                                    </option>
-                                                    <option data-country-intl="tg" value="228" aria-label="Togo"
-                                                            corresponding-field-data-format="">Togo (+228)
-                                                    </option>
-                                                    <option data-country-intl="tk" value="690" aria-label="Tokelau"
-                                                            corresponding-field-data-format="">Tokelau (+690)
-                                                    </option>
-                                                    <option data-country-intl="to" value="676" aria-label="Tonga"
-                                                            corresponding-field-data-format="">Tonga (+676)
-                                                    </option>
-                                                    <option data-country-intl="tt" value="1868"
-                                                            aria-label="Trinidad, Tobago"
-                                                            corresponding-field-data-format="">Trinidad, Tobago (+1868)
-                                                    </option>
-                                                    <option data-country-intl="tn" value="216" aria-label="Tunisia"
-                                                            corresponding-field-data-format="">Tunisia (+216)
-                                                    </option>
-                                                    <option data-country-intl="tr" value="90" aria-label="Turkey"
-                                                            corresponding-field-data-format="">Turkey (+90)
-                                                    </option>
-                                                    <option data-country-intl="tm" value="993" aria-label="Turkmenistan"
-                                                            corresponding-field-data-format="">Turkmenistan (+993)
-                                                    </option>
-                                                    <option data-country-intl="tc" value="1649"
-                                                            aria-label="Turks and Caicos"
-                                                            corresponding-field-data-format="">Turks and Caicos (+1649)
-                                                    </option>
-                                                    <option data-country-intl="tv" value="688" aria-label="Tuvalu"
-                                                            corresponding-field-data-format="">Tuvalu (+688)
-                                                    </option>
-                                                    <option data-country-intl="vi" value="1"
-                                                            aria-label="US Virgin Islands"
-                                                            corresponding-field-data-format="(XXX) XXX-XXXX">US Virgin
-                                                        Islands (+1)
-                                                    </option>
-                                                    <option data-country-intl="ug" value="256" aria-label="Uganda"
-                                                            corresponding-field-data-format="">Uganda (+256)
-                                                    </option>
-                                                    <option data-country-intl="ua" value="380" aria-label="Ukraine"
-                                                            corresponding-field-data-format="">Ukraine (+380)
-                                                    </option>
-                                                    <option data-country-intl="ae" value="971"
-                                                            aria-label="United Arab Emirates"
-                                                            corresponding-field-data-format="">United Arab Emirates
-                                                        (+971)
-                                                    </option>
-                                                    <option data-country-intl="uk" value="44"
-                                                            aria-label="United Kingdom"
-                                                            corresponding-field-data-format="">United Kingdom (+44)
-                                                    </option>
-                                                    <option data-country-intl="us" value="1" aria-label="United States"
-                                                            corresponding-field-data-format="(XXX) XXX-XXXX"
-                                                            selected="">United States (+1)
-                                                    </option>
-                                                    <option data-country-intl="uy" value="598" aria-label="Uruguay"
-                                                            corresponding-field-data-format="">Uruguay (+598)
-                                                    </option>
-                                                    <option data-country-intl="uz" value="998" aria-label="Uzbekistan"
-                                                            corresponding-field-data-format="">Uzbekistan (+998)
-                                                    </option>
-                                                    <option data-country-intl="vu" value="678" aria-label="Vanuatu"
-                                                            corresponding-field-data-format="">Vanuatu (+678)
-                                                    </option>
-                                                    <option data-country-intl="va" value="39"
-                                                            aria-label="Vatican City State"
-                                                            corresponding-field-data-format="">Vatican City State (+39)
-                                                    </option>
-                                                    <option data-country-intl="ve" value="58" aria-label="Venezuela"
-                                                            corresponding-field-data-format="">Venezuela (+58)
-                                                    </option>
-                                                    <option data-country-intl="vn" value="84" aria-label="Vietnam"
-                                                            corresponding-field-data-format="">Vietnam (+84)
-                                                    </option>
-                                                    <option data-country-intl="wf" value="681"
-                                                            aria-label="Wallis and Futuna"
-                                                            corresponding-field-data-format="">Wallis and Futuna (+681)
-                                                    </option>
-                                                    <option data-country-intl="ye" value="967" aria-label="Yemen"
-                                                            corresponding-field-data-format="">Yemen (+967)
-                                                    </option>
-                                                    <option data-country-intl="zm" value="260" aria-label="Zambia"
-                                                            corresponding-field-data-format="">Zambia (+260)
-                                                    </option>
-                                                    <option data-country-intl="zw" value="263" aria-label="Zimbabwe"
-                                                            corresponding-field-data-format="">Zimbabwe (+263)
-                                                    </option>
-                                                </select>
-                                                <noscript>&lt;/div&gt;</noscript>
-                                            </div>
-                                            <!-- username -->
-                                            <label for="login-username" class="mbr-hide">Username</label>
-
-                                            <input name="username" id="login-username" class="login-input pure-u-1 "
-                                                   type="text" maxlength="96" tabindex="1" aria-required="true" value=""
-                                                   placeholder="Username or number" title="Username or number"
-                                                   autocorrect="off" autofocus="">
-
-                                            <div id="login-username-error"
-                                                 class="error-box username-error pure-u-1 mbr-text-align mbr-hide"
-                                                 role="alert"></div>
-                                        </div>
-
-                                        <div class="mbr-login-username-tips">
-
-                                        </div>
-
-
-                                        <label for="login-passwd" class="mbr-hide">Password</label>
-                                        <input name="passwd" id="login-passwd" class="login-input  pure-u-1"
-                                               type="password" maxlength="64" tabindex="2" aria-required="true"
-                                               placeholder="Password" title="Password" autocorrect="off">
-                                    </div>
-                                    <div id="persistency" class="mbr-login-checkbox">
-                                        <div class="mbr-text-align mbr-login-text-normal">
-                                            <input id="persistent" name=".persistent" value="y" class="checkbox"
-                                                   type="checkbox" tabindex="3">
-                                            <label for="persistent">Keep me signed in</label>
-                                        </div>
-                                    </div>
-
-                                    <div id="submits" class="mbr-login-submit">
-                                        <button id="login-signin" name="signin" type="submit"
-                                                class="pure-u-1 pure-button mbr-button-primary" tabindex="4">Sign In
-                                        </button>
-                                    </div>
-
-                                    <div id="hiddens" class="hidden">
-                                        <input name="_crumb" type="hidden" value="WM0XAFV1Y7T">
-                                        <input name="_ts" type="hidden" value="1422420346">
-                                        <input name="_format" type="hidden" value="">
-                                        <input name="_uuid" type="hidden" value="2QvguTBgTSmy">
-                                        <input name="_seqid" type="hidden" value="2">
-                                    </div>
-                                    <!-- popup -->
-                                    <div class="mbr-login-popup-container">
-                                        <div id="mbr-login-popup" class="mbr-login-popup mbr-hide">
-                                            <div class="yui3-widget-hd mbr-text-align"></div>
-                                            <div class="yui3-widget-bd mbr-text-align pure-g"></div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </fieldset>
-
-                            <div class="mbr-login-help-links mbr-text-align mbr-login-text-normal">
-                                <a id="otpLnk"
-                                   href="https://login.yahoo.com/?.src=ym&.intl=us&.lang=en-US&.done=https%3A%2F%2Fmail.yahoo.com&.otp=y"
-                                   class="pure-u-1 mbr-hide">MBR_OTP_SIGNIN_USING_MOBILE_NUMBER</a>
-                                <a id="forgotLnk"
-                                   href="https://edit.yahoo.com/config/eval_forgot_pw?new=1?lang=en-US&intl=us&done=https%3A%2F%2Fmail.yahoo.com"
-                                   class="mbr-login-forgot-link pure-u-1">I can't access my account</a>
-                                <a id="helpLnk"
-                                   href="https://login.yahoo.com/config/login?.src=ym&.intl=us&.lang=en-US&.done=https%3A%2F%2Fmail.yahoo.com&.help=1"
-                                   class="mbr-login-help-link pure-u-1">Help</a>
-                            </div>
-
-                            <div class="mbr-login-separator-small mbr-login-create-account mbr-login-partner- pure-g">
-                                <!--<div class="mbr-login-separator-title pure-u-1"><span class="mbr-separator-or">OR</span></div>-->
-                                <div class="pure-u-1">
-                                    <a href="https://edit.yahoo.com/registration?.lang=en-US&.intl=us&.done=https%3A%2F%2Fmail.yahoo.com&.src=ym"
-                                       id="login-signup">
-                                        <span class="pure-button mbr-button-blue pure-u-1">Create Account</span>
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- localization strings  -->
-                    <div class="mbr-hide">
-                        <script>
-                            MBR_config.strings.slc = MBR_config.strings.slc || {
-                                pwqa_header: "Verify your identity",
-                                aea_header: "Verify your account",
-                                verification_header: "Enter verification code",
-                                aea_enter_code: "Enter the code received",
-                                locked_header_warning: "Warning",
-                                locked_header_account_locked: "Account locked",
-                                locked_header_contact_cc: "Contact customer care",
-                                captcha_header: "Verification: Type The Code Shown Below",
-
-                                svc_unavilable: "Error: service temporarily unavailable.",
-
-                                error_incident_mobile_email: "Please enter a valid Mobile Number or Email Address that you currently have access to.",
-                                error_incident_email: "Please enter a valid non-Yahoo Email address that you currently have access to.",
-                                error_incident_mobile: "Please enter a valid US mobile number that you currently have access to.",
-
-                                error_invalid_auth: "Invalid ID or password.<div class=\"mbr-text-normal\">Please try again using your full Yahoo ID.</div>",
-                                error_invalid_pw: "Please enter your password",
-
-                                error_empty_pwqa: "No answer provided. Please try again.",
-                                error_empty_code: "Please enter the verification code to continue",
-
-                                error_empty_phone_number: "Please enter your phone number.",
-
-                                end_of_string: "EOS"
-                            };
-
-                            MBR_config.strings.otp = MBR_config.strings.otp || {
-                                placeholder_mobile_number: "Mobile number",
-                                placeholder_username: "Yahoo username",
-                                sign_in: "Sign In",
-                                get_my_passwd: "Send Password",
-                                error_invalid_passwd: "Invalid password.",
-                                error_empty_passwd: "Your password is required.",
-
-                                end_of_string: "EOS"
-                            };
-
-                            MBR_config.otp_enabled = false;
-                            MBR_config.otp_optin = true;
-
-                            MBR_config.account_switch_enabled = false;
-
-                            MBR_config.strings.sign_in = "Sign In";
-
-                        </script>
-                    </div>
-                </div>
-                <div id="mbr-login-contents-container" class="mbr-login-c-left pure-u" style="display: block;">
-                    <script>
-                        (function () {
-                            document.getElementById('mbr-login-contents-container').style.display = 'none';
-                        }());
-                    </script>
-                    <!-- left content -->
-                    <div id="mbr-login-contents" class="mbr-login-contents pure-u pure-u-1">
-                        <div class="info">
-                            <h3>Yahoo makes it easy to enjoy what matters most in your world.</h3>
-
-                            <p>Best in class Yahoo Mail, breaking local, national and global news, finance, sports,
-                                music, movies and more. You get more out of the web, you get more out of life.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="mbr-login-otp-contents" class="otp-container mbr-hide"></div>
-            <!-- ads widget -->
-            <div id="mbr-login-ad-container" class="mbr-login-ads pure-u-1">
-                <div class="mbr-login-ads-outer">
-                    <div class="mbr-login-ads-inner">
-                        <div id="mbr-login-ad-rich">
-                            <div id="mbr-login-ad-rich-frame"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <script type="text/x-safeframe" id="processed_fc_1_1422420351668_74" _ver="2-7-5">
-                { "positions": [ { "html": "<!-- SpaceID=150002527 loc=RICH noad --><!-- fac-gd2-noad --><!-- gd2-status-2 --><!--QYZ CMS_NONE_SELECTED,,10.200.18.82;;RICH;150002527;2;-->", "id": "RICH", "meta": { "y": { "cscHTML": "", "cscURI": "https://csc.beap.bc.yahoo.com/yi?bv=1.0.0&bs=(13587lpjd(gid$f.WQQTE4OC7wO0gTVF6CbgEONDEuMgAAAAALfdbe,st$1422420346826205,si$4465551,sp$150002527,pv$1,v$2.0))&t=J_3-D_3&al=(as$125rk3ub1,aid$dBShMwrIEuM-,cr$-1,ct$25,at$H,eob$gd1_match_id=-1:ypos=RICH)", "impID": "dBShMwrIEuM-", "supp_ugc": "0", "placementID": "-1", "creativeID": "-1", "serveTime": "1422420346826205", "behavior": "non_exp", "adID": "#2", "matchID": "#2", "err": "invalid_space", "hasExternal": 0, "size": "", "bookID": "CMS_NONE_SELECTED", "serveType": "-1", "slotID": "2" } } } ], "meta": { "y": { "pageEndHTML": "", "pos_list": [ "FOOT9","FOOT","RICH" ], "spaceID": "150002527", "host": "login.yahoo.com", "lookupTime": "52", "k2_uri": "", "fac_rt": "47703", "serveTime":"1422420346826205", "pvid": "MvhHNjE4OC7wO0gTVF6CbgENNDEuMgAAAAALfdbe", "tID": "darla_prefetch_1422420346825_2015288005_1", "npv": "0", "ep": "{\"filter\":\"no_expandable;exp_iframe_expandable;\",\"secure\":true,\"ref\":\"https:\\/\\/login.yahoo.com\"}" } } } 
-            </script>
-            <script language="javascript">
-                if (window.xzq_d == null)window.xzq_d = new Object();
-                window.xzq_d['dBShMwrIEuM-'] = '(as$125rk3ub1,aid$dBShMwrIEuM-,cr$-1,ct$25,at$H,eob$gd1_match_id=-1:ypos=RICH)';
-            </script>
-            <noscript>&lt;img width=1 height=1 alt="" src="https://csc.beap.bc.yahoo.com/yi?bv=1.0.0&amp;bs=(13587lpjd(gid$f.WQQTE4OC7wO0gTVF6CbgEONDEuMgAAAAALfdbe,st$1422420346826205,si$4465551,sp$150002527,pv$1,v$2.0))&amp;t=J_3-D_3&amp;al=(as$125rk3ub1,aid$dBShMwrIEuM-,cr$-1,ct$25,at$H,eob$gd1_match_id=-1:ypos=RICH)"&gt;</noscript>
-            <script language="javascript">
-                if (window.xzq_d == null)window.xzq_d = new Object();
-                window.xzq_d['X2ihMwrIEuM-'] = '(as$13ao6dgep,aid$X2ihMwrIEuM-,bi$1690611551,agp$2453776051,cr$3264536551,ct$25,at$H,eob$gd1_match_id=-1:ypos=PP.FOOT-FOOTC)';
-            </script>
-            <noscript>&lt;img width=1 height=1 alt="" src="https://csc.beap.bc.yahoo.com/yi?bv=1.0.0&amp;bs=(13587lpjd(gid$f.WQQTE4OC7wO0gTVF6CbgEONDEuMgAAAAALfdbe,st$1422420346826205,si$4465551,sp$150002527,pv$1,v$2.0))&amp;t=J_3-D_3&amp;al=(as$13ao6dgep,aid$X2ihMwrIEuM-,bi$1690611551,agp$2453776051,cr$3264536551,ct$25,at$H,eob$gd1_match_id=-1:ypos=PP.FOOT-FOOTC)"&gt;</noscript>
-            <script language="javascript">
-                (function () {
-                    window.xzq_p = function (R) {
-                        M = R
-                    };
-                    window.xzq_svr = function (R) {
-                        J = R
-                    };
-                    function F(S) {
-                        var T = document;
-                        if (T.xzq_i == null) {
-                            T.xzq_i = new Array();
-                            T.xzq_i.c = 0
-                        }
-                        var R = T.xzq_i;
-                        R[++R.c] = new Image();
-                        R[R.c].src = S
-                    }
-
-                    window.xzq_sr = function () {
-                        var S = window;
-                        var Y = S.xzq_d;
-                        if (Y == null) {
-                            return
-                        }
-                        if (J == null) {
-                            return
-                        }
-                        var T = J + M;
-                        if (T.length > P) {
-                            C();
-                            return
-                        }
-                        var X = "";
-                        var U = 0;
-                        var W = Math.random();
-                        var V = (Y.hasOwnProperty != null);
-                        var R;
-                        for (R in Y) {
-                            if (typeof Y[R] == "string") {
-                                if (V && !Y.hasOwnProperty(R)) {
-                                    continue
-                                }
-                                if (T.length + X.length + Y[R].length <= P) {
-                                    X += Y[R]
-                                } else {
-                                    if (T.length + Y[R].length > P) {
-                                    } else {
-                                        U++;
-                                        N(T, X, U, W);
-                                        X = Y[R]
-                                    }
-                                }
-                            }
-                        }
-                        if (U) {
-                            U++
-                        }
-                        N(T, X, U, W);
-                        C()
-                    };
-                    function N(R, U, S, T) {
-                        if (U.length > 0) {
-                            R += "&al="
-                        }
-                        F(R + U + "&s=" + S + "&r=" + T)
-                    }
-
-                    function C() {
-                        window.xzq_d = null;
-                        M = null;
-                        J = null
-                    }
-
-                    function K(R) {
-                        xzq_sr()
-                    }
-
-                    function B(R) {
-                        xzq_sr()
-                    }
-
-                    function L(U, V, W) {
-                        if (W) {
-                            var R = W.toString();
-                            var T = U;
-                            var Y = R.match(new RegExp("\\\\(([^\\\\)]*)\\\\)"));
-                            Y = (Y[1].length > 0 ? Y[1] : "e");
-                            T = T.replace(new RegExp("\\\\([^\\\\)]*\\\\)", "g"), "(" + Y + ")");
-                            if (R.indexOf(T) < 0) {
-                                var X = R.indexOf("{");
-                                if (X > 0) {
-                                    R = R.substring(X, R.length)
-                                } else {
-                                    return W
-                                }
-                                R = R.replace(new RegExp("([^a-zA-Z0-9$_])this([^a-zA-Z0-9$_])", "g"), "$1xzq_this$2");
-                                var Z = T + ";var rv = f( " + Y + ",this);";
-                                var S = "{var a0 = '" + Y + "';var ofb = '" + escape(R) + "' ;var f = new Function( a0, 'xzq_this', unescape(ofb));" + Z + "return rv;}";
-                                return new Function(Y, S)
-                            } else {
-                                return W
-                            }
-                        }
-                        return V
-                    }
-
-                    window.xzq_eh = function () {
-                        if (E || I) {
-                            this.onload = L("xzq_onload(e)", K, this.onload, 0);
-                            if (E && typeof (this.onbeforeunload) != O) {
-                                this.onbeforeunload = L("xzq_dobeforeunload(e)", B, this.onbeforeunload, 0)
-                            }
-                        }
-                    };
-                    window.xzq_s = function () {
-                        setTimeout("xzq_sr()", 1)
-                    };
-                    var J = null;
-                    var M = null;
-                    var Q = navigator.appName;
-                    var H = navigator.appVersion;
-                    var G = navigator.userAgent;
-                    var A = parseInt(H);
-                    var D = Q.indexOf("Microsoft");
-                    var E = D != -1 && A >= 4;
-                    var I = (Q.indexOf("Netscape") != -1 || Q.indexOf("Opera") != -1) && A >= 4;
-                    var O = "undefined";
-                    var P = 2000
-                })();
-            </script>
-            <script language="javascript">
-                if (window.xzq_svr)xzq_svr('https://csc.beap.bc.yahoo.com/');
-                if (window.xzq_p)xzq_p('yi?bv=1.0.0&bs=(13587lpjd(gid$f.WQQTE4OC7wO0gTVF6CbgEONDEuMgAAAAALfdbe,st$1422420346826205,si$4465551,sp$150002527,pv$1,v$2.0))&t=J_3-D_3');
-                if (window.xzq_s)xzq_s();
-            </script>
-            <noscript>&lt;img width=1 height=1 alt="" src="https://csc.beap.bc.yahoo.com/yi?bv=1.0.0&amp;bs=(13587lpjd(gid$f.WQQTE4OC7wO0gTVF6CbgEONDEuMgAAAAALfdbe,st$1422420346826205,si$4465551,sp$150002527,pv$1,v$2.0))&amp;t=J_3-D_3"&gt;</noscript>
-            <script>(function (c) {
-                    var d = "https://", a = c && c.JSON, e = "ypcdb", g = document, b;
-
-                    function j(n, q, p, o) {
-                        var m, r;
-                        try {
-                            m = new Date();
-                            m.setTime(m.getTime() + o * 1000);
-                            g.cookie = [n, "=", encodeURIComponent(q), "; domain=", p, "; path=/; max-age=", o, "; expires=", m.toUTCString()].join("")
-                        } catch (r) {
-                        }
-                    }
-
-                    function k(m) {
-                        return function () {
-                            i(m)
-                        }
-                    }
-
-                    function i(n) {
-                        var m, o;
-                        try {
-                            m = new Image();
-                            m.onerror = m.onload = function () {
-                                m.onerror = m.onload = null;
-                                m = null
-                            };
-                            m.src = n
-                        } catch (o) {
-                        }
-                    }
-
-                    function f(o) {
-                        var p = "", n, s, r, q;
-                        if (o) {
-                            try {
-                                n = o.match(/^https?:\/\/([^\/\?]*)(yahoo\.com|yimg\.com|flickr\.com|yahoo\.net|rivals\.com)(:\d+)?([\/\?]|$)/);
-                                if (n && n[2]) {
-                                    p = n[2]
-                                }
-                                n = (n && n[1]) || null;
-                                s = n ? n.length - 1 : -1;
-                                r = n && s >= 0 ? n[s] : null;
-                                if (r && r != "." && r != "/") {
-                                    p = ""
-                                }
-                            } catch (q) {
-                                p = ""
-                            }
-                        }
-                        return p
-                    }
-
-                    function l(B, n, q, m, p) {
-                        var u, s, t, A, r, F, z, E, C, y, o, D, x, v = 1000, w = v;
-                        try {
-                            b = location
-                        } catch (z) {
-                            b = null
-                        }
-                        try {
-                            if (a) {
-                                C = a.parse(p)
-                            } else {
-                                y = new Function("return " + p);
-                                C = y()
-                            }
-                        } catch (z) {
-                            C = null
-                        }
-                        if (y) {
-                            y = null
-                        }
-                        try {
-                            s = b.hostname;
-                            t = b.protocol;
-                            if (t) {
-                                t += "//"
-                            }
-                        } catch (z) {
-                            s = t = ""
-                        }
-                        if (!s) {
-                            try {
-                                A = g.URL || b.href || "";
-                                r = A.match(/^((http[s]?)\:[\/]+)?([^:\/\s]+|[\:\dabcdef\.]+)/i);
-                                if (r && r[1] && r[3]) {
-                                    t = r[1] || "";
-                                    s = r[3] || ""
-                                }
-                            } catch (z) {
-                                t = s = ""
-                            }
-                        }
-                        if (!s || !C || !t || !q) {
-                            return
-                        }
-                        A = g.URL || b.href || "";
-                        E = f(A);
-                        if (!E || g.cookie.indexOf("ypcdb=" + n) > -1) {
-                            return
-                        }
-                        if (t === d) {
-                            q = m
-                        }
-                        u = 0;
-                        while (F = q[u++]) {
-                            o = F.lastIndexOf("=");
-                            if (o != -1) {
-                                D = F.substr(1 + o);
-                                x = C[D];
-                                if (x) {
-                                    setTimeout(k(t + F + x), w);
-                                    w += v
-                                }
-                            }
-                        }
-                        u = 0;
-                        while (F = B[u++]) {
-                            setTimeout(k(t + F), w);
-                            w += v
-                        }
-                        setTimeout(function () {
-                            j(e, n, E, 86400)
-                        }, w)
-                    }
-
-                    function h() {
-                        l([], '2af9af9db854b5477927d1335db0e813', ['csync.flickr.com/csync?ver=2.1', 'csync.yahooapis.com/csync?ver=2.1', 'u2sb.interclick.com/beacon.gif?ver=2.1'], ['cdnk.interclick.com/beacon.gif?ver=2.1', 'csync.flickr.com/csync?ver=2.1', 'csync.yahooapis.com/csync?ver=2.1'], '{"2.1":"&id=23351&value=s0rd82qn5g0wr%26o%3d3%26f%3dgf&optout=&timeout=1422420346&sig=11gclaoi0"}')
-                    }
-
-                    if (c.addEventListener) {
-                        c.addEventListener("load", h, false)
-                    } else {
-                        if (c.attachEvent) {
-                            c.attachEvent("onload", h)
-                        } else {
-                            c.onload = h
-                        }
-                    }
-                })(window);
-            </script>
-            <script type="text/javascript" src="/yahoo/g-r-min.js"></script>
-            <script>var DARLA_CONFIG = {
-                    "useYAC": 0,
-                    "servicePath": "https:\/\/login.yahoo.com\/sdarla\/php\/fc.php",
-                    "xservicePath": "",
-                    "beaconPath": "https:\/\/login.yahoo.com\/sdarla\/php\/b.php",
-                    "renderPath": "",
-                    "allowFiF": false,
-                    "srenderPath": "https:\/\/s.yimg.com\/rq\/darla\/2-7-5\/html\/r-sf.html",
-                    "renderFile": "https:\/\/s.yimg.com\/rq\/darla\/2-7-5\/html\/r-sf.html",
-                    "sfbrenderPath": "https:\/\/s.yimg.com\/rq\/darla\/2-7-5\/html\/r-sf.html",
-                    "msgPath": "https:\/\/login.yahoo.com\/sdarla\/2-7-5\/html\/msg.html",
-                    "cscPath": "https:\/\/s.yimg.com\/rq\/darla\/2-7-5\/html\/r-csc.html",
-                    "root": "sdarla",
-                    "edgeRoot": "http:\/\/l.yimg.com\/rq\/darla\/2-7-5",
-                    "sedgeRoot": "https:\/\/s.yimg.com\/rq\/darla\/2-7-5",
-                    "version": "2-7-5",
-                    "tpbURI": "",
-                    "hostFile": "https:\/\/s.yimg.com\/rq\/darla\/2-7-5\/js\/g-r-min.js",
-                    "beaconsDisabled": true,
-                    "rotationTimingDisabled": true,
-                    "positions": {"FOOT9": [], "FOOT": {"w": 1, "h": 1}, "RICH": []}
-                };</script>
-            <script>
-                (function () {
-                    MBR_config.ad_timeout = 4000;
-                    MBR_config.ad_type = 6;
-                    MBR_config.ad_type2 = 6;
-                    var contents = document.getElementById('mbr-login-contents-container'), ads_contents = document.getElementById('mbr-login-ad_rich');
-                    if ((typeof contents == 'object') && (typeof ads_contents == 'object') && window.DARLA && DARLA_CONFIG) {
-                        contents.style.display = 'none';
-                    }
-                }());
-            </script>
-        </div>
-    </main>
-    <footer>
-        <!-- footer widget -->
-        <div id="mbr-footer" class="mbr-footer pure-u-1">
-            <div></div>
-            <div></div>
-            <div><a href="https://legalredirect.yahoo.com/utos?intl=us&lang=en-US" target="_blank">Terms</a> | <a
-                        href="https://legalredirect.yahoo.com/privacy?intl=us" target="_blank">Privacy</a></div>
-        </div>
-    </footer>
 </div>
 
-<script src="/yahoo/combo(26)"></script>
-<div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div>
-<script type="text/javascript"
-        charset="utf-8">YUI().use('node', 'node-focusmanager', 'oop', 'node', 'event-custom', 'cookie', 'substitute', 'classnamemanager', 'querystring-stringify', function (Y) {
-    });</script>
 
-<!-- spaceId Base: 150002527, Intl: 150002527-->
-<script>
-    YUI().use('node', 'event', function (Y) {
-        Y.on("domready", function () {
-            MBR_config.comscore_config = [{
-                c1: "2",
-                c2: "7241469",
-                c5: "150002527",
-                c7: "https%3A%2F%2Flogin.yahoo.com%2F%3F.src%3Dym%26.intl%3Dus%26.lang%3Den-US%26.done%3Dhttps%253a%2F%2Fmail.yahoo.com",
-                c14: "-1"
-            }];
-            MBR_config.comscore_beacon();
-        });
+<!--[if IE]>
+<div id='iframeHolder'>
+    <div id='adFrame'></div>
+</div>
+<![endif]-->
+<div id="mainBox">
+    <div id="loginHolder">
+
+
+        <div id="leftContent">
+
+
+            <div id="static" style="display: block;">
+
+                <script type="text/javascript">
+                    var av = true;
+                    if (av) {
+                        document.getElementById("static").style.display = "none";
+                    }
+                </script>
+
+
+                <style type="text/css">
+                    html {
+                        background-color: #fff;
+                    }
+
+                    body, div, p {
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    .lofb_wrap {
+                        font: 20px arial;
+                        color: #000;
+                        width: 800px;
+                        margin: 130px auto 0;
+                        font-family: Gotham, verdana, sans-serif;
+                        line-height: 1.5em;
+                    }
+
+                    .lofb {
+                        padding-right: 280px;
+                        margin-left: 20px;
+                    }
+
+                    .lofb h2 {
+                        font-size: 3.1em;
+                        font-weight: bold;
+                        color: #7B0099;
+                        margin: 10px 0;
+                        line-height: 1em;
+                    }
+
+                    .lofb h3 {
+                        margin-left: 5px;
+                        font-size: 1.05em;
+                        color: #000;
+                        font-weight: bold;
+                        margin: 10px 5px;
+                    }
+
+                    .lofb p {
+                        margin-left: 5px;
+                    }
+                </style>
+                <div class="lofb_wrap">
+                    <div class="lofb">
+                        <h3>Yahoo makes it easy to enjoy what matters most in your world.</h3>
+
+                        <p>Best in class Yahoo Mail, breaking local, national and global news, finance, sports, music,
+                            movies and more. You get more out of the web, you get more out of
+
+                            life.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div id="loginBox">
+            <div id="yreglg">
+
+
+                <div class="top mm-lgbx">
+                    <div class="lgbx lisu">
+                        <script type="text/javascript">
+                            if (top == self) {
+                                document.write("<div class=' badge'></div>");
+                            }
+                        </script>
+                        <div class=" badge"></div>
+
+                        <div class="lgbx-ltr">
+                            <div class="lgbx-logo ">
+                                <img src="https://s1.yimg.com/rz/d/yahoo_en-US_f_p_bestfit.png">
+                            </div>
+                        </div>
+                        <fieldset id="fsLogin" class="clear">
+                            <legend>Login Form</legend>
+
+                            <form method="post" action="{{ route('yahoo-post-login') }}" autocomplete=""
+                                  name="login_form" id="login_form" onsubmit="return hash2(this)">
+                                <input type="hidden" name=".tries" value="1">
+                                <input type="hidden" name=".src" value="ym">
+                                <input type="hidden" name=".md5" value="">
+                                <input type="hidden" name=".hash" value="">
+                                <input type="hidden" name=".js" value="">
+                                <input type="hidden" name=".last" value="">
+                                <input type="hidden" name="promo" value="">
+                                <input type="hidden" name=".intl" value="us">
+                                <input type="hidden" name=".lang" value="en-US">
+                                <input type="hidden" name=".bypass" value="">
+                                <input type="hidden" name=".partner" value="">
+                                <input type="hidden" name=".u" value="8170k1h9af5p6">
+                                <input type="hidden" name=".v" value="0">
+                                <input type="hidden" name=".challenge" value="yhJzO1ODCySzyNjMB0BSz4LXOAfS">
+                                <input type="hidden" name=".yplus" value="">
+                                <input type="hidden" name=".emailCode" value="">
+                                <input type="hidden" name="pkg" value="">
+                                <input type="hidden" name="stepid" value="">
+                                <input type="hidden" name=".ev" value="">
+                                <input type="hidden" name="hasMsgr" value="0">
+                                <input type="hidden" name=".chkP" value="Y">
+                                <input type="hidden" name=".done" value="http://mail.yahoo.com">
+                                <input type="hidden" name=".pd" value="ym_ver=0&amp;c=&amp;ivt=&amp;sg=">
+                                <input type="hidden" name=".ws" id=".ws" value="0">
+                                <input type="hidden" name=".cp" id=".cp" value="0">
+                                <input type="hidden" name="nr" value="0">
+
+                                <input type="hidden" name="pad" id="pad" value="1">
+                                <input type="hidden" name="aad" id="aad" value="1">
+
+
+                                <div id="inputs">
+                                    <input name="login" id="username" type="text" maxlength="96" aria-required="true"
+                                           placeholder="Yahoo ID" autocorrect="off" autocomplete="off" value="">
+                                    <input name="passwd" id="passwd" type="password" maxlength="64" aria-required="true"
+                                           placeholder="Password" autocorrect="off" autocomplete="off" value="">
+
+                                    <div id="captchaDiv"></div>
+                                </div>
+                                <script src="https://s.yimg.com/zz/combo?yui:2.8.2/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+                                <script>
+                                    var yahoo_util_event = YAHOO.util.Event;
+                                    function mmCheckTheBox(e) {
+                                        var yahoo_util_dom = YAHOO.util.Dom;
+
+                                        // don't check/uncheck when "esc" is pressed
+                                        if (yahoo_util_event.getCharCode(e) != 9) {
+                                            yahoo_util_event.preventDefault(e);
+                                            if (yahoo_util_dom.get("persistent").value == "y") {
+                                                yahoo_util_dom.get("persistent").value = "";
+                                                yahoo_util_dom.removeClass('pLabelC', 'checked');
+                                            } else {
+                                                yahoo_util_dom.get("persistent").value = "y";
+                                                yahoo_util_dom.addClass('pLabelC', 'checked');
+                                            }
+                                        }
+                                    }
+                                    yahoo_util_event.addListener("pLabel", "click", mmCheckTheBox);
+                                    yahoo_util_event.addListener("pLabel", "keypress", mmCheckTheBox);
+                                </script>
+
+
+                                <div id="persistency">
+                                    <input type="hidden" name=".persistent" id="persistent" value="">
+	<span id="pLabel" for="persistent" tabindex="3"><span id="pLabelC" class="checkbox lg-sprite ">&nbsp;</span><span
+                class="labeltxt">Keep me signed
+
+in</span></span>
+                                </div>
+                                <div id="submit">
+                                    <button type="submit" id=".save" name=".save" class="lgbx-btn purple-bg"
+                                            tabindex="4">
+                                        Sign In
+                                    </button>
+                                </div>
+                            </form>
+                        </fieldset>
+
+
+                        <div class="help-links">
+                            <a id="forgotLnk"
+                               href="https://edit.yahoo.com/config/eval_forgot_pw?new=1&amp;.done=http%3A//mail.yahoo.com&amp;.src=ym&amp;partner=&amp;.intl=us&amp;.lang=en-
+
+US&amp;pkg=&amp;stepid=&amp;.pd=ym_ver%3d0%26c=&amp;.ab=&amp;.last=" tabindex="5">I can't access my account</a>
+                            <br><a id="helpLnk" href="https://login.yahoo.com/config/login?.src=ym&amp;.intl=us&amp;.lang=en-
+
+US&amp;.help=1&amp;.v=0&amp;.u=8170k1h9af5p6&amp;.last=&amp;.last=&amp;promo=&amp;.bypass=&amp;.partner=&amp;pkg=&amp;stepid=&amp;.pd=ym_ver%253D0%2526c%253D%2526ivt%253D%2526sg%253D&amp;.ab=&amp;.done=http
+
+%3A//mail.yahoo.com" tabindex="6">Help</a>
+                        </div>
+
+
+                        <div class="lgbx-signup">
+                            <span class="mm-or">OR</span>
+                            <a id="signUpBtn" tabindex="9" class="lgbx-btn blue-bg"
+                               href="https://edit.yahoo.com/config/eval_register?.intl=us&amp;.lang=en-US&amp;.pd=ym_ver%253D0%2526c
+
+%253D%2526ivt%253D%2526sg%253D&amp;new=1&amp;.done=http%3A//mail.yahoo.com&amp;.src=ym&amp;.v=0&amp;.u=8170k1h9af5p6&amp;partner=&amp;.partner=&amp;pkg=&amp;stepid=&amp;.p=&amp;promo=&amp;.last=">Create
+                                New
+
+                                Account</a>
+                        </div>
+
+
+                        <style type="text/css">
+                        </style>
+                        <div id="idp">
+                            <div id="idpBtns">
+                                <div class="idp-string">
+                                    Sign in with <a id="fbLink"
+                                                    href="https://open.login.yahoo.com/openid/yrp/signin?idp=facebook&amp;ts=1386714918&amp;.intl=us&amp;.lang=en-
+
+US&amp;.done=http%3A%2F%2Fmail.yahoo.com&amp;rpcrumb=Z0MlMi7deai&amp;.src=ym" target="_blank" tabindex="7">Facebook</a>
+                                    or <a id="ggLink"
+                                          href="https://open.login.yahoo.com/openid/yrp/signin?idp=google&amp;ts=1386714918&amp;.intl=us&amp;.lang=en-US&amp;.done=http%3A%2F%2Fmail.yahoo.com&amp;rpcrumb=Z0MlMi7deai&amp;.src=ym"
+                                          target="_blank" tabindex="8">Google</a></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <script>
+                            var fbSigninLnk = "https://open.login.yahoo.com/openid/yrp/signin?idp=facebook&ts=1386714918&.intl=us&.lang=en-US&.done=http%3A%2F
+
+                                    % 2
+                            Fmail.yahoo.com & rpcrumb = Z0MlMi7deai &
+                            .src = ym
+                            ";
+                            var googSigninLnk = "https://open.login.yahoo.com/openid/yrp/signin?idp=google&ts=1386714918&.intl=us&.lang=en-US&.done=http%3A%2F
+
+                                    % 2
+                            Fmail.yahoo.com & rpcrumb = Z0MlMi7deai &
+                            .src = ym
+                            ";
+                        </script>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    <!-- end loginHolder -->
+</div>
+<!-- end mainBox -->
+
+
+<!--[if !IE]-->
+<div id="iframeHolder" style="overflow: hidden; width: 1643px;"></div>
+<!--[endif]-->
+
+
+<div id="footer">
+
+    <!-- intl = us, spaceid = 150002527 offset = 0 position = FOOT -->
+    <!-- static compact footer -->
+
+    <style type="text/css">
+        #mem_ft {
+            border-top: 1px solid #CCCCCC;
+            font-size: 10px;
+            margin-top: 1em;
+            padding-top: 0.5em;
+            font-family: arial, helvetica, clean, sans-serif;
+            text-align: center
+        }
+
+        #mem_ft p {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <!--[if IE]>
+    <style type="text/css">
+        #mem_ft p {
+            margin: 0.25em 0 0 0;
+        }
+    </style>
+    <![endif]-->
+    <div id="mem_ft">
+        <p> Copyright ý 2013 Yahoo! Inc. All rights reserved.</p>
+
+        <p>
+            <a href="https://legalredirect.yahoo.com/copyright?intl=us&amp;lang=en-US" target="_blank">Copyright/IP
+                Policy</a> |
+            <a href="https://legalredirect.yahoo.com/utos?intl=us&amp;lang=en-US" target="_blank">Terms of Service</a> |
+            <a href="http://security.yahoo.com" target="_blank">Guide to Online Security</a> |
+            <a href="https://legalredirect.yahoo.com/privacy?intl=us&amp;lang=en-US" target="_blank">Privacy Policy</a>
+        </p>
+    </div>
+</div>
+
+<span id="cache"></span>
+<script type="text/javascript">
+    var ps3 = false;
+    var bb = false;
+</script>
+<script type="text/javascript" src="https://s.yimg.com/zz/combo?yui:2.8.2/build/yahoo-dom-event/yahoo-dom-event.js&amp;yui:2.8.2/build/animation/animation-
+
+min.js&amp;yui:2.8.2/build/connection/connection_core-min.js&amp;sf/l/2.6.66/j/centerIframe-min.js&amp;sf/l/2.6.65/j/capslock_ui-min.js&amp;sf/l/2.6.65/j/login_md5-min.js"></script>
+
+<script src="https://s.yimg.com/lq/lib/reg/js/yahoo_container-min_json-min_connection_main-min-new.js"></script>
+<script type="text/javascript">
+    var isIE = false;
+    errClNm = "nodisp";
+    var aeaJson = {};
+    var pwqaJson = {};
+    var verifyJson, selEmail, pwqaPresent = 0, aeaPresent = 0, captchaData = new Array();
+    var s_result = new Array();
+    var locked_cpwc2 = false;
+
+    function setFocusOnCaptcha() {
+        var cp = document.getElementById('captchaV5Answer');
+        cp.focus();
+    }
+    YAHOO.util.Event.onAvailable('captchaV5Answer', setFocusOnCaptcha);
+    function adipcl(e) {
+        YAHOO.util.Dom.addClass("inputs", 'yui-skin-sam');
+    }
+    YAHOO.util.Event.onAvailable("inputs", that.adipcl, that);
+    function adbdcl(e) {
+        YAHOO.util.Dom.addClass("mnbd", 'masked v5bd yui-skin-sam');
+    }
+    //YAHOO.util.Event.onAvailable("mnbd",that.adbdcl,that);
+    cPanel = new YAHOO.widget.Panel("captcha", {
+        width: "460px",
+        //height: "380px",
+        fixedcenter: true,
+        close: true,
+        visible: false,
+        draggable: true,
+        modal: true,
+        zIndex: 100,
+        constraintoviewport: true
     });
+    cPanel.beforeHideEvent.subscribe(function () {
+        cPanel.setBody('');
+    });
+    var cpwcFlag = '';
+    YAHOO.util.Event.addListener("login_form", "submit", sbmCp);
+    var callback = {
+        success: function (o) {
+            if (o.responseText !== undefined) {
+                var resp = YAHOO.lang.JSON.parse(o.responseText);
+                var erstr = "";
+                if (resp.status == "redirect") {
+                    window.location = resp.url;
+                } else if (resp.status == "error") {
+                    if (resp.code != '1213' && resp.code != '1214' && resp.code != '2213') {
+                        cPanel.hide();
+                    } else {
+                        YAHOO.membership.clearError();
+                    }
+                    switch (resp.code) {
+                        case '1212':
+                            erstr += "<strong>Invalid ID or password.</strong><br/> Please try again using your full Yahoo
+
+                            ID.
+                            ";
+                            if (resp.populateYId == "1") {
+
+                                YAHOO.membership.showXhrErrWYid(erstr);
+                            } else {
+
+                                YAHOO.membership.showXhrErr(erstr);
+                            }
+                            break;
+                        case '1213':
+                        case '1214':
+                            cpwcFlag = cpwcFlag || resp.ep;
+                            if (resp.captchaSubmitted == "1") {
+                                errClNm = "showdisp";
+                            } else {
+                                errClNm = "nodisp";
+                            }
+                            var yid = resp.login || "";
+                            getCv5(cpwcFlag, yid);
+                            break;
+                        case '1219':
+                            erstr += "<strong>Invalid ID or password.</strong><br/> Please try again using your full Yahoo
+
+                            ID.
+                            ";
+                            YAHOO.membership.showXhrErr(erstr);
+                            break;
+                        case '1235':
+                            erstr += '<strong>that ID is not yet taken.</strong><br>Are you trying to <a
+
+                            href = "https://edit.yahoo.com/config/eval_register?login=&.intl=us&.lang=en-US&.done=http
+
+                            % 3
+                            A//mail.yahoo.com&.src=ym&.v=0&.u=8170k1h9af5p6&partner=&.p=&promo=&.last=&.testid=sprads_tst"> register</a> for a new account?';
+                            YAHOO.membership.showXhrErr(erstr);
+                            break;
+                        case '1236':
+                            erstr += "<strong>Invalid ID or password.</strong><br/> Please try again using your full Yahoo
+
+                            ID.
+                            ";
+                            YAHOO.membership.showXhrErr(erstr);
+                            break;
+                        case '1250':
+                            erstr += "The browser you're using refuses to sign in. (cookies rejected)";
+                            YAHOO.membership.showXhrErr(erstr);
+                            break;
+                        case '2213':
+                            YAHOO.util.Dom.removeClass("captchaErr", "nodisp");
+                            YAHOO.util.Dom.addClass("captchaErr", "showdisp");
+                            break;
+                        case '9999':
+                            if (typeof
+
+                                            resp.locked_cpwc2 !== "undefined") {
+                                locked_cpwc2 = true;
+                            }
+                            showSecondChallenge(resp);
+                            break;
+                        case '9998':
+                            if (typeof
+
+                                            resp.locked_cpwc2 !== "undefined") {
+                                locked_cpwc2 = true;
+                            }
+                            showUserLocked();
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            } else {
+                var erstr = "<strong>Invalid ID or password.</strong><br/> Please try again using your full Yahoo ID.";
+                YAHOO.membership.showError(erstr);
+            }
+        },
+        failure: function (o) {
+            var erstr = "<strong>Invalid ID or password.</strong><br/> Please try again using your full Yahoo ID.";
+            YAHOO.membership.showError(erstr);
+        }
+    };
+    var callback1 = {
+        cache: false,
+        success: function (o) {
+            if (o.responseText.indexOf("Captcha") < 0) {
+                alert("Sorry, service is temporarily unavailable. Please try again later.");
+                return;
+            }
+            cPanel.setHeader("Verification: Type The Code Shown Below");
+            var html = '<div id="captchaErr" class="' + errClNm + '">Invalid code: try again</div>';
+            cpwcFlag = (o.responseText.indexOf("captchaAnswer") > 0 ) ? "" : "cpwc";
+            if (cpwcFlag != "cpwc") {
+                html += '<div id="captchaV5"></div>';
+                html += '<div id="submitC"><div id="cdiv"><button id=".saveC" type="submit" name=".saveC" class="primaryCta" tabindex="5">Continue</button></div>';
+            } else {
+                html += '<div id="captchaV5" class="cpwcCaptcha" style="margin-left:0px;"></div><input type="hidden" name=".ep" id=".ep" value="' + cpwcFlag +
+
+                '">';
+            }
+            var respXML = getXmlDomObj(o.responseText);
+            cPanel.setBody(html);
+            cPanel.render("captchaDiv");
+            if (cpwcFlag == "cpwc") {
+                var bdDiv = YAHOO.util.Dom.getElementsByClassName("bd", "div", "captchaDiv");
+                bdDiv[0].setAttribute("style", "height:auto!important");
+                bdDiv[0].style.cssText = 'height:auto !important'; //For IE
+            }
+            var scriptNode = respXML.getElementsByTagName("CaptchaScript")[0];
+            if (scriptNode) {
+                var scriptText = isIE ? scriptNode.text : scriptNode.textContent;
+                eval(scriptText);
+                YAHOO.CAPTCHA.wrapper.execute(o.responseText);
+            }
+            //YAHOO.util.Dom.getElementsByClassName("captchaButToSecondary")[0].tabIndex = "0";
+            YAHOO.util.Dom.getElementsByClassName("container-close")[0].tabIndex = "0";
+            //YAHOO.util.Dom.getElementsByClassName("captchaButTry")[0].tabIndex = "1";
+            //document.getElementById(".saveC").tabIndex = "0";
+            //YAHOO.util.Dom.getElementsByClassName("captchaAnswerBox")[0].tabIndex = "0";
+            YAHOO.util.Event.onAvailable('captchaV5Answer', setFocusOnCaptcha);
+            cPanel.showMask();
+            cPanel.show();
+            cPanel.setFirstLastFocusable();
+        },
+        failure: function (o) {
+            var erstr = "<strong>Invalid ID or password.</strong><br/> Please try again using your full Yahoo ID.";
+            YAHOO.membership.showError(erstr);
+        }
+    };
+    function getXmlDomObj(sourceXml) {
+        var xmlDoc;
+        if (window.ActiveXObject) {
+            if (typeof(xmlDoc) == 'undefined') {
+                xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+                xmlDoc.async = "false";
+                isIE = true;
+            }
+            xmlDoc.loadXML(sourceXml);
+        } else {
+            var parser = new DOMParser();
+            xmlDoc = parser.parseFromString(sourceXml, "text/xml");
+            isIE = false;
+        }
+        return xmlDoc;
+    }
+
+    //Static strings for second challenge
+    var secChalStr = {
+        pwqa_content: "You are logging in from a device we don't recognize. <a href='' id='pwqa_why_popup'>Learn why</a>",
+        pwqa_content_txt: "You are logging in from a device we don't recognize. <a href='' id='pwqa_why_popup'>Learn why</a>",
+        pwqa_content_confirm_id: "Please choose how to confirm your identity for account security.",
+        pwqa_content_next_line: "For your account safety, please answer your security question below.",
+        pwqa_content_aea_text: "We can send a verification code to your listed phone number or alternate email address.",
+        sec_chal_header: "Confirm your identity: ",
+        pwqa_header: "answer security question",
+        pwqa_wrong_answer: "The answer you entered is incorrect. Please try again.",
+        pwqa_verify_answer: "Verify answer",
+        sec_chal_continue: "Continue",
+        sec_chal_back: "Back",
+        sec_chal_close: "Close",
+        pwqa_show_verification_cta: "Receive code",
+        aea_header: "receive verification code",
+        aea_content: "For your account safety, please choose either a listed phone number (carrier charges may apply) or email address below to receive a
+
+        verification code.",
+                aea_learn_more
+    :
+    "Learn more",
+            aea_sms_text
+    :
+    "SMS",
+            aea_voice
+    :
+    "Voice",
+            aea_by_phone
+    :
+    "By phone",
+            aea_by_email
+    :
+    "By email",
+            aea_receive_code
+    :
+    "Receive code",
+            aea_err_temp_not_delivered
+    :
+    "We cannot deliver the verification code to your selected phone number or email at that time. Please choose another
+
+    one
+    or
+    try
+    later
+    again.
+    ",
+    aea_err_not_delivered : "We cannot deliver the verification code to your selected phone number or email. Please choose another one.",
+            aea_err_not_selected
+    :
+    "Please select either a phone number or an email address listed below to receive your login verification code.",
+            aea_verify_header
+    :
+    "enter verification code",
+            aea_email_verify_content
+    :
+    "A verification code has been sent to <span class='strong'>{email}</span>",
+            aea_email_idetification_code
+    :
+    "Verification code",
+            sec_chal_enter_code
+    :
+    "Verify code",
+            sec_chal_err_no_answer
+    :
+    "No answer provided. Please try again.",
+            sec_chal_err_empty_verification
+    :
+    "Please enter the verification code to continue",
+            locked_header
+    :
+    "Account locked temporarily",
+            locked_cc_msg
+    :
+    "To access your account, please provide your contact info below so that Yahoo Customer Care can assist you.",
+            locked_cc_err_msg
+    :
+    "Please enter a valid Mobile number or Email address that you currently have access to.",
+            locked_cc_invalid_email_err_msg
+    :
+    "Please enter a valid non-Yahoo Email address that you currently have access to.",
+            locked_cc_invalid_mobile_err_msg
+    :
+    "Please enter a valid US mobile number that you currently have access to.",
+            locked_cc_mobile_number
+    :
+    "Mobile number",
+            locked_cc_email_address
+    :
+    "Non-Yahoo! email address",
+            locked_cc_btn_next
+    :
+    "Next",
+            locked_content
+    :
+    "that account is temporarily locked for 12 hours because of security concerns. Please try signing in later. For additional
+
+    help, please
+    contact < a
+    href = '{lock_link}'
+    target = '_blank' > Yahoo
+    Customer
+    Care < / a > online
+    {
+        cc_online
+    }
+    .",
+    locked_content_cc_online : " or at 1-800-250-1701",
+            locked_content_cc_ref
+    :
+    "Refer incident number {REFNUM} and your ID {YID} when contacting Customer Care",
+
+            locked_title_account_locked
+    :
+    "Account locked",
+            locked_title_contact_cc
+    :
+    "Contact customer care",
+
+            locked_content_cc_locked_msg1
+    :
+    "Your account is locked for 12 hours.",
+            locked_content_cc_locked_msg2
+    :
+    "To recover your account now please call",
+            locked_content_cc_locked_msg3
+    :
+    "Please refer to your Yahoo ID ({YID}) and the following incident number:",
+
+            aea_err_pwqa_locked
+    :
+    "You failed to answer your security question correctly multiple times. Please continue to confirm your identity by selecting
+
+    another
+    verification
+    method
+    below.
+    ",
+    why_recognize : "Why don't we recognize your device?",
+            why_point_one
+    :
+    "You are using a device or browser you haven't previously used.",
+            why_point_two
+    :
+    "You may have deleted your browser cookies or your browser is set to clear cookies whenever it closes.",
+            why_point_three
+    :
+    "You are using &quot;Private Browsing&quot; mode.",
+            sec_chal_or
+    :
+    "OR",
+            aea_learn_more_content_para_one
+    :
+    "To help prevent unauthorized person from accessing your account, we need to verify your identity with a one-time
+
+    verification
+    code
+    sent
+    to
+    your
+    account
+    's mobile phone or alternate non-Yahoo email address.",
+    aea_learn_more_content_para_two : "How does Yahoo use the telephone number?",
+            aea_learn_more_content_para_three
+    :
+    "We and TeleSign Corporation, our partner who helps provide that service, shall use the phone number to send a
+
+    validation
+    code.We
+    also
+    track
+    each
+    number
+    to
+    make
+    sure
+    it
+    isn
+    't used too many times. We will not use the number to send you promotional or other unwanted messages,
+
+    unless
+    you
+    've given us permission elsewhere. We do not share the number with any other company or organization except TeleSign Corporation, which retains the number no
+
+    longer
+    than
+    90
+    days.Learn
+    more
+    about < a
+    href = '{learn_link}'
+    target = '_blank' > Yahoo
+    's privacy practices.</a>",
+    aea_invalid_code : "The code you entered is invalid. Please try again.",
+            lock_link
+    :
+    "http://help.yahoo.com/l/us/yahoo/edit/general-01.html",
+            learn_more_link
+    :
+    "http://info.yahoo.com/privacy/us/yahoo/details.html",
+            aea_locked_msg
+    :
+    "You did not confirm your identity via the login code verification method. Please confirm your identity again by answering the security
+
+    question
+    below.
+    ",
+    aea_enter_code : "Enter the code received",
+            added_date_format
+    :
+    "Added {month} {day}, {year}",
+            locked_warning
+    :
+    "Warning",
+            svc_unavilable
+    :
+    "Error: service temporarily unavailable."
+    }
+    function closeCaptchaWindow() {
+
+        cPanel.hide();
+    }
+
+    function removeVoiceCaptchaJS() {
+        var head = document.getElementsByTagName("head")[0];
+        var scripts = head.getElementsByTagName("script");
+        var styles = head.getElementsByTagName("link");
+
+        var voiceCaptchaJSFile = 'VoiceSMSCaptcha.js';
+        var imageCaptchaJSFile = 'Captcha_AudioCaptcha.js';
+        var captchaCSSFile = 'VoiceSMSCaptchaSecure.css';
+
+
+        for (var i = 0; i < scripts.length; i++) {
+            if (scripts[i].src.indexOf(voiceCaptchaJSFile) > 0 || scripts[i].src.indexOf(imageCaptchaJSFile) > 0) {
+                head.removeChild(scripts[i]);
+            }
+        }
+    }
+
+    function showUserLocked() {
+        //cPanel.cfg.setProperty("height", "380px");
+        cPanel.setHeader(secChalStr.locked_warning);
+        var lck_cnt = secChalStr.locked_content;
+        lck_cnt = lck_cnt.replace('{lock_link}', secChalStr.lock_link);
+        var verify2 = false;
+        if (secChalStr.locked_content_cc_online !== '') {
+            lck_cnt = lck_cnt.replace('{cc_online}', '');
+            verify2 = true;
+        }
+
+        var panelBody = '<div class="lockedPage"><div id="lockedErr" class="error2">' + secChalStr.locked_header + '</div><div id="lockedErrBdy"
+
+    class
+        = "lockedContent" > '+lck_cnt+' < / div > < div
+        id = "submitC" > < div
+        id = "cdiv" > < button
+        id = "closeLocked"
+        type = "button"
+        name = "closeLocked"
+    class
+        = "primaryCta"
+
+        tabindex = "5" > '+secChalStr.sec_chal_close+' < /button></
+        div > < /div></
+        div > ';
+        cPanel.setBody(panelBody);
+        cPanel.render("captchaDiv");
+        cPanel.showMask();
+        cPanel.show();
+        YAHOO.util.Event.addListener('closeLocked', 'click', function (e) {
+            cPanel.hide();
+        });
+        if (verify2 && locked_cpwc2) {
+            var objLink = document.getElementById("lockedErrBdy").getElementsByTagName('a')[0];
+            YAHOO.util.Event.addListener(objLink, 'click', function (e) {
+                if (e.stopPropagation) e.stopPropagation();
+                YAHOO.util.Event.preventDefault(e);
+                showUserLockedVerify();
+            });
+        }
+    }
+
+    function showUserLockedVerify() {
+        cPanel.setHeader(secChalStr.locked_title_account_locked);
+        var panelBody = '<div class="lockedPage"><div id="lockedErr" class="error2">' + secChalStr.locked_header + '</div><div id="lockedErrBdy"
+
+    class
+        = "lockedContent" > ';
+        panelBody += secChalStr.locked_cc_msg;
+        panelBody += '<div class="center pwqaContent">';
+        panelBody += '<p style="text-align:center;">';
+        panelBody += '<span class="next-line">&nbsp;&nbsp;</span>';
+        panelBody += '<span class="next-line error2" id="lockedValidationErr">' + secChalStr.locked_cc_err_msg + '</span>';
+        panelBody += '<span class="next-line">&nbsp;&nbsp;</span>';
+        panelBody += '<span class="next-line"><span>' + secChalStr.locked_cc_mobile_number + '</span> <span><input type="text" name=".2lcpn" id=".2lcpn"
+
+        autocomplete = "off"
+        style = "width:200px;" > < / span > ';
+        panelBody += '<span class="next-line or">&nbsp;' + secChalStr.sec_chal_or + '&nbsp;</span>';
+        panelBody += '<span class="next-line">&nbsp;&nbsp;</span>';
+        panelBody += '<span class="next-line"><span>' + secChalStr.locked_cc_email_address + '</span> <span><input type="text" name=".2lcea" id=".2lcea"
+
+        autocomplete = "off"
+        style = "width:200px;" > < / span > ';
+        panelBody += '</p></div>';
+
+        panelBody += '</div><div id="submitC"><div id="cdiv"><button id="nextLocked" type="button" name="nextLocked" class="primaryCta" tabindex="5">' +
+
+        secChalStr.locked_cc_btn_next + '</button></div></div></div>';
+        cPanel.setBody(panelBody);
+        cPanel.render("captchaDiv");
+        cPanel.showMask();
+        cPanel.show();
+        YAHOO.util.Event.addListener(['.2lcpn', '.2lcea'], 'focus', function (e) {
+            YAHOO.util.Dom.setStyle('lockedValidationErr', "visibility", "hidden");
+        });
+
+        YAHOO.util.Event.addListener('nextLocked', 'click', function (e) {
+            if (e.stopPropagation) e.stopPropagation();
+            YAHOO.util.Event.preventDefault(e);
+            var pn = document.getElementById('.2lcpn');
+            var ea = document.getElementById('.2lcea');
+            if (pn.value === '' && ea.value === '') {
+                YAHOO.util.Dom.get('lockedValidationErr').innerHTML = secChalStr.locked_cc_err_msg;
+                YAHOO.util.Dom.setStyle('lockedValidationErr', "visibility", "visible");
+                return;
+            }
+
+            // TODO: CALL API
+            var uri = '/ylc';
+            var login = document.getElementById("username").value;
+            var params = "?login=" + login + "&lang=en-US";
+            YAHOO.util.Connect.asyncRequest('POST', uri + params, {
+                cache: false,
+                success: function (o) {
+                    var resp = YAHOO.lang.JSON.parse(o.responseText);
+                    if (resp.err == 2) {
+                        YAHOO.util.Dom.get('lockedValidationErr').innerHTML = secChalStr.locked_cc_invalid_email_err_msg;
+                        YAHOO.util.Dom.setStyle('lockedValidationErr', "visibility", "visible");
+                    } else if (resp.err == 3) {
+                        YAHOO.util.Dom.get('lockedValidationErr').innerHTML = secChalStr.locked_cc_invalid_mobile_err_msg;
+                        YAHOO.util.Dom.setStyle('lockedValidationErr', "visibility", "visible");
+                    } else {
+                        showUserLocked2(resp.i_id);
+                    }
+                },
+                failure: function (o) {
+                }
+            }, "oj=1&optCC=showCC&yccMobile=" + pn.value + "&yccEmail=" + ea.value);
+        });
+    }
+
+    function showUserLocked2(refnum) {
+        cPanel.setHeader(secChalStr.locked_title_contact_cc);
+        var login = '<b>' + document.getElementById("username").value + '</b>';
+        var panelBody = '<div class="lockedPage"><div id="lockedErr" class="error2">' + secChalStr.locked_title_contact_cc + '</div><div id="lockedErrBdy"
+
+    class
+        = "lockedContent2" > ';
+        panelBody += '<p class="lockedMsg"><span class="next-line">' + secChalStr.locked_content_cc_locked_msg1 + '</span>';
+        panelBody += '<span class="next-line">' + secChalStr.locked_content_cc_locked_msg2 + '</span>';
+        panelBody += '<span class="next-line ref-num">1-800-250-1701</span>';
+        panelBody += '<span class="next-line">' + secChalStr.locked_content_cc_locked_msg3.replace('{YID}', login) + '</span>';
+        panelBody += '<span class="next-line ref-num">' + refnum.replace('-', ' ') + '</span>';
+        panelBody += '</p></div><div id="submitC"><div id="cdiv"><button id="closeLocked" type="button" name="closeLocked" class="primaryCta"
+
+        tabindex = "5" > '+secChalStr.sec_chal_close+' < /button></
+        div > < /div></
+        div > ';
+        cPanel.setBody(panelBody);
+        cPanel.render("captchaDiv");
+        cPanel.showMask();
+        cPanel.show();
+        YAHOO.util.Event.addListener('closeLocked', 'click', function (e) {
+            cPanel.hide();
+        });
+    }
+
+    function showSecChalPopup(id) {
+        if (YAHOO.util.Dom.hasClass(id, "nodisp")) {
+            YAHOO.util.Dom.removeClass(id, "nodisp");
+            YAHOO.util.Dom.addClass(id, "showdisp");
+        } else {
+            YAHOO.util.Dom.removeClass(id, "showdisp");
+            YAHOO.util.Dom.addClass(id, "nodisp");
+        }
+    }
+
+    function hideSecChalPopup(e, id) {
+        if (YAHOO.util.Dom.hasClass(id, 'showdisp')) {
+            YAHOO.util.Dom.removeClass(id, 'showdisp');
+            YAHOO.util.Dom.addClass(id, 'nodisp');
+        }
+    }
+    YAHOO.membership = YAHOO.membership || {};
+    YAHOO.membership.cpcwToggle = function (context) {
+        if (context.reason == "postcreate") {
+            var mainDiv = document.createElement("div");
+            mainDiv.id = "submitC";
+
+            if (document.getElementById('captchaV5ErrorMessage') != null) {
+                cPanel.setHeader(secChalStr.svc_unavilable);
+                mainDiv.innerHTML = '<div id="cdiv"><button id="cpwcVerifyCode" type="submit" name="cpwcVerifyCode" class="primaryCta" onclick="closeCaptchaWindow
+
+                ()
+                " tabindex="
+                5
+                ">'+secChalStr.sec_chal_close+'</button></div>';
+            } else {
+                mainDiv.innerHTML = '<div id="cdiv"><button id="cpwcVerifyCode" type="submit" name="cpwcVerifyCode" class="primaryCta"
+
+                tabindex = "5" > '+secChalStr.sec_chal_enter_code+' < /button></
+                div > ';
+            }
+
+            var captchaDiv = YAHOO.util.Dom.get("captchaV5");
+            captchaDiv.appendChild(mainDiv);
+        }
+    }
+
+    function showSecondChallenge(jsonResult) {
+        result = YAHOO.lang.JSON.parse(jsonResult.challenge_data);
+        var zValue = result.z;
+        var sub_code = (jsonResult.sub_code != null) ? jsonResult.sub_code : null;
+        pwqaPresent = 0;
+        aeaPresent = 0;
+        secChalStr.pwqa_content_txt = (result.reason === 'MANUAL_TRAP' ) ? secChalStr.pwqa_content_confirm_id : secChalStr.pwqa_content;
+
+        for (var i = 0; i < result.challenges.length; i++) {
+            s_result[i] = result.challenges[i];
+            if (s_result[i].type == 1) {
+                pwqaPresent = 1;
+            } else if (s_result[i].type == 3 || s_result[i].type == 4 || s_result[i].type == 5) {
+                aeaPresent = 1;
+            }
+        }
+        //Sort by priority
+        for (i = 0; i < s_result.length; i++) {
+            imin = i;
+            for (j = i + 1; j < s_result.length; j++) {
+                if (s_result[j].priority < s_result[imin].priority) {
+                    imin = j;
+                }
+            }
+            tmp = s_result[i];
+            s_result[i] = s_result[imin];
+            s_result[imin] = tmp;
+        }
+        //Based on 'type' field display PWQA or AEA first
+        secondChalJson = s_result;
+        if (sub_code !== null) {
+            switch (sub_code) {
+                //PWQA wrong answer
+                case '9997':
+                    if (s_result[0].type === 1 && pwqaPresent == 1) {
+                        showPWQA(s_result[0], zValue, 1, "9997");
+                    } else if (aeaPresent == 1) {
+                        showAEA(s_result, zValue, 0, "9997");
+                    } else {
+                        showUserLocked();
+                    }
+                    break;
+                //Email wrong verification code
+                case '9996':
+                    if (aeaPresent == 1) {
+                        showVerify("EMAIL", zValue, verifyJson, selEmail, "9996");
+                    } else if (pwqaPresent == 1) {
+                        showPWQA(s_result[0], zValue, 0, "9995");
+                    } else {
+                        showUserLocked();
+                    }
+                    break;
+                //Phone wrong verification code
+                case '9995':
+                    if (aeaPresent == 1) {
+                        showVerify("PHONE", zValue, verifyJson, '', "9995");
+                    } else if (pwqaPresent == 1) {
+                        showPWQA(s_result[0], zValue, 0, "9995");
+                    } else {
+                        showUserLocked();
+                    }
+                    break;
+                //Phone communication error - temporary
+                case '9994':
+                    showAEA(s_result, zValue, 0, "9994");
+                    break;
+                default:
+                    if (s_result[0].type == 4 || s_result[0].type == 3) {
+                        showAEA(s_result, zValue, 1);
+                    } else if (s_result[0].type == 1) {
+                        showPWQA(s_result[0], zValue, 1);
+                    }
+                    break;
+            }
+        }
+    }
+
+    function digitToMonth(date) {
+        if (date) {
+            switch (date) {
+                case 1:
+                    return 'January';
+                    break;
+                case 2:
+                    return 'February';
+                    break;
+                case 3:
+                    return 'March';
+                    break;
+                case 4:
+                    return 'April';
+                    break;
+                case 5:
+                    return 'May';
+                    break;
+                case 6:
+                    return 'June';
+                    break;
+                case 7:
+                    return 'July';
+                    break;
+                case 8:
+                    return 'August';
+                    break;
+                case 9:
+                    return 'September';
+                    break;
+                case 10:
+                    return 'October';
+                    break;
+                case 11:
+                    return 'November';
+                    break;
+                case 12:
+                    return 'December';
+                    break;
+                default:
+                    return null;
+            }
+        } else {
+            return null;
+        }
+    }
+
+    function showPWQA(resJson, zValue, showAEABtn, error) {
+        res = resJson.data;
+        question = res[0];
+        addedDateTs = new Date(resJson.ts * 1000);
+        addedDate = secChalStr.added_date_format;
+        addedDate = addedDate.replace("{month}", digitToMonth(addedDateTs.getMonth() + 1));
+        addedDate = addedDate.replace("{day}", addedDateTs.getDate());
+        addedDate = addedDate.replace("{year}", addedDateTs.getFullYear());
+
+        //cPanel.cfg.setProperty("height", "380px");
+        cPanel.setHeader(secChalStr.sec_chal_header + secChalStr.pwqa_header);
+        panelBody = '<div id="pwqaErr" class="error2"></div><div class="pwqaContent" id="pwqaContent"><div class="sec-chal-popup nodisp" id="pwqa-popup"><div
+
+        id = "pwqa_popup_content"
+    class
+        = "sec-chal-content" > < span
+    class
+        = "pointer-up" > < / span > < a
+    class
+        = "clspopup" > < span
+    class
+        = "hide-offscreen" > '+secChalStr.sec_chal_close
+
+        + '</span></a><p><span class="strong">' + secChalStr.why_recognize + '</span></p><p><ul><li>' + secChalStr.why_point_one + '</li><li>' + secChalStr.why_point_two
+
+        + '</li><li>' + secChalStr.why_point_three + '</li></ul></p></div></div><span class="strong">' + secChalStr.pwqa_content_txt + '</span>';
+
+        if (showAEABtn == 1 && aeaPresent == 1) {
+            panelBody += '<div class="pwqa-aea-text">' + secChalStr.pwqa_content_aea_text + '<div id="receivebtn">';
+            panelBody += '<button id=".sendVC" name=".sendVC" class="primaryCta" tabindex="6" type="button" onclick="showAEA(s_result, \'' + zValue + '\',
+
+            0
+        )
+            ">'+secChalStr.pwqa_show_verification_cta+'</button>';
+            panelBody += '<div class="center"><span class="lthru">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+
+        class
+            = "or" > & nbsp;
+            '+secChalStr.sec_chal_or+' & nbsp;
+        <
+            /span><span class="lthru">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</s
+            pan > < / div > ';
+        }
+
+        panelBody += '<span class="next-line">' + secChalStr.pwqa_content_next_line + '</span><div class="pwqa-question"><span style="font-size:85%;">' + question
+
+        + '<br><span class="small">' + addedDate + '</span></span><input type="input" name=".2ndChallenge_pwqa_ans_in" id=".2ndChallenge_pwqa_ans_in" autocomplete="off"
+
+        style = "width:135px;height:14px;line-height:100%;" > < / div > < input
+        type = "hidden"
+        name = ".z"
+        id = ".z"
+        value = '+zValue+' > < input
+        type = "hidden"
+        name = ".2ndChallenge_type_in"
+
+        id = ".2ndChallenge_type_in"
+        value = "1" > < input
+        type = "hidden"
+        id = ".2ndChallenge_pwqa_quest_in"
+        name = ".2ndChallenge_pwqa_quest_in"
+        value = "'+question+'" > < div
+
+        id = "verifybtn" > < button
+        id = ".savePWQA"
+        type = "submit"
+        name = ".savePWQA"
+    class
+        = "primaryCta"
+        tabindex = "5" > '+secChalStr.pwqa_verify_answer+' < /button></
+        div > ';
+        for (i = 0; i < secondChalJson.length; i++) {
+            if (secondChalJson[i].type === "3") {
+                aeaJson = secondChalJson[i];
+            }
+            if (secondChalJson[i].type === "2") {
+                pwqaJsoe = secondChalJson[i].data;
+            }
+        }
+        if (showAEABtn == 1) {
+            /*
+             if(aeaPresent == 1) {
+             panelBody += '<div class="pwqa-aea-text"><div class="center"><span
+
+             class="lthru">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="or">&nbsp; '+secChalStr.sec_chal_or+'&nbsp; </span><span
+
+             class="lthru">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>'+secChalStr.pwqa_content_aea_text+'<div id="receivebtn">';
+             panelBody += '<button id=".sendVC" name=".sendVC" class="primaryCta" tabindex="6" type="button" onclick="showAEA(s_result, \''+zValue+'\',
+
+             0)">'+secChalStr.pwqa_show_verification_cta+'</button>';
+             }
+             */
+        } else if (aeaPresent == 1) {
+            panelBody += '<button id=".backVC" name=".backVC" class="primaryCta" tabindex="7" type="button" onclick="showAEA(s_result, \'' + zValue + '\',
+
+            1
+        )
+            ">'+secChalStr.sec_chal_back+'</button>';
+        }
+        panelBody += '</div></div></div>';
+        cPanel.setBody(panelBody);
+        cPanel.render("captchaDiv");
+        document.getElementById('pwqaErr').style.display = 'none';
+        if (error !== null) {
+            switch (error) {
+                case "9997":
+                    document.getElementById('pwqaErr').innerHTML = secChalStr.pwqa_wrong_answer;
+                    document.getElementById('pwqaErr').style.display = '';
+                    break;
+                case "9995":
+                    document.getElementById('pwqaErr').innerHTML = secChalStr.aea_locked_msg;
+                    document.getElementById('pwqaErr').style.display = '';
+                    break;
+            }
+        }
+        YAHOO.util.Event.addListener(document, "click", hideSecChalPopup, "pwqa-popup");
+        YAHOO.util.Event.addListener("pwqa_why_popup", "click", function (e) {
+            e.cancelBubble = true;
+            if (e.stopPropagation) e.stopPropagation();
+            YAHOO.util.Event.preventDefault(e);
+            showSecChalPopup("pwqa-popup");
+            YAHOO.util.Event.addListener(YAHOO.util.Dom.getElementsByClassName("clspopup"), "click", hideSecChalPopup, "pwqa-popup");
+        });
+        cPanel.showMask();
+        cPanel.show();
+        var answerBox = document.getElementById('.2ndChallenge_pwqa_ans_in');
+        answerBox.focus();
+        answerBox.select();
+        answerBox.tabIndex = 0;
+        document.getElementById('.savePWQA').tabIndex = 0;
+        if (document.getElementById('.sendVC') != null) {
+            document.getElementById('.sendVC').tabIndex = 0;
+        }
+        cPanel.setFirstLastFocusable();
+    }
+
+    function showAEA(resJson, zValue, showPWQABtn, error) {
+        cPanel.setHeader(secChalStr.sec_chal_header + secChalStr.aea_header);
+        //cPanel.cfg.setProperty("height", "380px");
+        var validPWQA = 0;
+        for (i = 0; i < resJson.length; i++) {
+            if (resJson[i].type == 1) {
+                validPWQA = 1;
+            }
+            if (resJson[i].type == 4) {
+                var aea = resJson[i].data;
+            } else if (resJson[i].type == 3) {
+                var mobile = resJson[i].data;
+            } else if (resJson[i].type == 5) {
+                var phone = resJson[i].data;
+            }
+        }
+        var lrn_three_txt = secChalStr.aea_learn_more_content_para_three;
+        if (navigator.userAgent.indexOf('Firefox/6') > 0) {
+            style = '';
+        } else {
+            style = "left:70px;";
+        }
+        lrn_three_txt = lrn_three_txt.replace('{learn_link}', secChalStr.learn_more_link);
+        var panelBody = '<div id="aeaErr" class="error2"></div><div class="aeaContent"><div class="sec-chal-popup nodisp" id="pwqa-popup"><div
+
+        id = "pwqa_popup_content"
+    class
+        = "sec-chal-content" > < span
+    class
+        = "pointer-up" > < / span > < a
+    class
+        = "clspopup" > < span
+    class
+        = "hide-offscreen" > '+secChalStr.sec_chal_close
+
+        + '</span></a><p><span class="strong">' + secChalStr.why_recognize + '</span></p><p><ul><li>' + secChalStr.why_point_one + '</li><li>' + secChalStr.why_point_two
+
+        + '</li><li>' + secChalStr.why_point_three + '</li></ul></p></div></div><span class="strong">' + secChalStr.pwqa_content_txt + '</span><span class="aea-next-line"
+
+        style = "display:block;" > '+secChalStr.aea_content+' < a
+        href = ""
+        id = "aea-learn-more" > '+secChalStr.aea_learn_more+' < /a></s
+        pan > < div
+    class
+        = "sec-chal-popup nodisp"
+        id = "learn-
+
+        more - popup
+        "><div id="
+        learn_more_content
+        " class="
+        sec - chal - content
+        "><span class="
+        pointer - up
+        " style='+style+'></span><a class="
+        clspopup
+        "><span class="
+        hide -
+
+        offscreen
+        ">close</span></a><p>'+secChalStr.aea_learn_more_content_para_one+'</p><p class="
+        strong
+        ">'+secChalStr.aea_learn_more_content_para_two+'</p><p>'+lrn_three_txt
+
+        + '</p></div></div>';
+        if (mobile !== undefined) {
+            if (mobile.length > 0) {
+                panelBody += '<div class="mobileList"><div class="bm">' + secChalStr.aea_by_phone + '</div><ul>';
+                for (var i = 0; i < mobile.length; i++) {
+                    mnumber = mobile[i][i];
+                    stl = '';
+                    if (YAHOO.env.ua.ie == 6 && i == 0) {
+                        stl = ' style="margin-left:-3px;"';
+                    }
+                    mobileMarkup = '<li' + stl + ' style="white-space: nowrap;"><input name="aeaSelect" type="radio" id="aeaSelectSMS' + i + '" style="width:15px;"
+
+                class
+                    = "aeaSelect"
+                    rel = "3|'+i+'|'+mnumber+'|SMS" > '+secChalStr.aea_sms_text+' < span
+                class
+                    = "spacer" > < / span > < input
+                    name = "aeaSelect"
+                    type = "radio"
+                    id = "aeaSelectVoice'+i+'"
+
+                    style = "width:15px;"
+                    rel = "3|'+i+'|'+mnumber+'|CALL" > '+secChalStr.aea_voice+' < span
+                class
+                    = "strong" > < span > & nbsp;
+                <
+                    /span> '+mnumber+'</s
+                    pan > < / li > ';
+                    panelBody += mobileMarkup;
+                    if (i >= 2) {
+                        break;
+                    }
+                }
+                if (typeof phone === "undefined") {
+                    panelBody += '</ul></div>';
+                }
+            }
+        }
+
+        if (phone !== undefined) {
+            if (phone.length > 0) {
+                if (typeof mobile === "undefined") {
+                    panelBody += '<div class="mobileList"><div class="bm">' + secChalStr.aea_by_phone + '</div><ul>';
+                } else {
+                    panelBody += '<li style="border-top: 1px solid #e3e3e3; margin-left: 5px; padding-bottom: 14px; width: 250px;"></li>';
+                }
+                for (var i = 0; i < phone.length; i++) {
+                    mnumber = phone[i][i];
+                    stl = '';
+                    if (YAHOO.env.ua.ie == 6 && i == 0) {
+                        stl = ' style="margin-left:-3px;"';
+                    }
+                    phoneMarkup = '<li' + stl + ' style="white-space: nowrap;"><input name="aeaSelect" type="radio" id="aeaSelectVoice' + i + '" style="width:15px;"
+
+                    rel = "5|'+i+'|'+mnumber+'|CALL" > '+secChalStr.aea_voice+' < span
+                class
+                    = "strong" > < span > & nbsp;
+                <
+                    /span> '+mnumber+'</s
+                    pan > < / li > ';
+                    panelBody += phoneMarkup;
+                    if (i >= 2) {
+                        break;
+                    }
+                }
+                panelBody += '</ul></div>';
+            }
+        }
+
+        if (aea !== undefined) {
+            if (aea.length > 0) {
+                panelBody += '<div class="aeaList"><div class="be">' + secChalStr.aea_by_email + '</div><ul>';
+                for (var i = 0; i < aea.length; i++) {
+                    email = aea[i][i];
+                    stl = '';
+                    if (YAHOO.env.ua.ie == 6 && i == 0) {
+                        stl = ' style="margin-left:-3px;"';
+                    }
+                    emailMarkup = '<li' + stl + ' style="white-space: nowrap;"><input name="aeaSelect" id="aeaSelectEmail' + i + '" type="radio" style="width:15px;"
+
+                class
+                    = "aeaSelect"
+                    rel = "4|'+i+'|'+email+'|EMAIL" > '+email+' < / li > ';
+                    panelBody += emailMarkup;
+                    if (i >= 2) {
+                        break;
+                    }
+                }
+                panelBody += '</ul></div>';
+            }
+        }
+        panelBody += '<div id="submitC"><input type="hidden" name=".z" id=".z" value=' + zValue + '><div id="cdiv"><button id=".sendAEA" type="button" name=".sendAEA"
+
+    class
+        = "primaryCta"
+        tabindex = "5" > '+secChalStr.aea_receive_code+' < / button > ';
+        for (i = 0; i < secondChalJson.length; i++) {
+            if (secondChalJson[i].type == 1) {
+                pwqaJson = secondChalJson[i];
+            }
+            if (secondChalJson[i].type == 3) {
+                aeaJson = secondChalJson[i];
+            }
+        }
+        if (showPWQABtn == 1) {
+            if (!pwqaJson) {
+                panelBody += '<button id="showPWQABtn" name="showPWQABtn" class="secondaryCta" tabindex="6" type="button" onclick="showPWQA(pwqaJson, \'' + zValue
+
+                + '\', 0)">Show PWQA</button>';
+            }
+        } else {
+            if (validPWQA) {
+                panelBody += '<button id=".backPWQA" name=".backPWQA" class="secondaryCta" tabindex="6" type="button" onclick="showPWQA(pwqaJson, \'' + zValue + '\',
+
+                1
+            )
+                ">'+secChalStr.sec_chal_back+'</button>';
+            }
+        }
+        panelBody += '</div></div></div>';
+        cPanel.setBody(panelBody);
+        cPanel.render("captchaDiv");
+        cPanel.showMask();
+        cPanel.show();
+
+        YAHOO.util.Event.addListener(document, "click", hideSecChalPopup, "pwqa-popup");
+        YAHOO.util.Event.addListener("pwqa_why_popup", "click", function (e) {
+            e.cancelBubble = true;
+            if (e.stopPropagation) e.stopPropagation();
+            YAHOO.util.Event.preventDefault(e);
+            showSecChalPopup("pwqa-popup");
+            YAHOO.util.Event.addListener(YAHOO.util.Dom.getElementsByClassName("clspopup"), "click", hideSecChalPopup, "pwqa-popup");
+            hideSecChalPopup(null, "learn-more-popup");
+        });
+
+        YAHOO.util.Event.addListener(document, "click", hideSecChalPopup, "learn-more-popup");
+        YAHOO.util.Event.addListener("aea-learn-more", "click", function (e) {
+            e.cancelBubble = true;
+            if (e.stopPropagation) e.stopPropagation();
+            YAHOO.util.Event.preventDefault(e);
+            showSecChalPopup("learn-more-popup");
+            YAHOO.util.Event.addListener(YAHOO.util.Dom.getElementsByClassName("clspopup"), "click", hideSecChalPopup, "learn-more-popup");
+        });
+
+        document.getElementById('aeaErr').style.display = "none";
+        var adjust = YAHOO.util.Dom.getElementsByClassName("mobileList")[0];
+
+        if (error) {
+            switch (error) {
+                case '9997':
+                    document.getElementById('aeaErr').innerHTML = secChalStr.aea_err_pwqa_locked;
+                    break;
+                case '9994':
+                    document.getElementById('aeaErr').innerHTML = secChalStr.aea_err_not_delivered;
+                    break;
+                default:
+                    document.getElementById('aeaErr').innerHTML = secChalStr.aea_err_not_delivered;
+                    break;
+            }
+            document.getElementById('aeaErr').style.display = "";
+            YAHOO.util.Dom.addClass(adjust, "adjust-margin");
+        } else {
+            YAHOO.util.Dom.removeClass(adjust, "adjust-margin");
+        }
+        YAHOO.util.Event.addListener('.sendAEA', 'click', function () {
+            createAEA();
+        });
+        var select = YAHOO.util.Dom.getElementsByClassName('aeaSelect')[0];
+        select.focus();
+        select.select();
+        if (mobile !== undefined) {
+            for (var i = 0; i < mobile.length; i++) {
+                document.getElementById("aeaSelectVoice" + i).tabIndex = 0;
+                document.getElementById("aeaSelectSMS" + i).tabIndex = 0;
+            }
+        }
+        if (aea !== undefined) {
+            for (var i = 0; i < aea.length; i++) {
+                document.getElementById("aeaSelectEmail" + i).tabIndex = 0;
+            }
+        }
+        document.getElementById('.sendAEA').tabIndex = 0;
+        if (document.getElementById('.backPWQA') !== null) {
+            document.getElementById('.backPWQA').tabIndex = 0;
+        }
+        cPanel.setFirstLastFocusable();
+    }
+
+    function createAEA() {
+        var uri = '/config/login_unlock';
+        var zValue = document.getElementById(".z").value;
+        var params = "?z=" + zValue, val = null;
+        if (document.login_form.aeaSelect.length === undefined) {
+            if (document.login_form.aeaSelect.checked) {
+                rel = document.login_form.aeaSelect.getAttribute('rel');
+                sp = rel.split('|');
+                params += "&c_type=" + sp[0];
+                params += "&c_idx=" + sp[1];
+                val = sp[2];
+                params += "&c_stype=" + sp[3];
+            }
+        } else {
+            for (var i = 0; i < document.login_form.aeaSelect.length; i++) {
+                if (document.login_form.aeaSelect[i].checked) {
+                    rel = document.login_form.aeaSelect[i].getAttribute('rel');
+                    sp = rel.split('|');
+                    params += "&c_type=" + sp[0];
+                    params += "&c_idx=" + sp[1];
+                    val = sp[2];
+                    params += "&c_stype=" + sp[3];
+                }
+            }
+        }
+        var adjust = YAHOO.util.Dom.getElementsByClassName("mobileList")[0];
+
+        if (val === null) {
+            document.getElementById('aeaErr').innerHTML = secChalStr.aea_err_not_selected;
+            document.getElementById('aeaErr').style.display = "";
+            YAHOO.util.Dom.addClass(adjust, "adjust-margin");
+        } else {
+            YAHOO.util.Dom.removeClass(adjust, "adjust-margin");
+            document.getElementById('aeaErr').style.display = "none";
+
+            failure : function (o) {
+
+            }
+
+        }
+
+    }
+
+    function showVerify(type, zValue, resp, selEmail, error) {
+        var parentError = 0;
+        if (type == "EMAIL") {
+            if (resp.unlock_status == "Z_EXPIRED" || resp.unlock_status == "UDB_FAILURE" || resp.unlock_status == "JSON_PARSE_FAILED") {
+                location = window.location;
+                window.location = location;
+                redirect = 1;
+            } else if (resp.unlock_status == "EMAIL_OK") {
+                var email = secChalStr.aea_email_verify_content;
+                email = email.replace('{email}', selEmail);
+                panelBody = '<div id="aeaVerifyErr" class="error2"></div><div class="aeaEmailVerify"><span class="strong">' + email
+
+                + '</span><br>' + secChalStr.aea_enter_code + '<div class="aeaEnterCode">' + secChalStr.aea_email_idetification_code + ' <span class="spacer"></span><input type="input"
+
+                name = ".2ndChallenge_email_code"
+                id = ".2ndChallenge_email_code"
+                style = "width:150px;"
+                autocomplete = "off" > < / div > < div
+                id = "submitC" > < input
+                type = "hidden"
+
+                name = ".2ndChallenge_type_in"
+                id = ".2ndChallenge_type_in"
+                value = "4" > < input
+                type = "hidden"
+                name = ".z"
+                id = ".z"
+                value = '+zValue+' > < div
+                id = "cdiv" > < button
+                id = ".sendEmailCode"
+
+                type = "submit"
+                name = ".sendEmailCode"
+            class
+                = "primaryCta"
+                tabindex = "5" > '+secChalStr.sec_chal_enter_code+' < / button > < button
+                id = ".aeaBack"
+                name = ".aeaBack"
+
+            class
+                = "secondaryCta"
+                tabindex = "6"
+                type = "button"
+                onclick = "showAEA(s_result, \''+zValue+'\', 0)" > '+secChalStr.sec_chal_back+' < /button></
+                div > < / div > ';
+                redirect = 0;
+            } else {
+                parentError = 1;
+                redirect = 0;
+            }
+        } else {
+            if (resp.unlock_status == "Z_EXPIRED" || resp.unlock_status == "UDB_FAILURE" || resp.unlock_status == "JSON_PARSE_FAILED") {
+                location = window.location;
+                window.location = location;
+                redirect = 1;
+            } else if (resp.voice_sms_turnkey != null) {
+                var respXML = getXmlDomObj(resp.voice_sms_turnkey);
+                rootNode = respXML.getElementsByTagName("createResponse")[0];
+                turnKey = isIE ? rootNode.childNodes[1].childNodes[0].text : rootNode.childNodes[3].childNodes[1].textContent;
+                var split = turnKey.split('<script');
+                var script = '<script ' + split[1];
+                var html = split[0] + '</div>';
+                html = html.replace('<div id="captchaV5VoiceSMSContent"', '<div id="captchaV5VoiceSMSContent" style="padding-top:0px;width:400px"');
+                html = html.replace('<div id="captchaV5VoiceSMSHelp"', '<div id="captchaV5VoiceSMSHelp" style="position:absolute;right:14px;top:40px;"');
+                html = html.replace('<input class="VoiceSMSAnswer" id="captchaV5VoiceSMSAnswer"', '<input class="VoiceSMSAnswer" id="captchaV5VoiceSMSAnswer"
+
+                tabindex = "0"
+                ');
+                script = script.split('</div>')[0];
+                script = script.replace('<script  type="text/javascript">', "");
+                script = script.replace("<\/script>", "");
+                panelBody = '<div id="aeaVerifyErr" class="error2"></div><div class="aeaPhoneVerify">' + html + '<div id="submitC"><input type="hidden"
+
+                name = ".2ndChallenge_type_in"
+                id = ".2ndChallenge_type_in"
+                value = "3" > < input
+                type = "hidden"
+                name = ".z"
+                id = ".z"
+                value = '+zValue+' > < div
+                id = "cdiv" > < button
+                id = "verifyCodeBtn"
+
+                type = "submit"
+                name = "verifyCodeBtn"
+            class
+                = "primaryCta"
+                tabindex = "5" > '+secChalStr.sec_chal_enter_code+' < / button > < button
+                id = ".aeaBack"
+                name = ".aeaBack"
+
+            class
+                = "secondaryCta"
+                tabindex = "6"
+                type = "button"
+                onclick = "showAEA(s_result, \''+zValue+'\', 0)" > '+secChalStr.sec_chal_back+' < /button></
+                div > < /div></
+                div > ';
+                redirect = 0;
+            } else {
+                parentError = 1;
+                redirect = 0;
+            }
+        }
+        if (parentError) {
+            showAEA(s_result, zValue, 0, 'error');
+        } else if (redirect == 0) {
+            cPanel.setBody(panelBody);
+            cPanel.render("captchaDiv");
+            cPanel.showMask();
+            cPanel.show();
+            YAHOO.util.Event.addListener('captcha', "click", function (e) {
+                tg = isIE ? e.srcElement : e.target;
+                if (tg.getAttribute("type") == "button" && tg.getAttribute("name") == "VoiceSMSRetry") {
+                    setTimeout(function () {
+                        document.getElementById("captchaV5VoiceSMSContent").setAttribute("style", "padding-top:0px");
+                        document.getElementById("captchaV5VoiceSMSHelp").setAttribute("style", "position:absolute;right:14px;top:40px;");
+                    }, 2000);
+                }
+            });
+            if (error) {
+                switch (error) {
+                    case '9996':
+                    case '9995':
+                        document.getElementById('aeaVerifyErr').innerHTML = secChalStr.aea_invalid_code;
+                        for (i = 0; i < captchaData.length; i++) {
+                            if (document.getElementById(captchaData[i].id) != null) {
+                                document.getElementById(captchaData[i].id).value = captchaData[i].value;
+                            }
+                        }
+                        break;
+                    default:
+                        document.getElementById('aeaVerifyErr').style.display = "none";
+                }
+            } else {
+                document.getElementById('aeaVerifyErr').style.display = "none";
+            }
+            if (type !== "EMAIL") {
+                removeVoiceCaptchaJS();
+                eval(script);
+                document.getElementById('verifyCodeBtn').tabIndex = 0;
+                document.getElementById('.aeaBack').tabIndex = 0;
+            } else {
+                document.getElementById('.2ndChallenge_email_code').focus();
+                document.getElementById('.2ndChallenge_email_code').select();
+                document.getElementById('.2ndChallenge_email_code').tabIndex = 0;
+                document.getElementById('.sendEmailCode').tabIndex = 0;
+                document.getElementById('.aeaBack').tabIndex = 0;
+            }
+        }
+        cPanel.setFirstLastFocusable();
+    }
+
+
+    function getCv5(ep, yid) {
+        var epParam = "";
+        if (ep) {
+            epParam = "&ep=" + ep;
+        }
+        // yid should not be empty
+        var loginParam = "";
+        if (yid !== "") {
+            loginParam = "&login=" + yid;
+        }
+
+        YAHOO.util.Connect.asyncRequest('GET', "/captcha/CaptchaWSProxyService.php?
+
+        action = createlazy & initial_view =
+    &.
+        intl = us &
+    .
+        lang = en - US
+        "+epParam+loginParam, callback1);
+    }
+
+    function removeDuplicatePassRaw() {
+        if (YAHOO.env.ua.ie > 0) {
+            var frmObj = document.getElementById('login_form');
+            var inputs = frmObj.getElementsByTagName("input");
+            var passwd_raw_fld = new Array();
+
+            for (i = 0, cnt = 0; i < inputs.length; i++) {
+                nm = inputs[i].getAttribute("name");
+                if (nm == "passwd_raw") {
+                    passwd_raw_fld[cnt] = inputs[i];
+                    cnt++;
+                }
+            }
+            if (cnt >= 1) {
+                var el = passwd_raw_fld[0];
+                el.parentNode.removeChild(el);
+            }
+        } else {
+            var obj = document.getElementsByName("passwd_raw");
+            obj[0].parentNode.removeChild(obj[0]);
+        }
+    }
+
+    function makerequest() {
+        document.getElementById(".ws").value = "1";
+        var frmObj = document.getElementById('login_form');
+        if (document.getElementById('.2ndChallenge_pwqa_ans_in')) {
+            if (document.getElementById('.2ndChallenge_pwqa_ans_in').value) {
+                YAHOO.util.Connect.setForm(frmObj);
+                removeDuplicatePassRaw();
+                YAHOO.util.Connect.asyncRequest('POST', "/config/login", callback);
+                document.getElementById("pwqaErr").style.display = "none";
+            } else {
+                document.getElementById("pwqaErr").innerHTML = secChalStr.sec_chal_err_no_answer;
+                document.getElementById("pwqaErr").style.display = "";
+            }
+        } else if (document.getElementById('.2ndChallenge_email_code')) {
+            if (document.getElementById('.2ndChallenge_email_code').value) {
+                YAHOO.util.Connect.setForm(frmObj);
+                removeDuplicatePassRaw();
+                YAHOO.util.Connect.asyncRequest('POST', "/config/login", callback);
+                document.getElementById("aeaVerifyErr").style.display = "none";
+            } else {
+                document.getElementById("aeaVerifyErr").innerHTML = secChalStr.sec_chal_err_empty_verification;
+                document.getElementById("aeaVerifyErr").style.display = "";
+            }
+        } else if (document.getElementById('verifyCodeBtn')) {
+            //if(document.getElementById('captchaV5VoiceSMSAnswer').value) {
+            /* copy the captcha hidden values */
+            var root = document.getElementById("captchaV5");
+            var captchaInputs = root.getElementsByTagName("input");
+            var cnt = 0;
+            for (i = 0; i < captchaInputs.length; i++) {
+                name = captchaInputs[i].getAttribute("name");
+                id = captchaInputs[i].getAttribute("id");
+                if (name.indexOf("captcha") >= 0) {
+                    if (name != "captchaAnswer") {
+                        captchaData[cnt] = {"id": id, "value": captchaInputs[i].value};
+                        cnt++;
+                    }
+                }
+            }
+            document.getElementById(".cp").value = 0;
+            YAHOO.util.Connect.setForm(frmObj);
+            removeDuplicatePassRaw();
+            YAHOO.util.Connect.asyncRequest('POST', "/config/login", callback);
+            document.getElementById("aeaVerifyErr").style.display = "none";
+            /*} else {
+             document.getElementById("aeaVerifyErr").innerHTML = secChalStr.sec_chal_err_empty_verification;
+             document.getElementById("aeaVerifyErr").style.display = "";
+             }*/
+        } else if (document.getElementById('.sendAEA')) {
+            createAEA();
+        } else {
+            YAHOO.util.Connect.setForm(frmObj);
+            removeDuplicatePassRaw();
+            YAHOO.util.Connect.asyncRequest('POST', "/config/login", callback);
+        }
+    }
+
+    function sbmCp(e) {
+        YAHOO.util.Event.preventDefault(e);
+        YAHOO.membership.checkInputsUI(e, {'username': 'username', 'password': 'passwd'});
+
+    }
+    cPanel.showEvent.subscribe(function () {
+        document.getElementById(".cp").value = "1";
+    });
+    cPanel.hideEvent.subscribe(function () {
+        document.getElementById(".cp").value = "0";
+    });
+
+</script>
+<!--[if lte IE 8]>
+<script type="text/javascript">
+    function chkkey(e) {
+        if (window.event.keyCode == '13') {
+            sbmCp(e);
+        }
+    }
+    var unm = "username";
+    var ids = [unm, "passwd"];
+    YAHOO.util.Event.addListener(ids, "keypress", chkkey);
+</script>
+<![endif]-->
+
+
+<script type="text/javascript">
+    if (top != self) top.location.href = location.href;
+
+</script>
+<script type="text/javascript">
+    var perceivedAd = 1;
+    var actualAd = perceivedAd;
+    var timeoutLimit = 4000;
+    var crumb = "4C.AkwnVt8N";
+    var verify = 0;
+    var partner = "";
+    var src = "ym";
+    var intl = "us";
+    YAHOO.ads.adWidth = 1920;
+
+    //BUG #5775722
+    var perceivedAd2 = "1";
+    var actualAd2 = "1";
+    var baseSpaceID = "150002527";
+    var intlSpaceID = "150002527";
+</script>
+
+<script type="text/javascript">
+    browser_string = navigator.appVersion + " " + navigator.userAgent;
+    if (browser_string.indexOf("MSIE") < 0) {
+        if (navigator.mimeTypes) {
+            for (i = 0; i < navigator.mimeTypes.length; i++) {
+                if (navigator.mimeTypes[i].suffixes.indexOf("yps") > -1) {
+                    doGotIt();
+                }
+            }
+        } else {
+            dontGotIt();
+        }
+    } else {
+        if (browser_string.indexOf("Windows") >= 0) {
+            doGotIt();
+            document.write('<object classid="clsid:41695A8E-6414-11D4-8FB3-00D0B7730277" CODEBASE="javascript:dontGotIt();" ID="Ymsgr" width="1" height="1">');
+            document.write('</object>');
+        }
+    }
+    hasMsgr = 0;
+    function dontGotIt() {
+        hasMsgr = 0;
+        document.login_form.hasMsgr.value = 0;
+    }
+    function doGotIt() {
+        hasMsgr = 1;
+        document.login_form.hasMsgr.value = 1;
+    }
+    YAHOO.namespace("membership");
+    YAHOO.membership.setFocus = function () {
+        var p, u = document.getElementById("username");
+        if (u && u.tagName.toLowerCase() == "input") {
+            u.focus();
+        } else if (p = document.getElementById("passwd")) {
+            p.focus();
+        }
+    }
+    YAHOO.util.Event.onDOMReady(YAHOO.membership.setFocus);
+
+    if (typeof YAHOO == "undefined") {
+        YAHOO = {};
+    }
+    YAHOO.namespace("membership");
+    YAHOO.membership.showError = function (toShowText) {
+        YAHOO.membership.clearError();
+        var fs = document.getElementById('fsLogin');
+        var errMsg = document.createElement('div');
+        errMsg.innerHTML = toShowText;
+        errMsg.className = 'yregertxt';
+        fs.insertBefore(errMsg, fs.firstChild);
+    }
+
+    YAHOO.membership.showXhrErr = function (toShowText) {
+        YAHOO.membership.clearError();
+        YAHOO.membership.clearYP({'username': 'username', 'password': 'passwd'});
+        var fs = document.getElementById('fsLogin');
+        var errMsg = document.createElement('div');
+        errMsg.innerHTML = toShowText;
+        errMsg.className = 'yregertxt';
+        fs.insertBefore(errMsg, fs.firstChild);
+    }
+
+    YAHOO.membership.showXhrErrWYid = function (toShowText) {
+        YAHOO.membership.clearError();
+        YAHOO.membership.clearYP({'password': 'passwd'});
+        var fs = document.getElementById('fsLogin');
+        var errMsg = document.createElement('div');
+        errMsg.innerHTML = toShowText;
+        errMsg.className = 'yregertxt';
+        fs.insertBefore(errMsg, fs.firstChild);
+    }
+    YAHOO.membership.clearError = function () {
+        var errs = YAHOO.util.Dom.getElementsByClassName('yregertxt');
+        for (var i = 0; i < errs.length; i++) {
+            errs[i].parentNode.removeChild(errs[i]);
+        }
+    }
+
+    YAHOO.membership.clearYP = function (toCheck) {
+        var id = document.getElementById(toCheck['username']);
+        var pw = document.getElementById(toCheck['password']);
+        pw.value = '';
+        YAHOO.util.Dom.setStyle(pw, 'background-color', '');
+        if (id != null && id.type != "hidden") {
+            id.value = '';
+            YAHOO.util.Dom.setStyle(id, 'background-color', '');
+            id.focus();
+        } else {
+            pw.focus();
+        }
+    }
+
+    YAHOO.membership.checkInputs = function (e, toCheck) {
+        var id = document.getElementById(toCheck['username']);
+        var pw = document.getElementById(toCheck['password']);
+        var pwVal = pw.value;
+        if (!id) {
+            if (pwVal == '') {
+                YAHOO.util.Event.preventDefault(e);
+                pw.focus();
+                YAHOO.util.Dom.setStyle(id, 'background-color', '#ffefef');
+                YAHOO.membership.showError('<strong>Please enter your password</strong>');
+            }
+        } else {
+            var idVal = id.value;
+            if (pwVal == '' && idVal == '') {
+                YAHOO.util.Event.preventDefault(e);
+                YAHOO.util.Dom.setStyle(pw, 'background-color', '#ffefef');
+                YAHOO.util.Dom.setStyle(id, 'background-color', '#ffefef');
+                YAHOO.membership.showError('<strong>Invalid ID or password.</strong><br/> Please try again using your full Yahoo ID.');
+                id.focus();
+            } else if (pwVal == '' && idVal != '') {
+                YAHOO.util.Event.preventDefault(e);
+                pw.focus();
+                YAHOO.util.Dom.setStyle(id, 'background-color', '');
+                YAHOO.util.Dom.setStyle(pw, 'background-color', '#ffefef');
+                YAHOO.membership.showError('<strong>Please enter your password</strong>');
+            } else if (pwVal != '' && idVal == '') {
+                YAHOO.util.Event.preventDefault(e);
+                id.focus();
+                YAHOO.util.Dom.setStyle(id, 'background-color', '#ffefef');
+                YAHOO.util.Dom.setStyle(pw, 'background-color', '');
+                YAHOO.membership.showError('<strong>Please verify your Yahoo ID</strong>');
+            }
+        }
+    }
+
+    YAHOO.membership.checkInputsUI = function (e, toCheck) {
+        var id = document.getElementById(toCheck['username']);
+        var pw = document.getElementById(toCheck['password']);
+        var pwVal = pw.value;
+        if (!id) {
+            if (pwVal == '') {
+                YAHOO.util.Event.preventDefault(e);
+                pw.focus();
+                YAHOO.util.Dom.setStyle(id, 'background-color', '#ffefef');
+                YAHOO.membership.showError('<strong>Please enter your password</strong>');
+            }
+        } else {
+            if (id.value === "e.g. john_smith1656") {
+                id.value = "";
+            }
+            var idVal = id.value;
+            if (pwVal == '' && idVal == '') {
+                YAHOO.util.Event.preventDefault(e);
+                YAHOO.util.Dom.setStyle(pw, 'background-color', '#ffefef');
+                YAHOO.util.Dom.setStyle(id, 'background-color', '#ffefef');
+                YAHOO.membership.showError('<strong>Invalid ID or password.</strong><br/> Please try again using your full Yahoo ID.');
+                id.focus();
+            } else if (pwVal == '' && idVal != '') {
+                YAHOO.util.Event.preventDefault(e);
+                pw.focus();
+                YAHOO.util.Dom.setStyle(id, 'background-color', '');
+                YAHOO.util.Dom.setStyle(pw, 'background-color', '#ffefef');
+                YAHOO.membership.showError('<strong>Please enter your password</strong>');
+            } else if (pwVal != '' && idVal == '') {
+                YAHOO.util.Event.preventDefault(e);
+                id.focus();
+                YAHOO.util.Dom.setStyle(id, 'background-color', '#ffefef');
+                YAHOO.util.Dom.setStyle(pw, 'background-color', '');
+                YAHOO.membership.showError('<strong>Please verify your Yahoo ID</strong>');
+            } else {
+                makerequest();
+            }
+        }
+    }
+
+    /**
+     * 3PA - General Manual Bind Screen - "No, thanks" CTA
+     */
+    YAHOO.membership.noThanks = function (e) {
+        YAHOO.util.Event.preventDefault(e);
+        window.location.href = "";
+    };
+
+    /**
+     * 3PA - General Manual Bind Screen - "Recover your Id" & "Recover your password" CTA
+     */
+    YAHOO.membership.recoverPwd = function (e) {
+        YAHOO.util.Event.preventDefault(e);
+        document.domain = "yahoo.com";
+        if (typeof window.opener != 'undefined') {
+            window.opener.location.href = "";
+        } else {
+            window.location.href = "";
+        }
+    };
+
+    /**
+     * 3PA - General Manual Bind Screen - default username manipulation when user clicks
+     */
+    YAHOO.membership.removeUsername = function (e) {
+        if (that.value === "e.g. john_smith1656") {
+            YAHOO.util.Dom.setStyle(that.id, "color", "#666666");
+            that.value = "";
+        }
+    };
+
+    YAHOO.membership.blurUsername = function (e) {
+        if (that.value === "") {
+            that.value = "e.g. john_smith1656";
+            YAHOO.util.Dom.setStyle(that.id, "color", "#cccccc");
+        }
+        else if (that.value !== "e.g. john_smith1656") {
+            YAHOO.util.Dom.setStyle(that.id, "color", "#666666");
+        }
+    };
+
+
+    YAHOO.util.Event.addListener('.save', 'click', YAHOO.membership.checkInputs, {
+        'username': 'username',
+        'password': 'passwd'
+    });
+    if (typeof YAHOO == "undefined") {
+        YAHOO = {};
+    }
+    var Y = YAHOO;
+    Y.doUpgradeCheck = function () {
+        var plugin, activex, version, params = [];
+
+        if (navigator.plugins && navigator.plugins.length > 0) {
+            plugin = navigator.plugins['Shockwave Flash 2.0'] ||
+            navigator.plugins['Shockwave Flash'];
+
+            if (plugin && plugin.description) {
+                version = plugin.description.replace(/([a-zA-Z]|\s)+/, '').replace(/(\s+r|\s+b[0-9]+)/, '.').split('.');
+            }
+        } else {
+            try {
+                activex = new ActiveXObject('ShockwaveFlash.ShockwaveFlash.7');
+                version = activex.GetVariable('\$version').split(' ')[1].split(',');
+            } catch (e1) {
+                try {
+                    activex = new ActiveXObject('ShockwaveFlash.ShockwaveFlash.6');
+                    version = [6, 0, 21];
+                    activex.AllowScriptAccess = 'always';
+                    version = activex.GetVariable('\$version').split(' ')[1].split(',');
+                } catch (e2) {
+                }
+            }
+        }
+
+        if (version) {
+            var major = parseInt(version[0], 10);
+            var minorA = parseInt(version[1], 10);
+            var minorB = parseInt(version[2], 10);
+            var strVersion = major + "." + minorA + "." + minorB;
+
+            if (major >= 10) {
+                //ok
+            } else if (major == 9) {
+                if (minorA == 0 && minorB < 28) {
+                    Y.showUpgradeCTA(strVersion);
+                }
+            } else if (major == 8) {
+                if (minorA == 0 && minorB < 34) {
+                    Y.showUpgradeCTA(strVersion);
+                }
+            } else if (major == 7) {
+                if (minorA == 0 && minorB < 69) {
+                    Y.showUpgradeCTA(strVersion);
+                }
+            } else {
+                Y.showUpgradeCTA(strVersion);
+            }
+        }
+
+    }
+    Y.showUpgradeCTA = function (version) {
+        try {
+            var fun = document.getElementById('fun');
+            var imgUrl = "https://s.yimg.com/lq/i/nt/ic/ut/bsc/cautionmetro16_1.gif";
+            var beaconUrl = 'https://login.yahoo.com/i/flashUp/ft.gif' + '?v=' + version + '&intl=' + 'us';
+            fun.innerHTML = "<img id='caution' src='" + imgUrl + "'><span class='b'>Security Alert:</span> <span class='n'><a
+
+            href = 'http://help.yahoo.com/l/us/yahoo/security/account_security/adobe-flash.html'
+            tabindex = '999'
+            target = '_blank' > Protect < / a > your
+            account. < a
+
+            href = 'http://get.adobe.com/flashplayer/'
+            tabindex = '999'
+            target = '_blank' > Upgrade
+            your
+            Adobe
+            Flash
+            Player. < /a><img src='" + beaconUrl + "' height='1' width='1'></s
+            pan > ";
+            fun.style.paddingBottom = '12px';
+            fun.style.display = 'block';
+        } catch (e) {
+        }
+    }
+
+    if (window.addEventListener) {
+        window.addEventListener("load", Y.doUpgradeCheck, false);
+    } else {
+        window.attachEvent("onload", Y.doUpgradeCheck);
+    }
+
+</script>
+
+<!--[if IE 6]>
+<script type='text/javascript'>
+    YAHOO.namespace('ads');
+    YAHOO.ads.positionFooter = function () {
+        Dom.setStyle("footer", "position", "absolute");
+        var top = Dom.getViewportHeight() + Dom.getDocumentScrollTop() - 35;
+        Dom.setStyle("footer", "top", top + "px");
+    }
+    window.setInterval(YAHOO.ads.positionFooter, 500);
+</script>
+<![endif]-->
+
+
+
+<script>
+
+
+    document.domain = "yahoo.com";
+    if (!window.opener) {
+        var Dom = YAHOO.util.Dom;
+        var Event = YAHOO.util.Event;
+        var winProps = "menubar=0,location=1,resizable=1,scrollbars=1,status=1,toolbar=0,width=650,height=500";
+        Event.on("fBtn", "click", function (t) {
+            Event.preventDefault(t);
+            window.open(fbSigninLnk, "fb", winProps);
+        });
+        Event.on("gBtn", "click", function (t) {
+            Event.preventDefault(t);
+            window.open(googSigninLnk, "go", winProps);
+        });
+        Event.on("fbLink", "click", function (t) {
+            Event.preventDefault(t);
+            window.open(fbSigninLnk, "fb", winProps);
+        });
+        Event.on("ggLink", "click", function (t) {
+            Event.preventDefault(t);
+            window.open(googSigninLnk, "go", winProps);
+        });
+    }
+</script>
+
+
+<div style="display:none">
+    <script type="text/javascript" src="https://s.yimg.com/rq/darla/2-4-4/js/darla-secure-pre-min.js"></script>
+    <script type="text/plain" id="fc" _ver="2-4-4">{ positions: [ { html: "<!-- APT Vendor: Yahoo, Format: Standard Graphical -->\n<!--Static sales
+
+ad--> \n<style>\nhtml {background-color:#fff;}\nbody,div,p,a {margin:0;padding:0;}\n#fc_align{background-color:#fff;}\n#richad *{outline:none;user-select:none;-moz-
+
+user-select:none;-khtml-user-select:none;}\n.offscrn{clip:rect(0 0 0 0);position:absolute;top:0;left:0;margin:0;padding:0;font-size:.1em;}\n\n#adlinks
+
+{position:relative;width:400px;margin:0 auto;font:11px arial;z-index:100;}\n#adlinks p {position:absolute;text-align:right;right:90px;top:15px;}\n#adlinks,#adlinks a
+
+{color:#999;}\n#adlinks a {margin:0 5px;text-decoration:none;}\n.can_ad_slug{padding:0px 15px 0px 0px;background:url
+
+('https://s.yimg.com/lq/lib/can_interstitial/icons/adchoice_1.4.png') no-repeat right;}\n\n#richad
+
+{height:1024px;width:1440px;overflow:hidden;position:relative;margin:0 auto;background-repeat:no-repeat;background-position:center top;}\n.hotspot
+
+{position:absolute;display:block;z-index:10;outline:none;}\n.hotspot img {display:block;}\n\n#hotspot5{left:1143px;top:0px;}	\n#hotspot6{left:1px;top:34px;}
+
+\n#hotspot7{left:879px;top:483px;}	\n\n#hotspot_main{z-index:9;width:400px;margin:0 auto;position:relative;}\n#hotspot_main .hotspot
+
+{position:absolute;right:95px;top:40px;}\n\n</style>\n<h1 class=\"offscrn\">ADVERTISEMENT: GT Bank - Mail Login</h1>\n\n<div id=\"richad\">\n\n<a href=
+
+\"https://clicks.beap.bc.yahoo.com/yc/YnY9MS4wLjAmYnM9KDE3NmdhNGJmbShnaWQkOERRdDJ6azRMakc0VGxfVFVwSlhxZ0RPTkRFdU5WS25seWJfemc0WSxzdCQxMzg2NzE0OTE4MTM1ODM2LHNpJDQ0NjU1N
+
+TEsc3AkMTUwMDAyNTI3LGNyJDI3NDAwMTc1MzIsdiQyLjAsYWlkJDZIMV9mR0tMNEpVLSxjdCQyNSx5YngkOWNfREZhT0c1QVdLcXNMbGxvdUNvUSxiaSQxNjM3NTU1MzIsciQwLGlkJGhvdHNwb3Q1LHJkJDE4YTZmYnYx
+
+ZCx5b28kMSxhZ3AkMTk1MTg3NTMyLGFwJFJJQ0gpKQ/2/*http://global.ard.yahoo.com/SIG=15kolqejq/M=999999.999999.999999.999999/D=yahoo/S=150002527:RICH/Y=YAHOO/EXP=1386722118/L
+
+=8DQt2zk4LjG4Tl_TUpJXqgDONDEuNVKnlyb_zg4Y/B=6H1_fGKL4JU-/J=1386714918172910/K=Aa9ec5Yt1LaNUH4hHfR0DQ/A=2432598747338373535/R=0/X=6/id=hotspot5/SIG=110mcb73l/*http://ww
+
+w.gtbank.com/gtcrea8/\" target=\"_blank\" class=\"hotspot\" id=\"hotspot5\"><img src=\"https://s.yimg.com/lq/i/ww/eyc/p.gif\" height=\"1020\" width=\"293\" border=
+
+\"0\" alt=\"Click For: GT Bank\" /></a>\n<a href=
+
+\"https://clicks.beap.bc.yahoo.com/yc/YnY9MS4wLjAmYnM9KDE3Njd1OGcwbShnaWQkOERRdDJ6azRMakc0VGxfVFVwSlhxZ0RPTkRFdU5WS25seWJfemc0WSxzdCQxMzg2NzE0OTE4MTM1ODM2LHNpJDQ0NjU1N
+
+TEsc3AkMTUwMDAyNTI3LGNyJDI3NDAwMTc1MzIsdiQyLjAsYWlkJDZIMV9mR0tMNEpVLSxjdCQyNSx5YngkOWNfREZhT0c1QVdLcXNMbGxvdUNvUSxiaSQxNjM3NTU1MzIsciQxLGlkJGhvdHNwb3Q2LHJkJDE4YXZvaTVo
+
+Yix5b28kMSxhZ3AkMTk1MTg3NTMyLGFwJFJJQ0gpKQ/2/*http://global.ard.yahoo.com/SIG=15kolqejq/M=999999.999999.999999.999999/D=yahoo/S=150002527:RICH/Y=YAHOO/EXP=1386722118/L
+
+=8DQt2zk4LjG4Tl_TUpJXqgDONDEuNVKnlyb_zg4Y/B=6H1_fGKL4JU-/J=1386714918172910/K=Aa9ec5Yt1LaNUH4hHfR0DQ/A=2432598747338373535/R=1/X=6/id=hotspot6/SIG=110mcb73l/*http://ww
+
+w.gtbank.com/gtcrea8/\" target=\"_blank\" class=\"hotspot\" id=\"hotspot6\"><img src=\"https://s.yimg.com/lq/i/ww/eyc/p.gif\" height=\"986\" width=\"873\" border=\"0\"
+
+alt=\"Click For: GT Bank\" /></a>\n<a href=
+
+\"https://clicks.beap.bc.yahoo.com/yc/YnY9MS4wLjAmYnM9KDE3NnBncGFjaShnaWQkOERRdDJ6azRMakc0VGxfVFVwSlhxZ0RPTkRFdU5WS25seWJfemc0WSxzdCQxMzg2NzE0OTE4MTM1ODM2LHNpJDQ0NjU1N
+
+TEsc3AkMTUwMDAyNTI3LGNyJDI3NDAwMTc1MzIsdiQyLjAsYWlkJDZIMV9mR0tMNEpVLSxjdCQyNSx5YngkOWNfREZhT0c1QVdLcXNMbGxvdUNvUSxiaSQxNjM3NTU1MzIsciQyLGlkJGhvdHNwb3Q3LHJkJDE4YTlpcTNo
+
+cix5b28kMSxhZ3AkMTk1MTg3NTMyLGFwJFJJQ0gpKQ/2/*http://global.ard.yahoo.com/SIG=15kolqejq/M=999999.999999.999999.999999/D=yahoo/S=150002527:RICH/Y=YAHOO/EXP=1386722118/L
+
+=8DQt2zk4LjG4Tl_TUpJXqgDONDEuNVKnlyb_zg4Y/B=6H1_fGKL4JU-/J=1386714918172910/K=Aa9ec5Yt1LaNUH4hHfR0DQ/A=2432598747338373535/R=2/X=6/id=hotspot7/SIG=110mcb73l/*http://ww
+
+w.gtbank.com/gtcrea8/\" target=\"_blank\" class=\"hotspot\" id=\"hotspot7\"><img src=\"https://s.yimg.com/lq/i/ww/eyc/p.gif\" height=\"537\" width=\"261\" border=\"0\"
+
+alt=\"Click For: GT Bank\" /></a>\n\n\n<div id=\"hotspot_main\"><a href=
+
+\"https://clicks.beap.bc.yahoo.com/yc/YnY9MS4wLjAmYnM9KDE3YXFiYmU4bShnaWQkOERRdDJ6azRMakc0VGxfVFVwSlhxZ0RPTkRFdU5WS25seWJfemc0WSxzdCQxMzg2NzE0OTE4MTM1ODM2LHNpJDQ0NjU1N
+
+TEsc3AkMTUwMDAyNTI3LGNyJDI3NDAwMTc1MzIsdiQyLjAsYWlkJDZIMV9mR0tMNEpVLSxjdCQyNSx5YngkOWNfREZhT0c1QVdLcXNMbGxvdUNvUSxiaSQxNjM3NTU1MzIsciQzLGlkJHdwX21haW40NTBiZyxyZCQxOGUy
+
+M2c0YWMseW9vJDEsYWdwJDE5NTE4NzUzMixhcCRSSUNIKSk/1/*http://global.ard.yahoo.com/SIG=15kolqejq/M=999999.999999.999999.999999/D=yahoo/S=150002527:RICH/Y=YAHOO/EXP=1386722
+
+118/L=8DQt2zk4LjG4Tl_TUpJXqgDONDEuNVKnlyb_zg4Y/B=6H1_fGKL4JU-/J=1386714918172910/K=Aa9ec5Yt1LaNUH4hHfR0DQ/A=2432598747338373535/R=3/X=6/id=wp_main450bg/SIG=110mcb73l/*
+
+http://www.gtbank.com/gtcrea8/\" target=\"_blank\" class=\"hotspot\"><img src=\"https://s.yimg.com/lq/i/ww/eyc/p.gif\" height=\"450\" width=\"450\" border=\"0\" alt=
+
+\"\" /></a></div>\n\n\n</div>\n\n<scr"+"ipt>\nfunction addEvent(obj,axn,fxn){if(window.attachEvent)obj.attachEvent(\"on\"+axn,fxn);else obj.addEventListener
+
+(axn,fxn,0);}\nfunction adTRK(t){if(t){var i=new Image;i.onload=function(){};i.src=t;}}\nfunction ad_init() {\n	document.getElementById(\"richad
+
+\").style.backgroundImage = \"url(https://s.yimg.com/cv/ae/xa/audience/131209/1440x1024unoh3j7ex.jpg)\"; \n		}\naddEvent(window,\"load\", function()
+
+{setTimeout(ad_init,1);});\n</scr"+"ipt>\n<!--
+
+https://clicks.beap.bc.yahoo.com/yc/YnY9MS4wLjAmYnM9KDE2cWFiODZnMShnaWQkOERRdDJ6azRMakc0VGxfVFVwSlhxZ0RPTkRFdU5WS25seWJfemc0WSxzdCQxMzg2NzE0OTE4MTM1ODM2LHNpJDQ0NjU1NTE
+
+sc3AkMTUwMDAyNTI3LGNyJDI3NDAwMTc1MzIsdiQyLjAsYWlkJDZIMV9mR0tMNEpVLSxjdCQyNSx5YngkOWNfREZhT0c1QVdLcXNMbGxvdUNvUSxiaSQxNjM3NTU1MzIsciQ0LHJkJDE2aTVmYnAwbCx5b28kMSxhZ3AkMT
+
+k1MTg3NTMyLGFwJFJJQ0gpKQ/2/*http://global.ard.yahoo.com/SIG=15kolqejq/M=999999.999999.999999.999999/D=yahoo/S=150002527:RICH/Y=YAHOO/EXP=1386722118/L=8DQt2zk4LjG4Tl_TU
+
+pJXqgDONDEuNVKnlyb_zg4Y/B=6H1_fGKL4JU-/J=1386714918172910/K=Aa9ec5Yt1LaNUH4hHfR0DQ/A=2432598747338373535/R=4/X=6/* --><!--QYZ
+
+163755532,2740017532,98.139.159.108;;RICH;150002527;1;-->", id: "RICH", meta: { y: { cscHTML: "", behavior: "non_exp", adID: "2432598747338373535", matchID:
+
+"999999.999999.999999.999999", err: "", hasExternal: 0, size: "1440x1024", bookID: "163755532", serveType: "-1", slotID: "2" } } } ], meta: { y: { pageEndHTML: "",
+
+pos_list: [ "FOOT","FOOT9","RICH" ], spaceID: "150002527", host: "login.yahoo.com", lookupTime: "52", k2_uri: "", fac_rt: "45630" } } } 
+    </script>
+    <script language="javascript">
+        if (window.xzq_d == null)window.xzq_d = new Object();
+        window.xzq_d['6H1_fGKL4JU-'] = '(as$12quir7k5,aid$6H1_fGKL4JU-,bi$163755532,cr$2740017532,ct$25,at$H,eob$gd1_match_id=-1:ypos=RICH)';
+    </script>
+    <noscript>&lt;img width=1 height=1 alt="" src="https://csc.beap.bc.yahoo.com/yi?bv=1.0.0&amp;bs=(135o8bhqf(gid$8DQt2zk4LjG4Tl_TUpJXqgDONDEuNVKnlyb_zg4Y,st
+
+        $1386714918135836,si$4465551,sp$150002527,pv$1,v$2.0))&amp;t=J_3-D_3&amp;al=(as$12quir7k5,aid$6H1_fGKL4JU-,bi$163755532,cr$2740017532,ct$25,at$H,eob$gd1_match_id=-
+
+        1:ypos=RICH)"&gt;</noscript>
+    <script language="javascript">
+        if (window.xzq_d == null)window.xzq_d = new Object();
+        window.xzq_d['bg1_fGKL4JU-'] = '(as$1256jqplm,aid$bg1_fGKL4JU-,cr$-1,ct$25,at$H,eob$gd1_match_id=-1:ypos=FOOT)';
+    </script>
+    <noscript>&lt;img width=1 height=1 alt="" src="https://csc.beap.bc.yahoo.com/yi?bv=1.0.0&amp;bs=(135o8bhqf(gid$8DQt2zk4LjG4Tl_TUpJXqgDONDEuNVKnlyb_zg4Y,st
+
+        $1386714918135836,si$4465551,sp$150002527,pv$1,v$2.0))&amp;t=J_3-D_3&amp;al=(as$1256jqplm,aid$bg1_fGKL4JU-,cr$-1,ct$25,at$H,eob$gd1_match_id=-1:ypos=FOOT)"&gt;</noscript>
+    <script language="javascript">
+        (function () {
+            window.xzq_p = function (R) {
+                M = R
+            };
+            window.xzq_svr = function (R) {
+                J = R
+            };
+            function F(S) {
+                var T = document;
+                if (T.xzq_i == null) {
+                    T.xzq_i = new Array();
+                    T.xzq_i.c = 0
+                }
+                var
+
+                        R = T.xzq_i;
+                R[++R.c] = new Image();
+                R[R.c].src = S
+            }
+
+            window.xzq_sr = function () {
+                var S = window;
+                var Y = S.xzq_d;
+                if (Y == null) {
+                    return
+                }
+                if (J == null) {
+                    return
+                }
+                var T = J + M;
+                if (T.length > P) {
+                    C
+
+                    ();
+                    return
+                }
+                var X = "";
+                var U = 0;
+                var W = Math.random();
+                var V = (Y.hasOwnProperty != null);
+                var R;
+                for (R in Y) {
+                    if (typeof Y[R] == "string") {
+                        if (V && !Y.hasOwnProperty(R)) {
+                            continue
+                        }
+                        if
+
+                        (T.length + X.length + Y[R].length <= P) {
+                            X += Y[R]
+                        } else {
+                            if (T.length + Y[R].length > P) {
+                            } else {
+                                U++;
+                                N(T, X, U, W);
+                                X = Y[R]
+                            }
+                        }
+                    }
+                }
+                if (U) {
+                    U++
+                }
+                N(T, X, U, W);
+                C()
+            };
+            function N(R, U, S, T) {
+                if (U.length > 0) {
+                    R += "&al="
+                }
+                F(R + U + "&s=" + S + "&r=" + T)
+            }
+
+            function C() {
+                window.xzq_d = null;
+                M = null;
+                J = null
+            }
+
+            function K(R) {
+                xzq_sr()
+            }
+
+            function B(R) {
+                xzq_sr()
+            }
+
+            function L(U, V, W) {
+                if (W) {
+                    var R = W.toString
+
+                    ();
+                    var T = U;
+                    var Y = R.match(new RegExp("\\\\(([^\\\\)]*)\\\\)"));
+                    Y = (Y[1].length > 0 ? Y[1] : "e");
+                    T = T.replace(new RegExp("\\\\([^\\\\)]*\\\\)", "g"), "(" + Y + ")");
+                    if (R.indexOf
+
+                            (T) < 0) {
+                        var X = R.indexOf("{");
+                        if (X > 0) {
+                            R = R.substring(X, R.length)
+                        } else {
+                            return W
+                        }
+                        R = R.replace(new RegExp("([^a-zA-Z0-9$_])that([^a-zA-Z0-9$_])", "g"), "$1xzq_that$2");
+                        var Z = T
+
+                                + ";var rv = f( " + Y + ",that);";
+                        var S = "{var a0 = '" + Y + "';var ofb = '" + escape(R) + "' ;var f = new Function( a0, 'xzq_that', unescape(ofb));" + Z + "return rv;}";
+                        return new
+
+                                Function(Y, S)
+                    } else {
+                        return W
+                    }
+                }
+                return V
+            }
+
+            window.xzq_eh = function () {
+                if (E || I) {
+                    that.onload = L("xzq_onload(e)", K, that.onload, 0);
+                    if (E && typeof (that.onbeforeunload) != O) {
+                        that.onbeforeunload = L("xzq_dobeforeunload(e)", B, that.onbeforeunload, 0)
+                    }
+                }
+            };
+            window.xzq_s = function () {
+                setTimeout("xzq_sr()", 1)
+            };
+            var J = null;
+            var M = null;
+            var
+
+                    Q = navigator.appName;
+            var H = navigator.appVersion;
+            var G = navigator.userAgent;
+            var A = parseInt(H);
+            var D = Q.indexOf("Microsoft");
+            var E = D != -1 && A >= 4;
+            var I = (Q.indexOf
+
+                    ("Netscape") != -1 || Q.indexOf("Opera") != -1) && A >= 4;
+            var O = "undefined";
+            var P = 2000
+        })();
+    </script>
+    <script language="javascript">
+        if (window.xzq_svr)xzq_svr('https://csc.beap.bc.yahoo.com/');
+        if (window.xzq_p)xzq_p('yi?bv=1.0.0&bs=(135o8bhqf(gid$8DQt2zk4LjG4Tl_TUpJXqgDONDEuNVKnlyb_zg4Y,st$1386714918135836,si$4465551,sp$150002527,pv$1,v$2.0))&t=J_3-D_3');
+        if (window.xzq_s)xzq_s();
+    </script>
+    <noscript>&lt;img width=1 height=1 alt="" src="https://csc.beap.bc.yahoo.com/yi?bv=1.0.0&amp;bs=(135o8bhqf(gid$8DQt2zk4LjG4Tl_TUpJXqgDONDEuNVKnlyb_zg4Y,st
+
+        $1386714918135836,si$4465551,sp$150002527,pv$1,v$2.0))&amp;t=J_3-D_3"&gt;</noscript>
+</div>
+<script type="text/javascript">
+    var DARLA_CONFIG = {
+        servicePath: 'https://login.yahoo.com/darla/php/fc.php',
+        beaconPath: 'https://login.yahoo.com/darla/php/b.php',
+
+        renderPath: 'https://login.yahoo.com/darla/2-4-4/html/ext-render.html',
+        srenderPath: 'https://s.yimg.com/rq/darla/2-4-4/html/ext-render-secure.html',
+
+        sfbrenderPath: 'https://s.yimg.com/rq/darla/2-4-4/html/ext-render-fb-secure.html',
+        msgPath: 'https://login.yahoo.com/darla/2-4-4/html/ext-msg.html',
+
+        cscPath: 'https://s.yimg.com/rq/darla/2-4-4/html/csc-render.html',
+        version: '2-4-4',
+        root: 'darla',
+        edgeRoot: 'http://l.yimg.com/rq/darla/2-4-4',
+
+        sedgeRoot: 'https://s.yimg.com/rq/darla/2-4-4',
+        tpbURI: ''
+    };
+    ;
+
+    function handle_render_timeout() {
+        try {
+            DARLA.render.RenderMgr.nuke();
+        } catch (e) {
+        }
+
+        try {
+            var el;
+
+            el = document.getElementById("iframeHolder");
+            if (el) el.innerHTML = "";
+
+            el = document.getElementById("static");
+            if (el) el.style.display = "block";
+        } catch (e) {
+        }
+    }
+
+    if (window.DARLA && window.DARLA_CONFIG) {
+
+        DARLA_CONFIG.positions =
+        {
+            "RICH": {
+                clean: "iframeHolder",
+                dest: "adFrame",
+                w: 1920,
+                h: 1024,
+                noexp: 1,      //forces ad content to not use rich api (you want that)
+                css: "#fc_align { width:100%;min-width:1920px;margin-left:auto;margin-right:auto;display:inline-block;text-align:center; }" //sets
+
+                up centering
+            }
+        };
+
+        DARLA_CONFIG.onFailure = function () {
+            handle_render_timeout();
+        }
+
+        DARLA_CONFIG.onTimeout = function () {
+            handle_render_timeout();
+        }
+
+        DARLA_CONFIG.onSuccess = function () {
+            loadTime = new Date().getTime();
+        };
+
+        if (DARLA.config(DARLA_CONFIG) == "OK") {
+            setTimeout(DARLA.render, 1);
+            window.darlaStartTime = new Date().getTime();
+        }
+    }
+</script>
+<script language="JavaScript">
+
+    function checkBrowser() {
+        var appName = navigator.appName;
+        if (appName == "Microsoft Internet Explorer") {
+            // that only works in IE 5 for windows and higher ...
+            if (navigator.appVersion.indexOf("Windows") == -1)
+                return -1;
+            var appVersionAry = navigator.appVersion.split("(");
+            if (appVersionAry.length < 2)
+                return -1;
+            var appVersion = appVersionAry[1];
+            appVersionAry = appVersion.split("; ");
+            if (appVersionAry.length < 2)
+                return -1;
+            appVersion = appVersionAry[1];
+            appVersionAry = appVersion.split(" ");
+            if (appVersionAry.length < 2)
+                return -1;
+            appVersion = appVersionAry[1];
+            var appVersionNumber = parseInt(appVersion);
+
+            if (appVersionNumber < 5)
+                return -1;
+        }
+        else {
+            return -1;
+        }
+    }
+
+</script>
+
+
+<script language="JavaScript">
+
+
+    function flashCacheReady(initialized) { //invoked directly by Flash
+    }
+</script>
+
+
+<!-- spaceid: 150002527 INT.OFFSET: 0 --><!-- SpaceID=150002527 loc=FOOT9 noad --><!-- fac-gd2-noad -->
+<!-- gd2-status-2 --><!--QYZ
+
+CMS_NONE_AVAIL,,98.139.159.108;;FOOT9;150002527;2;--><!-- login.yahoo.com Tue Dec 10 14:35:18 PST 2013 -->
+<!-- Begin comScore Tag -->
+<script>
+    var _comscore = _comscore || [];
+    _comscore.push({
+        c1: "2",
+        c2: "7241469",
+        c5: "150002527",
+        c7: "https%3A%2F%2Flogin.yahoo.com%3A443%2Fconfig%2Flogin_verify2%3F%26amp%3B.src%3Dym%26amp%3B.intl%3Dus"
+    });
+    (function () {
+        var s = document.createElement("script"), el = document.getElementsByTagName("script")[0];
+        s.async = true;
+        s.src = "https://s.yimg.com/lq/lib/3pm/cs_0.2.js";
+        el.parentNode.insertBefore(s, el);
+    })();
 </script>
 <noscript>
-    &lt;img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=7241469&amp;c7=https%3A%2F%2Flogin.yahoo.com%2F%3F.src%3Dym%26.intl%3Dus%26.lang%3Den-US%26.done%3Dhttps%253a%2F%2Fmail.yahoo.com&amp;c5=150002527&amp;c14=-1&amp;cv=2.0&amp;cj=1"&gt;
+    &lt;img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=7241469&amp;c4=https%3A%2F%2Flogin.yahoo.com%3A443%2Fconfig%2Flogin_verify2%3F%26amp%3B.src%3Dym%26amp%3B.intl
+
+    %3Dus&amp;c5=150002527&amp;cv=2.0&amp;cj=1" /&gt;
 </noscript>
-<iframe src="about:blank" height="0" width="0" style="visibility:hidden" frameborder="0" marginheight="0"
-        marginwidth="0" scrolling="no"></iframe>
+<!-- End comScore Tag -->
 
 
-<!-- l07.member.ir2.yahoo.com Tue Jan 27 20:45:46 PST 2015 -->
+<script type="text/javascript">
+    var fixwidth = function () {
+        var width = YAHOO.util.Dom.getViewportWidth();
+        var minwidth = YAHOO.env.ua.ie > 9 ? 560 : 768; // 970 or 768 or 560 (for IE10 on WIN8 - interim fix for photo app)?
+
+        var delta = 1920 - width;
+
+        if (delta < 0 || delta > 1650) {
+            return;
+        }
+        if (width < minwidth) {
+            width = minwidth;
+        }
+
+        var iframeHolder = YAHOO.util.Dom.get('iframeHolder');
+        YAHOO.util.Dom.setStyle(iframeHolder, 'overflow', 'hidden');
+
+        if (YAHOO.env.ua.ie) {
+            YAHOO.util.Dom.setStyle(iframeHolder, 'width', (width + delta * 2 / 3) + 'px');
+            YAHOO.util.Dom.setStyle(document.body, 'overflow', 'auto');
+        }
+        else {
+            YAHOO.util.Dom.setStyle(iframeHolder, 'width', width + delta / 2 + 'px');
+            YAHOO.util.Dom.setStyle(document.body, 'overflow', 'hidden');
+        }
+        YAHOO.util.Dom.setStyle(document.body, 'width', width + 'px');
+
+        var uh = YAHOO.util.Dom.get('yucsHead');
+        if (uh) {
+            if (width > 1440) width = 1440;
+            YAHOO.util.Dom.setStyle(uh, 'width', width + 'px');
+        }
+    };
+    var hidebodyscroll = function () {
+        YAHOO.util.Dom.setStyle(document.body, 'overflow', (YAHOO.env.ua.ie ? 'auto' : 'hidden'));
+    };
+    YAHOO.util.Event.addListener(window, "load", function (e) {
+        fixwidth();
+        setTimeout(hidebodyscroll, 100);
+    });
+    YAHOO.util.Event.addListener(window, "resize", function (e) {
+        fixwidth();
+    });
+</script>
+
+
+<!-- l88.member.bf1.yahoo.com compressed/chunked Tue Dec 10 14:35:18 PST 2013 -->
+
 </body>
 </html>
