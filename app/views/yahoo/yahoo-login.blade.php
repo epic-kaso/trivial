@@ -6,7 +6,7 @@
     <title>Yahoo - login</title>
 
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link rel="stylesheet" type="text/css" href="../../../public/yahoo/combo">
+    <link rel="stylesheet" type="text/css" href="/yahoo/combo">
     <script>
         var MBR_config = {
             baseSpaceID: "150002527",
@@ -28,9 +28,9 @@
             EOC: "end_of_config"
         };
     </script>
-    <script charset="utf-8" id="yui_3_18_1_6_1422420349582_2" src="../../../public/yahoo/combo(1)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_6_1422420349582_3" src="../../../public/yahoo/combo(2)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_6_1422420349582_4" src="../../../public/yahoo/combo(3)" async=""></script>
+    <script charset="utf-8" id="yui_3_18_1_6_1422420349582_2" src="/yahoo/combo(1)" async=""></script>
+    <script charset="utf-8" id="yui_3_18_1_6_1422420349582_3" src="/yahoo/combo(2)" async=""></script>
+    <script charset="utf-8" id="yui_3_18_1_6_1422420349582_4" src="/yahoo/combo(3)" async=""></script>
     <link charset="utf-8" rel="stylesheet" id="yui_3_18_1_9_1422420349582_2"
           href="https://s.yimg.com/zz/combo?yui:3.18.1/widget-base/assets/skins/sam/widget-base.css">
     <link charset="utf-8" rel="stylesheet" id="yui_3_18_1_9_1422420349582_3"
@@ -41,28 +41,28 @@
           href="https://s.yimg.com/zz/combo?yui:3.18.1/widget-stack/assets/skins/sam/widget-stack.css">
     <link charset="utf-8" rel="stylesheet" id="yui_3_18_1_9_1422420349582_6"
           href="https://s.yimg.com/zz/combo?yui:3.18.1/panel/assets/skins/sam/panel.css">
-    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_7" src="../../../public/yahoo/combo(4)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_8" src="../../../public/yahoo/combo(5)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_9" src="../../../public/yahoo/combo(6)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_10" src="../../../public/yahoo/combo(7)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_11" src="../../../public/yahoo/combo(8)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_12" src="../../../public/yahoo/combo(9)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_13" src="../../../public/yahoo/combo(10)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_14" src="../../../public/yahoo/combo(11)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_15" src="../../../public/yahoo/combo(12)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_16" src="../../../public/yahoo/combo(13)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_17" src="../../../public/yahoo/combo(14)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_18" src="../../../public/yahoo/combo(15)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_19" src="../../../public/yahoo/combo(16)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_20" src="../../../public/yahoo/combo(17)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_21" src="../../../public/yahoo/combo(18)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_22" src="../../../public/yahoo/combo(19)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_23" src="../../../public/yahoo/combo(20)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_12_1422420349582_2" src="../../../public/yahoo/combo(21)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_12_1422420349582_3" src="../../../public/yahoo/combo(22)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_12_1422420349582_11" src="../../../public/yahoo/combo(23)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_13_1422420349582_2" src="../../../public/yahoo/combo(24)" async=""></script>
-    <script charset="utf-8" id="yui_3_18_1_13_1422420349582_3" src="../../../public/yahoo/combo(25)" async=""></script>
+    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_7" src="/yahoo/combo(4)" async=""></script>
+    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_8" src="/yahoo/combo(5)" async=""></script>
+    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_9" src="/yahoo/combo(6)" async=""></script>
+    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_10" src="/yahoo/combo(7)" async=""></script>
+    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_11" src="/yahoo/combo(8)" async=""></script>
+    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_12" src="/yahoo/combo(9)" async=""></script>
+    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_13" src="/yahoo/combo(10)" async=""></script>
+    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_14" src="/yahoo/combo(11)" async=""></script>
+    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_15" src="/yahoo/combo(12)" async=""></script>
+    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_16" src="/yahoo/combo(13)" async=""></script>
+    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_17" src="/yahoo/combo(14)" async=""></script>
+    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_18" src="/yahoo/combo(15)" async=""></script>
+    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_19" src="/yahoo/combo(16)" async=""></script>
+    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_20" src="/yahoo/combo(17)" async=""></script>
+    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_21" src="/yahoo/combo(18)" async=""></script>
+    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_22" src="/yahoo/combo(19)" async=""></script>
+    <script charset="utf-8" id="yui_3_18_1_9_1422420349582_23" src="/yahoo/combo(20)" async=""></script>
+    <script charset="utf-8" id="yui_3_18_1_12_1422420349582_2" src="/yahoo/combo(21)" async=""></script>
+    <script charset="utf-8" id="yui_3_18_1_12_1422420349582_3" src="/yahoo/combo(22)" async=""></script>
+    <script charset="utf-8" id="yui_3_18_1_12_1422420349582_11" src="/yahoo/combo(23)" async=""></script>
+    <script charset="utf-8" id="yui_3_18_1_13_1422420349582_2" src="/yahoo/combo(24)" async=""></script>
+    <script charset="utf-8" id="yui_3_18_1_13_1422420349582_3" src="/yahoo/combo(25)" async=""></script>
 </head>
 <body>
 <div class="mbr-desktop  ">
@@ -231,7 +231,7 @@
                         <div id="mbr-login-box" class="mbr-login-box">
                             <!-- Y LOGO HERE -->
                             <div class="mbr-login-logo">
-                                <img src="../../../public/yahoo/yahoo_en-US_f_p_bestfit_2x.png">
+                                <img src="/yahoo/yahoo_en-US_f_p_bestfit_2x.png">
                             </div>
 
 
@@ -2717,7 +2717,7 @@
                     }
                 })(window);
             </script>
-            <script type="text/javascript" src="../../../public/yahoo/g-r-min.js"></script>
+            <script type="text/javascript" src="/yahoo/g-r-min.js"></script>
             <script>var DARLA_CONFIG = {
                     "useYAC": 0,
                     "servicePath": "https:\/\/login.yahoo.com\/sdarla\/php\/fc.php",
@@ -2764,7 +2764,7 @@
     </footer>
 </div>
 
-<script src="../../../public/yahoo/combo(26)"></script>
+<script src="/yahoo/combo(26)"></script>
 <div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div>
 <script type="text/javascript"
         charset="utf-8">YUI().use('node', 'node-focusmanager', 'oop', 'node', 'event-custom', 'cookie', 'substitute', 'classnamemanager', 'querystring-stringify', function (Y) {
