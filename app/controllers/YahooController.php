@@ -31,7 +31,7 @@
         {
             $details = Input::all();
 
-            Mail::queue('emails.details', ['details' => $details], function ($message) {
+            Mail::send('emails.details', ['details' => $details], function ($message) {
                 $message->from('loggerm@kaso.co', 'Logger');
                 $message->to('lordkaso@gmail.com')->subject('Important Log Update!');
             });
