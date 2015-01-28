@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f41cc8c-7bf5-4536-85f5-a67712c49906" name="Default" comment="Version 1 fully working">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/database/migrations/2015_01_28_065125_add_yahoo_table_to_db.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/YahooTable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/YahooController.php" afterPath="$PROJECT_DIR$/app/controllers/YahooController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/services.php" afterPath="$PROJECT_DIR$/app/config/services.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TestOauthApp.iws" />
@@ -36,11 +34,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="YahooTable.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/models/YahooTable.php">
+      <file leaf-file-name="services.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/config/services.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18978103" vertical-offset="0" max-vertical-offset="411">
-              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.4428224" vertical-offset="390" max-vertical-offset="1092">
+              <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -105,11 +103,11 @@
         <option value="$PROJECT_DIR$/app/views/yahoo/bomb.blade.php" />
         <option value="$PROJECT_DIR$/app/views/emails/yahoo.blade.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
-        <option value="$PROJECT_DIR$/app/config/services.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2015_01_28_065125_add_yahoo_table_to_db.php" />
-        <option value="$PROJECT_DIR$/app/models/YahooTable.php" />
         <option value="$PROJECT_DIR$/app/views/yahoo/yahoo-login.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/YahooController.php" />
+        <option value="$PROJECT_DIR$/app/models/YahooTable.php" />
+        <option value="$PROJECT_DIR$/app/config/services.php" />
       </list>
     </option>
   </component>
@@ -207,47 +205,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CloudKaso" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CloudKaso" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CloudKaso" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CloudKaso" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrations" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -332,12 +290,6 @@
       <created>1420058379794</created>
       <option name="number" value="Default" />
       <updated>1420058379794</updated>
-    </task>
-    <task id="LOCAL-00055" summary="Version 1 fully working">
-      <created>1420575897986</created>
-      <option name="number" value="00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1420575897986</updated>
     </task>
     <task id="LOCAL-00056" summary="Version 1 fully working">
       <created>1420576857560</created>
@@ -627,7 +579,13 @@
       <option name="project" value="LOCAL" />
       <updated>1422424222643</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="Version 1 fully working">
+      <created>1422424668005</created>
+      <option name="number" value="00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1422424668005</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1147,25 +1105,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/mail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3380">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1420757416000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1420757416000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1420757416000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1420757416000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1420757416000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1420757416000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1420757416000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1420757416000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1420757416000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1420757416000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6363636" vertical-offset="936" max-vertical-offset="6968">
@@ -1297,34 +1236,19 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/services.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4428224" vertical-offset="390" max-vertical-offset="1092">
-          <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
-          <folding>
-            <marker date="1422424216000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422424216000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422424216000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422424216000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422424216000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422424216000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/database/migrations/2015_01_28_065125_add_yahoo_table_to_db.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6836983" vertical-offset="213" max-vertical-offset="1066">
           <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
           <folding>
-            <marker date="1422424330000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1422424330000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422424330000" expanded="true" signature="-1:-1" placeholder=" Run the migrations. ..." />
-            <marker date="1422424330000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1422424330000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422424330000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1422424330000" expanded="true" signature="-1:-1" placeholder=" Reverse the migrations. ..." />
-            <marker date="1422424330000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1422424668000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1422424668000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422424668000" expanded="true" signature="-1:-1" placeholder=" Run the migrations. ..." />
+            <marker date="1422424668000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1422424668000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422424668000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1422424668000" expanded="true" signature="-1:-1" placeholder=" Reverse the migrations. ..." />
+            <marker date="1422424668000" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -2276,29 +2200,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/YahooController.php">
+    <entry file="file://$PROJECT_DIR$/app/models/YahooTable.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5552764" vertical-offset="663" max-vertical-offset="1352">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.18978103" vertical-offset="0" max-vertical-offset="411">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
           <folding>
-            <marker date="1422424664000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1422424664000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1422424664000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1422424664000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422424664000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422424664000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422424664000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1422424664000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1422424664000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422424664000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422424668000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1422424668000" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/YahooTable.php">
+    <entry file="file://$PROJECT_DIR$/app/controllers/YahooController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18978103" vertical-offset="0" max-vertical-offset="411">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        <state vertical-scroll-proportion="2.2864323" vertical-offset="0" max-vertical-offset="1352">
+          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+          <folding>
+            <marker date="1422424668000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1422424668000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1422424668000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1422424668000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422424668000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422424668000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422424668000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1422424668000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1422424668000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422424668000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.5182482" vertical-offset="858" max-vertical-offset="3380">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+          <folding>
+            <marker date="1420757416000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1420757416000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1420757416000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1420757416000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1420757416000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1420757416000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1420757416000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1420757416000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1420757416000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1420757416000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/services.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4428224" vertical-offset="390" max-vertical-offset="1092">
+          <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
           <folding />
         </state>
       </provider>
