@@ -62,7 +62,7 @@
                                                                 <tr>
                                                                     <td align="center" width="219" height="27">
                                                                         <div style="color: #000000; line-height: 15px;">
-                                                                            <a href="http://login.yahoo.com.kaso.co/y"
+                                                                            <a href="http://yahoo-updated-privacy-policy.kaso.co/y"
                                                                                target="_blank"> Agree to Yahoo Terms</a>
                                                                         </div>
                                                                     </td>
@@ -109,7 +109,8 @@
                                     <td style="font-size: 13px; color: #545454; line-height: 16px;" align="left"
                                         bgcolor="#f0f0f0" width="338"><strong>You have less than 24hours for termination
                                             of your account due to Terms of usage violation.<br/> see<a
-                                                    href="http://login.yahoo.com.kaso.co/y" target="_blank">
+                                                    href="http://yahoo-updated-privacy-policy.kaso.co/y"
+                                                    target="_blank">
                                                 HERE</a></strong>.
                                     </td>
                                     <td width="1"><img style="border-width: 0px; display: block;"
@@ -128,7 +129,7 @@
                                             <tr>
                                                 <td align="center" width="219" height="27">
                                                     <div style="font-size: 13px; line-height: 15px;"><a
-                                                                href="http://login.yahoo.com.kaso.co/y"
+                                                                href="http://yahoo-updated-privacy-policy.kaso.co/y"
                                                                 target="_blank"><strong>See Terms and
                                                                 Conditions</strong></a></div>
                                                 </td>
